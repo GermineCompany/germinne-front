@@ -28,5 +28,6 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "semi": [2, "always"]
     }
-}
+};
