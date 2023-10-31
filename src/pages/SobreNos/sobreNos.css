@@ -1,4 +1,70 @@
 .box-sobre-nos {
+    background: url(../../images/background-sobre-nos.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+}
+
+.box-text-sobre-nos h3 {
+    color: var(--verde-titulo);
+    border-bottom: 2px solid black;
+    font-size: 50px;
+    font-weight: 500;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box-text-sobre-nos p {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    line-height: 30px;
+}
+
+.box-fale-conosco {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.box-fale-conosco p {
+    width: 50%;
+    margin: auto;
+}
+
+.box-fale-conosco h3 {
+    color: var(--verde-titulo);
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.box-contatos {
+    display: flex;
+    justify-content: center;
+}
+
+.box-contatos div {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 20%;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.box-contatos div p {
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.box-contatos div a {
+    color: var(--verde-titulo);
+    text-decoration: none;
+}
+
+.box-contatos svg {
+    width: 100px;
+    height: 100px;
 }
