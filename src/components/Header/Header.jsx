@@ -7,8 +7,8 @@ function Header() {
   return (
     <header>
       <div className='header-box'>
+      <a href="/home">
         <img src={ logo } alt="Logo verde" />
-        <a href="/home">
           <h1>Germinne</h1>
         </a>
       </div>
