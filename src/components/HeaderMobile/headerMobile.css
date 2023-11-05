@@ -1,0 +1,39 @@
+.header-mobile {
+    display: flex;
+    padding: 5px 30px;
+}
+
+.header-mobile p {
+    font-size: 60px;
+}
+
+.header-mobile img {
+    width: 40px;
+}
+
+.header-box h1 {
+    font-size: 40px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (max-width: 700px){
+    .header-mobile img {
+        width: 30px;
+    }
+
+    .header-box h1 {
+        font-size: 25px;
+    }
+
+    .header-mobile p {
+        font-size: 40px;
+    }
+}
