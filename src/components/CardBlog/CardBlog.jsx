@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './cardBlog.css';
 
 function CardBlog({ srcImg, altImg, title, resume, category }) {
   return (
-    <article>
+    <article className='card-blog'>
       <div>
         <img src={ srcImg } alt={ altImg } />
       </div>
@@ -11,7 +12,7 @@ function CardBlog({ srcImg, altImg, title, resume, category }) {
       <div>
         <h3>{ title }</h3>
         <p>{ resume }</p>
-        <p>{ category }</p>
+        <p className='category'>{ category }</p>
       </div>
     </article>
   );
