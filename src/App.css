@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;600;700&display=swap");
 
 * {
   padding: 0;
@@ -7,8 +8,45 @@
 }
 
 :root {
-  --verde-header: #2ACC91;
-  --verde-botao: #09834A;
-  --verde-germinne: #42785A;
-  --verde-footer: #4CA676;
+  /* COLOR */
+  --verde-header: #2acc91;
+  --verde-principal: #4ca676;
+  --verde-escuro: #09834a;
+
+  /* CTAS */
+  --cta-laranja: #f7a62b;
+  --cta-roxo: #b67dff;
+
+  /* BACKGROUND-COLOR */
+  --background-main: #fff;
+  /* COLOR */
+  
+
+  /* FONT */
+  /* FONT-FAMILLY */
+  --title-family: "Montserrat", sans-serif;
+  --body-family: 'Poppins', sans-serif;
+
+  /* FONT-SIZE */
+  --display-large: 4.5 rem;
+
+  --title-large: 3.125rem;
+  --title-small: 2rem;
+
+  --subtitle-large: 1.75rem;
+  --subtitle-small: 1.31rem;
+
+  --body-large: 1.25rem;
+  --body-medium: 1.125rem;
+  --body-small: 1rem;
+
+  /* FONT-COLORS */
+  --title-color: #1e1e1e;
+  --body-color: #353535;
+
+  /* FONT-WEIGHT */
+  --bold: 700;
+  --semi-bold: 600;
+  --regular: 400;
+  /* FONT */
 }
