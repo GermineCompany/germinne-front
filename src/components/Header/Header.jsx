@@ -8,11 +8,9 @@ import HeaderMobile from '../HeaderMobile/HeaderMobile';
 function Header() {
   return (
     <>
-      <div className='component-mobile'>
-        <HeaderMobile />
-      </div>
+      <HeaderMobile id='component-mobile' />
 
-      <header>
+      <header className='header-desktop'>
         <div className='header-box'>
           <img src={logo} alt="Logo verde" />
           <a href="/home">

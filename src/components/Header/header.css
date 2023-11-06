@@ -66,11 +66,7 @@ nav ul li a {
 }
 
 @media screen and (max-width: 1250px) {
-    header {
+    .header-desktop {
         display: none;
-    }
-
-    .component-mobile {
-        display: block;
     }
 }

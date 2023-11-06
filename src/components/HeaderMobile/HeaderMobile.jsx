@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../images/logo-verde.svg';
 import sacola from '../../images/sacola.png';
 import fecharMenu from '../../images/fechar-menu.png';
@@ -6,18 +6,30 @@ import './headerMobile.css';
 
 
 function HeaderMobile() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenu = () => setMenuOpen(menuOpen ? false : true);
+
   return (
     <>
-      <div className='menu-mobile'>
-        <div>
-          <img src={fecharMenu} alt="Icone de um X" />
-        </div>
+      <div className={!menuOpen ? 'esconder-menu-mobile' : 'menu-mobile'}>
 
-        <div className='header-box'>
-          <img src={logo} alt="Logo verde" />
-          <a href="/home">
-            <h1>Germinne</h1>
-          </a>
+        <div>
+          <div className='header-box'>
+            <img src={logo} alt="Logo verde" />
+            <a href="/home">
+              <h1>Germinne</h1>
+            </a>
+          </div>
+
+          <div>
+            <img
+              className='icone-fechar'
+              onClick={handleMenu}
+              src={fecharMenu}
+              alt="Icone de um X"
+            />
+          </div>
         </div>
 
         <nav>
@@ -29,11 +41,12 @@ function HeaderMobile() {
             <li>Sobre nós</li>
           </ul>
         </nav>
+
       </div>
 
-      <header className='header-mobile'>
+      <header className={menuOpen ? 'esconder-menu-mobile' : 'header-mobile'}>
         <div>
-          <p>&equiv;</p>
+          <p onClick={handleMenu}>&equiv;</p>
         </div>
 
         <div className='header-box'>
