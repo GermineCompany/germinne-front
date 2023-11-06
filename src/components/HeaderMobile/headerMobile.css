@@ -30,6 +30,10 @@
     background-color: white;
 }
 
+.animate__animated.animate__slideInRight {
+    --animate-duration: .7s;
+}
+
 .menu-mobile div:nth-child(1) {
     display: flex;
     align-items: center;

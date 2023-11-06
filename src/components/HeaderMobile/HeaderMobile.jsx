@@ -3,6 +3,7 @@ import logo from '../../images/logo-verde.svg';
 import sacola from '../../images/sacola.png';
 import fecharMenu from '../../images/fechar-menu.png';
 import './headerMobile.css';
+import 'animate.css';
 
 
 function HeaderMobile() {
@@ -12,7 +13,7 @@ function HeaderMobile() {
 
   return (
     <>
-      <div className={!menuOpen ? 'esconder-menu-mobile' : 'menu-mobile'}>
+      <div className={!menuOpen ? 'esconder-menu-mobile animate__slideOutRight' : 'menu-mobile animate__animated animate__slideInRight'}>
 
         <div>
           <div className='header-box'>
