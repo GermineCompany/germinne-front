@@ -35,11 +35,11 @@ function HeaderMobile() {
 
         <nav>
           <ul>
-            <li>Home</li>
-            <li>Blog</li>
-            <li>Loja</li>
-            <li>Receitas</li>
-            <li>Sobre nós</li>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="">Loja</a></li>
+            <li><a href="">Receitas</a></li>
+            <li><a href="/sobre-nos">Sobre nós</a></li>
           </ul>
         </nav>
 
