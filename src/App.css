@@ -12,9 +12,45 @@ body {
 }
 
 :root {
-  --verde-header: #2ACC91;
-  --verde-botao: #09834A;
-  --verde-germinne: #42785A;
-  --verde-footer: #4CA676;
-  --verde-titulo: #51B27E;
+  /* COLOR */
+  --verde-header: #2acc91;
+  --verde-principal: #4ca676;
+  --verde-escuro: #09834a;
+
+  /* CTAS */
+  --cta-laranja: #f7a62b;
+  --cta-roxo: #b67dff;
+
+  /* BACKGROUND-COLOR */
+  --background-main: #fff;
+  /* COLOR */
+  
+
+  /* FONT */
+  /* FONT-FAMILLY */
+  --title-family: "Montserrat", sans-serif;
+  --body-family: 'Poppins', sans-serif;
+
+  /* FONT-SIZE */
+  --display-large: 4.5 rem;
+
+  --title-large: 3.125rem;
+  --title-small: 2rem;
+
+  --subtitle-large: 1.75rem;
+  --subtitle-small: 1.31rem;
+
+  --body-large: 1.25rem;
+  --body-medium: 1.125rem;
+  --body-small: 1rem;
+
+  /* FONT-COLORS */
+  --title-color: #1e1e1e;
+  --body-color: #353535;
+
+  /* FONT-WEIGHT */
+  --bold: 700;
+  --semi-bold: 600;
+  --regular: 400;
+  /* FONT */
 }
