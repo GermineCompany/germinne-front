@@ -53,6 +53,20 @@ nav ul li a {
     background-color: var(--verde-botao);
 }
 
+.header-box img {
+    width: 50px;
+}
+
 .header-box button a {
     color: white;
+}
+
+.component-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1250px) {
+    .header-desktop {
+        display: none;
+    }
 }
