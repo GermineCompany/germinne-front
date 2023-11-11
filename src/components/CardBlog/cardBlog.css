@@ -1,0 +1,32 @@
+.card-blog {
+    display: flex;
+    width: 75%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.card-blog img {
+    height: 250px;
+}
+
+.card-blog div:nth-child(2) {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-blog div:nth-child(2) h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--verde-header);
+}
+
+.category {
+    align-self: flex-end;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--verde-germinne);
+}
