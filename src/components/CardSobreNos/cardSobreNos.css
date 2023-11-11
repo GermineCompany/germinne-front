@@ -1,0 +1,20 @@
+.card-sobre-nos {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+    margin: 0 5%;
+}
+
+.card-sobre-nos img {
+    width: 40%;
+    margin: auto;
+}
+
+.card-sobre-nos h4 {
+    font-size: 32px;
+}
+
+.card-sobre-nos p {
+    font-size: 18px;
+}

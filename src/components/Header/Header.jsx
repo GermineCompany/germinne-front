@@ -1,52 +1,58 @@
 import React from 'react';
 import logo from '../../images/logo-verde.svg';
-import sacola from '../../images/sacola.svg';
+import sacola from '../../images/sacola.png';
 import './header.css';
+import HeaderMobile from '../HeaderMobile/HeaderMobile';
+
 
 function Header() {
   return (
-    <header>
-      <div className='header-box'>
-      <a href="/home">
-        <img src={ logo } alt="Logo verde" />
-          <h1>Germinne</h1>
-        </a>
-      </div>
+    <>
+      <HeaderMobile id='component-mobile' />
 
-      <nav>
-        <ul>
-          <li>
-            <a href="/home">Home</a>
-          </li>
+      <header className='header-desktop'>
+        <div className='header-box'>
+          <img src={logo} alt="Logo verde" />
+          <a href="/home">
+            <h1>Germinne</h1>
+          </a>
+        </div>
 
-          <li>
-            <a href="/blog">Blog</a>
-          </li>
+        <nav>
+          <ul>
+            <li>
+              <a href="/home">Home</a>
+            </li>
 
-          <li>
-            <a href="/loja">Loja</a>
-          </li>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
 
-          <li>
-            <a href="/receitas">Receitas</a>
-          </li>
+            <li>
+              <a href="/loja">Loja</a>
+            </li>
 
-          <li>
-            <a href="/sobre-nos">Sobre nós</a>
-          </li>
-        </ul>
-      </nav>
+            <li>
+              <a href="/receitas">Receitas</a>
+            </li>
 
-      <div className='header-box'>
-        <button>
-          <a href="/login">Entrar</a>
-        </button>
+            <li>
+              <a href="/sobre-nos">Sobre nós</a>
+            </li>
+          </ul>
+        </nav>
 
-        <a href="/carrinho">
-          <img src={ sacola } alt="Icone de sacola" />
-        </a>
-      </div>
-    </header>
+        <div className='header-box'>
+          <button>
+            <a href="/login">Entrar</a>
+          </button>
+
+          <a href="/carrinho">
+            <img src={sacola} alt="Icone de sacola" />
+          </a>
+        </div>
+      </header>
+    </>
   );
 }
 
