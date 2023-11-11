@@ -72,7 +72,7 @@ function SobreNos() {
         </div>
 
         <div>
-          <h2>Ou preencha oo formulário</h2>
+          <h2>Ou preencha o formulário</h2>
           <FormsSobreNos />
         </div>
       </div>
