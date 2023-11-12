@@ -1,0 +1,16 @@
+.carousel-blog {
+  width: 90%;
+  margin: 30px auto;
+  height: 500px;
+  border-radius: 50px;
+}
+
+.aws-sld {
+  --open-animation-perspective: 600px;
+  --open-animation-angle: 8deg;
+  --open-animation-enter-delay: 85ms;
+}
+
+.carousel-blog img {
+  border-radius: 50px;
+}

@@ -8,7 +8,7 @@ import HeaderMobile from '../HeaderMobile/HeaderMobile';
 function Header() {
   return (
     <>
-      <HeaderMobile id='component-mobile' />
+      <HeaderMobile id="component-mobile" />
 
       <header className='header-desktop'>
         <div className='header-box'>

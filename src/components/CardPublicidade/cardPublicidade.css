@@ -3,6 +3,16 @@
     font-size: 18px;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 30px;
+    width: 40%;
+}
+
+.card-publicidade div {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    padding: 50px;
+    background-color: var(--cta-roxo);
 }
 
 .card-publicidade hr {

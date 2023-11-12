@@ -12,7 +12,10 @@ function CardBlog({ srcImg, altImg, title, resume, category }) {
       <div>
         <h3>{ title }</h3>
         <p>{ resume }</p>
-        <p className='category'>{ category }</p>
+        <div>
+          <a href="">Ler mais...</a>
+          <p className='category'>{ category }</p>
+        </div>
       </div>
     </article>
   );
