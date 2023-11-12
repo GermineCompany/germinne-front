@@ -40,4 +40,5 @@
 .box-card-germinne {
     display: flex;
     justify-content: space-between;
+    padding: 4% 0;
 }

@@ -19,7 +19,7 @@ function CardHomeGerminne({ title, className, subtitle, id }) {
 CardHomeGerminne.propTypes = {
   title: PropTypes.array.isRequired,
   className: PropTypes.string.isRequired,
-  subtitle: PropTypes.string,
+  subtitle: PropTypes.array,
   id: PropTypes.string
 };
 

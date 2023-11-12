@@ -42,7 +42,7 @@ function Home() {
           <CardHomeGerminne 
             title={['Temos a missão de levar o ', <span key={ 2 }>verde</span>, ' para as áreas urbanas']}
             className='second-germinne-card'
-            subtitle='Conheça a Germinne'
+            subtitle={['Conheça a ', <span key={ 4 }>Germinne</span>]}
             id='second-germinne-large'
           />
 
@@ -52,6 +52,10 @@ function Home() {
           />
         </div>
       </article>
+
+      <section>
+        <h2>Benefícios da Agricultura Urbana</h2>
+      </section>
     </div>
   );
 }
