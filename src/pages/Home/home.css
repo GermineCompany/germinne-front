@@ -1,0 +1,26 @@
+.banner-home {
+    background: url(../../images/banner-home.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.banner-home h2 {
+    font-size: var(--title-large);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.banner-home span {
+    color: var(--font-banner-verde);
+}
+
+.banner-home p {
+    width: 22%;
+    font-size: var(--subtitle-medium);
+}

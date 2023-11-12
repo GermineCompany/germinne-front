@@ -18,7 +18,7 @@ function HeaderMobile() {
         <div>
           <div className='header-box'>
             <img src={logo} alt="Logo verde" />
-            <a href="/home">
+            <a href="/">
               <h1>Germinne</h1>
             </a>
           </div>
