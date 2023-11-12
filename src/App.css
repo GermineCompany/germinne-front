@@ -23,6 +23,7 @@ body {
 
   /* BACKGROUND-COLOR */
   --background-main: #fff;
+  --background-article-home: #F8F8F8;
   /* COLOR */
   
 
@@ -35,6 +36,7 @@ body {
   --display-large: 4.5 rem;
 
   --title-large: 3.125rem;
+  --title-medium: 2.75rem;
   --title-small: 2rem;
 
   --subtitle-large: 1.75rem;
