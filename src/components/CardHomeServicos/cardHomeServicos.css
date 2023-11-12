@@ -7,7 +7,20 @@
     border-radius: 15px;
     background-size: cover;
     background-position: center;
+    transition: 0.2s;
 }
+
+.card-home-servicos div:hover {
+    width: 375px;
+    height: 305px;
+    transition: 0.2s;
+}
+
+.card-home-servicos:hover {
+    cursor: pointer;
+}
+
+
 
 .first-service-card {
     background: url(../../images/card-home-1.png) no-repeat;

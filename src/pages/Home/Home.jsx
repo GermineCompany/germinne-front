@@ -16,16 +16,19 @@ function Home() {
             title='Explore informações sobre a agricultura'
             subtitle={['Acesse o ', <span key={ 1 }>Germinne Blog</span>]}
             className='first-service-card'
+            routeName='blog'
           />
           <CardHomeServicos 
             title='Contrate Serviços de Agricultura'
             subtitle={['Profissionais de ', <span key={ 2 }>Qualidade</span>]}
             className='second-service-card'
+            routeName='horticultor'
           />
           <CardHomeServicos 
             title='Plante sem dificuldades'
             subtitle={['Conheça a ', <span key={ 3 }>Germinne Box</span>]}
             className='third-service-card'
+            routeName='loja'
           />
         </div>
       </article>
