@@ -25,9 +25,19 @@
     font-size: var(--subtitle-small);
 }
 
+.box-card-home {
+    width: 90%;
+    margin: auto;
+}
+
 .box-card-servicos {
     background-color: var(--body-article-color);
     padding: 4% 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.box-card-germinne {
+    display: flex;
+    justify-content: space-between;
 }

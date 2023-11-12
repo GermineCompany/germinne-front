@@ -20,7 +20,7 @@ function CardHomeServicos({ subtitle, title, className, routeName }) {
 }
 
 CardHomeServicos.propTypes = {
-  subtitle: PropTypes.array .isRequired,
+  subtitle: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
   className: PropTypes.string.isRequired,
   routeName: PropTypes.string.isRequired

@@ -34,10 +34,6 @@
     background: url(../../images/card-home-3.png) no-repeat;
 }
 
-.card-home-servicos {
-    width: 30%
-}
-
 .card-home-servicos h2 {
     font-size: var(--body-large);
     width: 60%;
