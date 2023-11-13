@@ -7,6 +7,7 @@ import ArticleBeneficios from '../../components/ArticleBeneficios/ArticleBenefic
 import articleImage1 from '../../images/article-image-1.png';
 import articleImage2 from '../../images/article-image-2.png';
 import articleImage3 from '../../images/article-image-3.png';
+import CardAvaliacao from '../../components/CardAvaliacao/CardAvaliacao';
 
 function Home() {
   return (
@@ -81,6 +82,33 @@ function Home() {
           title='Cultivar plantas: um impulso positivo para a saúde mental'
           text='Plantar faz bem para a cabeça! Reduz estresse e ansiedade, trazendo alegria com a natureza. Jardinagem dá sensação boa, deixando a gente mais feliz. Cuidar das plantas e ter rotinas de jardinagem é tipo uma terapia, criando um ambiente que faz a gente se sentir bem. Em resumo, plantar não só dá comida, mas também faz a gente se sentir bem por dentro.'
         />
+      </section>
+
+      <section className='box-avaliacoes'>
+        <h3><span>Avaliações</span> dos nossos <span>Clientes</span></h3>
+
+        <div>
+          <CardAvaliacao 
+            srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
+            altImg='Foto do Gabriel Augusto'
+            description='"Me tornei pai de planta com a Germine Box"'
+            name='Gabriel Augusto'
+          />
+
+          <CardAvaliacao 
+            srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
+            altImg='Foto do Gabriel Augusto'
+            description='“É otimo, pouco trabalho, quase nenhum.”'
+            name='Gabriel Silva'
+          />
+
+          <CardAvaliacao 
+            srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
+            altImg='Foto do Gabriel Augusto'
+            description='"Me tornei pai de planta com a Germine Box"'
+            name='Gabriel Lindo Augusto'
+          />
+        </div>
       </section>
     </div>
   );

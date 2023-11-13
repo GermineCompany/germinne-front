@@ -54,7 +54,7 @@
 }
 
 .box-beneficios-agricultura h2 {
-    font-size: var(--title-large);
+    font-size: var(--title-medium);
     text-align: center;
 }
 
@@ -64,4 +64,24 @@
 
 .box-beneficios-agricultura article:nth-child(3) {
     flex-direction: row-reverse;
+}
+
+.box-avaliacoes {
+    background-color: var(--verde-avaliacoes);
+    padding: 5% 0;
+}
+
+.box-avaliacoes div {
+    display: flex;
+    justify-content: center;
+}
+
+.box-avaliacoes h3 {
+    text-align: center;
+    font-size: var(--title-medium);
+    margin-bottom: 5%;
+}
+
+.box-avaliacoes span {
+    color: var(--verde-principal);
 }
