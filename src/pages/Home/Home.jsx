@@ -2,6 +2,11 @@ import React from 'react';
 import './home.css';
 import CardHomeServicos from '../../components/CardHomeServicos/CardHomeServicos';
 import CardHomeGerminne from '../../components/CardHomeGerminne/CardHomeGerminne';
+import ArticleBeneficios from '../../components/ArticleBeneficios/ArticleBeneficios';
+
+import articleImage1 from '../../images/article-image-1.png';
+import articleImage2 from '../../images/article-image-2.png';
+import articleImage3 from '../../images/article-image-3.png';
 
 function Home() {
   return (
@@ -53,8 +58,29 @@ function Home() {
         </div>
       </article>
 
-      <section>
-        <h2>Benefícios da Agricultura Urbana</h2>
+      <section className='box-beneficios-agricultura'>
+        <h2>Benefícios da <span>Agricultura Urbana</span></h2>
+
+        <ArticleBeneficios 
+          urlImg={ articleImage1 }
+          altImg='Imagem de várias comidas em uma mesa'
+          title='Alimentos Mais Frescos e Nutritivos'
+          text='Os alimentos cultivados localmente são colhidos no auge da maturidade, garantindo maior frescor e preservação dos nutrientes, proporcionando opções mais saudáveis para os consumidores.'
+        />
+
+        <ArticleBeneficios 
+          urlImg={ articleImage2 }
+          altImg='Imagem de pessoas trabalhando em uma horta'
+          title='Sustentabilidade Ambiental'
+          text='Ao aproveitar espaços urbanos para o cultivo, a agricultura urbana contribui para a redução da pegada de carbono, promove a biodiversidade e cria ambientes mais sustentáveis nas cidades.'
+        />
+
+        <ArticleBeneficios 
+          urlImg={ articleImage3 }
+          altImg='Imagem de uma pessoa com luvas trabalhando em uma horta'
+          title='Cultivar plantas: um impulso positivo para a saúde mental'
+          text='Plantar faz bem para a cabeça! Reduz estresse e ansiedade, trazendo alegria com a natureza. Jardinagem dá sensação boa, deixando a gente mais feliz. Cuidar das plantas e ter rotinas de jardinagem é tipo uma terapia, criando um ambiente que faz a gente se sentir bem. Em resumo, plantar não só dá comida, mas também faz a gente se sentir bem por dentro.'
+        />
       </section>
     </div>
   );
