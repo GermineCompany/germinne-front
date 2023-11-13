@@ -6,19 +6,26 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import SobreNos from './pages/SobreNos/SobreNos';
 import Blog from './pages/Blog/Blog';
+import Login from './pages/Login/Login';
 
 function App() {
+  const path = window.location.pathname;
   return (
     <BrowserRouter>
-      <Header />
+      {
+        path != '/login' && <Header />
+      }
       <main>
         <Routes>
           <Route path='/' Component={Home} />
           <Route path='/sobre-nos' Component={SobreNos} />
           <Route path='/blog' Component={Blog} />
+          <Route path='/login' Component={Login} />
         </Routes>
       </main>
-      <Footer />
+      {
+        path != '/login' && <Footer />
+      }
     </BrowserRouter>
   );
 }

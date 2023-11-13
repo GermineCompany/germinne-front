@@ -17,6 +17,7 @@ body {
   --verde-principal: #4CA676;
   --verde-escuro: #0C9354;
   --verde-avaliacoes: #F5FEF8;
+  --cor-inputs: #F7F7F7;
 
   /* CTAS */
   --cta-laranja: #f7a62b;
@@ -34,7 +35,7 @@ body {
   --body-family: 'Poppins', sans-serif;
 
   /* FONT-SIZE */
-  --display-large: 4.5 rem;
+  --display-large: 4.5rem;
 
   --title-large: 3.125rem;
   --title-medium: 2.75rem;
@@ -57,6 +58,7 @@ body {
   /* FONT-WEIGHT */
   --bold: 700;
   --semi-bold: 600;
+  --regular-bold: 500;
   --regular: 400;
   /* FONT */
 }
