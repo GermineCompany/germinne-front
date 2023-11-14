@@ -7,13 +7,14 @@ import Footer from './components/Footer/Footer';
 import SobreNos from './pages/SobreNos/SobreNos';
 import Blog from './pages/Blog/Blog';
 import Login from './pages/Login/Login';
+import CadastroProfissional from './pages/CadastroProfissional/CadastroProfissional';
 
 function App() {
   const path = window.location.pathname;
   return (
     <BrowserRouter>
       {
-        path != '/login' && <Header />
+        path != '/login' && path != '/cadastro-profissional' && <Header />
       }
       <main>
         <Routes>
@@ -21,10 +22,11 @@ function App() {
           <Route path='/sobre-nos' Component={SobreNos} />
           <Route path='/blog' Component={Blog} />
           <Route path='/login' Component={Login} />
+          <Route path='/cadastro-profissional' Component={CadastroProfissional} />
         </Routes>
       </main>
       {
-        path != '/login' && <Footer />
+        path != '/login' && path != '/cadastro-profissional' && <Footer />
       }
     </BrowserRouter>
   );
