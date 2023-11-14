@@ -55,12 +55,12 @@ function Login() {
           </div>
         </div>
 
-        <div>
+        <div className='box-google'>
           <p>Ou faça login com sua conta do Google</p>
           <img src={ google } alt='Logo do Google' />
         </div>
 
-        <div>
+        <div className='box-cadastro'>
           <hr />
           <p>Não possui conta na Germinne?</p>
           <button>Cadastre-se</button>
