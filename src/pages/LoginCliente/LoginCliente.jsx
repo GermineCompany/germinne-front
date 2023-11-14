@@ -22,7 +22,7 @@ function LoginCliente() {
       <article className='box-inputs-login-cadastro box-inputs-cliente'>
         <div>
           <h1>Germinne</h1>
-          <h3>Profissional</h3>
+          <h3>Cliente</h3>
         </div>
 
         <div className='box-email-password'>

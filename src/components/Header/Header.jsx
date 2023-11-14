@@ -44,7 +44,7 @@ function Header() {
 
         <div className='header-box'>
           <button>
-            <a href="/login">Entrar</a>
+            <a href="/login-cliente">Entrar</a>
           </button>
 
           <a href="/carrinho">

@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import imagemLogin from '../../images/login-cliente.png';
 import '../Login/loginCadastro.css';
+import { useNavigate } from 'react-router-dom';
 
 function CadastroCliente() {
+  const navigate = useNavigate();
+
   const [infos, setInfos] = useState({
     email: '',
     password: '',
@@ -85,7 +88,7 @@ function CadastroCliente() {
         <div className='box-cadastro box-cadastro-profissional'>
           <hr />
           <p>Já possui conta na Germinne?</p>
-          <button>Login</button>
+          <button onClick={() => navigate('/login-cliente')}>Login</button>
         </div>
 
 
