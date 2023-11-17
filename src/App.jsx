@@ -8,13 +8,15 @@ import SobreNos from './pages/SobreNos/SobreNos';
 import Blog from './pages/Blog/Blog';
 import Login from './pages/Login/Login';
 import CadastroProfissional from './pages/CadastroProfissional/CadastroProfissional';
+import LoginCliente from './pages/LoginCliente/LoginCliente';
 
 function App() {
   const path = window.location.pathname;
   return (
     <BrowserRouter>
       {
-        path != '/login' && path != '/cadastro-profissional' && <Header />
+        path != '/login' && path != '/cadastro-profissional'
+        && path != '/login-cliente' && <Header />
       }
       <main>
         <Routes>
@@ -23,10 +25,12 @@ function App() {
           <Route path='/blog' Component={Blog} />
           <Route path='/login' Component={Login} />
           <Route path='/cadastro-profissional' Component={CadastroProfissional} />
+          <Route path='/login-cliente' Component={LoginCliente} />
         </Routes>
       </main>
       {
-        path != '/login' && path != '/cadastro-profissional' && <Footer />
+        path != '/login' && path != '/cadastro-profissional'
+        && path != '/login-cliente' && <Footer />
       }
     </BrowserRouter>
   );
