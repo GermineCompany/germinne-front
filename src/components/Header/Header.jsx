@@ -11,17 +11,30 @@ function Header() {
       <HeaderMobile id="component-mobile" />
 
       <header className='header-desktop'>
-        <div className='header-box'>
-          <img src={logo} alt="Logo verde" />
-          <a href="/">
-            <h1>Germinne</h1>
-          </a>
+
+        <div>
+          <div className='box-logo-nome'>
+            <img src={logo} alt="Logo verde" />
+            <a href="/">
+              <h1>Germinne</h1>
+            </a>
+          </div>
+
+          <div className='box-login'>
+            <button>
+              <a href="/login-cliente">Entrar</a>
+            </button>
+
+            <a href="/carrinho">
+              <img src={sacola} alt="Icone de sacola" />
+            </a>
+          </div>
         </div>
 
         <nav>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <a href="/">Inicio</a>
             </li>
 
             <li>
@@ -29,11 +42,11 @@ function Header() {
             </li>
 
             <li>
-              <a href="/loja">Loja</a>
+              <a href="/loja">Germinne Box</a>
             </li>
 
             <li>
-              <a href="/receitas">Receitas</a>
+              <a href="/receitas">Profissionais</a>
             </li>
 
             <li>
@@ -42,15 +55,6 @@ function Header() {
           </ul>
         </nav>
 
-        <div className='header-box'>
-          <button>
-            <a href="/login-cliente">Entrar</a>
-          </button>
-
-          <a href="/carrinho">
-            <img src={sacola} alt="Icone de sacola" />
-          </a>
-        </div>
       </header>
     </>
   );
