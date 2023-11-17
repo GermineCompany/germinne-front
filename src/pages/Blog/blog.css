@@ -1,5 +1,5 @@
 .pagina-blog {
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 
@@ -65,7 +65,7 @@
 .box-artigos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: auto;
 }
 
