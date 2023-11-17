@@ -1,18 +1,24 @@
 .card-blog {
     display: flex;
-    width: 75%;
-    padding: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     margin-bottom: 5%;
 }
 
 .card-blog img {
-    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+
+.card-blog h3, .card-blog p, .card-blog a {
+    margin: 10px 0;
 }
 
 .card-blog div:nth-child(2) {
-    margin-left: 15px;
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,12 +27,27 @@
 .card-blog div:nth-child(2) h3 {
     font-size: 25px;
     font-weight: 500;
-    color: var(--verde-header);
+    color: var(--font-body-verde);
+}
+
+.card-blog div:nth-child(2) > p {
+    color: var(--font-body-color);
+}
+
+.card-blog div:nth-child(2) div {
+    display: flex;
+    justify-content: space-between;
 }
 
 .category {
     align-self: flex-end;
     text-transform: uppercase;
     font-size: 20px;
-    color: var(--verde-germinne);
+    color: var(--font-body-verde);
+}
+
+.card-blog a {
+    color: var(--verde-principal);
+    text-decoration: none;
+    font-size: 17px;
 }

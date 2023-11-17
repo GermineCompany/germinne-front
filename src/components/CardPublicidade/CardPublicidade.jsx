@@ -2,10 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './cardPublicidade.css';
 
-function CardPublicidade({ srcImg }) {
+function CardPublicidade() {
   return (
     <div className='card-publicidade'>
-      <img src={ srcImg } alt="Propaganda" />
+      <div>
+        Anuncios Google
+      </div>
       <hr />
       <p>Publicidade</p>
     </div>

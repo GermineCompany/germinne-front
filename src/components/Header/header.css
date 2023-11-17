@@ -50,7 +50,7 @@ nav ul li a {
     font-size: 20px;
     border-radius: 20px;
     border: none;
-    background-color: var(--verde-botao);
+    background-color: var(--verde-escuro);
 }
 
 .header-box img {

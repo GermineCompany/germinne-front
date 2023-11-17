@@ -13,9 +13,9 @@ body {
 
 :root {
   /* COLOR */
-  --verde-header: #2acc91;
-  --verde-principal: #4ca676;
-  --verde-escuro: #09834a;
+  --verde-header: #35845E;
+  --verde-principal: #4CA676;
+  --verde-escuro: #0C9354;
 
   /* CTAS */
   --cta-laranja: #f7a62b;
@@ -46,7 +46,9 @@ body {
 
   /* FONT-COLORS */
   --title-color: #1e1e1e;
-  --body-color: #353535;
+  --font-body-color: #353535;
+  --font-body-verde: #4CA676;
+  --font-banner-verde: #1AC673;
 
   /* FONT-WEIGHT */
   --bold: 700;

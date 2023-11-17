@@ -1,7 +1,7 @@
 footer {
     font-family: 'Montserrat', sans-serif;
     height: 375px;
-    background-color: var(--verde-footer);
+    background-color: var(--verde-principal);
     display: flex;
     align-items: center;
     color: white;
