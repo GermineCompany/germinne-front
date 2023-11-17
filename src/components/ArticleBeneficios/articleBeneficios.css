@@ -2,19 +2,24 @@
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center ;
+    justify-content: center;
+    width: 100vw;
+}
+
+.article-beneficios img {
+    width: 500px;
 }
 
 .article-beneficios h4 {
-    font-size: var(--subtitle-large);
+    font-size: var(--subtitle-medium);
     margin-bottom: 7%;
 }
 
 .article-beneficios p {
-    font-size: var(--body-large);
+    font-size: var(--body-medium);
 }
 
 .article-beneficios div:nth-child(2) {
-    padding: 0 5%;
-    width: 40%;
+    padding: 0 11%;
+    width: 50%;
 }
