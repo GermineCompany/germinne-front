@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import imagemLogin from '../../images/login-cliente.png';
-import google from '../../images/google.png';
 import '../Login/loginCadastro.css';
-import './loginCliente.css';
+import { useNavigate } from 'react-router-dom';
 
+function CadastroCliente() {
+  const navigate = useNavigate();
 
-function LoginCliente() {
   const [infos, setInfos] = useState({
     email: '',
-    password: ''
+    password: '',
+    name: '',
+    CPF: ''
   });
 
   const handleChange = (event) => setInfos({ ...infos, [event.target.name]: event.target.value });
@@ -25,7 +27,20 @@ function LoginCliente() {
           <h3>Cliente</h3>
         </div>
 
-        <div className='box-email-password'>
+        <div className='box-email-password label-cadastro-profissional'>
+          <div>
+            <label>
+              Nome e sobrenome
+              <input 
+                type='text' 
+                name='name' 
+                value={ infos.name } 
+                onChange={ handleChange }
+                placeholder='Digite seu nome e sobrenome aqui...'
+              />
+            </label>
+          </div>
+
           <div>
             <label>
               Email
@@ -52,20 +67,28 @@ function LoginCliente() {
             </label>
           </div>
 
+          <div>
+            <label>
+              CPF
+              <input 
+                type='text' 
+                name='CPF' 
+                value={ infos.CPF } 
+                onChange={ handleChange }
+                placeholder='Digite seu CPF aqui...'
+              />
+            </label>
+          </div>
+
           <div className='box-button'>
-            <button>Entrar</button>
+            <button>Cadastrar</button>
           </div>
         </div>
 
-        <div className='box-google'>
-          <p>Ou faça login com sua conta do Google</p>
-          <img src={ google } alt='Logo do Google' />
-        </div>
-
-        <div className='box-cadastro'>
+        <div className='box-cadastro box-cadastro-profissional'>
           <hr />
-          <p>Não possui conta na Germinne?</p>
-          <button>Cadastre-se</button>
+          <p>Já possui conta na Germinne?</p>
+          <button onClick={() => navigate('/login-cliente')}>Login</button>
         </div>
 
 
@@ -74,4 +97,4 @@ function LoginCliente() {
   );
 }
 
-export default LoginCliente;
+export default CadastroCliente;
