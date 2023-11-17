@@ -1,0 +1,55 @@
+.card-home-germinne {
+    height: 335px;
+    width: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.card-home-germinne h2 {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 20px;
+    color: white;
+    font-size: var(--body-large);
+    font-weight: var(--semi-bold);
+}
+
+.card-home-germinne span {
+    color: var(--verde-principal);
+}
+
+.first-germinne-card {
+    background: url(../../images/card-home-4.png) no-repeat;
+}
+
+.second-germinne-card {
+    background: url(../../images/card-home-5.png) no-repeat;
+    width: 600px !important;
+    height: 170px;
+}
+
+.second-germinne-large {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.second-germinne-large h3 {
+    font-size: var(--title-small);
+    text-align: center;
+    margin-top: 7%;
+    text-transform: uppercase;
+}
+
+.second-germinne-large span {
+    color: var(--verde-principal);
+}
+
+.third-germinne-card {
+    background: url(../../images/card-home-6.png) no-repeat;
+}

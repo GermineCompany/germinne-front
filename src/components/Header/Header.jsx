@@ -13,7 +13,7 @@ function Header() {
       <header className='header-desktop'>
         <div className='header-box'>
           <img src={logo} alt="Logo verde" />
-          <a href="/home">
+          <a href="/">
             <h1>Germinne</h1>
           </a>
         </div>
@@ -21,7 +21,7 @@ function Header() {
         <nav>
           <ul>
             <li>
-              <a href="/home">Home</a>
+              <a href="/">Home</a>
             </li>
 
             <li>

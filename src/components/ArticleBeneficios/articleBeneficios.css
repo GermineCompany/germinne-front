@@ -1,0 +1,20 @@
+.article-beneficios {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center ;
+}
+
+.article-beneficios h4 {
+    font-size: var(--subtitle-large);
+    margin-bottom: 7%;
+}
+
+.article-beneficios p {
+    font-size: var(--body-large);
+}
+
+.article-beneficios div:nth-child(2) {
+    padding: 0 5%;
+    width: 40%;
+}

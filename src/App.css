@@ -16,6 +16,7 @@ body {
   --verde-header: #35845E;
   --verde-principal: #4CA676;
   --verde-escuro: #0C9354;
+  --verde-avaliacoes: #F5FEF8;
 
   /* CTAS */
   --cta-laranja: #f7a62b;
@@ -23,6 +24,7 @@ body {
 
   /* BACKGROUND-COLOR */
   --background-main: #fff;
+  --background-article-home: #F8F8F8;
   /* COLOR */
   
 
@@ -35,9 +37,11 @@ body {
   --display-large: 4.5 rem;
 
   --title-large: 3.125rem;
+  --title-medium: 2.75rem;
   --title-small: 2rem;
 
   --subtitle-large: 1.75rem;
+  --subtitle-medium: 1.45rem;
   --subtitle-small: 1.31rem;
 
   --body-large: 1.25rem;
