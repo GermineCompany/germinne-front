@@ -9,6 +9,10 @@ import './loja.css';
 import CarouselPaginaGB from '../../components/CarouselPaginaGB/CarouselPaginaGB';
 import carouselGbImagem1 from '../../images/CarouselGB1.png';
 import doublearrow from '../../images/doublearrow.svg';
+import CardPerguntas from '../../components/CardPerguntas/CardPerguntas';
+import './loja.css';
+
+
 
 function Loja() {
 
@@ -45,6 +49,28 @@ function Loja() {
         <CarouselPaginaGB srcImg={carouselGbImagem1} altImg='carouselGbImagem1' title='Alimentação saudável e saborosa' text='Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.'/>
       </div>
 
+
+      <div className='box-card-pergunta'>
+
+
+
+
+
+        <CardPerguntas 
+          title='Quantas horas de sol por dia minha planta precisa?'
+          text='Para que suas plantinhas tenham o desenvolvimento ideal, você vai precisar de pelo menos 4 horas de sol direto ao dia, e não basta ser só aquela claridade, é necessário que realmente a luz do sol incidir diretamente sobre sua hortinha.'  
+        />
+        <hr />
+        <CardPerguntas  
+          title='Quanto tempo leva para germinar?'  
+          text='Vai depender do tipo da semente. Disponibilizamos em nosso blog informações completinhas sobre diversas plantas, confira aqui.'
+        />
+        <hr />
+        <CardPerguntas  
+          title='Preciso regar?' 
+          text='Nosso kit conta com um sistema de autoirrigação, que facilita o cuidado das plantas ao fornecer água de forma automática. Então se você tem pouco tempo disponível para regar plantas ou se não têm experiência prévia no cultivo não se preocupe, nosso kit não precisa de maiores trabalhos :)'  
+        />
+      </div>
     </div>
   );
 }
