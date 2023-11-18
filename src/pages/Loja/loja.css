@@ -1,0 +1,81 @@
+
+.textoVerde {
+  color: var(--verde-principal);
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+.conheca-gb {
+  margin: auto;
+  width: 1250px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conheca-gb img {
+  width: 35%;
+  height: 80%;
+  margin-left: 120px;
+ 
+}
+
+.conheca-gb-texto {
+  text-align: center;
+  width: 35%;
+  margin-right: 120px;
+
+}
+
+
+.conheca-gb-texto h2 {
+  margin-bottom: 60px;
+  font-size: var(--title-small);
+}
+
+ /* ----------------------------------------------------------------------------------------- */
+
+.conteudo-gb {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.conteudo-gb-cards {
+  display: flex;
+}
+
+.conteudo-gb h3 {
+  font-size: var(--subtitle-medium);
+}
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+.caroulsel-pagina-gb-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+ 
+}
+
+.caroulsel-pagina-gb-title h2 {
+  font-size: var(--title-small);
+}
+
+.caroulsel-pagina-gb-title img {
+  height: auto;
+  width: 3%;
+}
+
+
+
+.carousel-pagina-gb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
