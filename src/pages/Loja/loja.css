@@ -1,0 +1,8 @@
+.box-card-pergunta{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 2px black;
+    width: 80%;
+    margin: auto;
+   
+}
