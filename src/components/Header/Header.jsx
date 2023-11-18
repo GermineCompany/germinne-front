@@ -20,18 +20,7 @@ function Header() {
             </a>
           </div>
 
-          <div className='box-login'>
-            <button>
-              <a href="/login-cliente">Entrar</a>
-            </button>
-
-            <a href="/carrinho">
-              <img src={sacola} alt="Icone de sacola" />
-            </a>
-          </div>
-        </div>
-
-        <nav>
+          <nav>
           <ul>
             <li>
               <a href="/">Inicio</a>
@@ -54,6 +43,17 @@ function Header() {
             </li>
           </ul>
         </nav>
+        
+          <div className='box-login'>
+            <button>
+              <a href="/login-cliente">Entrar</a>
+            </button>
+
+            <a href="/carrinho">
+              <img src={sacola} alt="Icone de sacola" />
+            </a>
+          </div>
+        </div>
 
       </header>
     </>
