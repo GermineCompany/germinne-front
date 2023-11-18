@@ -26,12 +26,14 @@
 
 .card-blog div:nth-child(2) h3 {
     font-size: 25px;
-    font-weight: 500;
+    font-weight: var(--semi-bold);
     color: var(--font-body-verde);
 }
 
 .card-blog div:nth-child(2) > p {
     color: var(--font-body-color);
+    font-size: var(--body-small);
+    font-weight: var(--regular);
 }
 
 .card-blog div:nth-child(2) div {
