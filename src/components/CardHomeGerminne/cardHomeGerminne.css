@@ -1,6 +1,6 @@
 .card-home-germinne {
-    height: 335px;
-    width: 350px;
+    width: 400px;
+    height: 300px;    
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -29,8 +29,8 @@
 
 .second-germinne-card {
     background: url(../../images/card-home-5.png) no-repeat;
-    width: 550px !important;
-    height: 170px;
+    width: 645px !important;
+    height: 180px;
 }
 
 .second-germinne-large {
@@ -40,7 +40,7 @@
 }
 
 .second-germinne-large h3 {
-    font-size: var(--title-small);
+    font-size: var(--subtitle-medium);
     text-align: center;
     margin-top: 7%;
     text-transform: uppercase;
