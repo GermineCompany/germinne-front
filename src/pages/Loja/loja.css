@@ -82,9 +82,22 @@
   border-radius: 10px;
 }
 
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.faq-title{
+    font-size: var(--title-small);
+  
+}
+
 hr {
   display: flex;
   justify-content: center;
-  width: 1000px;
+  width: 85%;
   margin: 0 80px;
 }
