@@ -8,11 +8,12 @@
     display: flex;
     height: 200px;
     background-color: white;
-    width: 60%;
+    width: 95%;
     margin: 5px auto;
     
 }
 .ImagemBola{
+      
     display: flex;
     height: 30px;
     margin-bottom: 100px;
@@ -22,6 +23,13 @@
     
 }
 .Titulo{
+    color: var(--cor-principal-cor-principal, #4CA676);
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; 
+    letter-spacing: 0.15px;
     position: absolute;
      margin-top: 40px;
     margin-bottom: 30px;
@@ -34,7 +42,13 @@
     align-items: center;
     display: flex;
     margin-top: 40px;
-    margin-right: 110px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: 0.5px;
     
   
     
