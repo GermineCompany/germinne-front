@@ -1,0 +1,95 @@
+.box-descricao-produto {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-imagem-descricao {
+    width: 75%;
+}
+
+.box-imagem-descricao img {
+    background-color: #F8F8F8;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.box-imagem-descricao p {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.descricao-imagens {
+    display: flex;
+    width: 50%;
+}
+
+.box-selecao {
+    /* width: 45%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-preco h2 {
+    font-size: var(--title-small);
+}
+
+.nome-preco p {
+    font-size: var(--title-small);
+}
+
+.nome-preco span {
+    font-size: var(--subtitle-small);
+}
+
+.box-botoes-selecao {
+    display: flex;
+}
+
+.div-botoes {
+    margin: 2% 0;
+}
+
+.div-botoes > p {
+    margin: 10px 0;
+    font-size: var(--subtitle-small);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.div-botoes > p span {
+    color: black;
+}
+
+.botao-adicionar-carrinho button{
+    background-color: var(--cta-roxo);
+    color: white;
+    border: none;
+    font-weight: var(--regular-bold);
+    font-size: var(--subtitle-medium);
+    padding: 15px 50px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.box-quantidade button {
+    background-color: white;
+    border: .5px solid rgba(0, 0, 0, 0.3);
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: var(--body-small);
+    font-weight: var(--semi-bold);
+    white-space: nowrap;
+    margin: 10px 15px 0 0;
+}
+
+.box-quantidade span {
+    margin: 0 20px;
+    font-size: var(--body-large);
+    font-weight: var(--regular);
+}
+
+.box-quantidade span:hover {
+    cursor: pointer;
+}

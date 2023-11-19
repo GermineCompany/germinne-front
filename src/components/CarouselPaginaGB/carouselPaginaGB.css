@@ -1,0 +1,26 @@
+.carousel-pagina-gb-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+
+}
+
+.carousel-pagina-gb-conteudo img {
+  width: 35%;
+  margin-right: 10%;
+  border-radius: 10px;
+}
+
+.caroulsel-pagina-gb-text {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  text-align: center;
+}
+
+.caroulsel-pagina-gb-text h2 {
+  margin-bottom: 10%;
+  color: var(--verde-principal);
+  font-size: var(--subtitle-medium);
+}

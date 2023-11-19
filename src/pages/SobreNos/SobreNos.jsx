@@ -1,11 +1,11 @@
-import React from "react";
-import CardSobreNos from "../../components/CardSobreNos/CardSobreNos";
-import missao from "../../images/missao.svg";
-import visao from "../../images/visao.svg";
-import valor from "../../images/valor.svg";
-import "./sobreNos.css";
-import { MdOutlineEmail, MdOutlineWhatsapp } from "react-icons/md";
-import FormsSobreNos from "../../components/FormsSobreNos/FormsSobreNos";
+import React from 'react';
+import CardSobreNos from '../../components/CardSobreNos/CardSobreNos';
+import missao from '../../images/missao.svg';
+import visao from '../../images/visao.svg';
+import valor from '../../images/valor.svg';
+import './sobreNos.css';
+import { MdOutlineEmail, MdOutlineWhatsapp } from 'react-icons/md';
+import FormsSobreNos from '../../components/FormsSobreNos/FormsSobreNos';
 
 function SobreNos() {
   return (
