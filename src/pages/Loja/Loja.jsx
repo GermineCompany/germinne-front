@@ -10,6 +10,7 @@ import CarouselPaginaGB from '../../components/CarouselPaginaGB/CarouselPaginaGB
 import carouselGbImagem1 from '../../images/CarouselGB1.png';
 import doublearrow from '../../images/doublearrow.svg';
 import CardPerguntas from '../../components/CardPerguntas/CardPerguntas';
+import elipsedarrow from '../../images/elipsed-arrow.svg';
 import './loja.css';
 import DescricaoProduto from '../../components/DescricaoProduto/DescricaoProduto';
 
@@ -40,9 +41,10 @@ function Loja() {
         </div>
       </div>
       
-      <div className='caroulsel-pagina-gb-title'>
+      <div className='carousel-pagina-gb-title'>
         <h2 >Motivos para ter sua própria hortinha em casa</h2>
         <img src={doublearrow} alt="seta dupla" />
+
       </div>
       
       <div className='carousel-pagina-gb'>
@@ -54,12 +56,17 @@ function Loja() {
         />
       </div>
 
+      <div className='carousel-content'>
+        <CarouselPaginaGB srcImg={carouselGbImagem1} altImg='carouselGbImagem1' title='Alimentação saudável e saborosa' text='Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.'/>
+        <img className='elipsedarrow' src={elipsedarrow} alt="" />
+      </div>
+
       <div className='faq'>
         <h2 className='faq-title'>Perguntas frequentes</h2>
-        <div className='box-card-pergunta'>
+        <div className='box-card-perguntaS'>
           <CardPerguntas 
             title='Quantas horas de sol por dia minha planta precisa?'
-            text='Para que suas plantinhas tenham o desenvolvimento ideal, você vai precisar de pelo menos 4 horas de sol direto ao dia, e não basta ser só aquela claridade, é necessário que realmente a luz do sol incidir diretamente sobre sua hortinha.'  
+            text='Para que suas plantinhas tenham o desenvolvimento ideal, você vai precisar de pelo menos 4 horas de sol direto ao dia, e não basta ser só aquela claridade, é necessário a luz do sol incidir diretamente sobre sua hortinha.'  
           />
           <hr />
           <CardPerguntas  
@@ -69,7 +76,7 @@ function Loja() {
           <hr />
           <CardPerguntas  
             title='Preciso regar?' 
-            text='Nosso kit conta com um sistema de autoirrigação, que facilita o cuidado das plantas ao fornecer água de forma automática. Então se você tem pouco tempo disponível para regar plantas ou se não têm experiência prévia no cultivo não se preocupe, nosso kit não precisa de maiores trabalhos :)'  
+            text='Nosso kit conta com um sistema de autoirrigação, que facilita o cuidado das plantas ao fornecer água de forma automática. Então se você tem pouco tempo disponível ou se não têm experiência prévia no cultivo não se preocupe, nosso kit não precisa de maiores trabalhos :)'  
           />
         </div>
       </div>

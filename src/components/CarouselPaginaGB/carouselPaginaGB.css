@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  width: 80%;
+
 }
 
-.carousel-pagina-gb img {
-  width: 25%;
-  height: 15%;
+.carousel-pagina-gb-conteudo img {
+  width: 35%;
   margin-right: 10%;
   border-radius: 10px;
 }
@@ -15,12 +15,12 @@
 .caroulsel-pagina-gb-text {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 35%;
   text-align: center;
 }
 
 .caroulsel-pagina-gb-text h2 {
-  margin-bottom: 50px;
+  margin-bottom: 10%;
   color: var(--verde-principal);
   font-size: var(--subtitle-medium);
 }

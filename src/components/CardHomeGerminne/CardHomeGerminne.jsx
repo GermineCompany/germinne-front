@@ -5,6 +5,7 @@ import './cardHomeGerminne.css';
 function CardHomeGerminne({ title, className, subtitle, id }) {
   return (
     <div className={ `card-germinne ${id}`}>
+      
       <div>
         <h3>{subtitle}</h3>
       </div>
@@ -12,6 +13,7 @@ function CardHomeGerminne({ title, className, subtitle, id }) {
       <div className={`card-home-germinne ${className}`}>
         <h2>{ title }</h2>
       </div>
+
     </div>
   );
 }

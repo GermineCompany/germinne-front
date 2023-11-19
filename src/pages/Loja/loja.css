@@ -5,24 +5,23 @@
 /* ----------------------------------------------------------------------------------------- */
 
 .conheca-gb {
-  margin: auto;
-  width: 1250px;
-  height: 400px;
+  margin: 35px auto;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .conheca-gb img {
-  width: 35%;
-  height: 80%;
-  margin-left: 120px;
+  width: 27vw;
+  margin-left: 250px;
 }
 
 .conheca-gb-texto {
   text-align: center;
-  width: 35%;
-  margin-right: 120px;
+  width: 30%;
+  margin-right: 250px;
 }
 
 .conheca-gb-texto h2 {
@@ -40,6 +39,7 @@
 }
 .conteudo-gb-cards {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .conteudo-gb h3 {
@@ -48,40 +48,43 @@
 
 /* ----------------------------------------------------------------------------------------- */
 
-.caroulsel-pagina-gb-title {
+.carousel-pagina-gb-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
 }
 
-.caroulsel-pagina-gb-title h2 {
+.carousel-pagina-gb-title h2 {
   font-size: var(--title-small);
 }
 
-.caroulsel-pagina-gb-title img {
+.carousel-pagina-gb-title img {
   height: auto;
   width: 3%;
 }
 
-.carousel-pagina-gb {
+.carousel-content {
+  margin-top: 3%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.box-card-pergunta {
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+.box-card-perguntaS {
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
   background: #fffdfd;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-  width: 70%;
-  margin: 50px auto;
-  height: 650px;
+  height: 10%;
+  width: 67%;
+  margin: 50px 0px;
   border-radius: 10px;
 }
-
 
 .faq {
   display: flex;
