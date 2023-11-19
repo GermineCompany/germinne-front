@@ -1,0 +1,30 @@
+.cardPerguntas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  background-color: white;
+  margin: 5px auto;
+}
+.cardPerguntas img {
+  margin: 0px 75px;
+}
+
+.cardPerguntasText {
+  margin: 15px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardPerguntas h3 {
+  color: var(--verde-principal);
+  font-size: var(--subtitle-small);
+  font-weight: 600;
+}
+
+.cardPerguntas p {
+  margin-top: 15px;
+  width: 85%;
+  font-size: var(--body-small);
+}

@@ -1,6 +1,6 @@
 .card-home-servicos div {
+    width: 475px;
     height: 300px;
-    width: 370px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -11,8 +11,8 @@
 }
 
 .card-home-servicos div:hover {
-    width: 375px;
-    height: 305px;
+    width: 485px;
+    height: 310px;
     transition: 0.2s;
 }
 

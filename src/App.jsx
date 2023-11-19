@@ -11,6 +11,7 @@ import CadastroProfissional from './pages/CadastroProfissional/CadastroProfissio
 import LoginCliente from './pages/LoginCliente/LoginCliente';
 import CadastroCliente from './pages/CadastroCliente/CadastroCliente';
 import Artigo from './pages/Artigo/Artigo';
+import Loja from './pages/Loja/Loja';
 
 function App() {
   const path = window.location.pathname;
@@ -30,6 +31,7 @@ function App() {
           <Route path='/login-cliente' Component={LoginCliente} />
           <Route path='/cadastro-cliente' Component={CadastroCliente} />
           <Route path='/artigo/:id' Component={Artigo} />
+          <Route path='/loja' Component={Loja} />
         </Routes>
       </main>
       {

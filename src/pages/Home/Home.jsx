@@ -80,7 +80,7 @@ function Home() {
           urlImg={ articleImage3 }
           altImg='Imagem de uma pessoa com luvas trabalhando em uma horta'
           title='Cultivar plantas: um impulso positivo para a saúde mental'
-          text='Plantar faz bem para a cabeça! Reduz estresse e ansiedade, trazendo alegria com a natureza. Jardinagem dá sensação boa, deixando a gente mais feliz. Cuidar das plantas e ter rotinas de jardinagem é tipo uma terapia, criando um ambiente que faz a gente se sentir bem. Em resumo, plantar não só dá comida, mas também faz a gente se sentir bem por dentro.'
+          text='Plantar faz bem para a cabeça! Reduz estresse e ansiedade, trazendo alegria com a natureza. Horticultura dá sensação boa, deixando a gente mais feliz. Cuidar das plantas e ter rotinas de plantio é tipo uma terapia, criando um ambiente que faz a gente se sentir bem.'
         />
       </section>
 
