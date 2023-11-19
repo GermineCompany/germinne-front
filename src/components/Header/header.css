@@ -44,7 +44,7 @@
 }
 
 .box-login button {
-    margin-right: 15px;
+    color: white;
     padding: 10px 60px;
     font-size: 22px;
     font-weight: var(--semi-bold);
@@ -53,7 +53,12 @@
     background-color: var(--verde-principal);
 }
 
+.box-login button:hover {
+    cursor: pointer;
+}
+
 .box-login img {
+    margin-left: 15px;
     width: 50px;
 }
 
@@ -84,6 +89,47 @@
 
 .component-mobile {
     display: none;
+}
+
+.close-login {
+    display: none;
+}
+
+.open-login {
+    display: block;
+}
+
+.button-opened {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.links-login ul {
+    width: 185px;
+    list-style: none;
+    text-align: center;
+    list-style-position: inside;
+    position: absolute;
+}
+
+.links-login ul li {
+    padding: 15px 10px;
+    background-color: var(--verde-escuro);
+    display: block !important;
+    transition: .3s;
+}
+
+.links-login a {
+    color: white;
+}
+
+.links-login ul li:hover {
+    cursor: pointer;
+    background-color: var(--cta-laranja);
+    transition: .5s;
+}
+
+.links-login ul li:nth-child(2) {
+    border-radius: 0 0 10px 10px;
 }
 
 @media screen and (max-width: 1250px) {
