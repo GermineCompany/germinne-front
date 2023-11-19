@@ -11,6 +11,7 @@ import carouselGbImagem1 from '../../images/CarouselGB1.png';
 import doublearrow from '../../images/doublearrow.svg';
 import CardPerguntas from '../../components/CardPerguntas/CardPerguntas';
 import './loja.css';
+import DescricaoProduto from '../../components/DescricaoProduto/DescricaoProduto';
 
 
 
@@ -18,7 +19,8 @@ function Loja() {
 
   return (
     <div className='pagina-loja'>
-     
+
+      <DescricaoProduto />
 
       <div className='conheca-gb'>
         <img src={conhecaGbImagem} alt="" />
@@ -27,8 +29,6 @@ function Loja() {
           <p>Ja pensou em cultivar seus próprios alimentos? Nossa Box inclui todo o necessário para facilitar sua jornada, você terá tudo à mão para começar a cultivar suas próprias hortaliças, ervas e temperos com eficiência e comodidade. Com nosso kit você estará cultivando suas próprias plantinhas em um piscar de olhos.</p>
         </div>
       </div>
-
-
 
       <div className='conteudo-gb'>
         <h3>O que vem na <span className='textoVerde'>GerminneBox</span>?</h3>
@@ -46,9 +46,13 @@ function Loja() {
       </div>
       
       <div className='carousel-pagina-gb'>
-        <CarouselPaginaGB srcImg={carouselGbImagem1} altImg='carouselGbImagem1' title='Alimentação saudável e saborosa' text='Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.'/>
+        <CarouselPaginaGB 
+          srcImg={carouselGbImagem1} 
+          altImg='carouselGbImagem1' 
+          title='Alimentação saudável e saborosa' 
+          text='Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.'
+        />
       </div>
-
 
       <div className='faq'>
         <h2 className='faq-title'>Perguntas frequentes</h2>
