@@ -1,0 +1,46 @@
+.pagina-artigo {
+    width: 90%;
+    margin: 4% auto;
+}
+
+.pagina-artigo h2 {
+    font-size: var(--title-medium);
+}
+
+.artigo-creditos p:nth-child(2) {
+    margin: 0 30px;
+}
+
+.artigo-creditos {
+    margin: 30px 0;
+    display: flex;
+}
+
+.box-artigo-aside {
+    display: flex;
+    justify-content: space-between;
+}
+
+.artigo-blog {
+    width: 65%;
+}
+
+.artigo-blog img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.artigo-blog p {
+    font-size: var(--body-medium);
+    margin-bottom: 25px;
+    line-height: 33px;
+}
+
+.box-ultimos-posts {
+    margin-top: 80%;
+}
+
+.pagina-artigo aside h4 {
+    font-size: var(--title-small);
+}
