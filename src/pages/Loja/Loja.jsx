@@ -46,18 +46,14 @@ function Loja() {
         <img src={doublearrow} alt="seta dupla" />
 
       </div>
-      
-      <div className='carousel-pagina-gb'>
+
+      <div className='carousel-content'>
         <CarouselPaginaGB 
           srcImg={carouselGbImagem1} 
           altImg='carouselGbImagem1' 
           title='Alimentação saudável e saborosa' 
           text='Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.'
         />
-      </div>
-
-      <div className='carousel-content'>
-        <CarouselPaginaGB srcImg={carouselGbImagem1} altImg='carouselGbImagem1' title='Alimentação saudável e saborosa' text='Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.'/>
         <img className='elipsedarrow' src={elipsedarrow} alt="" />
       </div>
 

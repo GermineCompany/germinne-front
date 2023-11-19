@@ -1,0 +1,14 @@
+.botao-selecao-gb button {
+    background-color: white;
+    border: .5px solid rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 50px;
+    font-size: var(--body-small);
+    font-weight: var(--semi-bold);
+    white-space: nowrap;
+    margin: 10px 15px 0 0;
+}
+
+.botao-selecao-gb button:hover {
+    cursor: pointer;
+}
