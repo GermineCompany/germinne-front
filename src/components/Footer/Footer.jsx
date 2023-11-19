@@ -1,8 +1,11 @@
 import React from 'react';
 import './footer.css';
 import logo from '../../images/logo-branco.svg';
-import { HiLocationMarker, HiPhone } from 'react-icons/hi';
-import { RiWhatsappFill, RiInstagramFill, RiLinkedinBoxFill } from 'react-icons/ri';
+import {  RiLinkedinBoxFill } from 'react-icons/ri';
+import { SiLinktree } from 'react-icons/si';
+import { FaInstagram } from 'react-icons/fa';
+
+
 
 
 
@@ -11,39 +14,45 @@ function Footer() {
     <footer>
       <div className='footer-box'>
         <div className='footer-logo'>
-          <img src={ logo } alt="Logo da Germinne branco" />
+          <img className='LogoGerminne' src={ logo } alt="Logo da Germinne branco" />
           <h2>Germinne</h2>
         </div>
+        <div className='redes'>
+          <a href="https://www.instagram.com/germinne_oficial/">
+            <FaInstagram className='footer-icons'/>
+          </a>
+          <a href="https://www.linkedin.com/in/vitormoutim/">
+            <RiLinkedinBoxFill className='footer-icons'/>
+          </a>
+          <a href="https://www.linkedin.com/in/vitormoutim/">
+            <SiLinktree className='footer-icons'/>
+          </a>
 
-        <div>
-          <div className='footer-info'>
-            <HiLocationMarker className='footer-icons'/>
-            <p>R. Tito, 54 - Vila Romana, São Paulo - SP, 05051-000</p>
-          </div>
-
-          <div className='footer-box-contatos'>
-            <div className='footer-info'>
-              <HiPhone className='footer-icons'/>
-              <p>(11) 2888-5500</p> 
-            </div>
-            <div className='footer-info'>
-              <RiWhatsappFill className='footer-icons'/>
-              <p>(11) 2888-5500</p>
-            </div>
-          </div>
-
-          <div className='footer-info'>
-            <p>Midias sociais: </p>
-            <a href="https://www.instagram.com/germinne_oficial/">
-              <RiInstagramFill className='footer-icons'/>
-            </a>
-
-            <a href="https://www.linkedin.com/in/vitormoutim/">
-              <RiLinkedinBoxFill className='footer-icons'/>
-            </a>
-          </div>
         </div>
+        <div className='Contatos'>
+          <p href=""> <a className='ancoras'href=""> BLOG GERMINNE </a></p>
+          <p href=""> <a className='ancoras'href=""> EMAIL </a></p>
+          <p href=""> <a className='ancoras'href=""> TELEFONE </a></p>
+          <p href=""> <a className='ancoras'href=""> SOBRE NÓS </a></p>
+        </div>
+        <div className='Site'>
+          <p href=""> <a className='ancoras'href=""> SEGURANÇA </a></p>
+          <p href=""> <a className='ancoras'href=""> TERMOS DE USO </a></p>
+          <p href=""> <a className='ancoras'href=""> POLITICAS DE ENVIO </a></p>
+          <p href=""> <a className='ancoras'href=""> PERGUNTAS FREQUENTES </a></p>
+        </div>
+
+
+
       </div>
+
+
+
+
+
+       
+   
+        
     </footer>
   );
 }
