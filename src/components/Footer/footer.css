@@ -9,7 +9,6 @@ footer {
 
 .footer-box {
     display: flex;
-
 }
 
 footer p {
@@ -17,10 +16,9 @@ footer p {
     margin-right: 20px;
     font-size: 20px;
 }
+
 .LogoGerminne{
-    
     height:140px
-    
 }
 
 .footer-logo {
@@ -30,28 +28,20 @@ footer p {
     flex-direction: column;
     margin-left:  35px;
     margin-top: 30px;
-
-
-
 }
 
 .footer-logo h2 {
     font-weight: 400;
     font-size: 35px;
     color: #FFF;
-    font-family: Montserrat;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 40px; 
     letter-spacing: 0.5px;
 }
-hr{
-    display: flex;
-    width: 20px;
 
-}
-.redes{
+.redes {
     height: 200px;
     border-left : 1px solid #0C9354;
     display: flex;
@@ -68,24 +58,25 @@ hr{
     height: 40px;
     margin-right: 5px;
 }
-.Contatos{
+
+.Contatos {
     color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 300px;
-
+    margin-left: 400px;
 }
-.Site{
+
+.Site {
     text-decoration: none;
     color: white;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-left: 220px;
-
 }
-.ancoras{
+
+.ancoras {
     display: flex;
     text-decoration: none;
     color: white;
