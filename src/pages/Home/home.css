@@ -51,10 +51,9 @@
     align-items: center;
 }
 
-/* .article-beneficios :nth-child() {
-    margin-top: 50px !important;
-    padding: 0;
-} */
+.box-beneficios-agricultura article:nth-child(2) {
+    padding-top: 50px !important;
+}
 
 .box-beneficios-agricultura article {
     padding-top: 150px;
