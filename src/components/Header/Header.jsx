@@ -21,28 +21,36 @@ function Header() {
           </div>
 
           <nav>
-          <ul>
-            <li>
-              <a href="/">Inicio</a>
-            </li>
+            <ul>
+              <li className="nav-item">
+                <a href="/">Inicio<div className="underline" /></a>
+              </li>
 
-            <li>
-              <a href="/blog">Blog</a>
-            </li>
+              <li className="nav-item">
+                <a href="/blog">Blog<div className="underline" /></a>
+              </li>
 
-            <li>
-              <a href="/loja">Germinne Box</a>
-            </li>
+              <li className="nav-item">
+                <a href="/loja">Germinne Box<div className="underline" /></a>
+              </li>
 
-            <li>
-              <a href="/receitas">Profissionais</a>
-            </li>
+              <li className="nav-item">
+                <a href="/horticultores">Horticultores<div className="underline" /></a>
+              </li>
 
-            <li>
-              <a href="/sobre-nos">Sobre nós</a>
-            </li>
-          </ul>
-        </nav>
+              <li className="nav-item">
+                <a href="/trabalhe-conosco">Trabalhe conosco<div className="underline" /></a>
+              </li>
+
+              <li className="nav-item">
+                <a href="/sobre-nos">Sobre nós<div className="underline" /></a>
+              </li>
+             
+            </ul>
+
+            
+              
+          </nav>
         
           <div className='box-login'>
             <button>
