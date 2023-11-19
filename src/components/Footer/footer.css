@@ -1,6 +1,6 @@
 footer {
     font-family: 'Montserrat', sans-serif;
-    height: 375px;
+    height: 378px;
     background-color: var(--verde-principal);
     display: flex;
     align-items: center;
@@ -9,13 +9,6 @@ footer {
 
 .footer-box {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 300px;
-    width: 80%;
-    margin: auto;
-    border-top: 2px solid rgba(255, 255, 255, 0.5);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 footer p {
@@ -24,54 +17,67 @@ footer p {
     font-size: 20px;
 }
 
+.LogoGerminne{
+    height:140px
+}
+
 .footer-logo {
+    padding: 70px;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left:  35px;
+    margin-top: 30px;
 }
 
 .footer-logo h2 {
     font-weight: 400;
     font-size: 35px;
+    color: #FFF;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; 
+    letter-spacing: 0.5px;
+}
+
+.redes {
+    height: 200px;
+    border-left : 1px solid #0C9354;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin: 90px 20px;
+    margin-top: 90px;
+    padding-left: 15px;
 }
 
 .footer-icons {
     color: white;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 40px;
     margin-right: 5px;
 }
 
-.footer-info {
+.Contatos {
+    color: white;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 400px;
 }
 
-.footer-box-contatos {
+.Site {
+    text-decoration: none;
+    color: white;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 220px;
 }
 
-@media screen and (max-width: 1100px) {
-    .footer-box {
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer p {
-        font-size: 15px;
-    }
-
-    footer h2 {
-        font-size: 25px;
-    }
-
-    footer img {
-        width: 60px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    footer p {
-        font-size: 13px;
-    }
+.ancoras {
+    display: flex;
+    text-decoration: none;
+    color: white;
 }
