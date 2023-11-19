@@ -2,13 +2,18 @@
     background-color: white;
     border: .5px solid rgba(0, 0, 0, 0.3);
     padding: 15px;
-    border-radius: 50px;
+    border-radius: 10px;
     font-size: var(--body-small);
-    font-weight: var(--semi-bold);
+    font-weight: var(--regular);
     white-space: nowrap;
     margin: 10px 15px 0 0;
 }
 
 .botao-selecao-gb button:hover {
     cursor: pointer;
+}
+
+.botao-selecionado {
+    background-color: var(--cta-roxo) !important;
+    color: white;
 }

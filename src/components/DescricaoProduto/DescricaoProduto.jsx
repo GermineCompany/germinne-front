@@ -43,7 +43,7 @@ function DescricaoProduto() {
         <div className='div-botoes'>
           <p>Selecione o tipo de produto: <span>Germinne Box</span></p>
           <div className='box-botoes-selecao'>
-            <BotaoSelecaoGB contentButton='Germinne Box'/>
+            <BotaoSelecaoGB className='botao-selecionado' contentButton='Germinne Box'/>
             <BotaoSelecaoGB contentButton='Kit Plantio'/>
           </div>
         </div>
@@ -52,13 +52,13 @@ function DescricaoProduto() {
           <p>Semente: <span>Salsa</span></p>
           <div className='box-botoes-selecao'>
             <BotaoSelecaoGB contentButton='Coentro'/>
-            <BotaoSelecaoGB contentButton='Manjericão'/>
+            <BotaoSelecaoGB className='botao-selecionado' contentButton='Manjericão'/>
             <BotaoSelecaoGB contentButton='Salsa'/>
           </div>
           <div className='box-botoes-selecao'>
-            <BotaoSelecaoGB contentButton='Hortelã'/>
+            <BotaoSelecaoGB className='botao-selecionado' contentButton='Hortelã'/>
             <BotaoSelecaoGB contentButton='Tomate Cereja'/>
-            <BotaoSelecaoGB contentButton='Alecrim'/>
+            <BotaoSelecaoGB className='botao-selecionado' contentButton='Alecrim'/>
           </div>
         </div>
 
