@@ -2,12 +2,14 @@
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100px;
 }
 
 .header-desktop > div {
     width: 100%;
-    padding: 5px 3%;
+    padding: 0px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,6 +32,10 @@
 
 .box-logo-nome a {
     color: var(--verde-germinne);
+}
+
+.box-logo-nome img {
+    margin-right: 10px;
 }
 
 .box-login {
@@ -56,7 +62,6 @@
 }
 
 .header-desktop nav {
-    background-color: var(--verde-principal);
     width: 100%;
     padding: 10px 0;
 }
@@ -74,7 +79,7 @@
 }
 
 .header-desktop nav a {
-    color: white;
+    color: var(--title-color);
 }
 
 .component-mobile {

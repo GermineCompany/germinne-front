@@ -1,26 +1,47 @@
 import React from 'react';
-import CoreStyles from 'react-awesome-slider/src/core/styles.scss?inline';
-import AnimationStyles from 'react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss?inline';
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
 import imagem from '../../images/banner-blog.svg';
-import imagem2 from '../../images/artigo-exemplo.png';
+import imagem2 from '../../images/banner-home.png';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Autoplay, Pagination, EffectFade } from 'swiper/modules';
+
 import './carouselBlog.css';
 
 function CarouselBlog() {
   return (
-    <AwesomeSlider
-      cssModule={[CoreStyles, AnimationStyles]}
-      animation="foldOutAnimation"
-      bullets={ false }
-      className='carousel-blog'
-      infinite={ true }
-    >
-      <div data-src={ imagem } />
-      <div data-src={ imagem2 } />
-      <div data-src={ imagem2 } />
-    </AwesomeSlider>
+    <>
+      <Swiper
+        effect={'fade'}
+        navigation={true} 
+        modules={[Autoplay, Pagination, Navigation, EffectFade]}
+        className="mySwiper carousel-blog"
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: true,
+        }}
+        pagination={true}
+        loop={true}
+      >
+        <SwiperSlide>
+          <img src={ imagem } alt="Imagem do banner 1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={ imagem2 } alt="Imagem do banner 1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={ imagem } alt="Imagem do banner 1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={ imagem2 } alt="Imagem do banner 1" />
+        </SwiperSlide>
+      </Swiper>
+    </>
   );
 }
+
 
 export default CarouselBlog;

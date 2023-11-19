@@ -2,7 +2,8 @@
     background: url(../../images/banner-home.png) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 600px;
+    width: 100vw;
     padding: 0 5%;
     display: flex;
     flex-direction: column;
@@ -11,7 +12,7 @@
 }
 
 .banner-home h2 {
-    font-size: var(--title-medium);
+    font-size: var(--display-large);
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -21,18 +22,18 @@
 }
 
 .banner-home p {
-    width: 25%;
-    font-size: var(--subtitle-small);
+    width: 35%;
+    font-size: var(--subtitle-medium);
 }
 
 .box-card-home {
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 
 .box-card-servicos {
     background-color: var(--body-article-color);
-    padding: 4% 0;
+    padding-top:  50px;
     display: flex;
     justify-content: space-between;
 }
@@ -40,21 +41,26 @@
 .box-card-germinne {
     display: flex;
     justify-content: space-between;
-    padding: 4% 0;
+    padding-top: 150px;
 }
 
 .box-beneficios-agricultura {
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.box-beneficios-agricultura article:nth-child(2) {
+    padding-top: 50px !important;
+}
+
 .box-beneficios-agricultura article {
-    margin: 30px 0;
+    padding-top: 150px;
 }
 
 .box-beneficios-agricultura h2 {
-    font-size: var(--title-medium);
+    font-size: var(--title-large);
     text-align: center;
 }
 
