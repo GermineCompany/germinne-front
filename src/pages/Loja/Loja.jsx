@@ -76,6 +76,7 @@ function Loja() {
           />
         </div>
       </div>
+    </div>
   );
 }
 
