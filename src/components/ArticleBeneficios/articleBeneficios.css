@@ -3,6 +3,7 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    gap: 150px;
     width: 100vw;
 }
 
@@ -11,8 +12,9 @@
 }
 
 .article-beneficios h4 {
-    font-size: var(--subtitle-medium);
-    margin-bottom: 7%;
+    font-size: var(--subtitle-large);
+    font-weight: var(--semi-bold);
+    margin-bottom: 30px;
 }
 
 .article-beneficios p {
@@ -20,6 +22,5 @@
 }
 
 .article-beneficios div:nth-child(2) {
-    padding: 0 11%;
-    width: 50%;
+    width: 500px;
 }
