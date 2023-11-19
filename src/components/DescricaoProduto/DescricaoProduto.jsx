@@ -65,7 +65,7 @@ function DescricaoProduto() {
         <div className='div-botoes box-quantidade'>
           <p>Quantidade</p>
 
-          <button><span onClick={() => console.log('MENOS')}>-</span> 2 <span onClick={() => console.log('MAIS')}>+</span></button>
+          <button><span onClick={() => console.log('MENOS')}>-</span> 1 <span onClick={() => console.log('MAIS')}>+</span></button>
         </div>
 
         <div className='div-botoes botao-adicionar-carrinho'>
