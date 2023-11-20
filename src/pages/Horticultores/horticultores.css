@@ -1,3 +1,8 @@
+.box-horticultores {
+    display: flex;
+    flex-direction: column;
+}
+
 .box-como-funciona {
     display: flex;
     margin: auto;
@@ -20,4 +25,37 @@
 
 .box-texto-como-funciona .card-como-funciona {
     padding-top: 30px;
+}
+
+
+.box-servicos {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.box-servicos h2 {
+    font-size: var(--title-large);
+}
+
+.box-servicos h2 span{
+    color: var( --verde-principal);
+}
+
+.box-card-servicos-horticultores {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    margin-top: 50px;
+}
+
+.box-card-servicos-horticultores h4 {
+    color: var(--verde-principal);
+}
+
+.box-card-servicos-horticultores article:nth-child(1) {
+    flex-direction: row-reverse;
+}
+
+.box-card-servicos-horticultores article:nth-child(3) {
+    flex-direction: row-reverse;
 }
