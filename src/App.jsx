@@ -12,6 +12,9 @@ import LoginCliente from './pages/LoginCliente/LoginCliente';
 import CadastroCliente from './pages/CadastroCliente/CadastroCliente';
 import Artigo from './pages/Artigo/Artigo';
 import Loja from './pages/Loja/Loja';
+import Horticultores from './pages/Horticultores/Horticultores';
+
+
 
 function App() {
   const path = window.location.pathname;
@@ -32,7 +35,9 @@ function App() {
           <Route path='/cadastro-cliente' Component={CadastroCliente} />
           <Route path='/artigo/:id' Component={Artigo} />
           <Route path='/loja' Component={Loja} />
+          <Route path='/horticultores' Component={Horticultores} />
         </Routes>
+        
       </main>
       {
         path != '/login' && path != '/cadastro-profissional'

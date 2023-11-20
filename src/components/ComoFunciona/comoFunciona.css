@@ -1,0 +1,15 @@
+.card-como-funciona {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-como-funciona div {
+    width: 70%;
+    text-align: center;
+}
+
+.card-como-funciona p {
+    font-size: var(--body-large);
+}
+
