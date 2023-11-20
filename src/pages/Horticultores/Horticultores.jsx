@@ -10,26 +10,57 @@ import Passo2 from '../../images/Passo2.svg';
 import Passo3 from '../../images/Passo3.svg';
 import Passo4 from '../../images/Passo4.svg';
 import imgComoFunciona from '../../images/comoFunciona.svg';
+
 import servico1 from '../../images/servico1.svg';
 import servico2 from '../../images/servico2.svg';
 import servico3 from '../../images/servico3.svg';
 
 
 
-function Horticultores() {
-  return (
+import { useState } from 'react';
 
-    <div className='box-horticultores'>
+function Horticultores() {
+  const [CEP, setCEP] = useState('');
+
+  const handleChange = (event) => setCEP(event.target.value);
+
+  return (
+    <div>
+      
+      <div className='banner-horticultor'>
+        <div>
+          <h2>Consulte agora um <span>profissional</span> e solicite um orçamento <span>gratuito</span>.</h2>
+
+          <div className='box-inputs-horticultor'>
+            <div>
+              <select>
+                <option value="" disabled selected>Selecione o tipo de serviço</option>
+                <option value="plantio">Plantio</option>
+                <option value="cultivo">Cultivo</option>
+                <option value="pragas">Controle de pragas</option>
+              </select>
+            </div>
+
+            <div>
+              <input
+                type="number"
+                name="largestRadius"
+                value={CEP}
+                onChange={handleChange}
+                placeholder='Digite seu CEP'
+              />
+            </div>
+          </div>
+
+          <button>Consultar profissionais</button>
+        </div>
+      </div>
 
       <div className='box-como-funciona'>
-
-
         <img src={imgComoFunciona} alt="imgComoFunciona" />
 
         <section className='box-texto-como-funciona'>
-
           <h2>Como funciona?</h2>
-
           <ComoFunciona
             urlImg={Passo1}
             altImg="icone1"
@@ -53,8 +84,7 @@ function Horticultores() {
             altImg="icone4"
             conteudo="Após aprovar o orçamento nosso parceiro vai realizar o serviço na data e local combinados. "
           />
-
-        </section>
+        </section >
 
       </div>
 
@@ -85,14 +115,10 @@ function Horticultores() {
           />
         </div>
 
-
       </div>
+    </div >
 
-
-
-    </div>
   );
 }
 
 export default Horticultores;
-
