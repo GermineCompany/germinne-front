@@ -42,7 +42,7 @@ function Horticultores() {
             <div>
               <input
                 type="number"
-                name="largestRadius"
+                name="CEP"
                 value={CEP}
                 onChange={handleChange}
                 placeholder='Digite seu CEP'

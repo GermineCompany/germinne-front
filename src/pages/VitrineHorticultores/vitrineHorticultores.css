@@ -1,0 +1,51 @@
+.box-introducao-vitrine {
+    background-color: var(--verde-vitrine);
+    color: white;
+    text-align: center;
+    padding: 2% 0;
+}
+
+.box-inputs-vitrine > div {
+    margin: 1% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.box-inputs-vitrine select, .box-inputs-vitrine input {
+    margin: 5% 0;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.3);
+    border: none;
+    background-color: #EAE9E9;
+    width: 90%;
+    padding: 3% 70px;
+    font-size: var(--body-small);
+}
+
+.box-inputs-vitrine option {
+    background-color: var(--verde-principal);
+    color: white;
+}
+
+.box-inputs-vitrine select {
+    border: unset;
+    appearance: none;
+    background-image: url(../../images/arrow-select.svg);
+    background-repeat: no-repeat;
+    background-position: right 1.5rem top 50%;
+    background-size: 20px auto;
+}
+
+.box-inputs-vitrine button {
+    background-color: var(--verde-escuro);
+    color: white;
+    font-size: var(--body-small);
+    border: none;
+    padding: 1% 0;
+    border-radius: 10px;
+    width: 25%;
+}
+
+.box-inputs-vitrine button:hover {
+    cursor: pointer;
+}
