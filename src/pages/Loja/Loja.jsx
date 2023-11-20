@@ -59,7 +59,7 @@ function Loja() {
 
       <div className='faq'>
         <h2 className='faq-title'>Perguntas frequentes</h2>
-        <div className='box-card-perguntaS'>
+        <div className='box-card-perguntas'>
           <CardPerguntas 
             title='Quantas horas de sol por dia minha planta precisa?'
             text='Para que suas plantinhas tenham o desenvolvimento ideal, você vai precisar de pelo menos 4 horas de sol direto ao dia, e não basta ser só aquela claridade, é necessário a luz do sol incidir diretamente sobre sua hortinha.'  

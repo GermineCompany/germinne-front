@@ -2,25 +2,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
+  gap: 130px;
 
 }
 
 .carousel-pagina-gb-conteudo img {
-  width: 35%;
-  margin-right: 10%;
+  width: 30%;
   border-radius: 10px;
 }
 
 .caroulsel-pagina-gb-text {
+  font-size: var(--body-medium);
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 30%;
   text-align: center;
 }
 
 .caroulsel-pagina-gb-text h2 {
   margin-bottom: 10%;
   color: var(--verde-principal);
-  font-size: var(--subtitle-medium);
+  font-size: var(--subtitle-large);
+}
+
+.elipsedarrow {
+  position: absolute;
+  margin-left: 80%;
+  width: 3%;
 }
