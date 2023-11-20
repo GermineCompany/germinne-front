@@ -1,5 +1,5 @@
 import React from 'react';
-import './Horticultores.css';
+import './horticultores.css';
 import '../../components/ArticleBeneficios/articleBeneficios.css';
 
 import ComoFunciona from '../../components/ComoFunciona/ComoFunciona';
