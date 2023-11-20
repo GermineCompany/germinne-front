@@ -1,5 +1,5 @@
 import React from 'react';
-import './Horticultores.css';
+import './horticultores.css';
 import '../../components/ArticleBeneficios/articleBeneficios.css';
 
 import ComoFunciona from '../../components/ComoFunciona/ComoFunciona';
@@ -15,8 +15,6 @@ import servico1 from '../../images/servico1.svg';
 import servico2 from '../../images/servico2.svg';
 import servico3 from '../../images/servico3.svg';
 
-
-
 import { useState } from 'react';
 
 function Horticultores() {
@@ -26,7 +24,7 @@ function Horticultores() {
 
   return (
     <div>
-      
+
       <div className='banner-horticultor'>
         <div>
           <h2>Consulte agora um <span>profissional</span> e solicite um orçamento <span>gratuito</span>.</h2>
@@ -115,6 +113,18 @@ function Horticultores() {
           />
         </div>
 
+      </div>
+
+      <div className='banner-cadastro-horticultor'>
+
+        <div>
+            
+          <h3>Aumente sua <span>visibilidade e alcance</span>, atraindo mais clientes e <span>expandindo seus negócios</span>.</h3>
+          <p>Ao ingressar como profissional em uma plataforma web, você amplirá seu alcance de negócio, promoverá e interajir com outros profissionais. Gerencie com eficiência as solicitações dos clientes, mantendo controle sobre encomendas, e estabeleça confiança ao fornecer informações detalhadas e avaliações aos consumidores.</p>
+
+          <button>Cadastrar</button>
+
+        </div>
       </div>
     </div >
 

@@ -1,3 +1,4 @@
+
 .box-horticultores {
     display: flex;
     flex-direction: column;
@@ -13,7 +14,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center; 
+    justify-content: center;
     width: 70%;
 }
 
@@ -127,4 +128,49 @@
     border: none;
     padding: 15px 50px;
     border-radius: 10px;
+}
+
+
+.banner-cadastro-horticultor {
+    background-image: url(../../images/banner-cadastro-horticultor.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 55vh;
+    width: 100vw;
+    color: white;
+    gap: 15px;
+    margin-top: 100px;
+}
+
+.banner-cadastro-horticultor div  {
+    width: 27%;
+    margin-left: 3%;
+}
+
+.banner-cadastro-horticultor h3 {
+    font-size: var(--title-small);
+    font-weight: var(--bold);
+}
+
+.banner-cadastro-horticultor span {
+    color: var(--font-banner-verde);
+}
+
+.banner-cadastro-horticultor p {
+    font-size: var(--body-small);
+    padding-top: 2%;
+}
+
+.banner-cadastro-horticultor button {
+    margin-top: 5%;
+    background-color: var(--cta-laranja);
+    color: white;
+    font-size: var(--subtitle-small);
+    font-weight: var(--semi-bold);
+    font-family: var(--title-family);
+    border: none;
+    padding: 3% 8%;
+    border-radius: 20px;
 }
