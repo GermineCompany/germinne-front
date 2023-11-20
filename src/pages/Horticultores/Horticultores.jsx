@@ -42,6 +42,7 @@ function Horticultores() {
           conteudo="Após aprovar o orçamento nosso parceiro vai realizar o serviço na data e local combinados. "
         />
 
+
       </div>
     </div>
   );
