@@ -51,10 +51,15 @@
     border-radius: 10px;
     border: none;
     background-color: var(--verde-principal);
+    transition: .3s;
 }
 
 .box-login button:hover {
+    border: 1.5px solid var(--verde-principal);
+    color: var(--verde-principal);
+    background-color: white;
     cursor: pointer;
+    transition: .5s;
 }
 
 .box-login img {
@@ -101,10 +106,13 @@
 
 .button-opened {
     border-radius: 10px 10px 0 0 !important;
+    border: 1.5px solid var(--verde-principal) !important;
+    color: var(--verde-principal) !important;
+    background-color: white !important;
 }
 
 .links-login ul {
-    width: 185px;
+    width: 186px;
     list-style: none;
     text-align: center;
     list-style-position: inside;
