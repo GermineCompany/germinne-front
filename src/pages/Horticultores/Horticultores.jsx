@@ -115,15 +115,16 @@ function Horticultores() {
 
       </div>
 
-      <div className='banner-cadastro-horticultor'>
+      <div className='box-banner-cadastro-horticultor'>
+        <div className='banner-cadastro-horticultor'>
+          <div>
 
-        <div>
-            
-          <h3>Aumente sua <span>visibilidade e alcance</span>, atraindo mais clientes e <span>expandindo seus negócios</span>.</h3>
-          <p>Ao ingressar como profissional em uma plataforma web, você amplirá seu alcance de negócio, promoverá e interajir com outros profissionais. Gerencie com eficiência as solicitações dos clientes, mantendo controle sobre encomendas, e estabeleça confiança ao fornecer informações detalhadas e avaliações aos consumidores.</p>
+            <h3>Aumente sua <span>visibilidade e alcance</span>, atraindo mais clientes e <span>expandindo seus negócios</span>.</h3>
+            <p>Ao ingressar como profissional em uma plataforma web, você amplirá seu alcance de negócio, promoverá e interajir com outros profissionais. Gerencie com eficiência as solicitações dos clientes, mantendo controle sobre encomendas, e estabeleça confiança ao fornecer informações detalhadas e avaliações aos consumidores.</p>
 
-          <button>Cadastrar</button>
+            <a href="#"><button>Cadastrar</button></a>
 
+          </div>
         </div>
       </div>
     </div >
