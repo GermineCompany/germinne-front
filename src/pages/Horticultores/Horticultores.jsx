@@ -1,11 +1,22 @@
 import React from 'react';
 import './Horticultores.css';
+import '../../components/ArticleBeneficios/articleBeneficios.css';
+
 import ComoFunciona from '../../components/ComoFunciona/ComoFunciona';
+import ArticleBeneficios from '../../components/ArticleBeneficios/ArticleBeneficios';
+
 import Passo1 from '../../images/Passo1.svg';
 import Passo2 from '../../images/Passo2.svg';
 import Passo3 from '../../images/Passo3.svg';
 import Passo4 from '../../images/Passo4.svg';
 import imgComoFunciona from '../../images/comoFunciona.svg';
+
+import servico1 from '../../images/servico1.svg';
+import servico2 from '../../images/servico2.svg';
+import servico3 from '../../images/servico3.svg';
+
+
+
 import { useState } from 'react';
 
 function Horticultores() {
@@ -15,6 +26,7 @@ function Horticultores() {
 
   return (
     <div>
+      
       <div className='banner-horticultor'>
         <div>
           <h2>Consulte agora um <span>profissional</span> e solicite um orçamento <span>gratuito</span>.</h2>
@@ -30,10 +42,10 @@ function Horticultores() {
             </div>
 
             <div>
-              <input 
-                type="number" 
-                name="largestRadius" 
-                value={CEP} 
+              <input
+                type="number"
+                name="largestRadius"
+                value={CEP}
                 onChange={handleChange}
                 placeholder='Digite seu CEP'
               />
@@ -46,8 +58,8 @@ function Horticultores() {
 
       <div className='box-como-funciona'>
         <img src={imgComoFunciona} alt="imgComoFunciona" />
-      
-        <div className='box-texto-como-funciona'>
+
+        <section className='box-texto-como-funciona'>
           <h2>Como funciona?</h2>
           <ComoFunciona
             urlImg={Passo1}
@@ -72,11 +84,41 @@ function Horticultores() {
             altImg="icone4"
             conteudo="Após aprovar o orçamento nosso parceiro vai realizar o serviço na data e local combinados. "
           />
-        </div>
+        </section >
+
       </div>
-    </div>
+
+      <div className='box-servicos'>
+
+        <h2><span>Promovemos</span> diversos serviços:</h2>
+
+        <div className='box-card-servicos-horticultores'>
+          <ArticleBeneficios
+            urlImg={servico1}
+            altImg='Imgem de um homem plantando'
+            title='Plantio e replantio'
+            text='Se você sonha em transformar espaços inutilizados em deslumbrantes hortas orgânicas, nossa equipe está pronta para tornar isso realidade! O plantio e replantio ganham vida com o toque especial dos nossos especialistas, que não só cultivam plantas, mas criam ambientes vibrantes e cheios de vida.'
+          />
+
+          <ArticleBeneficios
+            urlImg={servico2}
+            altImg='Imagem de várias comidas em uma mesa'
+            title='Controle de pragas e enfermidades'
+            text='Nossos profissionais não apenas conhecem o significado de "Proteção" mas sim a linguagem secreta das plantas. Com expertise em controle de pragas e enfermidades, eles protegem seu jardim como guardiões dedicados.'
+          />
+
+          <ArticleBeneficios
+            urlImg={servico3}
+            altImg='Imagem de várias comidas em uma mesa'
+            title='Manutenção e fertilização'
+            text='Imagine uma Horta que sempre pareceu saído de uma revista de jardinagem - agora, pare de imaginar e comece a viver essa realidade! Com a manutenção e fertilização especializada dos nossos profissionais, seu espaço verde será constantemente nutrido e mimado.'
+          />
+        </div>
+
+      </div>
+    </div >
+
   );
 }
 
 export default Horticultores;
-
