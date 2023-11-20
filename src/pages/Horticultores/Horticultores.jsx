@@ -22,7 +22,7 @@ function Horticultores() {
           <div className='box-inputs-horticultor'>
             <div>
               <select>
-                <option value="" disabled selected>Selecione o tipo de serviço</option>
+                <option value="default" disabled selected>Selecione o tipo de serviço</option>
                 <option value="plantio">Plantio</option>
                 <option value="cultivo">Cultivo</option>
                 <option value="pragas">Controle de pragas</option>
