@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import './vitrineHorticultores.css';
+import CardHorticultor from '../../components/CardHorticultor/CardHorticultor';
+import imagemHorticultor from '../../images/horticultor-exemplo.png';
 
 function VitrineHorticultores() {
   const [CEP, setCEP] = useState('');
@@ -40,6 +42,37 @@ function VitrineHorticultores() {
           </div>
         </div>
       </div>
+
+      <article className='box-horticultores'>
+        <CardHorticultor 
+          srcImg={ imagemHorticultor }
+          name='Nice Lima Soares'
+          description='Apaixonada pela diversidade de plantas, fiz um curso de horticultor orgânico em 2015 e estou na área desde então. Sou especialista em hortas verticais e em plantas trepadeiras.'
+          rating='4,8'
+        />
+
+        <CardHorticultor 
+          srcImg={ imagemHorticultor }
+          name='Nice Lima Soares'
+          description='Apaixonada pela diversidade de plantas, fiz um curso de horticultor orgânico em 2015 e estou na área desde então. Sou especialista em hortas verticais e em plantas trepadeiras.'
+          rating='4,8'
+        />
+
+        <CardHorticultor 
+          srcImg={ imagemHorticultor }
+          name='Nice Lima Soares'
+          description='Apaixonada pela diversidade de plantas, fiz um curso de horticultor orgânico em 2015 e estou na área desde então. Sou especialista em hortas verticais e em plantas trepadeiras.'
+          rating='4,8'
+        />
+
+        <CardHorticultor 
+          srcImg={ imagemHorticultor }
+          name='Nice Lima Soares'
+          description='Apaixonada pela diversidade de plantas, fiz um curso de horticultor orgânico em 2015 e estou na área desde então. Sou especialista em hortas verticais e em plantas trepadeiras.'
+          rating='4,8'
+        />
+
+      </article>
     </div>
   );
 }
