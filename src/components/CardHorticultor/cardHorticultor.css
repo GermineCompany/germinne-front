@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     width: 30%;
+    margin-right: 20px;
 }
 
 .foto-rating-horticultor div:nth-child(1) {
@@ -70,6 +71,7 @@
 }
 
 .botoes-contato-horticultor {
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
