@@ -1,19 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './cardBlog.css';
+import { useNavigate } from 'react-router-dom';
 
-function CardBlog({ srcImg, altImg, title, resume, category }) {
+function CardBlog({ srcImg, altImg, title, resume, category, idArticle }) {
+  const navigate = useNavigate();
+
+  const handleDirect = () => navigate(`/artigo/${idArticle}`);
+
   return (
     <article className='card-blog'>
       <div>
-        <img src={ srcImg } alt={ altImg } />
+        <img src={ srcImg } alt={ altImg } onClick={ handleDirect } />
       </div>
 
       <div>
-        <h3>{ title }</h3>
+        <h3 onClick={ handleDirect }>{ title }</h3>
         <p>{ resume }</p>
         <div>
-          <a href="">Ler mais...</a>
+          <a href={ `/artigo/${idArticle}` }>Ler mais...</a>
           <p className='category'>{ category }</p>
         </div>
       </div>
@@ -27,6 +32,7 @@ CardBlog.propTypes = {
   title: PropTypes.string.isRequired,
   resume: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
+  idArticle: PropTypes.string,
 };
 
 export default CardBlog;

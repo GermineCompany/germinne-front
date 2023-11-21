@@ -13,8 +13,16 @@
     width: 100%;
 }
 
+.card-blog img:hover {
+    cursor: pointer;
+}
+
 .card-blog h3, .card-blog p, .card-blog a {
     margin: 10px 0;
+}
+
+.card-blog h3 {
+    cursor: pointer;
 }
 
 .card-blog div:nth-child(2) {
