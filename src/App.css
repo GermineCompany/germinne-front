@@ -62,3 +62,7 @@ body {
   --regular: 400;
   /* FONT */
 }
+
+h1, h2, h3, h4 {
+  font-family: var(--title-family);
+}

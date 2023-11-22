@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import busca from '../../images/busca.png';
-import artigo from '../../images/artigo-exemplo.png';
 import publicidade from '../../images/publi.png';
 import CardBlog from '../../components/CardBlog/CardBlog';
 import CardPublicidade from '../../components/CardPublicidade/CardPublicidade';
 import './blog.css';
 import CarouselBlog from '../../components/CarouselBlog/CarouselBlog';
+import artigos from '../../data/artigos';
 
 
 function Blog() {
@@ -45,12 +45,28 @@ function Blog() {
       </div>
 
       <div className='box-artigos'>
-        <CardBlog
+        {
+          artigos.map(({ artigoId, titulo, descricao, imagemCard, categoria }) => {
+            return (
+              <CardBlog
+                key={artigoId}
+                srcImg={ imagemCard }
+                altImg="Foto do telhado verde"
+                title={ titulo }
+                resume={ descricao }
+                category={ categoria }
+                idArticle={ artigoId }
+              />
+            );
+          })
+        }
+        {/* <CardBlog
           srcImg={artigo}
           altImg="Foto do telhado verde"
           title="O Telhado Verde do Shopping Eldorado: Um Refúgio Natural"
           resume="Este artigo revela como o Shopping Eldorado se transforma em um refúgio verde e relaxante no meio da cidade, proporcionando uma experiência única para quem busca tranquilidade em São Paulo."
           category="Cultivo"
+          idArticle={ 2 }
         />
 
         <CardBlog
@@ -91,7 +107,7 @@ function Blog() {
           title="O Telhado Verde do Shopping Eldorado: Um Refúgio Natural"
           resume="Este artigo revela como o Shopping Eldorado se transforma em um refúgio verde e relaxante no meio da cidade, proporcionando uma experiência única para quem busca tranquilidade em São Paulo."
           category="Cultivo"
-        />
+        /> */}
       </div>
 
       <hr />

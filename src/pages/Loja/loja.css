@@ -79,6 +79,10 @@
   align-items: center;
 }
 
+.carousel-content img:hover {
+  cursor: pointer;
+}
+
 /* ----------------------------------------------------------------------------------------- */
 
 .faq {

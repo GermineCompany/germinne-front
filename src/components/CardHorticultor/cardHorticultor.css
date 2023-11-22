@@ -1,0 +1,95 @@
+.card-horticultor {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.foto-rating-horticultor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    margin-right: 20px;
+}
+
+.foto-rating-horticultor div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+}
+
+.foto-rating-horticultor div:nth-child(1) img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.foto-rating-horticultor div:nth-child(2) {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-rating-horticultor div:nth-child(2) img {
+    width: 40%;
+}
+
+.foto-rating-horticultor p {
+    margin-right: 10px;
+    font-size: var(--body-medium);
+    color: #FDD634;
+    font-weight: var(--bold);
+}
+
+.descricao-horticultor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.descricao-horticultor p:nth-child(1) {
+    font-size: var(--subtitle-large);
+    font-weight: var(--semi-bold);
+}
+
+.descricao-horticultor p:nth-child(2) {
+    font-size: var(--body-medium);
+}
+
+.descricao-horticultor button {
+    margin-top: 15px;
+    width: 150px;
+    border: none;
+    background-color: var(--cta-laranja);
+    color: white;
+    padding: .8% 3%;
+    font-size: var(--body-small);
+    border-radius: 10px;
+}
+
+.botoes-contato-horticultor {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.botoes-contato-horticultor button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--body-small);
+    width: 200px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cta-roxo);
+    color: white;
+}
+
+.botoes-contato-horticultor button svg {
+    margin-right: 10px;
+}
