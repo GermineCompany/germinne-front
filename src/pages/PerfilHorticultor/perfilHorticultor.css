@@ -1,0 +1,165 @@
+.box-perfil-horticultor {
+    background-color: var(--background-cards);
+    border: 1px solid var(--verde-principal);
+    border-radius: 20px;
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+
+.box-sobre-contatos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-nome-avaliacao-perfil {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid var(--verde-principal);
+    border-radius: 20px;
+}
+
+.box-nome-avaliacao-perfil > div {
+    margin: 10px 0;
+}
+
+.box-nome-avaliacao-perfil div:nth-child(1) img {
+    margin-bottom: 10px;
+    width: 50%;
+    border-radius: 100%;
+}
+
+.box-nome-avaliacao-perfil div:nth-child(1) p {
+    font-size: var(--subtitle-large);
+    font-weight: var(--semi-bold);
+}
+
+.box-nome-avaliacao-perfil div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-nome-avaliacao-perfil div:nth-child(2) div {
+    display: flex;
+    flex-direction: row;
+}
+
+.box-nome-avaliacao-perfil div:nth-child(2) div p {
+    color: var(--cta-laranja);
+    font-weight: var(--semi-bold);
+}
+
+.box-nome-avaliacao-perfil div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-nome-avaliacao-perfil div:nth-child(2) > p {
+    font-size: var(--body-small);
+}
+
+.box-nome-avaliacao-perfil div:nth-child(3) {
+    font-size: 13px;
+    /* font-size: var(--body-small); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    white-space: nowrap;
+}
+
+.box-nome-avaliacao-perfil div:nth-child(3) svg, .box-nome-avaliacao-perfil div:nth-child(3) p:nth-child(1) {
+    display: flex;
+    align-items: center;
+    font-weight: var(--semi-bold);
+    color: #069AF1;
+}
+
+.box-sobre-mim-perfil {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-sobre-mim-perfil h2 {
+    margin-bottom: 5%;
+    font-size: var(--subtitle-large);
+}
+
+.box-sobre-mim-perfil p {
+    font-size: var(--body-medium);
+}
+
+.box-contatos-perfil {
+    /* padding-right: 5%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-contatos-perfil button {
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border: none;
+    background-color: var(--cta-roxo);
+    color: white;
+    padding: 5% 3%;
+    font-size: var(--body-medium);
+    border-radius: 10px;
+}
+
+.box-contatos-perfil button svg {
+    margin-right: 5px;
+}
+
+.box-servicos-oferecidos {
+    width: 85%;
+    margin: 3% auto;
+    text-align: center;
+}
+
+.box-servicos-oferecidos h3 {
+    font-size: var(--subtitle-large);
+}
+
+.box-servicos-oferecidos span {
+    color: var(--verde-principal);
+}
+
+.box-servicos-oferecidos div {
+    margin: 1.5% 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pagina-perfil-horticultor hr {
+    width: 85%;
+    border-color: rgba(0, 0, 0, 0.10);
+    margin: auto;
+}
+
+.box-ultimos-servicos {
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+
+.box-ultimos-servicos > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-ultimos-servicos h2 {
+    font-size: var(--title-large);
+    margin: 2% 0;
+}
+
+.box-ultimos-servicos span {
+    color: var(--verde-principal);
+}
