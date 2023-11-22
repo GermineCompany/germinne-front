@@ -1,4 +1,5 @@
 .box-perfil-horticultor {
+    background-color: var(--background-cards);
     border: 1px solid var(--verde-principal);
     border-radius: 20px;
     display: flex;
@@ -114,4 +115,29 @@
 
 .box-contatos-perfil button svg {
     margin-right: 5px;
+}
+
+.box-servicos-oferecidos {
+    width: 85%;
+    margin: 3% auto;
+    text-align: center;
+}
+
+.box-servicos-oferecidos h3 {
+    font-size: var(--subtitle-large);
+}
+
+.box-servicos-oferecidos span {
+    color: var(--verde-principal);
+}
+
+.box-servicos-oferecidos div {
+    margin: 1.5% 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pagina-perfil-horticultor hr {
+    width: 85%;
+    margin: auto;
 }

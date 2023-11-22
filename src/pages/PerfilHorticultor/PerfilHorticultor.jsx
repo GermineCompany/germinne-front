@@ -4,11 +4,12 @@ import estrelas from '../../images/stars.png';
 import { MdVerified, MdOutlineWhatsapp } from 'react-icons/md';
 import { FaPhoneAlt } from 'react-icons/fa';
 import './perfilHorticultor.css';
+import CardPerfilServico from '../../components/CardPerfilServico/CardPerfilServico';
 
 
 function PerfilHorticultor() {
   return (
-    <div>
+    <div className='pagina-perfil-horticultor'>
       <article className='box-perfil-horticultor'>
         <div className='box-nome-avaliacao-perfil'>
           <div>
@@ -43,6 +44,24 @@ function PerfilHorticultor() {
           </div>
         </div>
       </article>
+      
+      <div className='box-servicos-oferecidos'>
+        <h3><span>Serviços</span> oferecidos: </h3>
+
+        <div>
+          <CardPerfilServico service='Fertilização do solo' />
+          <CardPerfilServico service='Manutenção' />
+          <CardPerfilServico service='Plantio' />
+          <CardPerfilServico service='Sistema de irrigação' />
+          <CardPerfilServico service='Controle de pragas' />
+        </div>
+      </div>
+
+      <hr />
+
+      <div>
+        <h2>Últimos <span>Trabalhos</span>!</h2>
+      </div>
     </div>
   );
 }
