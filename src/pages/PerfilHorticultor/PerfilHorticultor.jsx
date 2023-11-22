@@ -5,6 +5,7 @@ import { MdVerified, MdOutlineWhatsapp } from 'react-icons/md';
 import { FaPhoneAlt } from 'react-icons/fa';
 import './perfilHorticultor.css';
 import CardPerfilServico from '../../components/CardPerfilServico/CardPerfilServico';
+import ImagemUltimosServicos from '../../components/ImagemUltimosServicos/ImagemUltimosServicos';
 
 
 function PerfilHorticultor() {
@@ -59,8 +60,42 @@ function PerfilHorticultor() {
 
       <hr />
 
-      <div>
+      <div className='box-ultimos-servicos'>
         <h2>Últimos <span>Trabalhos</span>!</h2>
+
+        <div>
+          <ImagemUltimosServicos 
+            srcImg='https://construtoraandradejunior.com.br/2019/wp-content/uploads/2019/07/horta-vertical.jpg'
+          />
+
+          <ImagemUltimosServicos 
+            srcImg='https://construtoraandradejunior.com.br/2019/wp-content/uploads/2019/07/horta-vertical.jpg'
+          />
+
+          <ImagemUltimosServicos 
+            srcImg='https://construtoraandradejunior.com.br/2019/wp-content/uploads/2019/07/horta-vertical.jpg'
+          />
+
+          <ImagemUltimosServicos 
+            srcImg='https://construtoraandradejunior.com.br/2019/wp-content/uploads/2019/07/horta-vertical.jpg'
+          />
+
+          <ImagemUltimosServicos 
+            srcImg='https://construtoraandradejunior.com.br/2019/wp-content/uploads/2019/07/horta-vertical.jpg'
+          />
+
+          <ImagemUltimosServicos 
+            srcImg='https://construtoraandradejunior.com.br/2019/wp-content/uploads/2019/07/horta-vertical.jpg'
+          />
+
+          <ImagemUltimosServicos 
+            srcImg='https://construtoraandradejunior.com.br/2019/wp-content/uploads/2019/07/horta-vertical.jpg'
+          />
+
+          <ImagemUltimosServicos 
+            srcImg='https://construtoraandradejunior.com.br/2019/wp-content/uploads/2019/07/horta-vertical.jpg'
+          />
+        </div>
       </div>
     </div>
   );

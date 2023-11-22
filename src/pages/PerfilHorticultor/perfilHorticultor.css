@@ -139,5 +139,27 @@
 
 .pagina-perfil-horticultor hr {
     width: 85%;
+    border-color: rgba(0, 0, 0, 0.10);
     margin: auto;
+}
+
+.box-ultimos-servicos {
+    text-align: center;
+    width: 85%;
+    margin: auto;
+}
+
+.box-ultimos-servicos > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-ultimos-servicos h2 {
+    font-size: var(--title-large);
+    margin: 2% 0;
+}
+
+.box-ultimos-servicos span {
+    color: var(--verde-principal);
 }
