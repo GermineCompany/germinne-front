@@ -1,0 +1,23 @@
+.box-como-funciona {
+    display: flex;
+    margin: auto;
+    width: 90%;
+}
+
+.box-texto-como-funciona {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center; 
+    width: 70%;
+}
+
+.box-texto-como-funciona h2 {
+    font-size: var(--title-large);
+    color: var(--title-color);
+    font-weight: var(--bold);
+}
+
+.box-texto-como-funciona .card-como-funciona {
+    padding-top: 30px;
+}
