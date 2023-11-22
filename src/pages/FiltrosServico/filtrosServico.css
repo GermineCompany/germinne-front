@@ -1,0 +1,26 @@
+.banner-filtros-servico {
+    background: url(../../images/banner-filtros.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    padding-bottom: 7%;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white;
+}
+
+.banner-filtros-servico h2 {
+    font-size: var(--title-medium);
+}
+
+.banner-filtros-servico span {
+    color: var(--verde-principal);
+}
+
+.banner-filtros-servico p {
+    margin-top: 3%;
+    font-size: var(--subtitle-medium);
+}
