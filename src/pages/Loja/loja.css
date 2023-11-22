@@ -68,6 +68,11 @@
   margin-top: 3%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.carousel-content img:hover {
+  cursor: pointer;
 }
 
 
