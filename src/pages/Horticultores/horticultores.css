@@ -65,7 +65,7 @@
     background-size: cover;
     background-position: center;
     height: 80vh;
-    width: 100vw;
+    width: 100%;
     padding: 2% 4%;
 }
 
@@ -143,7 +143,7 @@
     background-size: cover;
     margin-top: 100px;
     height: 55vh;
-    width: 100vw;
+    width: 100%;
 }
 
 

@@ -4,10 +4,12 @@ import sacola from '../../images/sacola.png';
 import './header.css';
 import HeaderMobile from '../HeaderMobile/HeaderMobile';
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 
 function Header() {
   const [showLogin, setShowLogin] = useState(false);
+  const { pathname } = useLocation();
 
   const handleShowLogin = () => {
     setShowLogin(showLogin ? false : true);
@@ -31,28 +33,28 @@ function Header() {
           <nav>
             <ul>
               
-              <li className="nav-item">
-                <a href="/">Inicio<div className="underline" /></a>
+              <li className= "nav-item" >
+                <a href="/">Inicio<div className={ ` underline  ${pathname == '/' ? 'hold-underline' : '' }`} /></a>
               </li>
 
-              <li className="nav-item">
-                <a href="/blog">Blog<div className="underline" /></a>
+              <li className= "nav-item" >
+                <a href="/blog">Blog<div className={ ` underline  ${pathname == '/blog' ? 'hold-underline' : '' }`} /></a>
               </li>
 
-              <li className="nav-item">
-                <a href="/loja">Germinne Box<div className="underline" /></a>
+              <li className= "nav-item" >
+                <a href="/loja">GerminneBox<div className={ ` underline  ${pathname == '/loja' ? 'hold-underline' : '' }`}/></a>
               </li>
 
-              <li className="nav-item">
-                <a href="/horticultores">Horticultores<div className="underline" /></a>
+              <li className={` nav-item `}>
+                <a href="/horticultores">Horticultores<div className={ ` underline  ${pathname == '/horticultores' ? 'hold-underline' : '' }`}/></a>
               </li>
 
-              <li className="nav-item">
-                <a href="/trabalhe-conosco">Trabalhe conosco<div className="underline" /></a>
+               <li className= "nav-item" >
+                <a href="/trabalhe-conosco">Trabalhe conosco<div className={ ` underline  ${pathname == '/trabalheconosco' ? 'hold-underline' : '' }`}/></a>
               </li>
 
-              <li className="nav-item">
-                <a href="/sobre-nos">Sobre nós<div className="underline" /></a>
+              <li className= "nav-item" >
+                <a href="/sobre-nos">Sobre nós<div className={ ` underline  ${pathname == '/sobre-nos' ? 'hold-underline' : '' }`}/></a>
               </li>
              
             </ul>
@@ -70,10 +72,12 @@ function Header() {
               </div>
 
             </div>
-
-            <a href="/carrinho">
-              <img src={sacola} alt="Icone de sacola" />
-            </a>
+            
+            <div className='box-icone-sacola'>
+              <a href="/carrinho">
+                <img src={sacola} alt="Icone de sacola" />
+              </a>
+            </div>
           </div>
         </div>
 

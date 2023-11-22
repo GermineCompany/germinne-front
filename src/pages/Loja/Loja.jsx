@@ -77,6 +77,8 @@ function Loja() {
         <img src={doublearrow} alt="seta dupla" />
       </div>
 
+      
+
       <div className='carousel-content'>
         <CarouselPaginaGB 
           srcImg={ carouselProps.img } 
