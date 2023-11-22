@@ -13,6 +13,7 @@ import CadastroCliente from './pages/CadastroCliente/CadastroCliente';
 import Artigo from './pages/Artigo/Artigo';
 import Loja from './pages/Loja/Loja';
 import Horticultores from './pages/Horticultores/Horticultores';
+import VitrineHorticultores from './pages/VitrineHorticultores/VitrineHorticultores';
 
 
 
@@ -36,6 +37,7 @@ function App() {
           <Route path='/artigo/:id' Component={Artigo} />
           <Route path='/loja' Component={Loja} />
           <Route path='/horticultores' Component={Horticultores} />
+          <Route path='/vitrine-horticultores' Component={VitrineHorticultores} />
         </Routes>
         
       </main>
