@@ -85,12 +85,9 @@
 
 /* ---------------------------------------- */
 
-
-
-
 .header-desktop nav {
-  width: 100%;
-  padding: 15x 0;
+  width: 90%;
+  padding: 15px 0;
 }
 
 .header-desktop nav ul {
@@ -99,13 +96,13 @@
 }
 
 .header-desktop nav ul li {
-  font-size: var(--subtitle-small);
   font-weight: var(--regular-bold);
-  margin: 0 35px;
+  margin: 0 30px;
   list-style: none;
 }
 
 .header-desktop nav a {
+  font-size: var(--subtitle-small);
   color: var(--title-color);
 }
 
@@ -116,9 +113,9 @@
 /* --------------------HOVER ABAIXO-------------------- */
 
 .box-login button:hover {
-    background-color: var(--verde-escuro);
-  }
-  
+  background-color: var(--verde-escuro);
+}
+
 .nav-item a:hover {
   color: var(--verde-escuro);
 }
@@ -186,9 +183,8 @@
 
 /* -----------------HOVER ACIMA----------------------- */
 
-
 @media screen and (max-width: 1250px) {
-    .header-desktop {
-      display: none;
-    }
+  .header-desktop {
+    display: none;
   }
+}

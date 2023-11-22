@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 function CardPerguntas({ title, text }) {
   return (
     <div className="cardPerguntas">
-      <img src={greenElipse} alt="" />
+      <img src={greenElipse} alt="green elipse" />
       <div className='cardPerguntasText'>
         <h3>{title}</h3>
         <p>{text}</p>
