@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './checkboxFiltro.css';
 
 function CheckboxFiltro({ value, label }) {
   return (
-    <div>
+    <div className='checkbox-filtro'>
       <label htmlFor="">
         <input
           type="checkbox"
