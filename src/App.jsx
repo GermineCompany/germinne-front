@@ -15,6 +15,7 @@ import Loja from './pages/Loja/Loja';
 import Horticultores from './pages/Horticultores/Horticultores';
 import VitrineHorticultores from './pages/VitrineHorticultores/VitrineHorticultores';
 import PerfilHorticultor from './pages/PerfilHorticultor/PerfilHorticultor';
+import FiltrosServico from './pages/FiltrosServico/FiltrosServico';
 
 
 
@@ -40,6 +41,7 @@ function App() {
           <Route path='/horticultores' Component={Horticultores} />
           <Route path='/vitrine-horticultores' Component={VitrineHorticultores} />
           <Route path='/perfil-horticultor/:id' Component={PerfilHorticultor} />
+          <Route path='/filtros-servico' Component={FiltrosServico} />
         </Routes>
         
       </main>

@@ -1,0 +1,72 @@
+.banner-filtros-servico {
+    background: url(../../images/banner-filtros.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    padding-bottom: 7%;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white;
+}
+
+.banner-filtros-servico h2 {
+    font-size: var(--title-medium);
+}
+
+.banner-filtros-servico span {
+    color: var(--verde-principal);
+}
+
+.banner-filtros-servico p {
+    margin-top: 3%;
+    font-size: var(--subtitle-medium);
+}
+
+.box-imagens-terreno > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.box-filtros-servico h3 {
+    font-size: var(--subtitle-large);
+}
+
+.box-filtros-servico > div {
+    margin-bottom: 5%;
+}
+
+.box-filtros-servico {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 60%;
+    margin: 5% auto;
+    padding: 3% 5%;
+}
+
+.box-filtros-servico h4 {
+    font-size: var(--subtitle-large);
+}
+
+.box-filtros-servico textarea {
+    background-color: #E5E5E5;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    margin: 20px 0;
+}
+
+.box-filtros-servico button {
+    width: 300px;
+    padding: 2% 0;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--verde-vitrine);
+    color: white;
+    font-size: var(--subtitle-large);
+}
