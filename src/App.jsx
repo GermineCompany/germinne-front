@@ -15,8 +15,8 @@ import Loja from './pages/Loja/Loja';
 import Horticultores from './pages/Horticultores/Horticultores';
 import VitrineHorticultores from './pages/VitrineHorticultores/VitrineHorticultores';
 import Perfil from './pages/Perfil/Perfil';
-
-
+import PerfilHorticultor from './pages/PerfilHorticultor/PerfilHorticultor';
+import FiltrosServico from './pages/FiltrosServico/FiltrosServico';
 
 function App() {
   const path = window.location.pathname;
@@ -40,6 +40,8 @@ function App() {
           <Route path='/horticultores' Component={Horticultores} />
           <Route path='/vitrine-horticultores' Component={VitrineHorticultores} />
           <Route path='/perfil' Component={Perfil} />
+          <Route path='/perfil-horticultor/:id' Component={PerfilHorticultor} />
+          <Route path='/filtros-servico' Component={FiltrosServico} />
         </Routes>
         
       </main>

@@ -1,9 +1,6 @@
-
 .textoVerde {
   color: var(--verde-principal);
 }
-
-
 
 /* ----------------------------------------------------------------------------------------- */
 
@@ -104,8 +101,8 @@
   border-radius: 10px;
 }
 
-.faq-title{
-    font-size: var(--title-small);
+.faq-title {
+  font-size: var(--title-small);
 }
 
 .box-card-perguntas hr {

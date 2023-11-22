@@ -1,0 +1,12 @@
+.checkbox-filtro {
+    margin: 10px 0;
+}
+
+.checkbox-filtro label {
+    font-size: var(--body-medium);
+}
+
+.checkbox-filtro input[type="checkbox"] {
+    margin-right: 10px;
+    padding: 20px;
+}
