@@ -1,6 +1,12 @@
+
+.box-horticultores {
+    display: flex;
+    flex-direction: column;
+}
+
 .box-como-funciona {
     display: flex;
-    margin: auto;
+    margin: 5% auto;
     width: 90%;
 }
 
@@ -8,7 +14,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center; 
+    justify-content: center;
     width: 70%;
 }
 
@@ -20,4 +26,165 @@
 
 .box-texto-como-funciona .card-como-funciona {
     padding-top: 30px;
+}
+
+.box-servicos {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.box-servicos h2 {
+    font-size: var(--title-large);
+}
+
+.box-servicos h2 span{
+    color: var( --verde-principal);
+}
+
+.box-card-servicos-horticultores {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    margin-top: 50px;
+}
+
+.box-card-servicos-horticultores h4 {
+    color: var(--verde-principal);
+}
+
+.box-card-servicos-horticultores article:nth-child(1) {
+    flex-direction: row-reverse;
+}
+
+.box-card-servicos-horticultores article:nth-child(3) {
+    flex-direction: row-reverse;
+}
+
+.banner-horticultor {
+    background: url(../../images/banner-horticultor.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100vw;
+    padding: 2% 4%;
+}
+
+.banner-horticultor > div {
+    padding: 2%;
+    border-radius: 10px;
+    width: 40%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner-horticultor h2 {
+    text-align: left;
+    font-size: var(--subtitle-large);
+}
+
+.banner-horticultor span {
+    color: var(--verde-principal);
+}
+
+.box-inputs-horticultor {
+    margin-top: 5%;
+}
+
+.banner-horticultor select, .banner-horticultor input {
+    margin: 5% 0;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.3);
+    border: none;
+    background-color: #EAE9E9;
+    width: 90%;
+    padding: 5% 50px;
+    font-size: var(--subtitle-medium);
+}
+
+.banner-horticultor option {
+    background-color: var(--verde-principal);
+    color: white;
+}
+
+.banner-horticultor select {
+    border: unset;
+    appearance: none;
+    background-image: url(../../images/arrow-select.svg);
+    background-repeat: no-repeat;
+    background-position: right 2rem top 50%;
+    background-size: 40px auto;
+}
+
+.banner-horticultor button {
+    margin-top: 5%;
+    background-color: var(--verde-escuro);
+    color: white;
+    font-size: var(--subtitle-medium);
+    border: none;
+    padding: 15px 50px;
+    border-radius: 10px;
+    width: 70%;
+    margin: 5% auto;
+}
+
+.banner-horticultor button:hover {
+    cursor: pointer;
+}
+
+
+.box-banner-cadastro-horticultor {
+    background-image: url(../../images/banner-cadastro-horticultor.svg);
+    box-shadow: 900px 0px 150px 0px rgba(0, 0, 0, 0.60) inset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+    height: 55vh;
+    width: 100vw;
+}
+
+
+.banner-cadastro-horticultor {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 100%;
+    color: white;
+    gap: 15px
+}
+
+
+.banner-cadastro-horticultor div  {
+    width: 30%;
+    margin-left: 3%;
+}
+
+.banner-cadastro-horticultor h3 {
+    font-size: var(--title-small);
+    font-weight: var(--bold);
+}
+
+.banner-cadastro-horticultor span {
+    color: var(--font-banner-verde);
+}
+
+.banner-cadastro-horticultor p {
+    font-size: var(--body-small);
+    padding-top: 2%;
+}
+
+.banner-cadastro-horticultor button {
+    margin-top: 5%;
+    background-color: var(--cta-laranja);
+    color: white;
+    font-size: var(--subtitle-small);
+    font-weight: var(--semi-bold);
+    font-family: var(--title-family);
+    border: none;
+    padding: 3% 8%;
+    border-radius: 20px;
+    cursor: pointer;
 }

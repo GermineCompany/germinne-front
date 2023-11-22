@@ -3,12 +3,19 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin: auto;
     gap: 150px;
-    width: 100vw;
+    width: 80vw;
+}
+
+.article-beneficios div:nth-child(1) {
+    width: 40%;
+    height: auto;
 }
 
 .article-beneficios img {
-    width: 500px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .article-beneficios h4 {
@@ -22,5 +29,5 @@
 }
 
 .article-beneficios div:nth-child(2) {
-    width: 500px;
+    width: 40%;
 }
