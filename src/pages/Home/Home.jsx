@@ -13,7 +13,7 @@ function Home() {
   return (
     <div>
       <div className='banner-home'>
-        <h2>O <span>verde</span> no urbano</h2>
+        <h2>O <span>verde</span> no urbano.</h2>
         <p>Semeia a vida, cultive sabor! A <span>Germinne</span> almeja um futuro verde e sustentavel nas cidades.</p>
       </div>
 
@@ -41,7 +41,7 @@ function Home() {
 
         <div className='box-card-germinne'>
           <CardHomeGerminne 
-            title={['Promovemos a sustentabilidade contribuindo para uma cidade mais saudável', <span key={ 1 }>saudável</span>, ' para as áreas urbanas']}
+            title={['Temos a missão de levar o ', <span key={ 1 }>verde</span>, ' para as áreas urbanas']}
             className='first-germinne-card'
           />
 
@@ -65,14 +65,14 @@ function Home() {
         <ArticleBeneficios 
           urlImg={ articleImage1 }
           altImg='Imagem de várias comidas em uma mesa'
-          title='Alimentos mais frescos e nutritivos'
+          title='Alimentos Mais Frescos e Nutritivos'
           text='Os alimentos cultivados localmente são colhidos no auge da maturidade, garantindo maior frescor e preservação dos nutrientes, proporcionando opções mais saudáveis para os consumidores.'
         />
 
         <ArticleBeneficios 
           urlImg={ articleImage2 }
           altImg='Imagem de pessoas trabalhando em uma horta'
-          title='Sustentabilidade ambiental'
+          title='Sustentabilidade Ambiental'
           text='Ao aproveitar espaços urbanos para o cultivo, a agricultura urbana contribui para a redução da pegada de carbono, promove a biodiversidade e cria ambientes mais sustentáveis nas cidades.'
         />
 

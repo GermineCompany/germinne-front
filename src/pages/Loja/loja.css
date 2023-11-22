@@ -1,57 +1,49 @@
-
 .textoVerde {
   color: var(--verde-principal);
 }
 
-
-
 /* ----------------------------------------------------------------------------------------- */
 
 .conheca-gb {
-  margin: 50px auto;
+  margin: 35px auto;
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 120px;
 }
 
 .conheca-gb img {
-  width: 30%;
+  width: 27vw;
+  margin-left: 250px;
 }
 
 .conheca-gb-texto {
-  font-size: var(--body-medium);
   text-align: center;
   width: 30%;
+  margin-right: 250px;
 }
 
 .conheca-gb-texto h2 {
-  margin-bottom: 70px;
-  font-size: var(--title-medium);
+  margin-bottom: 60px;
+  font-size: var(--title-small);
 }
 
 /* ----------------------------------------------------------------------------------------- */
 
 .conteudo-gb {
-  width: 100%;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .conteudo-gb-cards {
   display: flex;
-  justify-content: center;
-  width: 100%;
   flex-wrap: wrap;
-  text-align: center;
 }
 
 .conteudo-gb h3 {
-  font-size: var(--title-small);
+  font-size: var(--subtitle-medium);
 }
 
 /* ----------------------------------------------------------------------------------------- */
@@ -64,16 +56,16 @@
 }
 
 .carousel-pagina-gb-title h2 {
-  font-size: var(--title-medium);
+  font-size: var(--title-small);
 }
 
 .carousel-pagina-gb-title img {
+  height: auto;
   width: 3%;
 }
 
 .carousel-content {
-  width: 100%;
-  margin-top: 50px;
+  margin-top: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,34 +75,37 @@
   cursor: pointer;
 }
 
+
+
 /* ----------------------------------------------------------------------------------------- */
+
+
+.box-card-perguntaS {
+  display: flex;
+  flex-direction: column;
+  background: #fffdfd;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  height: 10%;
+  width: 67%;
+  margin: 50px 0px;
+  border-radius: 10px;
+}
 
 .faq {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-  width: 100%;
-}
-
-.box-card-perguntas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #fffdfd;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-  width: 67%;
-  margin: 50px 0px;
-  border-radius: 10px;
 }
 
 .faq-title{
     font-size: var(--title-small);
+  
 }
 
-.box-card-perguntas hr {
+hr {
   display: flex;
   justify-content: center;
-  width: 90%;
-  margin: 5px auto;
+  width: 85%;
+  margin: 0 80px;
 }

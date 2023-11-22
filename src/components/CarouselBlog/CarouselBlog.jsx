@@ -1,6 +1,6 @@
 import React from 'react';
 import imagem from '../../images/banner-blog.svg';
-import imagem2 from '../../images/homebanner.png';
+import imagem2 from '../../images/banner-home.png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

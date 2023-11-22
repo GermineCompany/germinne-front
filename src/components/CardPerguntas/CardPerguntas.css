@@ -1,20 +1,20 @@
 .cardPerguntas {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
-  width: 95%;
+  height: auto;
+  width: 100%;
   background-color: white;
+  margin: 5px auto;
 }
-
 .cardPerguntas img {
-  width: 2%;
-  margin: 0px 40px;
+  margin: 0px 75px;
 }
-
 
 .cardPerguntasText {
-  width: 80%;
-  margin: 10px 0px;
+  margin: 15px 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 .cardPerguntas h3 {
@@ -25,5 +25,6 @@
 
 .cardPerguntas p {
   margin-top: 15px;
+  width: 85%;
   font-size: var(--body-small);
 }

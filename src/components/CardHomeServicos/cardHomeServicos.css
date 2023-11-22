@@ -4,7 +4,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 15px;
     background-size: cover;
     background-position: center;
     transition: 0.2s;
@@ -24,17 +24,14 @@
 
 .first-service-card {
     background: url(../../images/card-home-1.png) no-repeat;
-    background-size: cover;
 }
 
 .second-service-card {
     background: url(../../images/card-home-2.png) no-repeat;
-    background-size: cover;
 }
 
 .third-service-card {
     background: url(../../images/card-home-3.png) no-repeat;
-    background-size: cover;
 }
 
 .card-home-servicos h2 {

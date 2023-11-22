@@ -1,15 +1,14 @@
 .banner-home {
-    background: url(../../images/homebanner.png) no-repeat;
-    background-size: cover ;
+    background: url(../../images/banner-home.png) no-repeat;
+    background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 600px;
     width: 100vw;
+    padding: 0 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
-    padding: 150px 0px 0px 50px;
-    box-shadow: 700px 0px 150px 0px rgba(0, 0, 0, 0.70) inset;
 }
 
 .banner-home h2 {
@@ -23,12 +22,12 @@
 }
 
 .banner-home p {
-    width: 40%;
+    width: 35%;
     font-size: var(--subtitle-medium);
 }
 
 .box-card-home {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
