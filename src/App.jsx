@@ -14,6 +14,7 @@ import Artigo from './pages/Artigo/Artigo';
 import Loja from './pages/Loja/Loja';
 import Horticultores from './pages/Horticultores/Horticultores';
 import VitrineHorticultores from './pages/VitrineHorticultores/VitrineHorticultores';
+import Perfil from './pages/Perfil/Perfil';
 
 
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/loja' Component={Loja} />
           <Route path='/horticultores' Component={Horticultores} />
           <Route path='/vitrine-horticultores' Component={VitrineHorticultores} />
+          <Route path='/perfil' Component={Perfil} />
         </Routes>
         
       </main>

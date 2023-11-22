@@ -1,0 +1,35 @@
+.menu-lateral-perfil {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    width: max-content;
+    padding: 0 30px;
+}
+
+.menu-lateral-perfil h3 {
+    font-size: var(--title-small);
+    margin-bottom: 25%;
+}
+
+.menu-lateral-perfil span {
+    color: var(--verde-principal);
+}
+
+.menu-lateral-perfil li {
+    font-size: var(--body-medium);
+    font-weight: var(--regular-bold);
+    display: flex;
+    margin: 20% 0;
+}
+
+.menu-lateral-perfil li:last-child {
+    color: red;
+}
+
+.menu-lateral-perfil li:hover {
+    cursor: pointer;
+}
+
+.menu-lateral-perfil li svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
