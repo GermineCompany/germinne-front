@@ -60,54 +60,6 @@ function Blog() {
             );
           })
         }
-        {/* <CardBlog
-          srcImg={artigo}
-          altImg="Foto do telhado verde"
-          title="O Telhado Verde do Shopping Eldorado: Um Refúgio Natural"
-          resume="Este artigo revela como o Shopping Eldorado se transforma em um refúgio verde e relaxante no meio da cidade, proporcionando uma experiência única para quem busca tranquilidade em São Paulo."
-          category="Cultivo"
-          idArticle={ 2 }
-        />
-
-        <CardBlog
-          srcImg={artigo}
-          altImg="Foto do telhado verde"
-          title="O Telhado Verde do Shopping Eldorado: Um Refúgio Natural"
-          resume="Este artigo revela como o Shopping Eldorado se transforma em um refúgio verde e relaxante no meio da cidade, proporcionando uma experiência única para quem busca tranquilidade em São Paulo."
-          category="Cultivo"
-        />
-
-        <CardBlog
-          srcImg={artigo}
-          altImg="Foto do telhado verde"
-          title="O Telhado Verde do Shopping Eldorado: Um Refúgio Natural"
-          resume="Este artigo revela como o Shopping Eldorado se transforma em um refúgio verde e relaxante no meio da cidade, proporcionando uma experiência única para quem busca tranquilidade em São Paulo."
-          category="Cultivo"
-        />
-
-        <CardBlog
-          srcImg={artigo}
-          altImg="Foto do telhado verde"
-          title="O Telhado Verde do Shopping Eldorado: Um Refúgio Natural"
-          resume="Este artigo revela como o Shopping Eldorado se transforma em um refúgio verde e relaxante no meio da cidade, proporcionando uma experiência única para quem busca tranquilidade em São Paulo."
-          category="Cultivo"
-        />
-
-        <CardBlog
-          srcImg={artigo}
-          altImg="Foto do telhado verde"
-          title="O Telhado Verde do Shopping Eldorado: Um Refúgio Natural"
-          resume="Este artigo revela como o Shopping Eldorado se transforma em um refúgio verde e relaxante no meio da cidade, proporcionando uma experiência única para quem busca tranquilidade em São Paulo."
-          category="Cultivo"
-        />
-
-        <CardBlog
-          srcImg={artigo}
-          altImg="Foto do telhado verde"
-          title="O Telhado Verde do Shopping Eldorado: Um Refúgio Natural"
-          resume="Este artigo revela como o Shopping Eldorado se transforma em um refúgio verde e relaxante no meio da cidade, proporcionando uma experiência única para quem busca tranquilidade em São Paulo."
-          category="Cultivo"
-        /> */}
       </div>
 
       <hr />

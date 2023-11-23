@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './carouselPaginaGB.css';
+import 'animate.css';
 
 function CarouselPaginaGB({srcImg, altImg, title, text}) {
   return (
-    <div className='carousel-pagina-gb-conteudo'>
+    <div className='carousel-pagina-gb-conteudo animate__animated animate__bounce'>
       <img src={srcImg} alt={altImg} />
       <div className='caroulsel-pagina-gb-text'>
         <h2>{title}</h2>
