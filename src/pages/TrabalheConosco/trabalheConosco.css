@@ -1,0 +1,32 @@
+.banner-trabalhe-conosco {
+  background: url(../../images/banner-trabalhe-conosco.svg), no-repeat;
+  background-size: cover;
+  box-shadow: 950px 0px 100px 0px rgba(0, 0, 0, 0.5) inset;
+  width: 100%;
+  height: 65vh;
+  color: white;
+}
+
+.banner-trabalhe-conosco > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+.botoes-trabalhe-conosco {
+  display: flex;
+  flex-direction: row;
+  justify-content: ;
+}
+
+.banner-trabalhe-conosco button {
+  margin-top: 5%;
+  background-color: var(--verde-escuro);
+  color: white;
+  font-size: var(--subtitle-medium);
+  border: none;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
