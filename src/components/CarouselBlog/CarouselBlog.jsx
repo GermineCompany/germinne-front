@@ -17,18 +17,21 @@ function CarouselBlog() {
         modules={[Autoplay, Pagination, Navigation, EffectFade]}
         className="mySwiper carousel-blog"
         autoplay={{
-          delay: 5000,
+          delay: 3000,
           disableOnInteraction: true,
         }}
         pagination={true}
         loop={true}
       >
         <SwiperSlide>
-          <div className='bannerpost1'>Projeto Telhado Verde no shopping Eldorado destina 100% da sua produção aos seus funcionários</div>
+          <div className='box-slide-imagem-1 slide-carousel'>
+            <p>Como hortas urbanas reduzem as ilhas térmicas nas cidades</p>
+          </div>
         </SwiperSlide>
-
         <SwiperSlide>
-          <div  className='bannerpost2'>Este artigo revela como o Shopping Eldorado se transforma em um refúgio verde e relaxante no meio da cidade, proporcionando uma experiência única para quem busca tranquilidade em São Paulo.</div>
+          <div className='box-slide-imagem-2 slide-carousel'>
+            <p>Transformando cidades com hortas urbanas sustentáveis</p>
+          </div>
         </SwiperSlide>
       </Swiper>
     </>

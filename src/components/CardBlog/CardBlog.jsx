@@ -17,7 +17,7 @@ function CardBlog({ srcImg, altImg, title, resume, category, idArticle }) {
       <div>
         <h3 onClick={ handleDirect }>{ title }</h3>
         <p>{ resume }</p>
-        <div>
+        <div className='categoria-ler-mais'>
           <a href={ `/artigo/${idArticle}` }>Ler mais...</a>
           <p className='category'>{ category }</p>
         </div>

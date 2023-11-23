@@ -54,6 +54,7 @@ body {
   --body-large: 1.25rem;
   --body-medium: 1.125rem;
   --body-small: 1rem;
+  --body-extra-small: .85rem;
 
   /* FONT-COLORS */
   --title-color: #1e1e1e;

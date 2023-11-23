@@ -7,7 +7,7 @@
 .box-como-funciona {
     display: flex;
     margin: 5% auto;
-    width: 70%;
+    width: 100%;
 }
 
 .como-funciona-mainImg {
@@ -153,7 +153,7 @@
 
 
 .box-banner-cadastro-horticultor {
-    background-image: url(../../images/banner-cadastro-horticultor.png);
+    background-image: url(../../images/background-horticultores.png);
     box-shadow: 900px 0px 150px 0px rgba(0, 0, 0, 0.60) inset;
     background-repeat: no-repeat;
     background-size: cover;

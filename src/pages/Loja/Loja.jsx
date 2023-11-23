@@ -20,7 +20,6 @@ import DescricaoProduto from '../../components/DescricaoProduto/DescricaoProduto
 import { useState } from 'react';
 
 
-
 function Loja() {
   const contentCarousel = [
     {
