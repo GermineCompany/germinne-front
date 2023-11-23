@@ -1,3 +1,5 @@
+
+
 .banner-home {
     background: url(../../images/homebanner.png) no-repeat;
     background-size: cover ;
@@ -37,12 +39,12 @@
     background-color: var(--body-article-color);
     padding-top:  50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .box-card-germinne {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 150px;
 }
 
@@ -62,7 +64,7 @@
 }
 
 .box-beneficios-agricultura h2 {
-    font-size: var(--title-large);
+    font-size: var(--title-medium);
     text-align: center;
 }
 
@@ -75,13 +77,13 @@
 }
 
 .box-avaliacoes {
-    background-color: var(--verde-avaliacoes);
     padding: 5% 0;
 }
 
 .box-avaliacoes div {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .box-avaliacoes h3 {

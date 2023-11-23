@@ -1,20 +1,19 @@
+.card-home-servicos {
+    text-align: center;
+    width: 30%;
+}
+
+
 .card-home-servicos div {
-    width: 475px;
-    height: 300px;
+    width: 100%;
+    height: 230px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     border-radius: 10px;
     background-size: cover;
     background-position: center;
-    transition: 0.2s;
-}
-
-.card-home-servicos div:hover {
-    width: 485px;
-    height: 310px;
-    transition: 0.2s;
-}
+} 
 
 .card-home-servicos:hover {
     cursor: pointer;
@@ -38,11 +37,11 @@
 }
 
 .card-home-servicos h2 {
-    font-size: var(--body-large);
-    width: 60%;
+    font-size: var(--body-medium);
+    width: 90%;
     text-align: center;
     color: white;
-    font-weight: var(--regular);
+    font-weight: var(--regular-bold);
     margin-bottom: 20px;
 }
 
@@ -53,7 +52,7 @@
 }
 
 .card-home-servicos h3 {
-    font-size: var(--subtitle-medium);
+    font-size: var(--body-medium);
     margin-top: 20px;
     text-transform: uppercase;
 }

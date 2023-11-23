@@ -16,6 +16,7 @@ function Home() {
         <p>Semeia a vida, cultive sabor! A <span>Germinne</span> almeja um futuro verde e sustentavel nas cidades.</p>
       </div>
 
+<div className='main-container-limitador'>
       <article className='box-card-home'>
         <div className='box-card-servicos'>
           <CardHomeServicos 
@@ -84,7 +85,7 @@ function Home() {
       </section>
 
       <section className='box-avaliacoes'>
-        <h3><span>Avaliações</span> dos nossos <span>Clientes</span></h3>
+        <h3><span>Avaliações</span> dos nossos <span>clientes</span></h3>
 
         <div>
           <CardAvaliacao 
@@ -97,18 +98,19 @@ function Home() {
           <CardAvaliacao 
             srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
             altImg='Foto do Gabriel Augusto'
-            description='“É otimo, pouco trabalho, quase nenhum.”'
+            description='“Comprei a GerminneBox e foi otimo, pouco trabalho, quase nenhum.”'
             name='Gabriel Silva'
           />
 
           <CardAvaliacao 
             srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
             altImg='Foto do Gabriel Augusto'
-            description='"Me tornei pai de planta com a Germine Box"'
+            description='"Encontrei um profssional na vitrine da Germinne e "'
             name='Gabriel Lindo Augusto'
           />
         </div>
       </section>
+      </div>
     </div>
   );
 }
