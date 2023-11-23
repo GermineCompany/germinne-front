@@ -1,7 +1,8 @@
 .imagem-pequena-gb {
     background-color: #F8F8F8;
-    border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 5px;
     border-radius: 10px;
     margin: 0 10px 20% 0;
+    width: 100%;
+    object-fit: cover;
 }
