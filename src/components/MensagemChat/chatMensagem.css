@@ -1,0 +1,27 @@
+.chat-mensagem {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.box-foto {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.chat-mensagem img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.box-mensagem {
+    margin-left: 30px;
+    max-width: 60%;
+    border-radius: 0px 20px 20px 20px;
+    padding: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: #E5FFF1;
+    width: max-content;
+    height: max-content;
+}

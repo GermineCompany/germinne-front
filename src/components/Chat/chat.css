@@ -1,0 +1,55 @@
+.component-chat h2 {
+    font-size: var(--title-small);
+    text-align: center;
+}
+
+.box-mensagens {
+    margin: 4% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-mensagens div:nth-child(odd) {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
+.box-mensagens div:nth-child(even) {
+    align-self: flex-start;
+}
+
+.box-mensagens div:nth-child(odd) img {
+    margin-left: 30px;
+}
+
+.box-input-chat {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.box-input-chat input {
+    border: none;
+    border-radius: 10px;
+    background-color: #F3F3F3;
+    padding: 2% 10%;
+    font-size: var(--body-small);
+    width: 100%;
+}
+
+.box-input-chat div {
+    width: 70%;
+}
+
+.box-input-chat button {
+    width: 200px;
+    border: none;
+    background-color: var(--verde-principal);
+    color: white;
+    font-size: var(--body-large);
+    font-weight: var(--regular-bold);
+    border-radius: 10px;
+}
