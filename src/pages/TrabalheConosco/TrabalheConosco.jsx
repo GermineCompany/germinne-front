@@ -7,6 +7,7 @@ import BeneficiosParaVoce from "../../components/BeneficiosParaVoce/BeneficiosPa
 import img1 from "../../images/img-beneficio1.svg";
 import img2 from "../../images/imagemBeneficio2.svg";
 import img3 from "../../images/imagemBeneficio3.svg";
+import PassosTrabalheConosco from "../../components/PassosTrabalheConosco/PassosTrabalheConosco";
 
 function TrabalheConosco() {
   return (
@@ -22,7 +23,9 @@ function TrabalheConosco() {
           </div>
         </div>
       </div>
-      <div className="beneficios"><h1>Benefícios para você</h1></div>
+      <div className="beneficios">
+        <h1>Benefícios para você</h1>
+      </div>
       <div className="ElementoComponente">
         <BeneficiosParaVoce
           urlImg={img1}
@@ -58,6 +61,8 @@ function TrabalheConosco() {
           </a>
         </div>
       </div>
+
+      <PassosTrabalheConosco titulo={"Cadastre-se na plataforma"} />
     </div>
   );
 }
