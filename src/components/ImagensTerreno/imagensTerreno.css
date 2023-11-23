@@ -1,0 +1,17 @@
+.imagens-terreno {
+    width: 15%;
+    border: 1px solid #E5E5E5;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--background-cards);
+    margin: 10px;
+}
+
+.imagens-terreno svg {
+    width: 100%;
+    height: 50px;
+    color: #E5E5E5;
+}

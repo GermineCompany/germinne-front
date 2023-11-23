@@ -1,9 +1,6 @@
-
 .textoVerde {
   color: var(--verde-principal);
 }
-
-
 
 /* ----------------------------------------------------------------------------------------- */
 
@@ -106,7 +103,7 @@
 }
 
 .faq-title{
-  margin-top: 20px;
+    margin-top: 20px;
     font-size: var(--title-small);
 }
 
