@@ -1,0 +1,39 @@
+
+.beneficios-para-voce{
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25); 
+    padding: 2%;
+    text-align: left;   
+    gap: 1%;
+    margin: 3%;
+    border-radius:2% ;
+}
+
+.beneficios-para-voce > div {
+    height: 15%;
+}
+
+.beneficios-para-voce h2{
+    font-size: var(--subtitle-small);
+    font-weight: var(--semi-bold);
+    width: 100%;
+    margin-bottom: 6%;
+    margin-top: 3%;
+}
+.beneficios-para-voce p{
+    font-size: var(--body-small);
+    width: 70%;
+}
+
+    .beneficios-para-voce img{
+        
+        margin-top: -20%;
+        display: flex;
+        align-items: left;
+        height: 200%;
+    }

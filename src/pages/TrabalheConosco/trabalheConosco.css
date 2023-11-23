@@ -30,3 +30,9 @@
   padding: 10px 50px;
   border-radius: 10px;
 }
+
+.ElementoComponente{
+  display: flex;
+  justify-content: center;
+  gap:1%;
+}
