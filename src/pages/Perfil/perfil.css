@@ -1,6 +1,7 @@
 .menu-lateral-perfil {
     border-right: 1px solid rgba(0, 0, 0, 0.2);
-    width: max-content;
+    width: 25%;
+    /* width: max-content; */
     padding: 0 30px;
 }
 
@@ -39,8 +40,8 @@
 }
 
 .component-renderizado {
-    width: 100%;
-    margin: 2%;
+    width: 70%;
+    margin: 2% auto;
     border-radius: 10px;
     padding: 3% 2%;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);

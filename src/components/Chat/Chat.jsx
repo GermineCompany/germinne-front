@@ -17,7 +17,7 @@ function Chat() {
       <div className='box-mensagens'>
         <ChatMensagem 
           srcImg={ imagemHorticultor } 
-          textChat='oi hirtucyktir faz yna hirta ora nun aqyu en casa oir favirzunhi'
+          textChat='Olá, preciso de orçamento para fazer uma horta com as seguinte informações: Tamanho aproximado: pequeno (Até 50m); Local: casa; Prazo: próximos 7 dias; Detalhes: preciso de uma horta para cultir cebolinha, salsa, coentro, tomate cereja e alecrim.'
         />
 
         <ChatMensagem 
