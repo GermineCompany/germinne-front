@@ -1,83 +1,80 @@
 footer {
-    font-family: 'Montserrat', sans-serif;
-    height: 378px;
-    background-color: var(--verde-principal);
-    display: flex;
-    align-items: center;
-    color: white;
+  height: 380px;
+  width: 100vw;
+  background-color: var(--verde-escuro);
+  color: white;
 }
 
 .footer-box {
-    display: flex;
-}
-
-footer p {
-    margin: 15px 0;
-    margin-right: 20px;
-    font-size: 20px;
-}
-
-.LogoGerminne{
-    height:140px
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .footer-logo {
-    padding: 70px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    margin-left:  35px;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 25%;
+  margin-left: 30%;
+}
+
+.footer-logo img {
+  height: 50%;
+  margin-bottom: 10px;
 }
 
 .footer-logo h2 {
-    font-weight: 400;
-    font-size: 35px;
-    color: #FFF;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px; 
-    letter-spacing: 0.5px;
+  font-weight: var(--bold);
+  font-size: var(--title-small);
+  color: #fff;
+}
+
+.footer-box div:nth-child(1) {
+  display: flex;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a {
+  font-size: var(--subtitle-medium);
+  font-weight: var(--regular-bold);
+  text-decoration: none;
+  color: #fff;
 }
 
 .redes {
-    height: 200px;
-    border-left : 1px solid #0C9354;
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    margin: 90px 20px;
-    margin-top: 90px;
-    padding-left: 15px;
+  border-left: 1px solid var(--verde-principal);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7%;
+  padding-left: 5%;
 }
 
 .footer-icons {
-    color: white;
-    width: 60px;
-    height: 40px;
-    margin-right: 5px;
+  color: white;
+  width: 60px;
+  height: 40px;
 }
 
-.Contatos {
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 400px;
+.footer-box div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  margin-right: 20%;
+  white-space: nowrap;
+  gap: 20%;
 }
 
-.Site {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 220px;
-}
-
-.ancoras {
-    display: flex;
-    text-decoration: none;
-    color: white;
+.footer-box div:nth-child(2) ul {
+  text-decoration: none;
+  width: 40%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 }
