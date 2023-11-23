@@ -83,3 +83,11 @@
   justify-content: center;
   gap: 1%;
 }
+
+.beneficios{
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  font-size: var(--subtitle-small);
+
+}

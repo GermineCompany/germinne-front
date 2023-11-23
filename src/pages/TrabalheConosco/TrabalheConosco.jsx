@@ -22,7 +22,7 @@ function TrabalheConosco() {
           </div>
         </div>
       </div>
-
+      <div className="beneficios"><h1>Benefícios para você</h1></div>
       <div className="ElementoComponente">
         <BeneficiosParaVoce
           urlImg={img1}
