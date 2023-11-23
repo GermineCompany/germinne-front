@@ -1,0 +1,93 @@
+.banner-trabalhe-conosco {
+  background: url(../../images/banner-trabalhe-conosco.svg), no-repeat;
+  background-size: cover;
+  box-shadow: 950px 0px 100px 0px rgba(0, 0, 0, 0.5) inset;
+  width: 100%;
+  height: 65vh;
+  color: white;
+}
+
+.banner-trabalhe-conosco > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+  padding-left: 5%;
+}
+
+.banner-trabalhe-conosco h1 {
+  font-size: var(--title-medium);
+}
+
+.botoes-trabalhe-conosco {
+  display: flex;
+  flex-direction: row;
+  gap: 7%;
+}
+
+.banner-trabalhe-conosco button {
+  margin-top: 7%;
+  background-color: var(--verde-escuro);
+  color: white;
+  font-size: var(--subtitle-small);
+  font-weight: var(--semi-bold);
+  border: none;
+  padding: 8px 50px;
+  border-radius: 10px;
+}
+
+.custoBeneficio {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  gap: 10%;
+  margin-top: 8%;
+}
+
+.custoBeneficio img {
+  width: 40%;
+  border-radius: 2%;
+}
+
+.custoBeneficio div {
+  width: 60%;
+  height: 100%;
+}
+
+.custoBeneficio h2 {
+  font-size: var(--title-large);
+}
+
+.custoBeneficio p {
+  font-size: var(--body-large);
+  margin-top: 6%;
+}
+
+.custoBeneficio button {
+  margin-top: 5%;
+  background-color: var(--cta-laranja);
+  color: white;
+  font-size: var(--subtitle-small);
+  font-weight: var(--semi-bold);
+  border: none;
+  padding: 15px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.ElementoComponente {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+}
+
+.beneficios{
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  font-size: var(--subtitle-small);
+
+}
