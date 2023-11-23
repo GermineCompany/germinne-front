@@ -77,3 +77,9 @@
   border-radius: 10px;
   cursor: pointer;
 }
+
+.ElementoComponente {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+}
