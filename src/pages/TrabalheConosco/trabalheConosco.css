@@ -12,21 +12,68 @@
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  width: 50%;
+  width: 60%;
+  padding-left: 5%;
+}
+
+.banner-trabalhe-conosco h1 {
+  font-size: var(--title-medium);
 }
 
 .botoes-trabalhe-conosco {
   display: flex;
   flex-direction: row;
-  justify-content: ;
+  gap: 7%;
 }
 
 .banner-trabalhe-conosco button {
-  margin-top: 5%;
+  margin-top: 7%;
   background-color: var(--verde-escuro);
   color: white;
-  font-size: var(--subtitle-medium);
+  font-size: var(--subtitle-small);
+  font-weight: var(--semi-bold);
   border: none;
-  padding: 10px 50px;
+  padding: 8px 50px;
   border-radius: 10px;
+}
+
+.custoBeneficio {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  gap: 10%;
+  margin-top: 8%;
+}
+
+.custoBeneficio img {
+  width: 40%;
+  border-radius: 2%;
+}
+
+.custoBeneficio div {
+  width: 60%;
+  height: 100%;
+}
+
+.custoBeneficio h2 {
+  font-size: var(--title-large);
+}
+
+.custoBeneficio p {
+  font-size: var(--body-large);
+  margin-top: 6%;
+}
+
+.custoBeneficio button {
+  margin-top: 5%;
+  background-color: var(--cta-laranja);
+  color: white;
+  font-size: var(--subtitle-small);
+  font-weight: var(--semi-bold);
+  border: none;
+  padding: 15px 40px;
+  border-radius: 10px;
+  cursor: pointer;
 }
