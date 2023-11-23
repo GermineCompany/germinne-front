@@ -1,7 +1,4 @@
 import React from 'react';
-import imagem from '../../images/banner-blog.svg';
-import imagem2 from '../../images/homebanner.png';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -20,23 +17,21 @@ function CarouselBlog() {
         modules={[Autoplay, Pagination, Navigation, EffectFade]}
         className="mySwiper carousel-blog"
         autoplay={{
-          delay: 5000,
+          delay: 3000,
           disableOnInteraction: true,
         }}
         pagination={true}
         loop={true}
       >
         <SwiperSlide>
-          <img src={ imagem } alt="Imagem do banner 1" />
+          <div className='box-slide-imagem-1 slide-carousel'>
+            <p>Como hortas urbanas reduzem as ilhas térmicas nas cidades</p>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={ imagem2 } alt="Imagem do banner 1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={ imagem } alt="Imagem do banner 1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={ imagem2 } alt="Imagem do banner 1" />
+          <div className='box-slide-imagem-2 slide-carousel'>
+            <p>Transformando cidades com hortas urbanas sustentáveis</p>
+          </div>
         </SwiperSlide>
       </Swiper>
     </>

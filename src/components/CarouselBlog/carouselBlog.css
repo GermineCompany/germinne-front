@@ -1,12 +1,65 @@
   .carousel-blog {
-    width: 95%;
+    width: 100%;
     margin: 30px auto;
     height: 60vh;
     border-radius: 20px;
-  }
+}
+
+.box-slide-imagem-1, .box-slide-imagem-2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: 0px -160px 80px 0px rgba(0, 0, 0, 0.50) inset;
+  padding-bottom: 5%;
+}
+
+.box-slide-imagem-1 {
+    background: url(../../images/carousel-blog-1.png) no-repeat;
+    background-size: cover ;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.box-slide-imagem-2 {
+  background: url(../../images/carousel-blog-2.png) no-repeat;
+  background-size: cover ;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.slide-carousel p {
+  color: white;
+  font-size: var(--title-small);
+  font-weight: var(--semi-bold);
+}
+
+.slide-carousel
 
 .aws-sld {
   --open-animation-perspective: 600px;
   --open-animation-angle: 8deg;
   --open-animation-enter-delay: 85ms;
+}
+
+.bannerpost1 {
+  box-shadow: 0px -180p x 80px 0px rgba(0, 0, 0, 0.70) inset;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/postbanner1.png);
+  background-size: cover;
+  color: white;
+  font-size: var(--title-small);
+  text-align: center;
+}
+
+.bannerpost2{
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/homebanner.png);
 }

@@ -1,35 +1,35 @@
 import React from 'react';
 import ImagemPequenaGB from '../ImagemPequenaGB/ImagemPequenaGB';
-import imagemPequena from '../../images/miniatura-gb.png';
-import imagemGrande from '../../images/gb-grande.png';
+import imgsecundaria1 from '../../images/gb-imagem-secundaria1.png';
+import imgsecundaria2 from '../../images/gb-imagem-secundaria2.png';
+import imgsecundaria4 from '../../images/gb-imagem-secundaria4.png';
+import imgprincipal from '../../images/gb-imagem-principal.png';
 import './descricaoProduto.css';
 import BotaoSelecaoGB from '../BotaoSelecaoGB/BotaoSelecaoGB';
 
 function DescricaoProduto() {
   return (
+    
+    
     <div className='box-descricao-produto'>
       <div className='descricao-imagens'>
-        <div>
+        <div className='box-imagens-secundarias'>
           <ImagemPequenaGB 
-            srcImg={ imagemPequena }
+            srcImg={ imgsecundaria1 }
             altImg='Imagem ilustrativa da Germinne Box'
           />
           <ImagemPequenaGB 
-            srcImg={ imagemPequena }
+            srcImg={ imgsecundaria2 }
             altImg='Imagem ilustrativa da Germinne Box'
           />
           <ImagemPequenaGB 
-            srcImg={ imagemPequena }
-            altImg='Imagem ilustrativa da Germinne Box'
-          />
-          <ImagemPequenaGB 
-            srcImg={ imagemPequena }
+            srcImg={ imgsecundaria4 }
             altImg='Imagem ilustrativa da Germinne Box'
           />
         </div>
 
         <div className='box-imagem-descricao'>
-          <img src={ imagemGrande } alt="Imagem ilustrativa da Germinne Box" />
+          <img src={ imgprincipal } alt="Imagem ilustrativa da Germinne Box" />
           <p>Adquira nossa Germinne Box, nosso kit contem todo o nescessario para proporcionar a você a facilidade de ter o seu próprio jardim verde, saudável e vibrante com alimentos frescos e orgânicos.</p>
         </div>
       </div>

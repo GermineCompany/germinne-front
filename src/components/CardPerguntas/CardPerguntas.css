@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 95%;
+  width: 100%;
   background-color: white;
 }
 
@@ -14,7 +14,7 @@
 
 .cardPerguntasText {
   width: 80%;
-  margin: 10px 0px;
+  margin: 15px 0px;
 }
 
 .cardPerguntas h3 {

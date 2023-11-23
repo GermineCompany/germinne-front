@@ -1,37 +1,41 @@
-import React from "react";
-import CardConteudoGB from "../../components/CardConteudoGB/CardConteudoGB";
-import vaso from "../../images/gb-conteudo-vaso.svg";
-import sementes from "../../images/gb-conteudo-sementes.svg";
-import substrato from "../../images/gb-conteudo-substrato.svg";
-import qrcode from "../../images/gb-conteudo-qrcode.svg";
-import conhecaGbImagem from "../../images/conheca-gb.png";
-import "./loja.css";
-import CarouselPaginaGB from "../../components/CarouselPaginaGB/CarouselPaginaGB";
-import carouselGbImagem1 from "../../images/CarouselGB1.png";
-import doublearrow from "../../images/doublearrow.svg";
-import CardPerguntas from "../../components/CardPerguntas/CardPerguntas";
-import elipsedarrow from "../../images/elipsed-arrow.svg";
-import "./loja.css";
-import DescricaoProduto from "../../components/DescricaoProduto/DescricaoProduto";
-import { useState } from "react";
+import React from 'react';
+import CardConteudoGB from '../../components/CardConteudoGB/CardConteudoGB';
+import vaso from '../../images/gb-conteudo-vaso.svg';
+import sementes from '../../images/gb-conteudo-sementes.svg';
+import substrato from '../../images/gb-conteudo-substrato.svg';
+import qrcode from '../../images/gb-conteudo-qrcode.svg';
+import conhecaGbImagem from '../../images/conheca-gb.png';
+import './loja.css';
+import CarouselPaginaGB from '../../components/CarouselPaginaGB/CarouselPaginaGB';
+import carouselgb1 from '../../images/carouselgb1.png';
+import carouselgb2 from '../../images/carouselgb2.png';
+import carouselgb3 from '../../images/carouselgb3.png';
+
+
+import doublearrow from '../../images/doublearrow.svg';
+import CardPerguntas from '../../components/CardPerguntas/CardPerguntas';
+import elipsedarrow from '../../images/elipsed-arrow.svg';
+import './loja.css';
+import DescricaoProduto from '../../components/DescricaoProduto/DescricaoProduto';
+import { useState } from 'react';
 
 function Loja() {
   const contentCarousel = [
     {
-      img: carouselGbImagem1,
-      title: "Alimentação saudável e saborosa",
-      text: "Pesquisas indicam que ter plantas em casa pode melhorar seu bem-estar emocional e diminuir o estresse. Estar perto de plantas e se conectar com a natureza ajuda a relaxar, trazendo uma sensação de calma. Fora isso, cuidar das plantinhas é uma atividade terapêutica e recompensadora, proporcionando um descanso relaxante da correria do dia a dia.",
+      img: carouselgb1,
+      title: 'Alimentação saudável e saborosa',
+      text: 'Pesquisas indicam que ter plantas em casa pode melhorar seu bem-estar emocional e diminuir o estresse. Estar perto de plantas e se conectar com a natureza ajuda a relaxar, trazendo uma sensação de calma. Fora isso, cuidar das plantinhas é uma atividade terapêutica e recompensadora, proporcionando um descanso relaxante da correria do dia a dia.'
     },
     {
-      img: carouselGbImagem1,
-      title: "Bem-estar e terapia",
-      text: "Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.",
+      img: carouselgb2,
+      title: 'Bem-estar e terapia',
+      text: 'Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.'
     },
     {
-      img: carouselGbImagem1,
-      title: "Sua casa mais verde e bonita",
-      text: "Plantinhas fazem maravilhas no visual de qualquer ambiente, trazendo beleza e vida. Com suas cores animadas, texturas e formas diferentes, elas dão um up em qualquer lugar. Se você cuidar direitinho delas, a casa vira um cantinho super aconchegante e agradável.",
-    },
+      img: carouselgb3,
+      title: 'Sua casa mais verde e bonita',
+      text: 'Plantinhas fazem maravilhas no visual de qualquer ambiente, trazendo beleza e vida. Com suas cores animadas, texturas e formas diferentes, elas dão um up em qualquer lugar. Se você cuidar direitinho delas, a casa vira um cantinho super aconchegante e agradável.'
+    }
   ];
 
   const [carouselPosition, setCarouselPosition] = useState(0);
@@ -48,7 +52,8 @@ function Loja() {
   };
 
   return (
-    <div className="pagina-loja">
+    <div className='main-container-limitador'>
+    <div className='pagina-loja'>
       <DescricaoProduto />
 
       <div className="conheca-gb">
@@ -99,13 +104,13 @@ function Loja() {
         <h2>Razões para ter sua própria hortinha em casa</h2>
         <img src={doublearrow} alt="seta dupla" />
       </div>
-
-      <div className="carousel-content">
-        <CarouselPaginaGB
-          srcImg={carouselProps.img}
-          altImg="Imagem ilustrativa do carousel"
-          title={carouselProps.title}
-          text={carouselProps.text}
+     
+      <div className='carousel-content'>
+        <CarouselPaginaGB 
+          srcImg={ carouselProps.img } 
+          altImg='Imagem ilustrativa do carousel'
+          title={ carouselProps.title }
+          text={ carouselProps.text }
         />
         <div>
           <img
@@ -136,6 +141,7 @@ function Loja() {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 }

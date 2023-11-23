@@ -1,6 +1,6 @@
 .card-conteudo-gb {
   background-color: #ffffff;
-  width: 15%;
+  width: 17%;
   height: 120px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 50px 20px;
 }
 
 .card-conteudo-gb hr {
@@ -18,7 +18,7 @@
 }
 
 .card-conteudo-gb img {
-  width: 15%;
+  width: 20%;
   height: auto;
   margin-bottom: 5px;
 }

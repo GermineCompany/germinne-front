@@ -59,25 +59,19 @@
 }
 
 .box-login button:hover {
-    border: 1.5px solid var(--verde-principal);
+    border: 1px solid var(--verde-principal);
     color: var(--verde-principal);
     background-color: white;
     cursor: pointer;
     transition: .5s;
 }
 
-.box-login img {
-  margin-left: 15px;
-  width: 50px;
-  margin-right: 15px;
-  padding: 10px 40px;
+.box-login img {  
   font-size: var(--subtitle-small);
   font-weight: var(--semi-bold);
-  border-radius: 10px;
-  border: none;
-  background-color: var(--verde-escuro);
-}
+ 
 
+}
 
 .box-login button a {
   color: white;
@@ -86,7 +80,7 @@
 /* ---------------------------------------- */
 
 .header-desktop nav {
-  width: 90%;
+  width: 100%;
   padding: 15px 0;
 }
 
@@ -96,8 +90,9 @@
 }
 
 .header-desktop nav ul li {
+  white-space: nowrap;
   font-weight: var(--regular-bold);
-  margin: 0 30px;
+  margin: 0 2%;
   list-style: none;
 }
 
@@ -108,12 +103,6 @@
 
 .component-mobile {
   display: none;
-}
-
-/* --------------------HOVER ABAIXO-------------------- */
-
-.box-login button:hover {
-  background-color: var(--verde-escuro);
 }
 
 .nav-item a:hover {
@@ -181,7 +170,12 @@
   margin-top: 8px;
 }
 
-/* -----------------HOVER ACIMA----------------------- */
+.hold-underline {
+  height: 2px;
+  width: 100%;
+  background: var(--verde-escuro);
+  margin-top: 8px;
+}
 
 @media screen and (max-width: 1250px) {
   .header-desktop {
