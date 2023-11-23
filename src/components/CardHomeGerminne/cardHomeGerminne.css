@@ -19,8 +19,8 @@
     font-weight: var(--semi-bold);
 }
 
-.card-home-germinne span {
-    color: var(--verde-principal);
+.card-home-germinne span, .second-germinne-large span, .third-germinne-card span  {
+    color: var(--font-banner-verde);
 }
 
 .first-germinne-card {
@@ -40,14 +40,10 @@
 }
 
 .second-germinne-large h3 {
-    font-size: var(--subtitle-medium);
+    font-size: var(--subtitle-large);
     text-align: center;
-    margin-top: 7%;
+    margin-top: 5%;
     text-transform: uppercase;
-}
-
-.second-germinne-large span {
-    color: var(--verde-principal);
 }
 
 .third-germinne-card {

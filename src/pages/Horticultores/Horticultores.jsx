@@ -27,7 +27,7 @@ function Horticultores() {
 
       <div className='banner-horticultor'>
         <div>
-          <h2>Consulte agora um <span>profissional</span> e solicite um orçamento <span>gratuito</span>.</h2>
+          <h2>Encontre agora um <span>profissional</span> e solicite um orçamento <span>gratuito</span>.</h2>
 
           <div className='box-inputs-horticultor'>
             <div>
@@ -35,6 +35,9 @@ function Horticultores() {
                 <option value="default" disabled selected>Selecione o tipo de serviço</option>
                 <option value="plantio">Plantio</option>
                 <option value="cultivo">Cultivo</option>
+                <option value="manutencao">Manutenção</option>
+                <option value="fertilizacao">Fertilização do solo</option>
+                <option value="sistema de irrigacao">Sistema de irrigação</option>
                 <option value="pragas">Controle de pragas</option>
               </select>
             </div>
@@ -55,9 +58,9 @@ function Horticultores() {
       </div>
 
       <div className='box-como-funciona'>
-        <img src={imgComoFunciona} alt="imgComoFunciona" />
+        <img className="como-funciona-mainImg" src={imgComoFunciona} alt="imgComoFunciona" />
 
-        <section className='box-texto-como-funciona'>
+        <div className='box-texto-como-funciona'>
           <h2>Como funciona?</h2>
           <ComoFunciona
             urlImg={Passo1}
@@ -82,7 +85,7 @@ function Horticultores() {
             altImg="icone4"
             conteudo="Após aprovar o orçamento nosso parceiro vai realizar o serviço na data e local combinados. "
           />
-        </section >
+        </div >
 
       </div>
 

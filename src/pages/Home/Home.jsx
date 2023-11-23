@@ -3,7 +3,6 @@ import './home.css';
 import CardHomeServicos from '../../components/CardHomeServicos/CardHomeServicos';
 import CardHomeGerminne from '../../components/CardHomeGerminne/CardHomeGerminne';
 import ArticleBeneficios from '../../components/ArticleBeneficios/ArticleBeneficios';
-
 import articleImage1 from '../../images/article-image-1.png';
 import articleImage2 from '../../images/article-image-2.png';
 import articleImage3 from '../../images/article-image-3.png';
@@ -25,13 +24,13 @@ function Home() {
             className='first-service-card'
             routeName='blog'
           />
-          <CardHomeServicos 
-            title='Contrate Serviços de Agricultura'
+          <CardHomeServicos
+            title='Contrate profissionais de confinaça'
             subtitle={['Profissionais de ', <span key={ 2 }>Qualidade</span>]}
             className='second-service-card'
             routeName='horticultor'
           />
-          <CardHomeServicos 
+          <CardHomeServicos
             title='Plante sem dificuldades'
             subtitle={['Conheça a ', <span key={ 3 }>Germinne Box</span>]}
             className='third-service-card'
@@ -40,19 +39,19 @@ function Home() {
         </div>
 
         <div className='box-card-germinne'>
-          <CardHomeGerminne 
-            title={['Promovemos a sustentabilidade contribuindo para uma cidade mais saudável', <span key={ 1 }>saudável</span>, ' para as áreas urbanas']}
+          <CardHomeGerminne
+            title={['Temos a missão de levar o ', <span key={ 1 }>verde</span>, ' para as áreas urbanas']}
             className='first-germinne-card'
           />
 
-          <CardHomeGerminne 
-            title={['Temos a missão de levar o ', <span key={ 2 }>verde</span>, ' para as áreas urbanas']}
+          <CardHomeGerminne
+            title={['Promovemos a ',<span key={ 2 }>sustentabilidade</span>, ' contribuindo para uma cidade mais ' ,<span key={ 2 }>saudável</span>,]}
             className='second-germinne-card'
             subtitle={['Conheça a ', <span key={ 4 }>Germinne</span>]}
             id='second-germinne-large'
           />
 
-          <CardHomeGerminne 
+          <CardHomeGerminne
             title={['Temos a missão de levar o ', <span key={ 3 }>verde</span>, ' para as áreas urbanas']}
             className='third-germinne-card'
           />
@@ -62,21 +61,21 @@ function Home() {
       <section className='box-beneficios-agricultura'>
         <h2>Benefícios da <span>Agricultura Urbana</span></h2>
 
-        <ArticleBeneficios 
+        <ArticleBeneficios
           urlImg={ articleImage1 }
           altImg='Imagem de várias comidas em uma mesa'
           title='Alimentos mais frescos e nutritivos'
           text='Os alimentos cultivados localmente são colhidos no auge da maturidade, garantindo maior frescor e preservação dos nutrientes, proporcionando opções mais saudáveis para os consumidores.'
         />
 
-        <ArticleBeneficios 
+        <ArticleBeneficios
           urlImg={ articleImage2 }
           altImg='Imagem de pessoas trabalhando em uma horta'
           title='Sustentabilidade ambiental'
           text='Ao aproveitar espaços urbanos para o cultivo, a agricultura urbana contribui para a redução da pegada de carbono, promove a biodiversidade e cria ambientes mais sustentáveis nas cidades.'
         />
 
-        <ArticleBeneficios 
+        <ArticleBeneficios
           urlImg={ articleImage3 }
           altImg='Imagem de uma pessoa com luvas trabalhando em uma horta'
           title='Cultivar plantas: um impulso positivo para a saúde mental'

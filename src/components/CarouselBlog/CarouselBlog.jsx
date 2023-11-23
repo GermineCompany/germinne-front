@@ -1,7 +1,4 @@
 import React from 'react';
-import imagem from '../../images/banner-blog.svg';
-import imagem2 from '../../images/homebanner.png';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -27,16 +24,11 @@ function CarouselBlog() {
         loop={true}
       >
         <SwiperSlide>
-          <img src={ imagem } alt="Imagem do banner 1" />
+          <div className='bannerpost1'>Projeto Telhado Verde no shopping Eldorado destina 100% da sua produção aos seus funcionários</div>
         </SwiperSlide>
+
         <SwiperSlide>
-          <img src={ imagem2 } alt="Imagem do banner 1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={ imagem } alt="Imagem do banner 1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={ imagem2 } alt="Imagem do banner 1" />
+          <div  className='bannerpost2'>Este artigo revela como o Shopping Eldorado se transforma em um refúgio verde e relaxante no meio da cidade, proporcionando uma experiência única para quem busca tranquilidade em São Paulo.</div>
         </SwiperSlide>
       </Swiper>
     </>
