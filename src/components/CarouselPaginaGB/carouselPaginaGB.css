@@ -4,7 +4,6 @@
   align-items: center;
   width: 100%;
   gap: 130px;
-
 }
 
 .carousel-pagina-gb-conteudo img {
@@ -28,6 +27,5 @@
 
 .elipsedarrow {
   position: absolute;
-  margin-left: 80%;
   width: 3%;
 }

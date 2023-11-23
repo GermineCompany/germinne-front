@@ -1,0 +1,12 @@
+.card-perfil-servico {
+    background-color: var(--background-cards);
+    border: 1px solid var(--verde-principal);
+    width: max-content;
+    padding: 2% 2%;
+    border-radius: 15px;
+}
+
+.card-perfil-servico p {
+    font-size: var(--body-large);
+    white-space: nowrap;
+}
