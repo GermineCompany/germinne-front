@@ -11,7 +11,6 @@ import carouselgb1 from '../../images/carouselgb1.png';
 import carouselgb2 from '../../images/carouselgb2.png';
 import carouselgb3 from '../../images/carouselgb3.png';
 
-
 import doublearrow from '../../images/doublearrow.svg';
 import CardPerguntas from '../../components/CardPerguntas/CardPerguntas';
 import elipsedarrow from '../../images/elipsed-arrow.svg';
