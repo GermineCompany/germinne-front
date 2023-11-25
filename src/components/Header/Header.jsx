@@ -45,11 +45,11 @@ function Header() {
                 <a href="/loja">GerminneBox<div className={ ` underline  ${pathname == '/loja' ? 'hold-underline' : '' }`}/></a>
               </li>
 
-              <li className={` nav-item `}>
+              <li className={' nav-item '}>
                 <a href="/horticultores">Horticultores<div className={ ` underline  ${pathname == '/horticultores' ? 'hold-underline' : '' }`}/></a>
               </li>
 
-               <li className= "nav-item" >
+              <li className= "nav-item" >
                 <a href="/trabalhe-conosco">Trabalhe conosco<div className={ ` underline  ${pathname == '/trabalheconosco' ? 'hold-underline' : '' }`}/></a>
               </li>
 

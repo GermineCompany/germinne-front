@@ -1,13 +1,14 @@
 .card-horticultor {
     display: flex;
     width: 80%;
-    margin: 20px auto;
+    margin: 10px auto;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    padding: 50px;
+    padding: 30px;
 }
 
 .foto-rating-horticultor {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,14 +32,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .foto-rating-horticultor div:nth-child(2) img {
     width: 40%;
+    
 }
 
 .foto-rating-horticultor p {
-    margin-right: 10px;
+    margin-right: 15px;
     font-size: var(--body-medium);
     color: #FDD634;
     font-weight: var(--bold);
@@ -48,6 +51,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 95%;
+    align-items: start;
+    margin-left: 2%;
+    
+    
 }
 
 .descricao-horticultor p:nth-child(1) {
@@ -56,6 +64,7 @@
 }
 
 .descricao-horticultor p:nth-child(2) {
+    width: 92%;
     font-size: var(--body-medium);
 }
 
@@ -65,31 +74,42 @@
     border: none;
     background-color: var(--cta-laranja);
     color: white;
-    padding: .8% 3%;
-    font-size: var(--body-small);
+    padding: .9% 3%;
+    font-size: var(--semi-bold);
     border-radius: 10px;
+    height: 50px;
+    font-weight: bold;
+    
 }
 
 .botoes-contato-horticultor {
-    margin-left: 20px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 5%
+    
 }
 
 .botoes-contato-horticultor button {
+    
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--body-small);
+    font-size: var(--semi-bold);
     width: 200px;
     padding: 10px 0;
     border: none;
     border-radius: 10px;
-    background-color: var(--cta-roxo);
-    color: white;
+    background-color: var(--verde-principal);
+    color: rgb(255, 255, 255);
+    height: 54px;
 }
 
 .botoes-contato-horticultor button svg {
+    width: 21px;
+    height: 21px;
     margin-right: 10px;
+    
 }
