@@ -1,11 +1,11 @@
-import React from 'react';
-import CardSobreNos from '../../components/CardSobreNos/CardSobreNos';
-import missao from '../../images/missao.svg';
-import visao from '../../images/visao.svg';
-import valor from '../../images/valor.svg';
-import './sobreNos.css';
-import { MdOutlineEmail, MdOutlineWhatsapp } from 'react-icons/md';
-import FormsSobreNos from '../../components/FormsSobreNos/FormsSobreNos';
+import React from "react";
+import CardSobreNos from "../../components/CardSobreNos/CardSobreNos";
+import missao from "../../images/missao.svg";
+import visao from "../../images/visao.svg";
+import valor from "../../images/valor.svg";
+import "./sobreNos.css";
+import { MdOutlineEmail, MdOutlineWhatsapp } from "react-icons/md";
+import FormsSobreNos from "../../components/FormsSobreNos/FormsSobreNos";
 
 function SobreNos() {
   return (
@@ -31,19 +31,19 @@ function SobreNos() {
 
       <div className="box-sobre-nos">
         <CardSobreNos
-          srcImg={missao}
+          srcImg="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/missao.svg"
           altImg="Icone do missão"
           title="Missão"
           text="A nossa missão é promover e democratizar a agricultura urbana, fornecendo informações e práticas corretas."
         />
         <CardSobreNos
-          srcImg={visao}
+          srcImg="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/visao.svg"
           altImg="Icone da visão"
           title="Visão"
           text="A nossa missão é promover e democratizar a agricultura urbana, fornecendo informações e práticas corretas."
         />
         <CardSobreNos
-          srcImg={valor}
+          srcImg="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/valor.svg"
           altImg="Icone do valor"
           title="Valor"
           text="Ética, confiança, sustentabilidade, comprometimento, transparência, excelência, informações de qualidade e eficiência."

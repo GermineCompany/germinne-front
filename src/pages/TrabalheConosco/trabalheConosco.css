@@ -1,5 +1,6 @@
 .banner-trabalhe-conosco {
-  background: url(../../images/banner-trabalhe-conosco.svg), no-repeat;
+  background: url(https://germinnecomp-img.s3.sa-east-1.amazonaws.com/banner-trabalhe-conosco.svg),
+    no-repeat;
   background-size: cover;
   box-shadow: 950px 0px 100px 0px rgba(0, 0, 0, 0.5) inset;
   width: 100%;
@@ -84,10 +85,9 @@
   gap: 1%;
 }
 
-.beneficios{
+.beneficios {
   display: flex;
   justify-content: center;
   margin: 5%;
   font-size: var(--subtitle-small);
-
 }

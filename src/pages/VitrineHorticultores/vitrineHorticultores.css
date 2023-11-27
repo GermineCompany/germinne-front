@@ -1,5 +1,6 @@
 .box-introducao-vitrine {
-  background: url(../../images/banner-vitrine.svg) no-repeat;
+  background: url(https://germinnecomp-img.s3.sa-east-1.amazonaws.com/banner-vitrine.svg)
+    no-repeat;
   color: white;
   text-align: center;
   padding: 2% 0;
@@ -35,7 +36,7 @@
 .box-inputs-vitrine select {
   border: unset;
   appearance: none;
-  background-image: url(../../images/arrow-select.svg);
+  background-image: url(https://germinnecomp-img.s3.sa-east-1.amazonaws.com/arrow-select.svg);
   background-repeat: no-repeat;
   background-position: right 1.5rem top 50%;
   background-size: 20px auto;

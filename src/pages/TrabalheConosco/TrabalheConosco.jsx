@@ -22,22 +22,24 @@ function TrabalheConosco() {
           </div>
         </div>
       </div>
-      <div className="beneficios"><h1>Benefícios para você</h1></div>
+      <div className="beneficios">
+        <h1>Benefícios para você</h1>
+      </div>
       <div className="ElementoComponente">
         <BeneficiosParaVoce
-          urlImg={img1}
+          urlImg="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/img-beneficio1.svg"
           altImg="beneficio1"
           titulo="Aumente sua visibilidade"
           texto="Nossa plataforma te conecta com uma audiência diária de centenas de pessoas."
         />
         <BeneficiosParaVoce
-          urlImg={img2}
+          urlImg="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/imagemBeneficio2.svg"
           altImg="beneficio1"
           titulo="Sem comissão"
           texto="Não cobramos comissões dos serviços realizados, 100% do valor fica com você!."
         />
         <BeneficiosParaVoce
-          urlImg={img3}
+          urlImg="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/imagemBeneficio3.svg"
           altImg="beneficio1"
           titulo="Contato direto"
           texto="Converse e negocie diretamente, sem intermediadores, sem taxas e sem burocracia."
@@ -45,7 +47,10 @@ function TrabalheConosco() {
       </div>
 
       <div className="custoBeneficio">
-        <img src={CustoBeneficio} alt="" />
+        <img
+          src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/custo-beneficio-trabalhe-conosco.svg"
+          alt=""
+        />
         <div>
           <h2>Custo beneficio e acesso ao seu publico alvo</h2>
           <p>

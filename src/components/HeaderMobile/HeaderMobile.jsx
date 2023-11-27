@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import logo from '../../images/logo-verde.svg';
-import sacola from '../../images/sacola.png';
-import fecharMenu from '../../images/fechar-menu.png';
-import './headerMobile.css';
-import 'animate.css';
-
+import React, { useState } from "react";
+import logo from "../../images/logo-verde.svg";
+import sacola from "../../images/sacola.png";
+import fecharMenu from "../../images/fechar-menu.png";
+import "./headerMobile.css";
+import "animate.css";
 
 function HeaderMobile() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,10 +12,15 @@ function HeaderMobile() {
 
   return (
     <>
-      <div className={!menuOpen ? 'esconder-menu-mobile animate__slideOutRight' : 'menu-mobile animate__animated animate__slideInRight'}>
-
+      <div
+        className={
+          !menuOpen
+            ? "esconder-menu-mobile animate__slideOutRight"
+            : "menu-mobile animate__animated animate__slideInRight"
+        }
+      >
         <div>
-          <div className='header-box'>
+          <div className="header-box">
             <img src={logo} alt="Logo verde" />
             <a href="/">
               <h1>Germinne</h1>
@@ -25,9 +29,9 @@ function HeaderMobile() {
 
           <div>
             <img
-              className='icone-fechar'
+              className="icone-fechar"
               onClick={handleMenu}
-              src={fecharMenu}
+              src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/fechar-menu.png"
               alt="Icone de um X"
             />
           </div>
@@ -42,15 +46,14 @@ function HeaderMobile() {
             <li>Sobre nós</li>
           </ul>
         </nav>
-
       </div>
 
-      <header className={menuOpen ? 'esconder-menu-mobile' : 'header-mobile'}>
+      <header className={menuOpen ? "esconder-menu-mobile" : "header-mobile"}>
         <div>
           <p onClick={handleMenu}>&equiv;</p>
         </div>
 
-        <div className='header-box'>
+        <div className="header-box">
           <img src={logo} alt="Logo verde" />
           <a href="/home">
             <h1>Germinne</h1>
@@ -59,7 +62,10 @@ function HeaderMobile() {
 
         <div>
           <a href="/carrinho">
-            <img src={sacola} alt="Sacola verde" />
+            <img
+              src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/sacola.png"
+              alt="Sacola verde"
+            />
           </a>
         </div>
       </header>
