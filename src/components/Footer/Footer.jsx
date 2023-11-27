@@ -11,7 +11,10 @@ function Footer() {
       <div className="footer-box">
         <div>
           <div className="footer-logo">
-            <img src={logo} alt="Logo da Germinne branco" />
+            <img
+              src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/logo-branco.svg"
+              alt="Logo da Germinne branco"
+            />
             <h2>Germinne</h2>
           </div>
 
