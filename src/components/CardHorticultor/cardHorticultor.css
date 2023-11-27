@@ -86,18 +86,18 @@
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 5%
     
 }
 
 .botoes-contato-horticultor button {
-    
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: var(--semi-bold);
+    font-size: var(--regular-bold);
     width: 200px;
     padding: 10px 0;
     border: none;

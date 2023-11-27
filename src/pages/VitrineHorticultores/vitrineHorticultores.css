@@ -44,7 +44,8 @@
 .box-inputs-vitrine button {
   background-color: var(--cta-laranja);
   color: white;
-  font-size: var(--body-small);
+  font-size: var(--body-medium);
+  font-weight: var(--bold);
   border: none;
   padding: 1% 0;
   border-radius: 10px;
