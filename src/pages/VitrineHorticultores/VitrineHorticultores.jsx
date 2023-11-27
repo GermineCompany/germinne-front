@@ -46,7 +46,7 @@ function VitrineHorticultores() {
         </div>
       </div>
 
-      <article className='box-horticultores'>
+      <article className='box-horticultores main-container-limitador'>
         <CardHorticultor 
           srcImg={ Emanuel } 
           name='Emanuel da Silva Santos'

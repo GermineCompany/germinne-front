@@ -22,13 +22,18 @@ function CardHorticultor({ srcImg, name, description, rating }) {
       <div className='descricao-horticultor'>
         <p>{ name }</p>
         <p>{ description }</p>
-        <button>Ver perfil</button>
       </div>
 
       <div className='botoes-contato-horticultor'>
-        <button >Solicitar orçamento</button>
-        <button ><RiWhatsappFill /> WhatsApp </button>
-        <button><FaPhoneAlt /> Telefone </button>
+        <div>
+          <button>Ver perfil</button>
+        </div>
+
+        <div>
+          <button ><RiWhatsappFill /> WhatsApp </button>
+          <button >Solicitar orçamento</button>
+          <button><FaPhoneAlt /> Telefone </button>
+        </div>
       </div>
     </div>
   );
