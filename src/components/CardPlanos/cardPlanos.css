@@ -1,0 +1,69 @@
+.card-planos {
+    background-color: var(--cta-laranja);
+    width: 28%;
+    height: 680px;
+    border-radius: 35px;
+    color: white;
+  }
+  
+  .card-planos div:nth-child(1) {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--title-small);
+  }
+
+  .card-planos div:nth-child(1) p {
+    font-size: var(--body-large);
+  }
+  
+  .card-planos div:nth-child(1) span {
+    font-size: var(--subtitle-large);
+    font-weight: var(--bold-regular);
+  }
+  
+  .card-planos div:nth-child(2) {
+    height: 60%;
+    width: 100%;
+    background-color: var(--cta-roxo);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10%;
+    gap: 10%;
+  }
+
+  .card-planos div:nth-child(2) section {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--body-large);
+  }
+
+  .card-planos div:nth-child(2) section img {
+    width: 30px;
+  }
+  
+  
+  .card-planos div:nth-child(3) {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE5B9;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .card-planos div:nth-child(3) button {
+  background-color: var(--cta-roxo);
+  color: white;
+  font-size: var(--subtitle-large);
+  font-weight: var(--semi-bold);
+  border: none;
+  padding: 3% 27%;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -3,7 +3,7 @@
   background-size: cover;
   box-shadow: 950px 0px 100px 0px rgba(0, 0, 0, 0.5) inset;
   width: 100%;
-  height: 65vh;
+  height: 75vh;
   color: white;
 }
 
@@ -17,7 +17,11 @@
 }
 
 .banner-trabalhe-conosco h1 {
-  font-size: var(--title-medium);
+  font-size: var(--title-large);
+}
+
+.banner-trabalhe-conosco span {
+  color: var(--font-banner-verde);
 }
 
 .botoes-trabalhe-conosco {
@@ -26,22 +30,44 @@
   gap: 7%;
 }
 
-.banner-trabalhe-conosco button {
-  margin-top: 7%;
+.botoes-trabalhe-conosco button {
+  margin-top: 4%;
   background-color: var(--cta-laranja);
   color: white;
-  font-size: var(--subtitle-small);
+  font-size: var(--subtitle-medium);
   font-weight: var(--semi-bold);
   border: none;
-  padding: 8px 50px;
-  border-radius: 10px;
+  padding: 15px 50px;
+  border-radius: 15px;
 }
+
+/* banner */
+
+/* Beneficios */
+
+.ElementoComponente {
+  display: flex;
+  justify-content: space-between;
+}
+
+.beneficios {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  font-size: var(--subtitle-small);
+}
+
+/* Beneficios */
+
+
+/* custo-beneficio */
 
 .custoBeneficio {
   display: flex;
   margin: auto;
   align-items: center;
-  width: 90%;
+  width: 100%;
   height: 100%;
   gap: 10%;
   margin-top: 8%;
@@ -58,11 +84,11 @@
 }
 
 .custoBeneficio h2 {
-  font-size: var(--title-large);
+  font-size: var(--title-medium);
 }
 
 .custoBeneficio p {
-  font-size: var(--body-large);
+  font-size: var(--body-medium);
   margin-top: 6%;
 }
 
@@ -78,15 +104,92 @@
   cursor: pointer;
 }
 
-.ElementoComponente {
-  display: flex;
-  justify-content: center;
-  gap: 1%;
+/* custo-beneficio */
+
+/* banner-teste-gratis */
+
+.banner-teste-gratis {
+  background: url(../../images/Banner-teste-gratis.svg), no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 52vh;
+  margin-top: 10%;
 }
 
-.beneficios {
+.banner-teste-gratis > div {
+  text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 5%;
-  font-size: var(--subtitle-small);
+  margin: auto;
+  gap: 2%;
+  width: 50%; 
+  height: 100%;
+}
+
+.banner-teste-gratis p {
+  font-size: var(--title-medium);
+  font-weight: var(--regular-bold);
+  color: white;
+}
+
+.banner-teste-gratis h1 {
+  font-size: var(--display-large);
+  color: var(--font-body-color);
+}
+
+/* banner-teste-gratis */
+
+.passo-a-passo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.color-passo-a-passo {
+  color: var(--font-body-verde) !important;
+}
+
+.box-oferecemos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.box-oferecemos div {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+}
+
+.area-oferecemos {
+  margin-top: 10%;
+  text-align: center;
+} 
+
+.area-oferecemos h2 {
+  padding-bottom: 40px;
+  font-size: var(--title-large);
+}
+
+.box-planos {
+  display: flex;
+  justify-content: space-around ;
+
+}
+
+.section-planos {
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+.section-planos h2 {
+  font-size: var(--title-large);
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.section-planos > h2 > span{
+  color: var(--font-body-verde);
 }
