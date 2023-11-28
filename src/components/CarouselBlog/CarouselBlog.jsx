@@ -25,12 +25,14 @@ function CarouselBlog() {
       >
         <SwiperSlide>
           <div className='box-slide-imagem-1 slide-carousel'>
-            <p>Como hortas urbanas reduzem as ilhas térmicas nas cidades</p>
+          <span>Agricultura Urbana</span>
+            <h2>Conheça o Telhado Verde do Shopping Eldorado: Iniciativa promove horta e compostagem.</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className='box-slide-imagem-2 slide-carousel'>
-            <p>Transformando cidades com hortas urbanas sustentáveis</p>
+            <span>Cultivo</span>
+            <h2>Como plantar coentro: passo a passo</h2>
           </div>
         </SwiperSlide>
       </Swiper>
