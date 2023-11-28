@@ -1,0 +1,75 @@
+.pedidos-container{
+    display: flex;  
+    justify-content: start;
+    margin-top: 2%;
+    gap: 40px;
+    background-color: #F2F2F2;
+
+    border-radius: 10px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+h3{
+    margin-bottom: 8%;
+}
+.imagem-container{
+    display: flex;
+    height: 190px;
+}
+.Descricao{
+    margin-top: 1%;
+    font-weight: 600;
+}
+.Pedido{
+    margin-top: 9%;
+    color: #A5A5A5;
+}
+.Botoes-Compra{
+    display: flex;
+    margin-right: auto;
+    margin-left: 20%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.botoes1{
+    display: flex;
+    flex-direction:column ;
+    height: 50px;
+    width: 170px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px 60px;
+    font-size: 15px;
+    font-weight: var(--semi-bold);
+    border-radius: 10px;
+    border: none;
+    background-color: #FFBD4F;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+.botoes2{
+    display: flex;
+    flex-direction:column ;
+    height: 50px;
+    width: 170px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px 60px;
+    font-size: 15px;
+    font-weight: var(--semi-bold);
+    border-radius: 10px;
+    border: none;
+    background-color: #B67DFF;
+    cursor: pointer;
+
+}
+span{
+    color: #4CA676;
+}
+a{
+    text-decoration: none;
+}
+

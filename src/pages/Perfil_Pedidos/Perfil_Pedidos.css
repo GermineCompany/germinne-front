@@ -1,0 +1,33 @@
+.ConteudoGeral{
+    display: flex;
+    
+}
+
+.ConteudoDireito{
+    display: flex;
+
+    justify-content: center;
+    background-color: #FBFBFB;
+    height: 63vh;
+    display: inline;
+    width: 60vw;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.conteudoEsquerdo{
+    display: inline-block;
+}
+.ConteudoDireito > h2{
+text-align: center;
+margin-top: 2%;
+}
+.pedidos{
+    display: flex;
+    display: inline;
+    justify-content: start;
+}
+.ConteudoDireito > span{
+    color: #4CA676
+}

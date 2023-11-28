@@ -18,6 +18,7 @@ import Perfil from "./pages/Perfil/Perfil";
 import PerfilHorticultor from "./pages/PerfilHorticultor/PerfilHorticultor";
 import FiltrosServico from "./pages/FiltrosServico/FiltrosServico";
 import TrabalheConosco from "./pages/TrabalheConosco/TrabalheConosco";
+import Perfil_Pedidos from "./pages/Perfil_Pedidos/Perfil_Pedidos";
 
 function App() {
   const path = window.location.pathname;
@@ -50,6 +51,7 @@ function App() {
           <Route path="/perfil-horticultor/:id" Component={PerfilHorticultor} />
           <Route path="/filtros-servico" Component={FiltrosServico} />
           <Route path="/trabalhe-conosco" Component={TrabalheConosco} />
+          <Route path="/Perfil_Pedidos" Component={Perfil_Pedidos} />
         </Routes>
       </main>
       {path != "/login" &&
