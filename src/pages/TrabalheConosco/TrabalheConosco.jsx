@@ -22,7 +22,9 @@ function TrabalheConosco() {
           </div>
         </div>
       </div>
-      <div className="beneficios"><h1>Benefícios para você</h1></div>
+      <div className="beneficios">
+        <h1>Benefícios para você</h1>
+      </div>
       <div className="ElementoComponente">
         <BeneficiosParaVoce
           urlImg={img1}
@@ -54,7 +56,7 @@ function TrabalheConosco() {
             por pessoas engajadas e envolvidas em práticas sustentáveis.
           </p>
           <a href="#">
-            <button>Quero me cadastrar</button>
+            <button>Quero me cadastrar!</button>
           </a>
         </div>
       </div>

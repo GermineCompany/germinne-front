@@ -28,7 +28,7 @@
 
 .banner-trabalhe-conosco button {
   margin-top: 7%;
-  background-color: var(--verde-escuro);
+  background-color: var(--cta-laranja);
   color: white;
   font-size: var(--subtitle-small);
   font-weight: var(--semi-bold);
@@ -68,7 +68,7 @@
 
 .custoBeneficio button {
   margin-top: 5%;
-  background-color: var(--cta-laranja);
+  background-color: var(--cta-roxo);
   color: white;
   font-size: var(--subtitle-small);
   font-weight: var(--semi-bold);
@@ -84,10 +84,9 @@
   gap: 1%;
 }
 
-.beneficios{
+.beneficios {
   display: flex;
   justify-content: center;
   margin: 5%;
   font-size: var(--subtitle-small);
-
 }
