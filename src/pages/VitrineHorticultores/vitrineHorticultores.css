@@ -3,7 +3,7 @@
   color: white;
   text-align: center;
   padding: 2% 0;
-  height: 70vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +44,8 @@
 .box-inputs-vitrine button {
   background-color: var(--cta-laranja);
   color: white;
-  font-size: var(--body-small);
+  font-size: var(--body-medium);
+  font-weight: var(--bold);
   border: none;
   padding: 1% 0;
   border-radius: 10px;
@@ -56,5 +57,10 @@
 }
 
 .box-horticultores {
-  margin: 3% 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }

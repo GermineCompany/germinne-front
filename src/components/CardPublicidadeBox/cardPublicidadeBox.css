@@ -1,5 +1,8 @@
-.card-publicidade-box {
-    width: 280px;
-    height: 200px;
-    background-color: var(--cta-roxo);
+
+.card-publicidade-box img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+
 }

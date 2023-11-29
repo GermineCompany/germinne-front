@@ -26,7 +26,7 @@ function Header() {
           <div className='box-logo-nome'>
             <img src={logo} alt="Logo verde" />
             <a href="/">
-              <h1>Germinne</h1>
+              <h1>GERMINNE</h1>
             </a>
           </div>
 
@@ -45,7 +45,7 @@ function Header() {
                 <a href="/loja">GerminneBox<div className={ ` underline  ${pathname == '/loja' ? 'hold-underline' : '' }`}/></a>
               </li>
 
-              <li className={` nav-item `}>
+              <li className={' nav-item '}>
                 <a href="/horticultores">Horticultores<div className={ ` underline  ${pathname == '/horticultores' ? 'hold-underline' : '' }`}/></a>
               </li>
 

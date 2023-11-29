@@ -1,9 +1,16 @@
 .box-descricao-produto {
-    width: 100%;
-    margin: 5% auto;
+    width: 95%;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
+    margin: 5% auto;
+   
 }
+.descricao-imagens {
+    display: flex;
+    width: 50%;
+}
+
 
 .box-imagem-descricao {
     width: 85%;
@@ -12,8 +19,6 @@
 .box-imagem-descricao img {
     width: 100%;
     background-color: #F8F8F8;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 5px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -23,10 +28,6 @@
     margin-top: 5%;
 }
 
-.descricao-imagens {
-    display: flex;
-    width: 50%;
-}
 
 .box-imagens-secundarias {
     width: 25%
@@ -39,16 +40,16 @@
     object-fit: cover;
 }
 
-
-
 .box-selecao {
-    /* width: 45%; */
+    width: 35%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .nome-preco h2 {
-    font-size: var(--title-small);
+    font-size: var(--title-medium);
+    margin-bottom: 10px;
 }
 
 .nome-preco p {
@@ -56,20 +57,19 @@
 }
 
 .nome-preco span {
-    font-size: var(--subtitle-small);
+    font-size: var(--subtitle-large);
 }
 
 .box-botoes-selecao {
     display: flex;
 }
 
-.div-botoes {
-    margin: 2% 0;
-}
+ .div-botoes {
+    margin-top: 25px;
+} 
 
 .div-botoes>p {
-    margin: 10px 0;
-    font-size: var(--subtitle-small);
+    font-size: var(--body-small);
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -77,34 +77,43 @@
     color: black;
 }
 
-.botao-adicionar-carrinho button {
-    background-color: var(--cta-roxo);
-    color: white;
-    border: none;
-    font-weight: var(--regular-bold);
-    font-size: var(--subtitle-medium);
-    padding: 15px 50px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
+
+.box-quantidade {
+    margin-top: 25px;
 }
 
 .box-quantidade button {
     background-color: white;
     border: .5px solid rgba(0, 0, 0, 0.3);
-    padding: 10px 15px;
-    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;
     font-size: var(--body-small);
     font-weight: var(--semi-bold);
     white-space: nowrap;
-    margin: 10px 15px 0 0;
+  
 }
 
 .box-quantidade span {
-    margin: 0 20px;
+    margin: 0 25px;
     font-size: var(--body-large);
     font-weight: var(--regular);
 }
 
 .box-quantidade span:hover {
     cursor: pointer;
+}
+
+
+.botao-adicionar-carrinho button {
+    background-color: var(--cta-roxo);
+    color: white;
+    border: none;
+    font-weight: var(--regular-bold);
+    font-size: var(--subtitle-small);
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
+    margin-top: 25px;
 }
