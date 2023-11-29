@@ -180,11 +180,11 @@
 }
 
 .section-planos {
-  margin-top: 10%;
+  margin-top: 20%;
   margin-bottom: 20%;
 }
 
-.section-planos h2 {
+.section-planos > h2 {
   font-size: var(--title-large);
   text-align: center;
   padding-bottom: 5%;
@@ -192,4 +192,8 @@
 
 .section-planos > h2 > span{
   color: var(--font-body-verde);
+}
+
+.section-planos .card-planos:nth-child(even) {
+  background-color: var(--cta-roxo);
 }

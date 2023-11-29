@@ -1,34 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './cardPlanos.css';
-import checkWhite from '../../images/check-white.svg';
 
-function CardPlanos({ nomePlano, precoPlano, topico1, topico2, topico3 }) {
+function CardPlanos({ nomePlano, precoPlano, texto }) {
   return (
     <div className='card-planos'>
       <div>
-        <p>{nomePlano}</p>
-        <h2>{precoPlano}</h2>
+        <h3>{nomePlano}</h3>
       </div>
+
       <div>
 
-        <section>
-          <img src={checkWhite} alt='check-branco' />
-          <p>{topico1}</p>
-        </section>
-        <section>
-          <img src={checkWhite} alt='check-branco' />
-          <p>{topico2}</p>
-        </section>
-        <section>
-          <img src={checkWhite} alt='check-branco' />
-          <p>{topico3}</p>
-        </section>
+        <div>
+          <div>
+            <h2>{precoPlano}</h2>
+            <p>{texto}</p>
+          </div>
+
+          <button>Assinar</button>
+        </div>
 
       </div>
-      <div>
-        <button>Assinar</button>
-      </div>
+
     </div>
   );
 }
@@ -36,9 +29,7 @@ function CardPlanos({ nomePlano, precoPlano, topico1, topico2, topico3 }) {
 CardPlanos.propTypes = {
   nomePlano: PropTypes.string.isRequired,
   precoPlano: PropTypes.array.isRequired,
-  topico1: PropTypes.string.isRequired,
-  topico2: PropTypes.string.isRequired,
-  topico3: PropTypes.string.isRequired,
+  texto: PropTypes.string.isRequired,
 };
 
 export default CardPlanos;

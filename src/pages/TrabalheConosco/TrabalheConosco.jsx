@@ -136,25 +136,20 @@ function TrabalheConosco() {
           <h2><span>Conheça</span> nossos planos</h2>
           <div className='box-planos'>
             <CardPlanos
-              nomePlano='Mensalidade de Rico'
-              precoPlano={['R$200,00', <span key={1}>/mês</span>]}
-              topico1=''
-              topico2=''
-              topico3=''
+              nomePlano='Plano Anual'
+              precoPlano={['R$399,90', <span key={1}>/mês</span>]}
+              texto='O plano anual é a melhor opção para você que busca o melhor custo sem preocupação de renovar .'
             />
             <CardPlanos
-              nomePlano='Mensalidade de Rico'
-              precoPlano={['R$200,00', <span key={2}>/mês</span>]}
-              topico1=''
-              topico2=''
-              topico3=''
+              nomePlano='Plano Mensal'
+              precoPlano={['R$39,90', <span key={2}>/mês</span>]}
+              texto='Nosso plano mensal é uma boa opção para você que quer experimentar nossa plataforma.
+              '
             />
             <CardPlanos
-              nomePlano='Mensalidade de Rico'
-              precoPlano={['R$200,00', <span key={3}>/mês</span>]}
-              topico1=''
-              topico2=''
-              topico3=''
+              nomePlano='Plano Semestral'
+              precoPlano={['R$199,90', <span key={3}>/mês</span>]}
+              texto='O plano semestral é um intermédio entre os outros planos para você que precisa de flexibilidade.'
             />
           </div>
         </div>
