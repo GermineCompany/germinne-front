@@ -1,11 +1,9 @@
 .ConteudoGeral{
     display: flex;
-    
 }
 
 .ConteudoDireito{
     display: flex;
-
     justify-content: center;
     background-color: #FBFBFB;
     height: 63vh;
@@ -19,15 +17,18 @@
 .conteudoEsquerdo{
     display: inline-block;
 }
+
 .ConteudoDireito > h2{
-text-align: center;
-margin-top: 2%;
+    text-align: center;
+    margin-top: 2%;
 }
+
 .pedidos{
     display: flex;
     display: inline;
     justify-content: start;
 }
+
 .ConteudoDireito > span{
     color: #4CA676
 }
