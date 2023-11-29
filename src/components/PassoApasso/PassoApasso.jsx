@@ -6,11 +6,7 @@ function PassoApasso({ titulo, srcImg, altImg }) {
   return (
 
     <div className='card-passo-a-passo'>
-
-      <div>
-        <h3>{titulo}</h3>
-      </div>
-
+      <h3>{titulo}</h3>  
       <img src={srcImg} alt={altImg} />
 
     </div>

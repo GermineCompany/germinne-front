@@ -1,33 +1,24 @@
 .card-passo-a-passo {
-    height: 55vh;
-    width: 28%;
+    height: 450px;
+    width: 450px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
 }
 
-.card-passo-a-passo div:nth-child(1) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20%;
-    font-size: var(--subtitle-medium);
+.card-passo-a-passo h3 {
+    margin-bottom: 20px;
+    font-size: var(--subtitle-large);
     font-weight: var(--semi-bold);
     white-space: nowrap;
 }
 
-.card-passo-a-passo div:nth-child(1) span {
+.card-passo-a-passo h3 span {
     color: var(--font-body-verde);
 }
 
-.card-passo-a-passo div:nth-child(2) {
-    display: flex;
-    align-items: end;
-    height: 80%;
-    width: 100%;
-}
-
 .card-passo-a-passo img {
-    border-radius: 5%;
-    width: 100%;
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
 }

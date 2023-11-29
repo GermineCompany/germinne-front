@@ -1,23 +1,20 @@
 .banner-trabalhe-conosco {
   background: url(../../images/banner-trabalhe-conosco.svg), no-repeat;
   background-size: cover;
-  box-shadow: 950px 0px 100px 0px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 900px 0px 150px 0px rgba(0, 0, 0, 0.8) inset;
   width: 100%;
   height: 75vh;
   color: white;
-}
-
-.banner-trabalhe-conosco > div {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 100%;
-  width: 60%;
-  padding-left: 5%;
+  padding: 50px;
 }
 
 .banner-trabalhe-conosco h1 {
   font-size: var(--title-large);
+  width: 1000px;
+  margin-top: 150px;
 }
 
 .banner-trabalhe-conosco span {
@@ -26,40 +23,42 @@
 
 .botoes-trabalhe-conosco {
   display: flex;
-  flex-direction: row;
-  gap: 7%;
+  gap: 30px;
 }
 
 .botoes-trabalhe-conosco button {
-  margin-top: 4%;
-  background-color: var(--cta-laranja);
+  margin-top: 50px;
+  background-color: var(--cta-verde);
   color: white;
   font-size: var(--subtitle-medium);
   font-weight: var(--semi-bold);
-  border: none;
-  padding: 15px 50px;
-  border-radius: 15px;
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.banner-trabalhe-conosco button:hover {
+  cursor: pointer;
 }
 
 /* banner */
 
 /* Beneficios */
 
-.ElementoComponente {
-  display: flex;
-  justify-content: space-between;
-}
-
-.beneficios {
+.main-container-limitador > h2 {
   display: flex;
   justify-content: center;
-  margin-top: 3%;
-  margin-bottom: 5%;
-  font-size: var(--subtitle-small);
+  margin-top: 50px;
+  margin-bottom: 80px;
+  font-size: var(--title-medium);
+}
+
+.ElementoComponente {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Beneficios */
-
 
 /* custo-beneficio */
 
@@ -69,18 +68,21 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  gap: 10%;
-  margin-top: 8%;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
 .custoBeneficio img {
-  width: 40%;
-  border-radius: 2%;
+  width: 45%;
+  border-radius: 10px;
 }
 
 .custoBeneficio div {
-  width: 60%;
-  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: space-evenly;
 }
 
 .custoBeneficio h2 {
@@ -89,17 +91,16 @@
 
 .custoBeneficio p {
   font-size: var(--body-medium);
-  margin-top: 6%;
 }
 
 .custoBeneficio button {
-  margin-top: 5%;
   background-color: var(--cta-roxo);
   color: white;
   font-size: var(--subtitle-small);
   font-weight: var(--semi-bold);
   border: none;
-  padding: 15px 40px;
+  width: 350px;
+  height: 60px;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -112,19 +113,19 @@
   background: url(../../images/Banner-teste-gratis.svg), no-repeat;
   background-size: cover;
   width: 100%;
-  height: 52vh;
-  margin-top: 10%;
+  height: 450px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .banner-teste-gratis > div {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: auto;
-  gap: 2%;
-  width: 50%; 
-  height: 100%;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 95%;
 }
 
 .banner-teste-gratis p {
@@ -142,15 +143,31 @@
 
 .passo-a-passo {
   display: flex;
-  justify-content: space-between;
-  margin-top: 5%;
+  justify-content: space-evenly;
+  margin-top: 80px;
 }
 
 .color-passo-a-passo {
   color: var(--font-body-verde) !important;
 }
 
+.area-oferecemos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.area-oferecemos h2 {
+  margin-bottom: 40px;
+  font-size: var(--title-medium);
+}
+
+
 .box-oferecemos {
+  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,25 +180,19 @@
   gap: 40px;
 }
 
-.area-oferecemos {
-  margin-top: 10%;
-  text-align: center;
-} 
+.section-planos {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
 
-.area-oferecemos h2 {
-  padding-bottom: 40px;
-  font-size: var(--title-large);
 }
-
 .box-planos {
   display: flex;
-  justify-content: space-around ;
-
-}
-
-.section-planos {
-  margin-top: 20%;
-  margin-bottom: 20%;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .section-planos > h2 {
@@ -190,7 +201,7 @@
   padding-bottom: 5%;
 }
 
-.section-planos > h2 > span{
+.section-planos > h2 > span {
   color: var(--font-body-verde);
 }
 

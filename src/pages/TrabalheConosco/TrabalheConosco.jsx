@@ -15,28 +15,24 @@ import passo1 from '../../images/PassoApasso1.svg';
 import passo2 from '../../images/PassoApasso2.svg';
 import passo3 from '../../images/PassoApasso3.svg';
 
-
-
-
 function TrabalheConosco() {
   return (
-    <div className="box-trabalhe-conosco">
+    <div>
       <div className="banner-trabalhe-conosco">
-        <div>
-          <h1>
-            Conquiste <span>novos clientes</span> divulgando <span>seu</span> trabalho na nossa <span>plataforma</span>
-          </h1>
-          <div className="botoes-trabalhe-conosco">
-            <button>Cadastre-se</button>
-            <button>Profissionais</button>
-          </div>
+        <h1>
+          Conquiste <span>novos clientes</span> divulgando seu trabalho na nossa{' '}
+          <span>plataforma</span>
+        </h1>
+        <div className="botoes-trabalhe-conosco">
+          <button>Cadastre-se</button>
+          <button>Profissionais</button>
         </div>
       </div>
 
-      <div className='main-container-limitador'>
-        <div className="beneficios">
-          <h1>Benefícios para você</h1>
-        </div>
+      <div className="main-container-limitador">
+       
+        <h2>Benefícios para você</h2>
+        
         <div className="ElementoComponente">
           <BeneficiosParaVoce
             urlImg={img1}
@@ -58,6 +54,22 @@ function TrabalheConosco() {
           />
         </div>
 
+        <div className="area-oferecemos">
+         
+          <div className="box-oferecemos">
+            <div>
+              <CardOferecemos text="Perfil personalizado" />
+              <CardOferecemos text="Galeria de fotos e Portfólio" />
+            </div>
+
+            <div>
+              <CardOferecemos text="Chat integrado" />
+              <CardOferecemos text="Divulgação do Whatsap" />
+            </div>
+          </div>
+        </div>
+
+
         <div className="custoBeneficio">
           <img src={CustoBeneficio} alt="" />
           <div>
@@ -72,91 +84,78 @@ function TrabalheConosco() {
             </a>
           </div>
         </div>
-
       </div>
 
-      <div className='banner-teste-gratis'>
+      <div className="banner-teste-gratis">
         <div>
           <p>TESTE NOSSA PLATAFORMA DURANTE</p>
-          <h1>32 DIAS GRÁTIS</h1>
+          <h1>30 DIAS GRÁTIS</h1>
           <p>E RECEBA INÚMERAS OPORTUNIDADES DE TRABALHO!</p>
         </div>
       </div>
 
-      <div className='main-container-limitador'>
-
-        <div className='passo-a-passo'>
+      <div className="main-container-limitador">
+        <div className="passo-a-passo">
           <PassoApasso
-            titulo={[<sapn className='color-passo-a-passo' key={1}>Faça</sapn>, ' o Login']}
+            titulo={[
+              <sapn className="color-passo-a-passo" key={1}>
+                Faça
+              </sapn>,
+              ' o login',
+            ]}
             srcImg={passo1}
-            altImg='oi'
+            altImg="oi"
           />
 
           <PassoApasso
-            titulo={[<sapn className='color-passo-a-passo' key={2}>Complete</sapn>, ' seu cadastro']}
+            titulo={[
+              <sapn className="color-passo-a-passo" key={2}>
+                Complete
+              </sapn>,
+              ' seu cadastro',
+            ]}
             srcImg={passo2}
-            altImg='oi'
+            altImg="oi"
           />
 
           <PassoApasso
-            titulo={['Feche ', <sapn className='color-passo-a-passo' key={3}>trabalhos</sapn>, ' a vontade']}
+            titulo={[
+              'Feche ',
+              <sapn className="color-passo-a-passo" key={3}>
+                trabalhos
+              </sapn>,
+              ' a vontade',
+            ]}
             srcImg={passo3}
-            altImg='oi'
+            altImg="oi"
           />
         </div>
 
-        <div className='area-oferecemos'>
-
-          <h2>O que oferecemos:</h2>
-
-          <div className='box-oferecemos'>
-
-            <div>
-              <CardOferecemos
-                text='Perfil personalizado'
-              />
-              <CardOferecemos
-                text='Galeria de fotos e Portfólio'
-              />
-            </div>
-
-            <div>
-              <CardOferecemos
-                text='Chat integrado'
-              />
-              <CardOferecemos
-                text='Divulgação do Whatsap'
-              />
-            </div>
-
-          </div>
-        </div>
-
-        <div className='section-planos'>
-          <h2><span>Conheça</span> nossos planos</h2>
-          <div className='box-planos'>
+     
+        <div className="section-planos">
+          <h2>
+            <span>Conheça</span> nossos planos
+          </h2>
+          <div className="box-planos">
             <CardPlanos
-              nomePlano='Plano Anual'
+              nomePlano="Plano Anual"
               precoPlano={['R$399,90', <span key={1}>/mês</span>]}
-              texto='O plano anual é a melhor opção para você que busca o melhor custo sem preocupação de renovar .'
+              texto="O plano anual é a melhor opção para você que busca o melhor custo sem preocupação de renovar ."
             />
             <CardPlanos
-              nomePlano='Plano Mensal'
+              nomePlano="Plano Mensal"
               precoPlano={['R$39,90', <span key={2}>/mês</span>]}
-              texto='Nosso plano mensal é uma boa opção para você que quer experimentar nossa plataforma.
-              '
+              texto="Nosso plano mensal é uma boa opção para você que quer experimentar nossa plataforma.
+              "
             />
             <CardPlanos
-              nomePlano='Plano Semestral'
+              nomePlano="Plano Semestral"
               precoPlano={['R$199,90', <span key={3}>/mês</span>]}
-              texto='O plano semestral é um intermédio entre os outros planos para você que precisa de flexibilidade.'
+              texto="O plano semestral é um intermédio entre os outros planos para você que precisa de flexibilidade."
             />
           </div>
         </div>
-
       </div>
-
-
     </div>
   );
 }
