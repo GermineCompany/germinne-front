@@ -6,11 +6,10 @@ function BeneficiosParaVoce({urlImg, altImg, titulo, texto }) {
   return (
 
     <div className='beneficios-para-voce'>
-      <div>
         <img src={urlImg} alt={altImg} />
         <h2>{titulo}</h2>
         <p>{texto}</p>
-      </div>
+  
     </div>
   );
 }
