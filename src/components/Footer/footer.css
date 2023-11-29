@@ -1,80 +1,75 @@
 footer {
-  height: 380px;
-  width: 100vw;
+  height: 400px;
+  width: 100%;
   background-color: var(--verde-escuro);
   color: white;
-}
-
-.footer-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.footer-logo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-right: 25%;
-  margin-left: 30%;
+  justify-content: space-between;
 }
 
-.footer-logo img {
-  height: 50%;
+.footer-logo div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 10px;
 }
 
-.footer-logo h2 {
-  font-weight: var(--bold);
-  font-size: var(--title-small);
-  color: #fff;
+.footer-logo img {
+  width: 120px;
+  height: 150px;
 }
 
-.footer-box div:nth-child(1) {
+.footer-logo svg {
+  height: 33px;
+  width: 33px;
+}
+
+.footer-infos {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-footer ul li {
-  list-style: none;
+.footer-infos > div {
+  height: 50%;
 }
 
-footer ul li a {
-  font-size: var(--subtitle-medium);
-  font-weight: var(--regular-bold);
-  text-decoration: none;
-  color: #fff;
+.footer-infos h3 {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 4px solid var(--verde-principal);
+  font-size: var(--body-large);
 }
 
-.redes {
-  border-left: 1px solid var(--verde-principal);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 7%;
-  padding-left: 5%;
-}
-
-.footer-icons {
+.footer-infos a {
   color: white;
-  width: 60px;
-  height: 40px;
+  text-decoration: none;
 }
 
-.footer-box div:nth-child(2) {
+.footer-infos ul li {
+  list-style-position: inside;
+  color: var(--verde-principal);
+  margin: 15px 0;
+}
+
+.footer-infos li::marker {
+  font-size: 22px;
+}
+
+.footer-infos svg {
+  color: var(--verde-principal);
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.footer-infos a, .footer-infos p {
+  font-size: var(--body-medium);
+  margin: 20px 0;
+}
+
+.footer-contatos div p {
   display: flex;
   align-items: center;
-  margin-right: 20%;
-  white-space: nowrap;
-  gap: 20%;
-}
-
-.footer-box div:nth-child(2) ul {
-  text-decoration: none;
-  width: 40%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 30px;
 }

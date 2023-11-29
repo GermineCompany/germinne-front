@@ -1,65 +1,64 @@
-import React from "react";
-import "./footer.css";
-import logo from "../../images/logo-branco.svg";
-import { RiLinkedinBoxFill } from "react-icons/ri";
-import { SiLinktree } from "react-icons/si";
-import { FaInstagram } from "react-icons/fa";
+import React from 'react';
+import './footer.css';
+import logo from '../../images/logo-branco.svg';
+import waveFooter from '../../images/wave-footer.svg';
+import { FaInstagramSquare, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
+import { SlLocationPin } from 'react-icons/sl';
+import { MdEmail } from 'react-icons/md';
+import { FaPhoneVolume } from 'react-icons/fa6';
+
+
 
 function Footer() {
   return (
     <footer>
-      <div className="footer-box">
-        <div>
-          <div className="footer-logo">
+      <div className='footer-infos'>
+        <div className="footer-logo">
+          <div>
             <img src={logo} alt="Logo da Germinne branco" />
-            <h2>Germinne</h2>
+            <h2>GERMINNE</h2>
           </div>
-
-          <div className="redes">
-            <a href="https://www.instagram.com/germinne_oficial/">
-              <FaInstagram className="footer-icons" />
-            </a>
-            <a href="https://www.linkedin.com/in/vitormoutim/">
-              <RiLinkedinBoxFill className="footer-icons" />
-            </a>
-            <a href="https://www.linkedin.com/in/vitormoutim/">
-              <SiLinktree className="footer-icons" />
-            </a>
+          <div>
+            <FaInstagramSquare />
+            <FaLinkedin />
+            <FaGithubSquare />
           </div>
         </div>
 
         <div>
-          <ul>
-            <li>
-              <a href="">BLOG GERMINNE</a>
-            </li>
-            <li>
-              <a href="">EMAIL</a>
-            </li>
-            <li>
-              <a href="">TELEFONE</a>
-            </li>
-            <li>
-              <a href="">SOBRE NÓS</a>
-            </li>
-          </ul>
+          <h3>Links rápidos</h3>
 
           <ul>
-            <li>
-              <a href="">SEGURANÇA</a>
-            </li>
-            <li>
-              <a href="">TERMOS DE USO</a>
-            </li>
-            <li>
-              <a href="">POLITICAS DE ENVIO</a>
-            </li>
-            <li>
-              <a href="">PERGUNTAS FREQUENTES</a>
-            </li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/loja">Germinne Box</a></li>
+            <li><a href="/horticultores">Horticultores</a></li>
+            <li><a href="/blog">Blog</a></li>
           </ul>
+        </div>
+
+        <div>
+          <h3>Blog</h3>
+
+          <ul>
+            <li><a href="/#">Conheça o Telhado Verde</a></li>
+            <li><a href="/#">Transformando a cidade com hortas urbanas</a></li>
+          </ul>
+        </div>
+
+        <div className='footer-contatos'>
+          <h3>Contatos</h3>
+
+          <div>
+            <p><SlLocationPin /> R. Tito, 54 - Vila Romana, São Paulo - SP</p>
+            <p><MdEmail /> germinecompany@gmail.com</p>
+            <p><FaPhoneVolume /> (11) 1234-5678 </p>
+          </div>
         </div>
       </div>
+
+      {/* <div> */}
+      <img src={ waveFooter } alt="Wave footer" />
+      {/* </div> */}
     </footer>
   );
 }
