@@ -26,7 +26,7 @@ function Header() {
           <div className='box-logo-nome'>
             <img src={logo} alt="Logo verde" />
             <a href="/">
-              <h1>Germinne</h1>
+              <h1>GERMINNE</h1>
             </a>
           </div>
 

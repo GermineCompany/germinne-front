@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import imagemLogin from '../../images/login-cliente.png';
+import imagemLogin from '../../images/ImagemCliente.svg';
 import google from '../../images/google.png';
 import '../Login/loginCadastro.css';
 import './loginCliente.css';

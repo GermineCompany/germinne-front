@@ -43,7 +43,7 @@ function CadastroProfissional() {
           </div>
 
           <div>
-            <label>
+            <label className='Email'>
               Email
               <input 
                 type='email' 

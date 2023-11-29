@@ -1,0 +1,118 @@
+.editar-perfil-vitrine {
+    width: 70%;
+    margin: auto;
+}
+
+.editar-perfil-vitrine hr {
+    margin: 30px;
+}
+
+.editar-dados-pessoais-vitrine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editar-dados-pessoais-vitrine div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.editar-dados-pessoais-vitrine > div {
+    gap: 20px;
+}
+
+.editar-perfil-vitrine label {
+    display: flex;
+    flex-direction: column;
+    font-weight: var(--semi-bold);
+    font-size: var(--body-medium);
+}
+
+.editar-dados-pessoais-vitrine input {
+    border: none;
+    border-bottom: 2px solid var(--verde-principal);
+    padding: 10px 0;
+    width: 300px;
+    font-size: var(--body-small);
+}
+
+.editar-foto-perfil-vitrine img {
+    width: 130px;
+    border-radius: 100%;
+}
+
+.editar-foto-perfil-vitrine {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.editar-dados-pessoais-vitrine p {
+    font-weight: var(--semi-bold);
+    font-size: var(--body-medium);
+}
+
+.editar-info-horticultor-vitrine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editar-info-horticultor-vitrine textarea {
+    font-size: var(--body-medium);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border: 1px solid var(--verde-principal);
+    border-radius: 10px;
+}
+
+.editar-info-horticultor-vitrine p {
+    font-weight: var(--semi-bold);
+    font-size: var(--body-medium);
+}
+
+.editar-perfil-vitrine select {
+    border: unset;
+    border-bottom: 2px solid var(--verde-principal);
+    font-size: var(--body-medium);
+    width: 350px;
+    margin: 10px 0;
+    padding: 10px 0;
+    appearance: none;
+    background-image: url(../../images/arrow-select.svg);
+    background-repeat: no-repeat;
+    background-position: right .5rem top 50%;
+    background-size: 20px auto;
+}
+
+.box-servicos-perfil {
+    display: flex;
+}
+
+.box-servicos-perfil div {
+    margin-right: 20px;
+}
+
+.editar-perfil-vitrine h2 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: var(--title-small);
+}
+
+.servicos-que-atende-perfil > p {
+    font-weight: var(--semi-bold);
+    font-size: var(--body-medium);
+}
+
+.box-galeria-projetos p {
+    font-weight: var(--semi-bold);
+    font-size: var(--body-medium);
+}
+
+.box-galeria-projetos > div {
+    display: flex;
+}
+
+.box-galeria-projetos div {
+    margin-right: 20px;
+}

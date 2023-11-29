@@ -30,7 +30,7 @@ function Horticultores() {
 
       <div className='banner-horticultor'>
         <div>
-          <h2>Encontre agora um <span>profissional</span> e solicite um orçamento <span>gratuito</span>.</h2>
+          <h2>Encontre agora um <span>profissional</span> e solicite um orçamento <span>gratuito</span>:</h2>
 
           <div className='box-inputs-horticultor'>
             <div>
