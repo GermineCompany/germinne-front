@@ -1,0 +1,20 @@
+.servico-perfil-vitrine {
+    border: 1px solid var(--cta-roxo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    width: 180px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.servico-perfil-vitrine svg {
+    width: 25px;
+    height: 25px;
+}
+
+.servico-perfil-vitrine p {
+    font-size: var(--body-extra-small);
+    font-weight: var(--semi-bold);
+}
