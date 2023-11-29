@@ -1,53 +1,63 @@
-  .carousel-blog {
-    width: 100%;
-    margin: 30px auto;
-    height: 60vh;
-    border-radius: 20px;
-  }
+a {
+  text-decoration: none;
+}
 
-  .slide-carousel {
-    display: flex;
-    justify-content: end;
-    align-items: flex-start;
-    flex-direction: column;
-    box-shadow: 0px -175px 100px 0px rgba(0, 0, 0, 0.80) inset;
-    padding: 3%;
-    
-  }
+.carousel-blog {
+  width: 100%;
+  margin: 30px auto;
+  height: 60vh;
+  border-radius: 20px;
+}
 
-  .slide-carousel span {
-    width: 80%;
-    color: white;
-    text-align: center;
-  }
+.slide-carousel {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px -200px 150px 0px rgba(0, 0, 0, 0.8) inset;
+  padding: 3%;
+}
 
-  .slide-carousel h2 {
-    width: 80%;
-    color: white;
-    font-size: var(--subtitle-medium);
-    font-weight: var(--semi-bold);
-  }
+.slide-content span {
+  color: white;
+  font-size: var(--body-small);
+  font-weight: var(--semi-bold);
+}
 
-  .box-slide-imagem-1 {
-    background: url(../../images/carousel-blog-1.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
+.slide-content h2 {
+  margin-top: 10px;
+  text-align: left;
+  color: white;
+  font-size: var(--title-small);
+  font-weight: var(--semi-bold);
+}
 
-  }
+.box-slide-imagem-1 {
+  background: url(../../images/artigo-card-1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
 
-  .box-slide-imagem-2 {
-    background: url(../../images/carousel-blog-2.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-  }
- 
+.box-slide-imagem-2 {
+  background: url(../../images/artigo-card-2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
 
-  .slide-carousel .aws-sld {
-    --open-animation-perspective: 600px;
-    --open-animation-angle: 8deg;
-    --open-animation-enter-delay: 85ms;
-  }
+.box-slide-imagem-3 {
+  background: url(../../images/artigo-card-3.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.slide-carousel .aws-sld {
+  --open-animation-perspective: 600px;
+  --open-animation-angle: 8deg;
+  --open-animation-enter-delay: 85ms;
+}

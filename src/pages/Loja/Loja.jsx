@@ -23,18 +23,18 @@ function Loja() {
     {
       img: carouselgb1,
       title: 'Alimentação saudável e saborosa',
-      text: 'Pesquisas indicam que ter plantas em casa pode melhorar seu bem-estar emocional e diminuir o estresse. Estar perto de plantas e se conectar com a natureza ajuda a relaxar, trazendo uma sensação de calma. Fora isso, cuidar das plantinhas é uma atividade terapêutica e recompensadora, proporcionando um descanso relaxante da correria do dia a dia.'
+      text: 'Pesquisas indicam que ter plantas em casa pode melhorar seu bem-estar emocional e diminuir o estresse. Estar perto de plantas e se conectar com a natureza ajuda a relaxar, trazendo uma sensação de calma. Fora isso, cuidar das plantinhas é uma atividade terapêutica e recompensadora, proporcionando um descanso relaxante da correria do dia a dia.',
     },
     {
       img: carouselgb2,
       title: 'Bem-estar e terapia',
-      text: 'Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.'
+      text: 'Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.',
     },
     {
       img: carouselgb3,
       title: 'Sua casa mais verde e bonita',
-      text: 'Plantinhas fazem maravilhas no visual de qualquer ambiente, trazendo beleza e vida. Com suas cores animadas, texturas e formas diferentes, elas dão um up em qualquer lugar. Se você cuidar direitinho delas, a casa vira um cantinho super aconchegante e agradável.'
-    }
+      text: 'Plantinhas fazem maravilhas no visual de qualquer ambiente, trazendo beleza e vida. Com suas cores animadas, texturas e formas diferentes, elas dão um up em qualquer lugar. Se você cuidar direitinho delas, a casa vira um cantinho super aconchegante e agradável.',
+    },
   ];
 
   const [carouselPosition, setCarouselPosition] = useState(0);
@@ -51,94 +51,92 @@ function Loja() {
   };
 
   return (
-    <div className='main-container-limitador'>
-      <div className='pagina-loja'>
-        <DescricaoProduto />
+    <div className="main-container-limitador">
+      <DescricaoProduto />
 
-        <div className="conheca-gb">
-          <img src={conhecaGbImagem} alt="" />
-          <div className="conheca-gb-texto">
-            <h2>
+      <div className="conheca-gb">
+        <img src={conhecaGbImagem} alt="" />
+        <div className="conheca-gb-texto">
+          <h2>
             Conheça a <span className="textoVerde">GerminneBox</span>
-            </h2>
-            <p>
+          </h2>
+          <p>
             Ja pensou em cultivar seus próprios alimentos? Nossa Box inclui todo
             o necessário para facilitar sua jornada, você terá tudo à mão para
             começar a cultivar suas próprias hortaliças, ervas e temperos com
             eficiência e comodidade. Com nosso kit você estará cultivando suas
             próprias plantinhas em um piscar de olhos.
-            </p>
-          </div>
+          </p>
         </div>
+      </div>
 
-        <div className="conteudo-gb">
-          <h3>
+      <div className="conteudo-gb">
+        <h3>
           O que vem na <span className="textoVerde">GerminneBox</span>?
-          </h3>
-          <div className="conteudo-gb-cards">
-            <CardConteudoGB
-              srcImg={vaso}
-              altImg="SADASDA"
-              text="Vaso autoirrigável"
-            />
-            <CardConteudoGB
-              srcImg={sementes}
-              altImg="SADASDA"
-              text="Sementes orgânicas"
-            />
-            <CardConteudoGB
-              srcImg={substrato}
-              altImg="SADASDA"
-              text="Substrato de qualidade"
-            />
-            <CardConteudoGB
-              srcImg={qrcode}
-              altImg="SADASDA"
-              text="QR Code com instruções"
-            />
-          </div>
-        </div>
-
-        <div className="carousel-pagina-gb-title">
-          <h2>Razões para ter sua própria hortinha em casa</h2>
-          <img src={doublearrow} alt="seta dupla" />
-        </div>
-     
-        <div className='carousel-content'>
-          <CarouselPaginaGB 
-            srcImg={ carouselProps.img } 
-            altImg='Imagem ilustrativa do carousel'
-            title={ carouselProps.title }
-            text={ carouselProps.text }
+        </h3>
+        <div className="conteudo-gb-cards">
+          <CardConteudoGB
+            srcImg={vaso}
+            altImg="SADASDA"
+            text="Vaso autoirrigável"
           />
-          <div>
-            <img
-              className="elipsedarrow"
-              src={elipsedarrow}
-              alt="Imagem de uma seta para a direita"
-              onClick={handleCarousel}
-            />
-          </div>
+          <CardConteudoGB
+            srcImg={sementes}
+            altImg="SADASDA"
+            text="Sementes orgânicas"
+          />
+          <CardConteudoGB
+            srcImg={substrato}
+            altImg="SADASDA"
+            text="Substrato de qualidade"
+          />
+          <CardConteudoGB
+            srcImg={qrcode}
+            altImg="SADASDA"
+            text="QR Code com instruções"
+          />
         </div>
+      </div>
 
-        <div className="faq">
-          <h2 className="faq-title">Perguntas frequentes</h2>
-          <div className="box-card-perguntas">
-            <CardPerguntas
-              title="Quantas horas de sol por dia minha planta precisa?"
-              text="Para que suas plantinhas tenham o desenvolvimento ideal, você vai precisar de pelo menos 4 horas de sol direto ao dia, e não basta ser só aquela claridade, é necessário a luz do sol incidir diretamente sobre sua hortinha."
-            />
-            <hr />
-            <CardPerguntas
-              title="Quanto tempo leva para germinar?"
-              text="Vai depender do tipo da semente. Disponibilizamos em nosso blog informações completinhas sobre diversas plantas, confira aqui."
-            />
-            <hr />
-            <CardPerguntas
-              title="Preciso regar?"
-              text="Nosso kit conta com um sistema de autoirrigação, que facilita o cuidado das plantas ao fornecer água de forma automática. Então se você tem pouco tempo disponível ou se não têm experiência prévia no cultivo não se preocupe, nosso kit não precisa de maiores trabalhos :)"
-            />
-          </div>
+      <div className="carousel-pagina-gb-title">
+        <h2>Razões para ter sua própria hortinha em casa</h2>
+        <img src={doublearrow} alt="seta dupla" />
+      </div>
+
+      <div className="carousel-content">
+        <CarouselPaginaGB
+          srcImg={carouselProps.img}
+          altImg="Imagem ilustrativa do carousel"
+          title={carouselProps.title}
+          text={carouselProps.text}
+        />
+        <div>
+          <img
+            className="elipsedarrow"
+            src={elipsedarrow}
+            alt="Imagem de uma seta para a direita"
+            onClick={handleCarousel}
+          />
+        </div>
+      </div>
+
+      <div className="faq">
+        <h2 className="faq-title">Perguntas frequentes</h2>
+        <div className="box-card-perguntas">
+          <CardPerguntas
+            title="Quantas horas de sol por dia minha planta precisa?"
+            text="Para que suas plantinhas tenham o desenvolvimento ideal, você vai precisar de pelo menos 4 horas de sol direto ao dia, e não basta ser só aquela claridade, é necessário a luz do sol incidir diretamente sobre sua hortinha."
+          />
+          <hr />
+          <CardPerguntas
+            title="Quanto tempo leva para germinar?"
+            text="Vai depender do tipo da semente. Disponibilizamos em nosso blog informações completinhas sobre diversas plantas, confira aqui."
+          />
+          <hr />
+          <CardPerguntas
+            title="Preciso regar?"
+            text="Nosso kit conta com um sistema de autoirrigação, que facilita o cuidado das plantas ao fornecer água de forma automática. Então se você tem pouco tempo disponível ou se não têm experiência prévia no cultivo não se preocupe, nosso kit não precisa de maiores trabalhos :)"
+          />
         </div>
       </div>
     </div>

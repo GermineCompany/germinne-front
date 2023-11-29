@@ -1,9 +1,9 @@
 .card-germinne {
-    width: 30%;
+    width: 380px;
 }
 
 .card-home-germinne {
-    width: 100%;
+    width: 380px;
     height: 230px; 
     display: flex;
     align-items: flex-end;

@@ -6,7 +6,7 @@ function CardPublicidade() {
   return (
     <div className='card-publicidade'>
       <div>
-        Anuncios Google
+        Anuncios
       </div>
       <hr />
       <p>Publicidade</p>
