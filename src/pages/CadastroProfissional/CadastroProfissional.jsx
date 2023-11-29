@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import imagemLogin from '../../images/login-profissional.png';
 import '../Login/loginCadastro.css';
 import './cadastroProfissional.css';
+import { useNavigate } from 'react-router-dom';
 
 function CadastroProfissional() {
+  const navigate = useNavigate();
+
   const [infos, setInfos] = useState({
     email: '',
     password: '',
@@ -86,7 +89,7 @@ function CadastroProfissional() {
         <div className='box-cadastro box-cadastro-profissional'>
           <hr />
           <p>Já possui conta na Germinne?</p>
-          <button>Login</button>
+          <button onClick={() => navigate('/login')}>Login</button>
         </div>
 
 
