@@ -13,7 +13,7 @@ function CarouselBlog() {
     <>
       <Swiper
         effect={'fade'}
-        navigation={true} 
+        navigation={true}
         modules={[Autoplay, Pagination, Navigation, EffectFade]}
         className="mySwiper carousel-blog"
         autoplay={{
@@ -24,19 +24,43 @@ function CarouselBlog() {
         loop={true}
       >
         <SwiperSlide>
-          <div className='box-slide-imagem-1 slide-carousel'>
-            <p>Como hortas urbanas reduzem as ilhas térmicas nas cidades</p>
-          </div>
+          <a href="">
+            <div className="box-slide-imagem-1 slide-carousel">
+              <div className='slide-content'>
+                <span>AGRICULTURA URBANA</span>
+                <h2>
+                  Conheça o Telhado Verde do Shopping Eldorado: Iniciativa
+                  promove horta e compostagem.
+                </h2>
+              </div>
+            </div>
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='box-slide-imagem-2 slide-carousel'>
-            <p>Transformando cidades com hortas urbanas sustentáveis</p>
-          </div>
+          <a href="">
+            <div className="box-slide-imagem-2 slide-carousel">
+              <div className='slide-content'>
+                <span>CULTIVO</span>
+                <h2>Como plantar coentro: passo a passo</h2>
+              </div>
+            </div>
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="">
+            <div className="box-slide-imagem-3 slide-carousel">
+              <div className='slide-content'>
+                <span>NOTÍCIAS</span>
+                <h2>
+                  Como hortas urbanas reduzem as ilhas térmicas nas cidades:
+                </h2>
+              </div>
+            </div>
+          </a>
         </SwiperSlide>
       </Swiper>
     </>
   );
 }
-
 
 export default CarouselBlog;

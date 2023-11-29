@@ -20,7 +20,7 @@
     text-align: center;
     justify-content: center;
     width: 70%;
-}
+}ft
 
 .box-texto-como-funciona h2 {
     font-size: var(--title-small);
@@ -86,7 +86,7 @@
 .banner-horticultor > div {
     margin: 35px 35px;
     padding: 10px;
-    border-radius: 0px;
+    border-radius: 10px;
     width: 35%;
     height: 85%;
     background-color: white;
@@ -95,11 +95,15 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.banner-horticultor > div a {
+   color: black;
+   margin-bottom: 15px;
+}
 
 .banner-horticultor h2 {
     margin-top: 25px;
     text-align: center;
-    font-size: var(--title-small);
+    font-size: var(--subtitle-large);
 }
 
 .banner-horticultor span {
@@ -117,7 +121,7 @@
     border: none;
     background-color: #EAE9E9;
     width: 90%;
-    padding: 5% 50px;
+    padding: 4% 50px;
     font-size: var(--subtitle-small);
 }
 
@@ -126,13 +130,26 @@
     color: white;
 }
 
+.banner-horticultor input, .banner-horticultor input::-webkit-outer-spin-button,
+.banner-horticultor input::-webkit-inner-spin-button, .banner-horticultor input[type=number]  {
+    background-image: url(../../images/local-pin.svg);
+    background-repeat: no-repeat;
+    background-position: right 2rem top 50%;
+    background-size: 30px auto;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+}
+
+
+
 .banner-horticultor select {
     border: unset;
     appearance: none;
     background-image: url(../../images/arrow-select.svg);
     background-repeat: no-repeat;
     background-position: right 2rem top 50%;
-    background-size: 40px auto;
+    background-size: 30px auto;
 }
 
 .banner-horticultor button {

@@ -4,13 +4,11 @@ import './ultimosPosts.css';
 
 function UltimosPosts({ srcImg, altImg, title, category }) {
   return (
-    <div className='card-ultimos-posts'>
+    <div className="card-ultimos-posts">
+      <img src={srcImg} alt={altImg} />
       <div>
-        <img src={ srcImg } alt={ altImg } />
-      </div>
-      <div>
-        <h6>{ title }</h6>
-        <p className='ultimos-posts-category'>{ category }</p>
+        <h6>{title}</h6>
+        <p className="ultimos-posts-category">{category}</p>
       </div>
     </div>
   );
@@ -22,6 +20,5 @@ UltimosPosts.propTypes = {
   title: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
 };
-
 
 export default UltimosPosts;
