@@ -33,19 +33,13 @@ function App() {
           <Route path="/sobre-nos" Component={SobreNos} />
           <Route path="/blog" Component={Blog} />
           <Route path="/login" Component={Login} />
-          <Route
-            path="/cadastro-profissional"
-            Component={CadastroProfissional}
-          />
+          <Route path="/cadastro-profissional" Component={CadastroProfissional} />
           <Route path="/login-cliente" Component={LoginCliente} />
           <Route path="/cadastro-cliente" Component={CadastroCliente} />
           <Route path="/artigo/:id" Component={Artigo} />
           <Route path="/loja" Component={Loja} />
           <Route path="/horticultores" Component={Horticultores} />
-          <Route
-            path="/vitrine-horticultores"
-            Component={VitrineHorticultores}
-          />
+          <Route path="/vitrine-horticultores" Component={VitrineHorticultores} />
           <Route path="/perfil" Component={Perfil} />
           <Route path="/perfil-horticultor/:id" Component={PerfilHorticultor} />
           <Route path="/filtros-servico" Component={FiltrosServico} />

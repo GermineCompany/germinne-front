@@ -4,8 +4,11 @@ import { FaPhoneAlt } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import estrelas from '../../images/stars.png';
 import './cardHorticultor.css';
+import { useNavigate } from 'react-router-dom';
 
 function CardHorticultor({ srcImg, name, description, rating }) {
+  const navigate = useNavigate();
+
   return (
     <div className='card-horticultor'>
       <div className='foto-rating-horticultor'>
@@ -26,7 +29,7 @@ function CardHorticultor({ srcImg, name, description, rating }) {
 
       <div className='botoes-contato-horticultor'>
         <div>
-          <button>Ver perfil</button>
+          <button onClick={() => navigate('/perfil-horticultor/2')}>Ver perfil</button>
         </div>
 
         <div>

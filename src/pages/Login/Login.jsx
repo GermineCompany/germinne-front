@@ -66,7 +66,7 @@ function Login() {
         <div className='box-cadastro'>
           <hr />
           <p>Não possui conta na Germinne?</p>
-          <button onClick={() => navigate('/cadastro-cliente')}>Cadastre-se</button>
+          <button onClick={() => navigate('/cadastro-profissional')}>Cadastre-se</button>
         </div>
 
 

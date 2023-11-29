@@ -16,8 +16,11 @@ import servico2 from '../../images/servico2.svg';
 import servico3 from '../../images/servico3.svg';
 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Horticultores() {
+  const navigate = useNavigate();
+
   const [CEP, setCEP] = useState('');
 
   const handleChange = (event) => setCEP(event.target.value);
@@ -53,7 +56,7 @@ function Horticultores() {
             </div>
           </div>
 
-          <button>Consultar profissionais</button>
+          <button onClick={ () => navigate('/vitrine-horticultores')}>Consultar profissionais</button>
         </div>
       </div>
 
@@ -127,7 +130,7 @@ function Horticultores() {
             <h3>Aumente sua <span>visibilidade e alcance</span>, atraindo mais clientes e <span>expandindo seus negócios</span>.</h3>
             <p>Ao ingressar como profissional em uma plataforma web, você amplirá seu alcance de negócio, promoverá e interajir com outros profissionais. Gerencie com eficiência as solicitações dos clientes, mantendo controle sobre encomendas, e estabeleça confiança ao fornecer informações detalhadas e avaliações aos consumidores.</p>
 
-            <a href="#"><button>Cadastrar</button></a>
+            <a href="/cadastro-profissional"><button>Cadastrar</button></a>
 
           </div>
         </div>

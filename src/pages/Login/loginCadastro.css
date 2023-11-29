@@ -97,6 +97,10 @@
     background-color: var(--cta-roxo);
 }
 
+.box-login-cadastro button:hover {
+    cursor: pointer;
+}
+
 .box-cadastro hr {
     border-color: rgba(0, 0, 0, 0.2);
 }
