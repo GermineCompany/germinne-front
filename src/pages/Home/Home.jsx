@@ -18,6 +18,7 @@ function Home() {
 
 <div className='main-container-limitador'>
       <article className='box-card-home'>
+        <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/hortaa.jpg" alt="" />
         <div className='box-card-servicos'>
           <CardHomeServicos 
             title='Explore informações sobre a agricultura'
