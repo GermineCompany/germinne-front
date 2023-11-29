@@ -1,0 +1,16 @@
+.galeria-projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #E5E5E5;
+    border-radius: 25px;
+    margin: 20px 0;
+}
+
+.galeria-projetos svg {
+    color: #E5E5E5;
+    width: 60px;
+    height: 60px;
+}
