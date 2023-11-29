@@ -1,39 +1,31 @@
-
-.beneficios-para-voce{
+.beneficios-para-voce {
     background-color: rgb(255, 255, 255);
-    width: 25%;
-    height: 55vh;
+    width: 400px;
+    height: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25); 
-    padding: 2%;
-    text-align: left;   
-    gap: 1%;
-    margin: 3%;
-    border-radius:2% ;
-}
-
-.beneficios-para-voce > div {
-    height: 15%;
-}
-
-.beneficios-para-voce h2{
-    font-size: var(--subtitle-small);
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .beneficios-para-voce h3 {
+    font-size: var(--subtitle-large);
     font-weight: var(--semi-bold);
     width: 100%;
-    margin-bottom: 6%;
-    margin-top: 3%;
-}
-.beneficios-para-voce p{
-    font-size: var(--body-small);
-    width: 70%;
-}
+    margin-bottom: 10px;
+  }
+  
+  .beneficios-para-voce p {
 
-    .beneficios-para-voce img{
-        
-        margin-top: -20%;
-        display: flex;
-        align-items: left;
-        height: 200%;
-    }
+    font-size: var(--body-large);
+    width: 100%;
+  }
+  
+  .beneficios-para-voce img {
+    margin-top: -100px; 
+    width: 100px;
+  }

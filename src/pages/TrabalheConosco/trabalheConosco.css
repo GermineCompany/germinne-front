@@ -1,93 +1,210 @@
 .banner-trabalhe-conosco {
   background: url(../../images/banner-trabalhe-conosco.svg), no-repeat;
   background-size: cover;
-  box-shadow: 950px 0px 100px 0px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 900px 0px 150px 0px rgba(0, 0, 0, 0.8) inset;
   width: 100%;
-  height: 65vh;
+  height: 75vh;
   color: white;
-}
-
-.banner-trabalhe-conosco > div {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 100%;
-  width: 60%;
-  padding-left: 5%;
+  padding: 50px;
 }
 
 .banner-trabalhe-conosco h1 {
-  font-size: var(--title-medium);
+  font-size: var(--title-large);
+  width: 1000px;
+  margin-top: 150px;
+}
+
+.banner-trabalhe-conosco span {
+  color: var(--font-banner-verde);
 }
 
 .botoes-trabalhe-conosco {
   display: flex;
-  flex-direction: row;
-  gap: 7%;
+  gap: 30px;
 }
 
-.banner-trabalhe-conosco button {
-  margin-top: 7%;
-  background-color: var(--verde-escuro);
+.botoes-trabalhe-conosco button {
+  margin-top: 50px;
+  background-color: var(--cta-verde);
   color: white;
-  font-size: var(--subtitle-small);
+  font-size: var(--subtitle-medium);
   font-weight: var(--semi-bold);
-  border: none;
-  padding: 8px 50px;
+  width: 250px;
+  height: 60px;
   border-radius: 10px;
 }
+
+.banner-trabalhe-conosco button:hover {
+  cursor: pointer;
+}
+
+/* banner */
+
+/* Beneficios */
+
+.main-container-limitador > h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  font-size: var(--title-medium);
+}
+
+.ElementoComponente {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Beneficios */
+
+/* custo-beneficio */
 
 .custoBeneficio {
   display: flex;
   margin: auto;
   align-items: center;
-  width: 90%;
+  width: 100%;
   height: 100%;
-  gap: 10%;
-  margin-top: 8%;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
 .custoBeneficio img {
-  width: 40%;
-  border-radius: 2%;
+  width: 45%;
+  border-radius: 10px;
 }
 
 .custoBeneficio div {
-  width: 60%;
-  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: space-evenly;
 }
 
 .custoBeneficio h2 {
-  font-size: var(--title-large);
+  font-size: var(--title-medium);
 }
 
 .custoBeneficio p {
-  font-size: var(--body-large);
-  margin-top: 6%;
+  font-size: var(--body-medium);
 }
 
 .custoBeneficio button {
-  margin-top: 5%;
-  background-color: var(--cta-laranja);
+  background-color: var(--cta-roxo);
   color: white;
   font-size: var(--subtitle-small);
   font-weight: var(--semi-bold);
   border: none;
-  padding: 15px 40px;
+  width: 350px;
+  height: 60px;
   border-radius: 10px;
   cursor: pointer;
 }
 
-.ElementoComponente {
+/* custo-beneficio */
+
+/* banner-teste-gratis */
+
+.banner-teste-gratis {
+  background: url(../../images/Banner-teste-gratis.svg), no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
-  gap: 1%;
 }
 
-.beneficios{
+.banner-teste-gratis > div {
+  text-align: center;
   display: flex;
-  justify-content: center;
-  margin: 5%;
-  font-size: var(--subtitle-small);
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 95%;
+}
 
+.banner-teste-gratis p {
+  font-size: var(--title-medium);
+  font-weight: var(--regular-bold);
+  color: white;
+}
+
+.banner-teste-gratis h1 {
+  font-size: var(--display-large);
+  color: var(--font-body-color);
+}
+
+/* banner-teste-gratis */
+
+.passo-a-passo {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+
+.color-passo-a-passo {
+  color: var(--font-body-verde) !important;
+}
+
+.area-oferecemos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.area-oferecemos h2 {
+  margin-bottom: 40px;
+  font-size: var(--title-medium);
+}
+
+
+.box-oferecemos {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.box-oferecemos div {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+}
+
+.section-planos {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+.box-planos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section-planos > h2 {
+  font-size: var(--title-large);
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.section-planos > h2 > span {
+  color: var(--font-body-verde);
+}
+
+.section-planos .card-planos:nth-child(even) {
+  background-color: var(--cta-roxo);
 }
