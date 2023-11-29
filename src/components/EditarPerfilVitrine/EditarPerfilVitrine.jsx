@@ -1,5 +1,5 @@
 import React from 'react';
-import './EditarPerfilVitrine.css';
+import './editarPerfilVitrine.css';
 import ServicoPerfilVitrine from '../ServicoPerfilVitrine/ServicoPerfilVitrine';
 import GaleriaProjetos from '../GaleriaProjetos/GaleriaProjetos';
 
