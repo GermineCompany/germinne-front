@@ -1,9 +1,9 @@
-import React from "react";
-import "./footer.css";
-import logo from "../../images/logo-branco.svg";
-import { RiLinkedinBoxFill } from "react-icons/ri";
-import { SiLinktree } from "react-icons/si";
-import { FaInstagram } from "react-icons/fa";
+import React from 'react';
+import './footer.css';
+import logo from '../../images/logo-branco.svg';
+import { RiLinkedinBoxFill } from 'react-icons/ri';
+import { SiLinktree } from 'react-icons/si';
+import { FaInstagram } from 'react-icons/fa';
 
 function Footer() {
   return (

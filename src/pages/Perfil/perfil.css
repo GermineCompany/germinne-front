@@ -1,7 +1,20 @@
+.perfil {
+    display: flex;
+    width: 100%;
+}
+
 .menu-lateral-perfil {
+    width: 30%;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     width: max-content;
     padding: 0 30px;
+}
+
+.component-renderizado {
+    width: 75%;
+    margin: auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 
 .menu-lateral-perfil h3 {

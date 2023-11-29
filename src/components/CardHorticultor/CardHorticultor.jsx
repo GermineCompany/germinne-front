@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdOutlineWhatsapp } from 'react-icons/md';
+import { RiWhatsappFill } from 'react-icons/ri';
 import { FaPhoneAlt } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import estrelas from '../../images/stars.png';
@@ -22,13 +22,18 @@ function CardHorticultor({ srcImg, name, description, rating }) {
       <div className='descricao-horticultor'>
         <p>{ name }</p>
         <p>{ description }</p>
-        <button>Ver perfil</button>
       </div>
 
       <div className='botoes-contato-horticultor'>
-        <button>Solicitar orçamento</button>
-        <button><MdOutlineWhatsapp /> WhatsApp </button>
-        <button><FaPhoneAlt /> Telefone </button>
+        <div>
+          <button>Ver perfil</button>
+        </div>
+
+        <div>
+          <button ><RiWhatsappFill /> WhatsApp </button>
+          <button >Solicitar orçamento</button>
+          <button><FaPhoneAlt /> Telefone </button>
+        </div>
       </div>
     </div>
   );

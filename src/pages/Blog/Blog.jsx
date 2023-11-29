@@ -25,7 +25,7 @@ function Blog() {
           <p>Todos</p>
           <p>Agricultura urbana</p>
           <p>Cultivo</p>
-          <p>Curiosidades</p>
+          <p>Notícias</p>
         </div>
 
         <div className="busca">
