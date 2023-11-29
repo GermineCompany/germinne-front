@@ -8,7 +8,7 @@
 }
 
 .main-container-limitador {
-  width: 75%;
+  width: 75vw;
   margin: auto;
 }
 
@@ -27,8 +27,9 @@ body {
   --background-cards: #FAFAFA;
 
   /* CTAS */
-  --cta-laranja: #f7a62b;
+  --cta-laranja: #FFBD4F;
   --cta-roxo: #b67dff;
+  --cta-verde: #0C9354;
 
   /* BACKGROUND-COLOR */
   --background-main: #fff;

@@ -7,8 +7,6 @@ import { SlLocationPin } from 'react-icons/sl';
 import { MdEmail } from 'react-icons/md';
 import { FaPhoneVolume } from 'react-icons/fa6';
 
-
-
 function Footer() {
   return (
     <footer>
