@@ -111,3 +111,8 @@
 .box-cadastro hr {
     border-color: rgba(0, 0, 0, 0.2);
 }
+
+.box-login-cadastro span {
+    font-size: var(--body-small);
+    color: red;
+}
