@@ -1,15 +1,22 @@
+.box-beneficios-para-voce {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  width: 400px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 10px;
+}
+
 .beneficios-para-voce {
-    background-color: rgb(255, 255, 255);
-    width: 400px;
-    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    gap: 30px;
     padding: 15px;
     text-align: center;
-    border-radius: 10px;
   }
   
   .beneficios-para-voce h3 {
@@ -24,7 +31,6 @@
     width: 100%;
   }
   
-  .beneficios-para-voce img {
-    margin-top: -100px; 
+  .beneficios-para-voce img { 
     width: 100px;
   }

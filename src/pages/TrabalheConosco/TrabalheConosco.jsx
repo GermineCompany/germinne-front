@@ -5,12 +5,14 @@ import CustoBeneficio from '../../images/custo-beneficio-trabalhe-conosco.svg';
 
 import BeneficiosParaVoce from '../../components/BeneficiosParaVoce/BeneficiosParaVoce';
 import PassoApasso from '../../components/PassoApasso/PassoApasso';
-import CardOferecemos from '../../components/CardOferecemos/CardOferecemos';
 import CardPlanos from '../../components/CardPlanos/CardPlanos';
 
 import img1 from '../../images/imgemBeneficio1.svg';
 import img2 from '../../images/imagemBeneficio2.svg';
 import img3 from '../../images/imagemBeneficio3.svg';
+import img4 from '../../images/imagemBeneficio4.svg';
+import img5 from '../../images/imagemBeneficio5.svg';
+import img6 from '../../images/imagemBeneficio6.svg';
 import passo1 from '../../images/PassoApasso1.svg';
 import passo2 from '../../images/PassoApasso2.svg';
 import passo3 from '../../images/PassoApasso3.svg';
@@ -18,64 +20,50 @@ import passo3 from '../../images/PassoApasso3.svg';
 function TrabalheConosco() {
   return (
     <div>
-      <div className="banner-trabalhe-conosco">
-        <h1>
-          Conquiste <span>novos clientes</span> divulgando seu trabalho na nossa{' '}
-          <span>plataforma</span>
-        </h1>
-        <div className="botoes-trabalhe-conosco">
-          <button>Cadastre-se</button>
-          <button>Profissionais</button>
-        </div>
-      </div>
 
       <div className="main-container-limitador">
-       
+
         <h2>Benefícios para você</h2>
-        
+
         <div className="ElementoComponente">
           <BeneficiosParaVoce
             urlImg={img1}
             altImg="beneficio1"
             titulo="Aumente sua visibilidade"
             texto="Nossa plataforma te conecta com uma audiência diária de centenas de pessoas."
+            urlImg2={img4}
+            altImg2="beneficio1"
+            titulo2="Personalize seu perfil"
+            texto2="Lá você terá opções para melhores filtros e fácil descoberta."
           />
           <BeneficiosParaVoce
             urlImg={img2}
             altImg="beneficio1"
             titulo="Sem comissão"
             texto="Não cobramos comissões dos serviços realizados, 100% do valor fica com você!."
+            urlImg2={img5}
+            altImg2="beneficio1"
+            titulo2="Aumente sua visibilidade"
+            texto2="Nossa plataforma te conecta com uma audiência diária de centenas de pessoas."
           />
           <BeneficiosParaVoce
             urlImg={img3}
             altImg="beneficio1"
             titulo="Contato direto"
             texto="Converse e negocie diretamente, sem intermediadores, sem taxas e sem burocracia."
+            urlImg2={img6}
+            altImg2="beneficio1"
+            titulo2="Aumente sua visibilidade"
+            texto2="Nossa plataforma te conecta com uma audiência diária de centenas de pessoas."
           />
         </div>
-
-        <div className="area-oferecemos">
-         
-          <div className="box-oferecemos">
-            <div>
-              <CardOferecemos text="Perfil personalizado" />
-              <CardOferecemos text="Galeria de fotos e Portfólio" />
-            </div>
-
-            <div>
-              <CardOferecemos text="Chat integrado" />
-              <CardOferecemos text="Divulgação do Whatsap" />
-            </div>
-          </div>
-        </div>
-
 
         <div className="custoBeneficio">
           <img src={CustoBeneficio} alt="" />
           <div>
             <h2>Custo beneficio e acesso ao seu publico alvo</h2>
             <p>
-              Invista apenas R$ xx,xx por mês e impulsione suas receitas com a
+              Invista apenas <strong>R$ 39,90</strong> por mês e impulsione suas receitas com a
               atração de novos clientes, nossa plataforma é acessada diariamente
               por pessoas engajadas e envolvidas em práticas sustentáveis.
             </p>
@@ -131,7 +119,7 @@ function TrabalheConosco() {
           />
         </div>
 
-     
+
         <div className="section-planos">
           <h2>
             <span>Conheça</span> nossos planos
@@ -154,6 +142,17 @@ function TrabalheConosco() {
               texto="O plano semestral é um intermédio entre os outros planos para você que precisa de flexibilidade."
             />
           </div>
+        </div>
+      </div>
+
+      <div className="banner-trabalhe-conosco">
+        <h1>
+          Conquiste <span>novos clientes</span> divulgando seu trabalho na nossa{' '}
+          <span>plataforma</span>
+        </h1>
+        <div className="botoes-trabalhe-conosco">
+          <button>Cadastre-se</button>
+          <button>Profissionais</button>
         </div>
       </div>
     </div>
