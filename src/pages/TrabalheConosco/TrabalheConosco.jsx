@@ -16,6 +16,7 @@ import img6 from '../../images/imagemBeneficio6.svg';
 import passo1 from '../../images/PassoApasso1.svg';
 import passo2 from '../../images/PassoApasso2.svg';
 import passo3 from '../../images/PassoApasso3.svg';
+import Carousel from '../../components/Carousel/Carousel';
 
 function TrabalheConosco() {
   return (
@@ -55,6 +56,42 @@ function TrabalheConosco() {
             altImg2="beneficio1"
             titulo2="Aumente sua visibilidade"
             texto2="Nossa plataforma te conecta com uma audiência diária de centenas de pessoas."
+          />
+        </div>
+
+        <div className='carousel-beneficios'>
+
+          <Carousel
+            slide1={<BeneficiosParaVoce
+              urlImg={img1}
+              altImg="beneficio1"
+              titulo="Aumente sua visibilidade"
+              texto="Nossa plataforma te conecta com uma audiência diária de centenas de pessoas."
+              urlImg2={img4}
+              altImg2="beneficio1"
+              titulo2="Personalize seu perfil"
+              texto2="Lá você terá opções para melhores filtros e fácil descoberta."
+            />}
+            slide2={<BeneficiosParaVoce
+              urlImg={img2}
+              altImg="beneficio1"
+              titulo="Sem comissão"
+              texto="Não cobramos comissões dos serviços realizados, 100% do valor fica com você!."
+              urlImg2={img5}
+              altImg2="beneficio1"
+              titulo2="Aumente sua visibilidade"
+              texto2="Nossa plataforma te conecta com uma audiência diária de centenas de pessoas."
+            />}
+            slide3={<BeneficiosParaVoce
+              urlImg={img3}
+              altImg="beneficio1"
+              titulo="Contato direto"
+              texto="Converse e negocie diretamente, sem intermediadores, sem taxas e sem burocracia."
+              urlImg2={img6}
+              altImg2="beneficio1"
+              titulo2="Aumente sua visibilidade"
+              texto2="Nossa plataforma te conecta com uma audiência diária de centenas de pessoas."
+            />}
           />
         </div>
 
@@ -119,6 +156,43 @@ function TrabalheConosco() {
           />
         </div>
 
+        <div className='carousel-passo-a-passo'>
+
+          <Carousel
+            slide1={<PassoApasso
+              titulo={[
+                <sapn className="color-passo-a-passo" key={1}>
+                  Faça
+                </sapn>,
+                ' o login',
+              ]}
+              srcImg={passo1}
+              altImg="oi"
+            />}
+            slide2={<PassoApasso
+              titulo={[
+                <sapn className="color-passo-a-passo" key={2}>
+                  Complete
+                </sapn>,
+                ' seu cadastro',
+              ]}
+              srcImg={passo2}
+              altImg="oi"
+            />}
+            slide3={<PassoApasso
+              titulo={[
+                'Feche ',
+                <sapn className="color-passo-a-passo" key={3}>
+                  trabalhos
+                </sapn>,
+                ' a vontade',
+              ]}
+              srcImg={passo3}
+              altImg="oi"
+            />}
+          />
+        </div>
+
 
         <div className="section-planos">
           <h2>
@@ -127,34 +201,63 @@ function TrabalheConosco() {
           <div className="box-planos">
             <CardPlanos
               nomePlano="Plano Anual"
-              precoPlano={['R$399,90', <span key={1}>/mês</span>]}
+              precoPlano={['R$389,99', <span key={1}>/ano</span>]}
               texto="O plano anual é a melhor opção para você que busca o melhor custo sem preocupação de renovar ."
             />
             <CardPlanos
               nomePlano="Plano Mensal"
-              precoPlano={['R$39,90', <span key={2}>/mês</span>]}
+              precoPlano={['R$34,99', <span key={2}>/mês</span>]}
               texto="Nosso plano mensal é uma boa opção para você que quer experimentar nossa plataforma.
               "
             />
             <CardPlanos
               nomePlano="Plano Semestral"
-              precoPlano={['R$199,90', <span key={3}>/mês</span>]}
+              precoPlano={['R$199,99', <span key={3}>/3meses</span>]}
               texto="O plano semestral é um intermédio entre os outros planos para você que precisa de flexibilidade."
             />
           </div>
+
+          <div className='carousel-planos'>
+
+            <Carousel
+
+              slide1={<CardPlanos
+                nomePlano="Plano Anual"
+                precoPlano={['R$389,99', <span key={1}>/ano</span>]}
+                texto="O plano anual é a melhor opção para você que busca o melhor custo sem preocupação de renovar ."
+              />}
+              slide2={<CardPlanos
+                nomePlano="Plano Mensal"
+                precoPlano={['R$34,99', <span key={2}>/mês</span>]}
+                texto="Nosso plano mensal é uma boa opção para você que quer experimentar nossa plataforma.
+                "
+              />}
+              slide3={<CardPlanos
+                nomePlano="Plano Semestral"
+                precoPlano={['R$199,99', <span key={3}>/3meses</span>]}
+                texto="O plano semestral é um intermédio entre os outros planos para você que precisa de flexibilidade."
+              />}
+
+            />
+          </div>
+
         </div>
+
       </div>
 
       <div className="banner-trabalhe-conosco">
-        <h1>
-          Conquiste <span>novos clientes</span> divulgando seu trabalho na nossa{' '}
-          <span>plataforma</span>
-        </h1>
+        <div>
+          <h1>
+            Conquiste <span>novos clientes</span> divulgando seu trabalho na nossa 
+            <span> plataforma</span>
+          </h1>
+        </div>
         <div className="botoes-trabalhe-conosco">
           <button>Cadastre-se</button>
           <button>Profissionais</button>
         </div>
       </div>
+
     </div>
   );
 }

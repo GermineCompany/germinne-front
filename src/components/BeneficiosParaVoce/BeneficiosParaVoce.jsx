@@ -9,13 +9,13 @@ function BeneficiosParaVoce({ urlImg, altImg, titulo, texto, urlImg2, altImg2, t
 
       <div className='beneficios-para-voce'>
         <img src={urlImg} alt={altImg} />
-        <h2>{titulo}</h2>
+        <h3>{titulo}</h3>
         <p>{texto}</p>
       </div>
 
       <div className='beneficios-para-voce'>
         <img src={urlImg2} alt={altImg2} />
-        <h2>{titulo2}</h2>
+        <h3>{titulo2}</h3>
         <p>{texto2}</p>
       </div>
 

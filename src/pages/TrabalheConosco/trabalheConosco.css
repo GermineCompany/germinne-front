@@ -1,57 +1,13 @@
-.banner-trabalhe-conosco {
-  background: url(../../images/banner-trabalhe-conosco.svg), no-repeat;
-  background-size: cover;
-  box-shadow: 900px 0px 150px 0px rgba(0, 0, 0, 0.8) inset;
-  width: 100%;
-  height: 75vh;
-  color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 50px;
-}
-
-.banner-trabalhe-conosco h1 {
-  font-size: var(--title-large);
-  width: 1000px;
-  margin-top: 150px;
-}
-
-.banner-trabalhe-conosco span {
-  color: var(--font-banner-verde);
-}
-
-.botoes-trabalhe-conosco {
-  display: flex;
-  gap: 30px;
-}
-
-.botoes-trabalhe-conosco button {
-  margin-top: 50px;
-  background-color: var(--cta-verde);
-  color: white;
-  font-size: var(--subtitle-medium);
-  font-weight: var(--semi-bold);
-  width: 250px;
-  height: 60px;
-  border-radius: 10px;
-  border: none;
-}
-
-.banner-trabalhe-conosco button:hover {
-  cursor: pointer;
-}
-
-/* banner */
-
 /* Beneficios */
 
 .main-container-limitador > h2 {
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   font-size: var(--title-medium);
+  text-align: center;
+
 }
 
 .ElementoComponente {
@@ -126,8 +82,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 50%;
-  height: 95%;
+  width: 800px;
 }
 
 .banner-teste-gratis p {
@@ -138,7 +93,7 @@
 
 .banner-teste-gratis h1 {
   font-size: var(--display-large);
-  color: var(--font-body-color);
+  color: var(--cta-laranja);
 }
 
 /* banner-teste-gratis */
@@ -146,6 +101,8 @@
 .passo-a-passo {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
   margin-top: 80px;
 }
 
@@ -153,48 +110,18 @@
   color: var(--font-body-verde) !important;
 }
 
-.area-oferecemos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 80px;
-  text-align: center;
-}
-
-.area-oferecemos h2 {
-  margin-bottom: 40px;
-  font-size: var(--title-medium);
-}
-
-
-.box-oferecemos {
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-}
-
-.box-oferecemos div {
-  display: flex;
-  width: 100%;
-  gap: 40px;
-}
-
 .section-planos {
   margin-top: 100px;
   margin-bottom: 100px;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
-
 }
 .box-planos {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap; 
 }
 
 .section-planos > h2 {
@@ -210,3 +137,157 @@
 .section-planos .card-planos:nth-child(even) {
   background-color: var(--cta-roxo);
 }
+
+
+/* CAROUSELS */
+
+.carousel-beneficios {
+  display: none;
+}
+
+.carousel-passo-a-passo {
+  display: none;
+}
+
+.carousel-planos {
+  display: none;
+}
+
+
+.banner-trabalhe-conosco {
+  background: url(../../images/banner-trabalhe-conosco.svg), no-repeat;
+  background-size: cover;
+  box-shadow: 900px 0px 150px 0px rgba(0, 0, 0, 0.8) inset;
+  width: 100%;
+  height: 700px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.banner-trabalhe-conosco div:nth-child(1) {
+  max-width: 980px;
+}
+
+.banner-trabalhe-conosco div:nth-child(1) h1 {
+  font-size: var(--title-large);
+}
+
+.banner-trabalhe-conosco span {
+  color: var(--font-banner-verde);
+}
+
+.botoes-trabalhe-conosco {
+  display: flex;
+  gap: 30px;
+}
+
+.botoes-trabalhe-conosco button {
+  margin-top: 50px;
+  background-color: var(--cta-laranja);
+  color: white;
+  font-size: var(--subtitle-medium);
+  font-weight: var(--semi-bold);
+  width: 250px;
+  height: 55px;
+  border-radius: 10px;
+  border: none;
+}
+
+.botoes-trabalhe-conosco button:nth-child(2) {
+  background-color: var(--cta-verde);
+}
+
+.banner-trabalhe-conosco button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .main-container-limitador > h2{
+    font-size: var(--title-small);
+  }
+}
+
+@media (max-width: 610px) {
+
+  .custoBeneficio img {
+    width: 300px;
+  }
+
+  .custoBeneficio > div {
+    width: 300px;
+  }
+
+  .custoBeneficio button {
+    width: 250px;
+    height: 45px;
+    font-size: var(--body-small);
+  }
+
+  .custoBeneficio h2 {
+    font-size: var(--subtitle-medium);
+  }
+
+  .custoBeneficio p {
+    font-size: var(--body-small);
+  }
+
+  .banner-teste-gratis {
+    padding: 15px;
+  }
+
+  .banner-teste-gratis h1 {
+    font-size: var(--title-large);
+  }
+
+  .banner-teste-gratis p {
+    font-size: var(--subtitle-large);
+  }
+  
+  .section-planos > h2 {
+    font-size: var(--title-small);
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .banner-trabalhe-conosco div:nth-child(1) h1 {
+    font-size: var(--title-small);
+    text-align: center;
+  }
+
+  .banner-trabalhe-conosco button {
+    font-size: var(--subtitle-small);
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .box-planos {
+    display: none;
+  }
+
+  .carousel-planos {
+    display: flex;
+  }
+
+  .passo-a-passo {
+    display: none;
+  }
+
+  .carousel-passo-a-passo{
+    display: flex;
+  }
+
+  .ElementoComponente {
+    display: none;
+  }
+
+  .carousel-beneficios {
+    display: flex;
+  }
+}
+
+
+

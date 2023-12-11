@@ -20,17 +20,38 @@
   }
   
   .beneficios-para-voce h3 {
-    font-size: var(--subtitle-large);
-    font-weight: var(--semi-bold);
+    font-size: var(--subtitle-small);
+    font-weight: var(--bold);
     width: 100%;
     margin-bottom: 10px;
   }
   
   .beneficios-para-voce p {
-    font-size: var(--body-large);
+    font-size: var(--body-medium);
     width: 100%;
   }
   
   .beneficios-para-voce img { 
     width: 100px;
+  }
+
+  @media (max-width: 600px) {
+
+    .box-beneficios-para-voce {
+      height: 630px;
+      width: 300px;
+      justify-content: center;
+    }
+
+    .beneficios-para-voce {
+      padding: 0 10px 0 10px;
+    }
+
+    .beneficios-para-voce p {
+      font-size: var(--body-small);
+    }
+
+    .beneficios-para-voce img {
+      width: 80px;
+    }
   }
