@@ -1,15 +1,13 @@
 .box-inputs-cliente h3 {
-    color: var(--cta-roxo);
+  color: var(--cta-roxo);
 }
+
 input[type="email"] {
-    display: flex;
-    background-color: white;
-    border-bottom: green;
+  display: flex;
+  border-bottom: green;
+}
 
-  }
-  input[type="password"] {
-    display: flex;
-    background-color: white;
-    border-bottom: green;
-
-  }
+input[type="password"] {
+  display: flex;
+  border-bottom: green;
+}
