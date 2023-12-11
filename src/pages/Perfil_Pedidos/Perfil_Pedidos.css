@@ -8,7 +8,7 @@
 
     justify-content: center;
     background-color: #FBFBFB;
-    height: 63vh;
+    height: 70vh;
     display: inline;
     width: 60vw;
     border-radius: 10px;
@@ -21,7 +21,8 @@
 }
 .ConteudoDireito > h2{
 text-align: center;
-margin-top: 2%;
+margin-top: 5%;
+margin-bottom: 8%;
 }
 .pedidos{
     display: flex;

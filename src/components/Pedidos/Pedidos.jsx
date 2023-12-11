@@ -10,7 +10,7 @@ function Pedidos(props) {
         <img src={props.srcImg} alt={props.altImg} />
       </div>
       <div className='Descricao'>
-        <h3>Data da Compra: <span> 20/12/2023 </span></h3>
+        <h3>Data da Compra: <span>20/12/2023</span></h3>
         <p>Germinne Box</p>
         <p>Entrega ate 15/12/2023</p>
         <p>01 Unidade</p>

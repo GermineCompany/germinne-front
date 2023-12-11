@@ -1,10 +1,9 @@
 .pedidos-container{
     display: flex;  
     justify-content: start;
-    margin-top: 2%;
+    margin-top: 5%;
     gap: 40px;
     background-color: #F2F2F2;
-
     border-radius: 10px;
     margin-right: 3%;
     margin-left: 3%;

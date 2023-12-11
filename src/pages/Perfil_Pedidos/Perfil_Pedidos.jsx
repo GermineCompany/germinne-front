@@ -6,7 +6,7 @@ import './perfil_Pedidos.css';
 import Pedidos from '../../components/Pedidos/Pedidos';
 import Imagem from '../../images/ImagemVaso.svg';
 
-function Perfil_Enderecos() {
+function Perfil_Pedidos() {
   return (
     <div className='ConteudoGeral'>
       <div className="conteudoEsquerdo">
@@ -45,4 +45,4 @@ function Perfil_Enderecos() {
   );
 }
 
-export default Perfil_Enderecos;
+export default Perfil_Pedidos;
