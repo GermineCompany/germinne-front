@@ -13,7 +13,6 @@ function Header() {
 
   const handleShowLogin = () => {
     setShowLogin(showLogin ? false : true);
-    console.log(showLogin);
   }; 
 
   return (
@@ -45,12 +44,12 @@ function Header() {
                 <a href="/loja">GerminneBox<div className={ ` underline  ${pathname == '/loja' ? 'hold-underline' : '' }`}/></a>
               </li>
 
-              <li className={' nav-item '}>
-                <a href="/horticultores">Horticultores<div className={ ` underline  ${pathname == '/horticultores' ? 'hold-underline' : '' }`}/></a>
-              </li>
-
-              <li className= "nav-item" >
-                <a href="/trabalhe-conosco">Trabalhe conosco<div className={ ` underline  ${pathname == '/trabalheconosco' ? 'hold-underline' : '' }`}/></a>
+              <li className={' nav-item profissionais '}>
+                <a href="">Profissionais</a>
+                <div className='dropdown-horticultores'>
+                  <a href="/horticultores">Contrate</a>
+                  <a href="/trabalhe-conosco">Faça parte</a>
+                </div>
               </li>
 
               <li className= "nav-item" >
