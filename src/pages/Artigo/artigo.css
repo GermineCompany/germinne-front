@@ -14,6 +14,12 @@
   width: 70%;
   color: #09834A;
 }
+.pagina-artigo h3 {
+  font-size: var(--subtitle-medium);
+  width: 100%;
+  color: #09834A;
+}
+
 
 .pagina-artigo h3 {
   font-size: var(--subtitle-medium);
@@ -54,12 +60,15 @@
   border-radius: 10px;
  
 }
-
 .artigo-blog p {
   font-size: var(--body-small);
+<<<<<<< HEAD
   text-align: justify;
+=======
+>>>>>>> 64b6737f5ea16e7057e880b176dd72c3b710b15b
   margin-bottom: 25px;
   line-height: 33px;
+  text-align: justify;
 }
 
 aside {
