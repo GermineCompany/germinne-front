@@ -13,6 +13,12 @@
   font-size: var(--title-medium);
   width: 70%;
 }
+.pagina-artigo h3 {
+  font-size: var(--subtitle-medium);
+  width: 100%;
+  color: #09834A;
+}
+
 
 .artigo-creditos p:nth-child(2) {
   margin: 0 30px;
@@ -41,16 +47,16 @@
 
 .artigo-blog figure img {
   width: 100%;
-  height: 550px;
+  height: 400px;
   object-fit: cover;
   border-radius: 10px;
  
 }
-
 .artigo-blog p {
-  font-size: var(--body-medium);
+  font-size: var(--body-small);
   margin-bottom: 25px;
   line-height: 33px;
+  text-align: justify;
 }
 
 aside {
