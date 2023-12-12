@@ -40,6 +40,12 @@ function Artigo() {
         </div>
 
         <div className="box-artigo-aside">
+
+
+          {/* artigo-telhado-verde */}
+
+          {/* 
+
           <article className="artigo-blog">
             <figure>
               <img
@@ -68,7 +74,14 @@ function Artigo() {
             <p>{artigo.length && artigo[0].paragrafos[4]}</p>
 
             <p>{artigo.length && artigo[0].paragrafos[5]}</p>
-          </article>
+          </article> */}
+
+          {/* artigo-telhado-verde */}
+
+          
+          
+
+
 
           <aside>
             <CardPublicidadeBox srcImg={publicidade} />
