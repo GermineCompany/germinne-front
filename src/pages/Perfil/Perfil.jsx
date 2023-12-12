@@ -5,6 +5,7 @@ import { IoMdExit } from 'react-icons/io';
 import './perfil.css';
 import EditarPerfilVitrine from '../../components/EditarPerfilVitrine/EditarPerfilVitrine';
 import GerminneContext from '../../context/GerminneContext.jsx';
+import DadosPessoaisCliente from '../../components/DadosPessoaisCliente/DadosPessoaisCliente.jsx';
 
 function Perfil() {
   const { loggedUser } = useContext(GerminneContext);
@@ -43,9 +44,9 @@ function Perfil() {
 
       <div className='component-renderizado'>
         {
-
+          menusActived.dadosPessoais && <DadosPessoaisCliente />
         }
-        <EditarPerfilVitrine />
+        {/* <EditarPerfilVitrine /> */}
       </div>
     </div>
   );

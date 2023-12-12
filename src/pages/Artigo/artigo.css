@@ -53,7 +53,7 @@
   line-height: 33px;
 }
 
-aside {
+.box-artigo-aside aside {
   margin-top: 50px;
   width: 30%;
   display: flex;

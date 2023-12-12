@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import GerminneContext from './GerminneContext.jsx';
+import api from '../utils/axios.js';
 
 const GerminneProvider = ({ children }) => {
   const [loggedUser, setLoggedUser] = useState({
@@ -9,11 +10,19 @@ const GerminneProvider = ({ children }) => {
     idUsuario: ''
   });
     
-  const verifyUserLogin = () => {
+  const verifyUserLogin = async () => {
     const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+    console.log(userInfo);
 
     if (userInfo) {
-      setLoggedUser(prevState => ({ ...prevState, logged: true, idUsuario: userInfo.idCliente, nomeUsuario: userInfo.nomeCliente }));
+      const infosAPI = await api.get(`/cliente/${userInfo.idCliente}`);
+      console.log(infosAPI, 'dddddddddd');
+      setLoggedUser(prevState => ({ 
+        ...prevState, 
+        logged: true, 
+        idUsuario: infosAPI.idUsuario, 
+        nomeUsuario: userInfo.nomeCliente 
+      }));
     }
   };
     
