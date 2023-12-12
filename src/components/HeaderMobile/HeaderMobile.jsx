@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../images/logo-verde.svg";
+import logoMobile from "../../images/logo-branco.svg";
 import sacola from "../../images/sacola.png";
 import fecharMenu from "../../images/fechar-menu.png";
 import menu from "../../images/menu.png";
@@ -29,9 +30,9 @@ function HeaderMobile() {
           }>
           <div>
             <div className="header-box">
-              <img src={logo} alt="Logo verde" />
+              <img src={logoMobile} alt="Logo verde" />
               <a href="/">
-                <h1>Germinne</h1>
+                <h1 className="color-h1-header-mobile">Germinne</h1>
               </a>
             </div>
 
@@ -56,7 +57,10 @@ function HeaderMobile() {
               <li>
                 <a href="/loja">GerminneBox</a>
               </li>
-              <li>
+              <li
+                className={`${
+                  showDropdown ? "margin-dropdown" : "cursor-profissionais"
+                }`}>
                 <a onClick={handleShowDropdown}>Profissionais</a>
                 <ul
                   className={`${
@@ -70,7 +74,9 @@ function HeaderMobile() {
                   </li>
                 </ul>
               </li>
-              <li>Sobre nós</li>
+              <li>
+                <a href="/sobre-nos">Sobre nós</a>
+              </li>
             </ul>
           </nav>
         </div>
