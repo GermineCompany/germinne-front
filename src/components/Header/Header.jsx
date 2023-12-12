@@ -1,20 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '../../images/logo-verde.svg';
 import sacola from '../../images/sacola.png';
 import './header.css';
 import HeaderMobile from '../HeaderMobile/HeaderMobile';
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-
+import PropTypes from 'prop-types';
+import GerminneContext from '../../context/GerminneContext';
 
 function Header() {
+  const { loggedUser } = useContext(GerminneContext);
   const [showLogin, setShowLogin] = useState(false);
   const { pathname } = useLocation();
 
   const handleShowLogin = () => {
     setShowLogin(showLogin ? false : true);
     console.log(showLogin);
-  }; 
+  };
 
   return (
     <>
@@ -62,7 +64,16 @@ function Header() {
         
           <div className='box-login'>
             <div>
-              <button className={ showLogin ? 'button-opened' : ''} onClick={ handleShowLogin }>Entrar</button>
+              {
+                loggedUser.logged && 
+                <div>
+                  <a href="/perfil">Olá, { loggedUser.nomeUsuario }</a>
+                </div>
+              }
+              {
+                !loggedUser.logged && 
+                <button className={ showLogin ? 'button-opened' : ''} onClick={ handleShowLogin }>Entrar</button>
+              }
 
               <div className={`links-login ${showLogin ? 'open-login' : 'close-login'}`}>
                 <ul>
@@ -85,5 +96,9 @@ function Header() {
     </>
   );
 }
+
+Header.propTypes = {
+  loggedUser: PropTypes.object.isRequired
+};
 
 export default Header;

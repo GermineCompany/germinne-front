@@ -46,3 +46,7 @@
     height: 30px;
     margin-right: 15px;
 }
+
+.menuActived {
+    font-weight: var(--bold) !important;
+}
