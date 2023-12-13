@@ -6,6 +6,7 @@ import './perfil.css';
 import EditarPerfilVitrine from '../../components/EditarPerfilVitrine/EditarPerfilVitrine';
 import GerminneContext from '../../context/GerminneContext.jsx';
 import DadosPessoaisCliente from '../../components/DadosPessoaisCliente/DadosPessoaisCliente.jsx';
+import VerificacaoProfissional from '../../components/VerificacaoProfissional/VerificacaoProfissional.jsx';
 
 function Perfil() {
   const { loggedUser } = useContext(GerminneContext);
@@ -43,9 +44,10 @@ function Perfil() {
       </aside>
 
       <div className='component-renderizado'>
-        {
+        <VerificacaoProfissional />
+        {/* {
           menusActived.dadosPessoais && <DadosPessoaisCliente />
-        }
+        } */}
         {/* <EditarPerfilVitrine /> */}
       </div>
     </div>
