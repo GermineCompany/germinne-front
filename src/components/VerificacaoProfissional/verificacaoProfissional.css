@@ -57,3 +57,7 @@
     border-radius: 40px;
     background-color: var(--cta-laranja);
 }
+
+.box-certificados-na-area h4 {
+    margin-bottom: 10px;
+}
