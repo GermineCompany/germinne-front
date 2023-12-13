@@ -1,19 +1,19 @@
-import React from "react";
-import "./footer.css";
-import logo from "../../images/logo-branco.svg";
-import waveFooter from "../../images/wave-footer.svg";
-import { FaInstagramSquare, FaLinkedin, FaGithubSquare } from "react-icons/fa";
-import { SlLocationPin } from "react-icons/sl";
-import { MdEmail } from "react-icons/md";
-import { FaPhoneVolume } from "react-icons/fa6";
-import { useState } from "react";
+import React from 'react';
+import './footer.css';
+import logo from '../../images/logo-branco.svg';
+import waveFooter from '../../images/wave-footer.svg';
+import { FaInstagramSquare, FaLinkedin, FaGithubSquare } from 'react-icons/fa';
+import { SlLocationPin } from 'react-icons/sl';
+import { MdEmail } from 'react-icons/md';
+import { FaPhoneVolume } from 'react-icons/fa6';
+import { useState } from 'react';
 
 function Footer() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   const handleShowDropdown = () => {
     setShowDropdown(showDropdown ? false : true);
-    console.log("clicou");
+    console.log('clicou');
   };
 
   return (
@@ -51,9 +51,8 @@ function Footer() {
                 Profissionais
               </a>
               <ul
-                className={` ${
-                  showDropdown ? "showDropdown-footer" : "hideDropdown-footer"
-                }`}>
+                className={` ${showDropdown ? 'showDropdown-footer' : 'hideDropdown-footer'
+                  }`}>
                 <li>
                   <a href="/contrate">Contrate</a>
                 </li>
@@ -94,9 +93,9 @@ function Footer() {
             <p>
               <MdEmail /> germinecompany@gmail.com
             </p>
-            <p>
-              <FaPhoneVolume /> (11) 1234-5678{" "}
-            </p>
+            {/*             <p>
+              <FaPhoneVolume /> (11) 1234-5678
+            </p> */}
           </div>
         </div>
       </div>
