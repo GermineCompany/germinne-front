@@ -10,13 +10,14 @@ import CarouselPaginaGB from '../../components/CarouselPaginaGB/CarouselPaginaGB
 import carouselgb1 from '../../images/carouselgb1.png';
 import carouselgb2 from '../../images/carouselgb2.png';
 import carouselgb3 from '../../images/carouselgb3.png';
-
+import review1 from '../../images/review-loja-1.png';
 import doublearrow from '../../images/doublearrow.svg';
 import CardPerguntas from '../../components/CardPerguntas/CardPerguntas';
 import elipsedarrow from '../../images/elipsed-arrow.svg';
 import './loja.css';
 import DescricaoProduto from '../../components/DescricaoProduto/DescricaoProduto';
 import { useState } from 'react';
+import CardReviewLoja from '../../components/CardReviewLoja/CardReviewLoja';
 
 function Loja() {
   const contentCarousel = [
@@ -119,6 +120,33 @@ function Loja() {
       </div>
 
       <DescricaoProduto />
+
+      <div className='review-loja-germinne-box'>
+        <h3>Avaliações dos nossos <span>clientes</span>:</h3>
+
+        <div>
+          <CardReviewLoja 
+            fotoCliente='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322621?e=1707955200&v=beta&t=ox5WjTMlulu41s5QUazJH3v7dOkmCwa6WAq-qE7feRI'
+            nomeCliente='Gabriel Augusto'
+            descricao='"Me tornei pai de planta com a Germine Box. É incrivel o quanto o kit é completo, não precisei me preocupar em comprar mais nada para o plantio ”'
+            fotoReview={ review1 }
+          />
+
+          <CardReviewLoja 
+            fotoCliente='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322621?e=1707955200&v=beta&t=ox5WjTMlulu41s5QUazJH3v7dOkmCwa6WAq-qE7feRI'
+            nomeCliente='Gabriel Augusto'
+            descricao='"Me tornei pai de planta com a Germine Box. É incrivel o quanto o kit é completo, não precisei me preocupar em comprar mais nada para o plantio ”'
+            fotoReview={ review1 }
+          />
+
+          <CardReviewLoja 
+            fotoCliente='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322621?e=1707955200&v=beta&t=ox5WjTMlulu41s5QUazJH3v7dOkmCwa6WAq-qE7feRI'
+            nomeCliente='Gabriel Augusto'
+            descricao='"Me tornei pai de planta com a Germine Box. É incrivel o quanto o kit é completo, não precisei me preocupar em comprar mais nada para o plantio ”'
+            fotoReview={ review1 }
+          />
+        </div>
+      </div>
 
       <div className="faq">
         <h2 className="faq-title">Perguntas frequentes</h2>

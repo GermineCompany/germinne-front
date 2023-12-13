@@ -115,3 +115,20 @@
   width: 90%;
   margin: 5px auto;
 }
+
+/* ------------------------------------------ */
+
+.review-loja-germinne-box h3 {
+  font-size: var(--title-medium);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.review-loja-germinne-box span {
+  color: var(--verde-principal);
+}
+
+.review-loja-germinne-box > div {
+  display: flex;
+  justify-content: space-evenly;
+}
