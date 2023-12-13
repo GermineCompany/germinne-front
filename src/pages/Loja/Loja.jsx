@@ -52,8 +52,6 @@ function Loja() {
 
   return (
     <div className="main-container-limitador">
-      <DescricaoProduto />
-
       <div className="conheca-gb">
         <img src={conhecaGbImagem} alt="" />
         <div className="conheca-gb-texto">
@@ -119,6 +117,8 @@ function Loja() {
           />
         </div>
       </div>
+
+      <DescricaoProduto />
 
       <div className="faq">
         <h2 className="faq-title">Perguntas frequentes</h2>
