@@ -58,6 +58,10 @@
     background-color: var(--cta-laranja);
 }
 
+.box-certificados-na-area > div button:hover {
+    cursor: pointer;
+}
+
 .box-certificados-na-area h4 {
     margin-bottom: 10px;
 }
