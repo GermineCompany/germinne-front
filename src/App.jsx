@@ -1,55 +1,61 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import Header from './components/Header/Header';
-import './App.css';
-import Footer from './components/Footer/Footer';
-import SobreNos from './pages/SobreNos/SobreNos';
-import Blog from './pages/Blog/Blog';
-import Login from './pages/Login/Login';
-import CadastroProfissional from './pages/CadastroProfissional/CadastroProfissional';
-import LoginCliente from './pages/LoginCliente/LoginCliente';
-import CadastroCliente from './pages/CadastroCliente/CadastroCliente';
-import Artigo from './pages/Artigo/Artigo';
-import Loja from './pages/Loja/Loja';
-import Horticultores from './pages/Horticultores/Horticultores';
-import VitrineHorticultores from './pages/VitrineHorticultores/VitrineHorticultores';
-import Perfil from './pages/Perfil/Perfil';
-import PerfilHorticultor from './pages/PerfilHorticultor/PerfilHorticultor';
-import FiltrosServico from './pages/FiltrosServico/FiltrosServico';
-import TrabalheConosco from './pages/TrabalheConosco/TrabalheConosco';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Header from "./components/Header/Header";
+import "./App.css";
+import Footer from "./components/Footer/Footer";
+import SobreNos from "./pages/SobreNos/SobreNos";
+import Blog from "./pages/Blog/Blog";
+import Login from "./pages/Login/Login";
+import CadastroProfissional from "./pages/CadastroProfissional/CadastroProfissional";
+import LoginCliente from "./pages/LoginCliente/LoginCliente";
+import CadastroCliente from "./pages/CadastroCliente/CadastroCliente";
+import Artigo from "./pages/Artigo/Artigo";
+import Loja from "./pages/Loja/Loja";
+import Contrate from "./pages/Contrate/Contrate";
+import VitrineHorticultores from "./pages/VitrineHorticultores/VitrineHorticultores";
+import Perfil from "./pages/Perfil/Perfil";
+import PerfilHorticultor from "./pages/PerfilHorticultor/PerfilHorticultor";
+import FiltrosServico from "./pages/FiltrosServico/FiltrosServico";
+import FacaParte from "./pages/FacaParte/FacaParte";
 
 function App() {
   const path = window.location.pathname;
   return (
     <BrowserRouter>
-      {path != '/login' &&
-        path != '/cadastro-profissional' &&
-        path != '/login-cliente' &&
-        path != '/cadastro-cliente' && <Header />}
+      {path != "/login" &&
+        path != "/cadastro-profissional" &&
+        path != "/login-cliente" &&
+        path != "/cadastro-cliente" && <Header />}
       <main>
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="/sobre-nos" Component={SobreNos} />
           <Route path="/blog" Component={Blog} />
           <Route path="/login" Component={Login} />
-          <Route path="/cadastro-profissional" Component={CadastroProfissional} />
+          <Route
+            path="/cadastro-profissional"
+            Component={CadastroProfissional}
+          />
           <Route path="/login-cliente" Component={LoginCliente} />
           <Route path="/cadastro-cliente" Component={CadastroCliente} />
           <Route path="/artigo/:id" Component={Artigo} />
           <Route path="/loja" Component={Loja} />
-          <Route path="/horticultores" Component={Horticultores} />
-          <Route path="/vitrine-horticultores" Component={VitrineHorticultores} />
+          <Route path="/contrate" Component={Contrate} />
+          <Route
+            path="/vitrine-horticultores"
+            Component={VitrineHorticultores}
+          />
           <Route path="/perfil" Component={Perfil} />
           <Route path="/perfil-horticultor/:id" Component={PerfilHorticultor} />
           <Route path="/filtros-servico" Component={FiltrosServico} />
-          <Route path="/trabalhe-conosco" Component={TrabalheConosco} />
+          <Route path="/faca-parte" Component={FacaParte} />
         </Routes>
       </main>
-      {path != '/login' &&
-        path != '/cadastro-profissional' &&
-        path != '/login-cliente' &&
-        path != '/cadastro-cliente' && <Footer />}
+      {path != "/login" &&
+        path != "/cadastro-profissional" &&
+        path != "/login-cliente" &&
+        path != "/cadastro-cliente" && <Footer />}
     </BrowserRouter>
   );
 }
