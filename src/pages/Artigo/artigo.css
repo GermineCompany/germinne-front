@@ -71,7 +71,7 @@
   text-align: justify;
 }
 
-aside {
+.box-artigo-aside aside {
   margin-top: 50px;
   width: 30%;
   display: flex;

@@ -20,7 +20,7 @@ function LoginCliente() {
     try {
       const result = await api.post('/cliente/login', infos);
       setMessages({ ...messages, messageSuccessful: result.data.message });
-      localStorage.setItem('userInfo', JSON.stringify(result.data));
+      localStorage.setItem('userInfo', JSON.stringify({...result.data, logged: true}));
       setTimeout(() => window.location.href = '/', 1500);
     } catch(error) {
       setMessages({ ...messages, messageError: error.response.data.message });
