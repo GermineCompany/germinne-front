@@ -2,11 +2,21 @@
     background-color: var(--background-cards);
     border: 1px solid var(--verde-principal);
     width: max-content;
-    padding: 2% 2%;
+    padding: 15px 30px;
     border-radius: 15px;
 }
 
 .card-perfil-servico p {
     font-size: var(--body-large);
     white-space: nowrap;
+}
+
+@media (max-width:600px) {
+    .card-perfil-servico {
+        padding: 15px 15px;
+    }
+
+    .card-perfil-servico p{
+    font-size: var(--body-small);
+}
 }
