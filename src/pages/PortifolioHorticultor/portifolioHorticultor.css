@@ -77,8 +77,8 @@
     text-align: center;
 }
 
-.ultimos-projetos a {
-    color: black;
+.ultimos-projetos div a h3{
+    color: black !important;
 }
 
 .ultimos-projetos > div{

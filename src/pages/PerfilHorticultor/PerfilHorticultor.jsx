@@ -62,7 +62,7 @@ function PerfilHorticultor() {
       <hr />
 
       <div className='box-ultimos-servicos'>
-        <h2>Últimos <span>Trabalhos</span>!</h2>
+        <h2>Últimos <span>trabalhos</span>!</h2>
 
         <div className='ultimos-servicos-desktop'>
           <a href="/portifolio-horticultor">
@@ -112,6 +112,8 @@ function PerfilHorticultor() {
         </div>
 
         <div className='ultimos-servicos-mobile'>
+
+          
           <CarouselView
             componente1={
               <ImagemUltimosServicos
