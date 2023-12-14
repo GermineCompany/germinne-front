@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ImagemPequenaGB from '../ImagemPequenaGB/ImagemPequenaGB';
 import imgsecundaria1 from '../../images/gb-imagem-secundaria1.png';
 import imgsecundaria2 from '../../images/gb-imagem-secundaria2.png';
@@ -8,6 +8,21 @@ import './descricaoProduto.css';
 import BotaoSelecaoGB from '../BotaoSelecaoGB/BotaoSelecaoGB';
 
 function DescricaoProduto() {
+  const [infoCarrinho, setInfoCarrinho] = useState({
+    sementes: [],
+    quantidade: 0,
+    produto: ''
+  });
+
+  const changeQuantidade = ({ target: { id }}) => {
+    if (id == '+') {
+      setInfoCarrinho({ ...infoCarrinho, quantidade: infoCarrinho.quantidade + 1});
+    } else {
+      if (infoCarrinho.quantidade == 0) return;
+      setInfoCarrinho({ ...infoCarrinho, quantidade: infoCarrinho.quantidade - 1});
+    }
+  };
+
   return (
     <div className="box-descricao-produto">
       <div className="descricao-imagens">
@@ -59,7 +74,7 @@ function DescricaoProduto() {
 
         <div className="div-botoes">
           <p>
-            Semente: <span>Salsa</span>
+            Semente: <span>{ infoCarrinho.sementes.join(', ')}</span>
           </p>
           <div className="box-botoes-selecao">
             <BotaoSelecaoGB contentButton="Alecrim" />
@@ -68,10 +83,7 @@ function DescricaoProduto() {
           </div>
           <div className="box-botoes-selecao">
             <BotaoSelecaoGB contentButton="Manjericão" />
-            <BotaoSelecaoGB
-              className="botao-selecionado"
-              contentButton="Salsa"
-            />
+            <BotaoSelecaoGB contentButton="Salsa" />
             <BotaoSelecaoGB contentButton="Tomate Cereja" />
           </div>
         </div>
@@ -80,8 +92,19 @@ function DescricaoProduto() {
           <p>Quantidade:</p>
 
           <button>
-            <span onClick={() => console.log('MENOS')}>-</span> 1{' '}
-            <span onClick={() => console.log('MAIS')}>+</span>
+            <span
+              id='-'
+              onClick={changeQuantidade}
+            >
+              -
+            </span>
+            {infoCarrinho.quantidade}{' '}
+            <span
+              id='+'
+              onClick={changeQuantidade}
+            >
+              +
+            </span>
           </button>
         </div>
 

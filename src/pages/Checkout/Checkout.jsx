@@ -10,7 +10,8 @@ import {
   MDBRow,
   MDBTypography,
 } from 'mdb-react-ui-kit';
-import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import './mdb.min.css';
+// import './checkout.css';
 import germinneBox from '../../images/gb-imagem-principal.png';
 import React from 'react';
 
