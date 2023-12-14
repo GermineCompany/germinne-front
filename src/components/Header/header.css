@@ -99,6 +99,44 @@
 .header-desktop nav a {
   font-size: var(--subtitle-small);
   color: var(--title-color);
+  
+}
+
+.dropdown-horticultores {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border: 1px solid  var(--verde-principal) !important;
+  border-top: none !important;
+  border-radius: 0 0 10px 10px;
+  padding-top: 5px;
+}
+
+.profissionais:hover .dropdown-horticultores {
+      transition: 0.3s;
+      display: flex !important;
+}
+
+.dropdown-horticultores a {
+  height: 100%;
+  font-size: var(--body-small) !important;
+  padding: 15px 0 15px 0;
+  word-break: break-all;
+}
+
+.dropdown-horticultores a:hover {
+  background-color: var(--cta-laranja);
+  transition: 0.3s;
+  color: white !important;
+  z-index: 1;
+}
+
+.dropdown-horticultores a:nth-child(2):hover {
+  border-radius: 0 0 10px 10px;
+  background-color: var(--cta-verde);
 }
 
 .component-mobile {
@@ -175,6 +213,11 @@
   width: 100%;
   background: var(--verde-escuro);
   margin-top: 8px;
+}
+
+.box-icone-sacola img{
+  height: 50px;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 1250px) {

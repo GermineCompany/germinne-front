@@ -1,0 +1,201 @@
+
+.box-horticultores {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-como-funciona {
+    display: flex;
+    margin: 5% auto;
+    width: 100%;
+}
+
+.como-funciona-mainImg {
+    width: 675px;
+    height: 490px;
+}
+
+.box-texto-como-funciona {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+}ft
+
+.box-texto-como-funciona h2 {
+    font-size: var(--title-small);
+    color: var(--title-color);
+    font-weight: var(--bold);
+    margin-bottom: 10px;
+}
+
+.box-texto-como-funciona .card-como-funciona {
+    margin: 15px 0px;
+}
+
+.box-texto-como-funciona .card-como-funciona img {
+    margin: 10px 40px;
+}
+
+.box-texto-como-funciona .card-como-funciona p {
+    text-align: left;
+    font-size: var(--body-small);
+}
+
+.box-servicos {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.box-servicos h2 {
+    font-size: var(--title-large);
+}
+
+.box-servicos h2 span{
+    color: var( --verde-principal);
+}
+
+.box-card-servicos-horticultores {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    margin-top: 50px;
+}
+
+.box-card-servicos-horticultores h4 {
+    color: var(--verde-principal);
+}
+
+.box-card-servicos-horticultores article:nth-child(1) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.box-card-servicos-horticultores article:nth-child(2) {
+    text-align: left;
+}
+
+.box-card-servicos-horticultores article:nth-child(3) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.titulo-banner-horticultor {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 200px;
+    font-size: var(--title-large);
+}
+
+.titulo-banner-horticultor span:nth-child(1) {
+    color: var(--cta-laranja);
+}
+
+.titulo-banner-horticultor span:nth-child(2) {
+    color: var(--font-banner-verde);
+}
+
+.banner-horticultor {
+    background: url(../../images/banner-horticultor.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 755px;
+    width: 100%;
+    padding: 2% 4%;
+}
+
+.banner-horticultor > div {
+    margin: 35px 35px;
+    padding: 40px;
+    border-radius: 15px;
+    width: 650px;
+    height: 600px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.banner-horticultor > div a {
+   color: black;
+   margin-bottom: 15px;
+}
+
+.banner-horticultor h2 {
+    align-self: center;
+    padding-left: 30px;
+    text-align: left;
+    font-size: var(--subtitle-large);
+}
+
+.banner-horticultor span {
+    color: var(--verde-principal);
+}
+
+.box-inputs-horticultor {
+    margin-top: 5%;
+}
+
+.banner-horticultor select, .banner-horticultor input {
+    margin: 5% 0;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.3);
+    border: none;
+    background-color: #EAE9E9;
+    width: 90%;
+    padding: 4% 50px;
+    font-size: var(--subtitle-small);
+}
+
+.banner-horticultor option {
+    background-color: var(--verde-principal);
+    color: white;
+}
+
+.banner-horticultor input, .banner-horticultor input::-webkit-outer-spin-button,
+.banner-horticultor input::-webkit-inner-spin-button, .banner-horticultor input[type=number]  {
+    background-image: url(../../images/local-pin.svg);
+    background-repeat: no-repeat;
+    background-position: right 2rem top 50%;
+    background-size: 30px auto;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+}
+
+
+
+.banner-horticultor select {
+    border: unset;
+    appearance: none;
+    background-image: url(../../images/arrow-select.svg);
+    background-repeat: no-repeat;
+    background-position: right 2rem top 50%;
+    background-size: 30px auto;
+}
+
+.banner-horticultor button {
+    margin-top: 5%;
+    background-color: var(--verde-escuro);
+    color: white;
+    font-size: var(--subtitle-medium);
+    border: none;
+    padding: 20px 50px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 5% auto;
+}
+
+.banner-horticultor button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+    .box-como-funciona {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    };  
+}
