@@ -11,7 +11,8 @@
 }
 
 .como-funciona-mainImg {
-    width: 40%;
+    width: 675px;
+    height: 490px;
 }
 
 .box-texto-como-funciona {
@@ -68,32 +69,53 @@
 
 .box-card-servicos-horticultores article:nth-child(1) {
     flex-direction: row-reverse;
+    text-align: right;
+}
+
+.box-card-servicos-horticultores article:nth-child(2) {
+    text-align: left;
 }
 
 .box-card-servicos-horticultores article:nth-child(3) {
     flex-direction: row-reverse;
+    text-align: right;
+}
+
+.titulo-banner-horticultor {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 200px;
+    font-size: var(--title-large);
+}
+
+.titulo-banner-horticultor span:nth-child(1) {
+    color: var(--cta-laranja);
+}
+
+.titulo-banner-horticultor span:nth-child(2) {
+    color: var(--font-banner-verde);
 }
 
 .banner-horticultor {
-    background: url(../../images/banner-horticultor.png) no-repeat;
+    background: url(../../images/banner-horticultor.svg) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 755px;
     width: 100%;
     padding: 2% 4%;
 }
 
 .banner-horticultor > div {
     margin: 35px 35px;
-    padding: 10px;
-    border-radius: 10px;
-    width: 35%;
-    height: 85%;
+    padding: 40px;
+    border-radius: 15px;
+    width: 650px;
+    height: 600px;
     background-color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .banner-horticultor > div a {
    color: black;
@@ -101,8 +123,9 @@
 }
 
 .banner-horticultor h2 {
-    margin-top: 25px;
-    text-align: center;
+    align-self: center;
+    padding-left: 30px;
+    text-align: left;
     font-size: var(--subtitle-large);
 }
 
@@ -168,56 +191,11 @@
     cursor: pointer;
 }
 
-
-.box-banner-cadastro-horticultor {
-    background-image: url(../../images/background-horticultores.png);
-    box-shadow: 900px 0px 150px 0px rgba(0, 0, 0, 0.60) inset;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 100px;
-    height: 55vh;
-    width: 100%;
-}
-
-
-.banner-cadastro-horticultor {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    height: 100%;
-    color: white;
-    gap: 15px
-}
-
-
-.banner-cadastro-horticultor div  {
-    width: 30%;
-    margin-left: 3%;
-}
-
-.banner-cadastro-horticultor h3 {
-    font-size: var(--title-small);
-    font-weight: var(--bold);
-}
-
-.banner-cadastro-horticultor span {
-    color: var(--font-banner-verde);
-}
-
-.banner-cadastro-horticultor p {
-    font-size: var(--body-small);
-    padding-top: 2%;
-}
-
-.banner-cadastro-horticultor button {
-    margin-top: 5%;
-    background-color: var(--cta-laranja);
-    color: white;
-    font-size: var(--subtitle-small);
-    font-weight: var(--semi-bold);
-    font-family: var(--title-family);
-    border: none;
-    padding: 3% 8%;
-    border-radius: 20px;
-    cursor: pointer;
+@media (max-width: 1400px) {
+    .box-como-funciona {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    };  
 }
