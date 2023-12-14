@@ -2,14 +2,48 @@
     background: url(../../images/homebanner.png) no-repeat;
     background-size: cover ;
     background-position: center;
-    height: 70vh;
-    width: 100%;
+    height: 650px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
     padding: 150px 0px 0px 50px;
     box-shadow: 700px 0px 150px 0px rgba(0, 0, 0, 0.70) inset;
+}
+
+.banner-home span a {
+    color: var(--verde-principal) !important;
+}
+
+.germinnebox-home {
+    background: url(../../images/banner-germinnebox-home.svg) no-repeat !important;
+    background-size: cover !important;
+}
+
+.germinnebox-home span{
+    color: var(--cta-roxo) !important;
+}
+
+.germinnebox-home span a {
+    color: var(--cta-roxo) !important;
+}
+
+.contrate-home {
+    background: url(../../images/banner-contrate-home.svg) no-repeat !important;
+    background-size: cover !important;
+}
+
+.contrate-home span{
+    color: var(--cta-laranja) !important;
+}
+
+.contrate-home span a {
+    color: var(--cta-laranja) !important;
+}
+
+.swiper-slide {
+    padding: 0 !important;
 }
 
 .banner-home h2 {
@@ -97,4 +131,27 @@
 
 .tamanho-pagina {
     width: 80vw !important;
+}
+
+@media  (max-width:1200px) {
+    .banner-home {
+        height: 400px;
+        width: 100%;
+        padding: 0 30px !important;
+    }
+    .banner-home h2 {
+        font-size: var(--title-medium);
+    }
+    .banner-home p {
+        font-size: var(--body-large);
+        width: 100%;
+    }
+    
+    .germinnebox-home {
+        background-image: url(../../images/banner-germinnebox-home-mobile.svg) !important;
+    }
+
+    .contrate-home {
+        background-image: url(../../images/banner-contrate-home-mobile.svg) !important;
+    }
 }
