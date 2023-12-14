@@ -1,0 +1,132 @@
+.descricao-portifolio {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descricao-portifolio h2 {
+    font-size: var(--title-small);
+    margin-bottom: 50px;
+}
+
+.descricao-portifolio h2 span {
+    color: var(--verde-principal);
+}
+
+.descricao-portifolio p {
+    font-size: var(--body-medium);
+    width: 70%;
+}
+
+.data-publicacao-portifolio {
+    margin-top: 100px;
+    color: gray;
+}
+
+.main-container-limitador hr{
+    border-color: var(--verde-principal)
+}
+
+.box-imagens-portifolio {
+    margin: 50px 0;
+}
+
+.box-imagens-portifolio h2 {
+    font-size: var(--title-small);
+}
+
+.box-imagens-portifolio h2 span {
+    color: var(--verde-principal);
+}
+
+.imagens-portifolio {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.imagens-portifolio img {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 250px;
+    width: 420px;
+}
+
+.box-ultimos-projetos {
+    margin-top: 50px;
+}
+
+.box-ultimos-projetos h2{
+    font-size: var(--title-small);
+}
+
+.box-ultimos-projetos h2 span {
+    color: var(--verde-principal);
+}
+
+.ultimos-projetos {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+}
+
+.ultimos-projetos a {
+    color: black;
+}
+
+.ultimos-projetos > div{
+    width: 550px;
+    height: 350px;
+}
+
+.ultimos-projetos img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.ultimos-projetos h3 {
+    font-size: var(--subtitle-large);
+}
+
+.ultimos-projetos p {
+    font-size: var(--body-medium);
+    color: gray;
+}
+
+@media (max-width:600px) {
+    .descricao-portifolio h2 {
+        font-size: var(--subtitle-large) !important;
+    }
+
+    .descricao-portifolio p {
+        width: 100%
+    }
+
+    .box-imagens-portifolio h2 {
+        text-align: center;
+        white-space: nowrap;
+        font-size: var(--subtitle-large);
+    }
+
+    .ultimos-projetos h3{
+        font-size: var(--subtitle-small);
+    }
+
+    .ultimos-projetos p {
+        font-size: var(--body-small);
+    }
+
+    .box-ultimos-projetos h2 {
+        text-align: center;
+        font-size: var(--subtitle-large);
+    }
+}

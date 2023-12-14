@@ -65,12 +65,14 @@ function PerfilHorticultor() {
         <h2>Últimos <span>Trabalhos</span>!</h2>
 
         <div className='ultimos-servicos-desktop'>
-          <ImagemUltimosServicos
-            srcImg={post1}
-            titulo='Horticultura nas escolas'
-            local='Cotia - SP | Granja Viana'
-            texto='Os ensinos em escolas estão ficando cada vez mais tecnológicos, então tivemos a iniciativa de nos virar para o lado do conta...'
-          />
+          <a href="/portifolio-horticultor">
+            <ImagemUltimosServicos
+              srcImg={post1}
+              titulo='Horticultura nas escolas'
+              local='Cotia - SP | Granja Viana'
+              texto='Os ensinos em escolas estão ficando cada vez mais tecnológicos, então tivemos a iniciativa de nos virar para o lado do conta...'
+            />
+          </a>
 
           <ImagemUltimosServicos
             srcImg={post1}

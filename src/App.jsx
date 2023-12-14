@@ -18,6 +18,7 @@ import Perfil from "./pages/Perfil/Perfil";
 import PerfilHorticultor from "./pages/PerfilHorticultor/PerfilHorticultor";
 import FiltrosServico from "./pages/FiltrosServico/FiltrosServico";
 import FacaParte from "./pages/FacaParte/FacaParte";
+import PortifolioHorticultor from "./pages/PortifolioHorticultor/PortifolioHorticultor";
 
 function App() {
   const path = window.location.pathname;
@@ -48,6 +49,7 @@ function App() {
           />
           <Route path="/perfil" Component={Perfil} />
           <Route path="/perfil-horticultor/:id" Component={PerfilHorticultor} />
+          <Route path="/portifolio-horticultor" Component={PortifolioHorticultor} />
           <Route path="/filtros-servico" Component={FiltrosServico} />
           <Route path="/faca-parte" Component={FacaParte} />
         </Routes>
