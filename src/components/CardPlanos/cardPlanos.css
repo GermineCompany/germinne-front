@@ -1,6 +1,6 @@
 .card-planos {
   background-color: var(--verde-principal);
-  width: 30%;
+  width: 420px;
   height: 550px;
   border-radius: 15px;
   color: var(--font-body-color);
@@ -12,7 +12,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--subtitle-medium);
 }
 
 .card-planos div:nth-child(1) h3 {
@@ -27,6 +26,8 @@
   justify-content: end;
   background-color: white;
   padding: 8%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .card-planos div:nth-child(2) div {
@@ -70,15 +71,32 @@
   cursor: pointer;
 }
 
-.card-planos div:nth-child(3) button {
-  background-color: var(--cta-roxo);
-  color: white;
-  font-size: var(--subtitle-large);
-  font-weight: var(--semi-bold);
-  border: none;
-  padding: 3% 27%;
-  border-radius: 10px;
-  cursor: pointer;
+
+
+@media (max-width:600px) {
+  .card-planos div:nth-child(1) h3 {
+    font-size: var(--subtitle-large);
+  }
+  .card-planos div:nth-child(2) div h2{
+    font-size: var(--title-small);
+  }
+
+  .card-planos div:nth-child(2) span {
+    font-size: var(--subtitle-large);
+  }
+
+  .card-planos div:nth-child(2) div div {
+    font-size: var(--body-medium);
+  }
+
+  .card-planos div:nth-child(2) div button {
+    font-size: var(--subtitle-medium);
+  }
+
+  .card-planos {
+    height: 450px;
+  }
+
 }
 
 
