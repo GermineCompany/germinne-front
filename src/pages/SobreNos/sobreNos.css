@@ -1,3 +1,4 @@
+
 .box-paleta {
     display: flex;
     flex-direction: column;
@@ -72,4 +73,66 @@
     text-align: center;
     margin-top: 15px;
     width: 350px;
+}
+
+.banner-sobre-nos {
+  background-image: url("https://germinnecomp-img.s3.sa-east-1.amazonaws.com/banner-sobre-nos.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.banner-sobre-nos p {
+    color: white;
+    font-weight: var(--semi-bold);
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    font-size: var(--title-medium);
+}
+
+.banner-sobre-nos span {
+    color: var(--cta-laranja);
+}
+
+.box-sobre-a-germinne {
+    padding: 0 50px;
+}
+
+.box-sobre-a-germinne p {
+    line-height: 32px;
+    margin: 20px 0;
+    font-size: var(--body-medium);
+}
+
+.box-sobre-a-germinne span {
+    color: var(--cta-verde);
+}
+
+.box-cards-valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-futuro-germinne {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.box-futuro-germinne h3 {
+    font-size: var(--title-medium);
+    margin: 40px 0;
+}
+
+.box-futuro-germinne h3 span {
+    color: var(--verde-principal);
+}
+
+.box-futuro-germinne div:nth-child(even) {
+    flex-direction: row-reverse;
 }
