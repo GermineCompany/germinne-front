@@ -23,6 +23,13 @@ function DescricaoProduto() {
     }
   };
 
+  const toggleSeed = (seed) => {
+    const updatedSeeds = infoCarrinho.sementes.includes(seed)
+      ? infoCarrinho.sementes.filter((s) => s !== seed)
+      : [...infoCarrinho.sementes, seed];
+    setInfoCarrinho({ ...infoCarrinho, sementes: updatedSeeds });
+  };
+
   return (
     <div className="box-descricao-produto">
       <div className="descricao-imagens">
@@ -61,14 +68,19 @@ function DescricaoProduto() {
 
         <div className="div-botoes">
           <p>
-            Selecione o tipo de produto: <span>GerminneBox</span>
+            Selecione o tipo de produto: <span>{ infoCarrinho.produto }</span>
           </p>
           <div className="box-botoes-selecao">
             <BotaoSelecaoGB
-              className="botao-selecionado"
+              className={infoCarrinho.produto === 'GerminneBox' ? 'botao-selecionado' : ''}
+              changeClass={() => setInfoCarrinho({ ...infoCarrinho, produto: 'GerminneBox' })}
               contentButton="GerminneBox"
             />
-            <BotaoSelecaoGB contentButton="Kit Plantio" />
+            <BotaoSelecaoGB
+              className={infoCarrinho.produto === 'Kit Plantio' ? 'botao-selecionado' : ''}
+              changeClass={() => setInfoCarrinho({ ...infoCarrinho, produto: 'Kit Plantio' })}
+              contentButton="Kit Plantio" 
+            />
           </div>
         </div>
 
@@ -77,14 +89,39 @@ function DescricaoProduto() {
             Semente: <span>{ infoCarrinho.sementes.join(', ')}</span>
           </p>
           <div className="box-botoes-selecao">
-            <BotaoSelecaoGB contentButton="Alecrim" />
-            <BotaoSelecaoGB contentButton="Coentro" />
-            <BotaoSelecaoGB contentButton="Hortelã" />
+            <BotaoSelecaoGB
+              className={infoCarrinho.sementes.includes('Alecrim') ? 'botao-selecionado' : ''}
+              changeClass={() => toggleSeed('Alecrim')}
+              contentButton="Alecrim" 
+            />
+            <BotaoSelecaoGB
+              className={infoCarrinho.sementes.includes('Coentro') ? 'botao-selecionado' : ''}
+              changeClass={() => toggleSeed('Coentro')}
+              contentButton="Coentro" 
+            />
+            <BotaoSelecaoGB
+              className={infoCarrinho.sementes.includes('Hortelã') ? 'botao-selecionado' : ''}
+              changeClass={() => toggleSeed('Hortelã')}
+              contentButton="Hortelã" 
+            />
+            
           </div>
           <div className="box-botoes-selecao">
-            <BotaoSelecaoGB contentButton="Manjericão" />
-            <BotaoSelecaoGB contentButton="Salsa" />
-            <BotaoSelecaoGB contentButton="Tomate Cereja" />
+            <BotaoSelecaoGB
+              className={infoCarrinho.sementes.includes('Manjericão') ? 'botao-selecionado' : ''}
+              changeClass={() => toggleSeed('Manjericão')}
+              contentButton="Manjericão" 
+            />
+            <BotaoSelecaoGB
+              className={infoCarrinho.sementes.includes('Salsa') ? 'botao-selecionado' : ''}
+              changeClass={() => toggleSeed('Salsa')}
+              contentButton="Salsa" 
+            />
+            <BotaoSelecaoGB
+              className={infoCarrinho.sementes.includes('Tomate Cereja') ? 'botao-selecionado' : ''}
+              changeClass={() => toggleSeed('Tomate Cereja')}
+              contentButton="Tomate Cereja" 
+            />
           </div>
         </div>
 
