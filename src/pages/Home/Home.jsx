@@ -35,7 +35,7 @@ function Home() {
         slide3={
           <div className="banner-home contrate-home">
             <h2>
-            <span>profssionais</span> de confiança
+              <span>profissionais</span> de confiança
             </h2>
             <p>
               Solicite um orçamento <span>gratuito</span> sem sair de casa agora.
@@ -104,21 +104,21 @@ function Home() {
             <div className='box-card-servicos'>
               <CardHomeServicos
                 title='Explore informações sobre a agricultura'
-                subtitle={['Acesse o ', <span key={1}>Germinne Blog</span>]}
+                subtitle={['Acesse o ', <span key={1}>nosso Blog</span>]}
                 className='first-service-card'
                 routeName='blog'
-              />
-              <CardHomeServicos
-                title='Contrate profissionais de confinaça'
-                subtitle={['Profissionais de ', <span key={2}>Qualidade</span>]}
-                className='second-service-card'
-                routeName='horticultores'
               />
               <CardHomeServicos
                 title='Plante sem dificuldades'
                 subtitle={['Conheça a ', <span key={3}>Germinne Box</span>]}
                 className='third-service-card'
                 routeName='loja'
+              />
+              <CardHomeServicos
+                title='Contrate profissionais de confinaça'
+                subtitle={['Profissionais de ', <span key={2}>Qualidade</span>]}
+                className='second-service-card'
+                routeName='horticultores'
               />
             </div>
           </div>

@@ -9,24 +9,45 @@ import FormsSobreNos from '../../components/FormsSobreNos/FormsSobreNos';
 
 function SobreNos() {
   return (
-      <div className="box-text-sobre-nos">
-        <h3>Sobre nós</h3>
-        <p>
-          A Germinne surgiu com o objetivo de incentivar cada vêz mais pessoas
-          parte de um movimento que transforma os espaços urbanos em fontes de
-          vida e saúde. Nossa plataforma promove informações e incentiva
-          iniciativas que promovam a agricultura urbana: Leia os mais diversos
-          artigos em nosso blog, converse com nosso chatbot inteligente que irá
-          te orientar e ajudar a resolver os seus problemas, invista em nosso
-          kit de cultivo indoor e plante em qualquer lugar de maneira
-          simplificada.
-        </p>
+    <div className="main-container-limitador">
 
-        <p>
-          Temos como objetivo tornar a agricutura urbana mais acessível,
-          inclusiva e produtiva para todos.
-        </p>
+      <div className='box-paleta'>
+        <h2>Nossa paleta de cores</h2>
+        <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/paleta-de-cores.png" alt="Imagem da paleta de cores" />
       </div>
+
+      <div className='box-banner-logo'>
+        <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/banner-logo.png" alt="" />
+      </div>
+
+      <div className='box-impactos-sociais'>
+        <h2>O impacto da <span>Germinne</span>:</h2>
+        <div className='box-impactos-sociais-imagens'>
+          
+          <div className='div-impactos'>
+            <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/impacto-comunitario1.png" alt="" />
+            <p>Benefícios sua <span>saúde</span> fisica com a ingestão de menos agrotóxicos.</p>
+          </div>
+
+          <div className='div-impactos'>
+            <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/impacto-comunitario2.png" alt="" />
+            <p>Diminuição do stress e prevenção de doenças mentais com a <span>hortoterapia</span>.</p>
+          </div>
+
+          <div className='div-impactos'>
+            <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/impacto-comunitario3.png" alt="" />
+            <p>Alimentos mais saborosos e <span>orgânicos</span> cultivados em casa.</p>
+          </div>
+
+     
+
+        </div>
+      </div>
+
+
+    </div>
+
+
   );
 }
 
