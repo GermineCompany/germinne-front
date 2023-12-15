@@ -7,87 +7,97 @@ import articleImage1 from '../../images/article-image-1.png';
 import articleImage2 from '../../images/article-image-2.png';
 import articleImage3 from '../../images/article-image-3.png';
 import CardAvaliacao from '../../components/CardAvaliacao/CardAvaliacao';
-import Carousel from '../../components/Carousel/Carousel';
 
 function Home() {
   return (
     <div>
-      <Carousel
-        slide1={<div className="banner-home">
-          <h2>
-            O <span>verde</span> no urbano
-          </h2>
-          <p>
-            Semeia a vida, cultive sabor! A <span>Germinne</span> almeja um futuro
-            verde e sustentavel nas cidades.
-          </p>
-          <span><a href="/blog">saiba mais...</a></span>
-        </div>}
-        slide2={<div className="banner-home germinnebox-home">
-          <h2>
-            NÃO TEM <span>ESPAÇO</span> EM CASA?
-          </h2>
-          <p>
-          Conheça a <span>Germinne</span> Box, cultive seu próprio alimento sem dificuldades!
-          </p>
-          <span><a href="/loja">saiba mais...</a></span>
-        </div>}
-        slide3={
-          <div className="banner-home contrate-home">
-            <h2>
-              O <span>verde</span> no urbano
-            </h2>
-            <p>
-            TEM UM <span>ESPAÇO</span> EM CASA MAS NÃO SABE <span>OQUE FAZER</span> COM ELE?
-            </p>
-            <span><a href="/contrate">saiba mais...</a></span>
-          </div>
-
-        }
-      />
+      <div className="banner-home">
+        <h2>
+          O <span>verde</span> no urbano
+        </h2>
+        <p>
+          Semeia a vida, cultive sabor! A <span>Germinne</span> almeja um futuro
+          verde e sustentavel nas cidades.
+        </p>
+      </div>
 
       <div className='main-container-limitador'>
-        <article className='box-card-home'>
-          <div className='box-card-servicos'>
-            <CardHomeServicos
-              title='Explore informações sobre a agricultura'
-              subtitle={['Acesse o ', <span key={1}>Germinne Blog</span>]}
-              className='first-service-card'
-              routeName='blog'
-            />
-            <CardHomeServicos
-              title='Contrate profissionais de confinaça'
-              subtitle={['Profissionais de ', <span key={2}>Qualidade</span>]}
-              className='second-service-card'
-              routeName='horticultores'
-            />
-            <CardHomeServicos
-              title='Plante sem dificuldades'
-              subtitle={['Conheça a ', <span key={3}>Germinne Box</span>]}
-              className='third-service-card'
-              routeName='loja'
-            />
+
+        <div className='box-card-home'>
+
+          <div className='box-cards'>
+
+            <h2>Conheça a <span>Germinne</span></h2>
+
+            <div className='box-card-germinne'>
+              <CardHomeGerminne
+                title={['Temos a missão de levar o ', <span key={1}>verde</span>, ' para as áreas urbanas']}
+                className='first-germinne-card'
+              />
+
+              <CardHomeGerminne
+                title={['Promovemos a ', <span key={2}>sustentabilidade</span>, ' contribuindo para uma cidade mais saudável']}
+                className='second-germinne-card'
+              />
+
+              <CardHomeGerminne
+                title={['Temos a missão de levar o ', <span key={3}>verde</span>, ' para as áreas urbanas']}
+                className='third-germinne-card'
+              />
+            </div>
           </div>
 
-          <div className='box-card-germinne'>
-            <CardHomeGerminne
-              title={['Temos a missão de levar o ', <span key={1}>verde</span>, ' para as áreas urbanas']}
-              className='first-germinne-card'
-            />
-
-            <CardHomeGerminne
-              title={['Promovemos a ', <span key={2}>sustentabilidade</span>, ' contribuindo para uma cidade mais ', <span key={2}>saudável</span>,]}
-              className='second-germinne-card'
-              subtitle={['Conheça a ', <span key={4}>Germinne</span>]}
-              id='second-germinne-large'
-            />
-
-            <CardHomeGerminne
-              title={['Temos a missão de levar o ', <span key={3}>verde</span>, ' para as áreas urbanas']}
-              className='third-germinne-card'
-            />
+          <div className='banner-mvv'>
+            <div className='mvv-itens'>
+              <h2>CULTIVO</h2>
+              <p>A nossa missão é democratizar a agricultura urbana, fornecendo informações corretas e práticas junto com um profissional, para que todos possam ter acesso a alimentos frescos e saudáveis.</p>
+            </div>
+            <div className='box-mvv2'>
+              <div className='mvv-itens'>
+                <h2>COLHEITA</h2>
+                <p>Ser a principal plataforma de informações, serviço de horticultura e vendas de produtos que incentivam as hortas urbanas, reconhecida pela sua contribuição para a sustentabilidade e bem-estar das pessoas.</p>
+              </div>
+              <div className='mvv-itens'>
+                <h2>NUTRIENTES</h2>
+                <ul>
+                  <li>Ética</li>
+                  <li>Confiança</li>
+                  <li>Sustentabilidade</li>
+                  <li>Comprometimento</li>
+                  <li>Informações de Qualidade</li>
+                  <li>Eficiência</li>
+                  <li>Tecnologia</li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </article>
+
+          <div className='box-cards'>
+
+            <h2>Conheça nossas <span>soluções</span>:</h2>
+
+            <div className='box-card-servicos'>
+              <CardHomeServicos
+                title='Explore informações sobre a agricultura'
+                subtitle={['Acesse o ', <span key={1}>Germinne Blog</span>]}
+                className='first-service-card'
+                routeName='blog'
+              />
+              <CardHomeServicos
+                title='Contrate profissionais de confinaça'
+                subtitle={['Profissionais de ', <span key={2}>Qualidade</span>]}
+                className='second-service-card'
+                routeName='horticultores'
+              />
+              <CardHomeServicos
+                title='Plante sem dificuldades'
+                subtitle={['Conheça a ', <span key={3}>Germinne Box</span>]}
+                className='third-service-card'
+                routeName='loja'
+              />
+            </div>
+          </div>
+        </div>
 
         <section className='box-beneficios-agricultura'>
           <h2>Benefícios da <span>Agricultura Urbana</span></h2>
