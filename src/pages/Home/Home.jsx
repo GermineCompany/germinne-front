@@ -12,7 +12,7 @@ import Carousel from '../../components/Carousel/Carousel';
 function Home() {
   return (
     <div>
-     <Carousel
+      <Carousel
         slide1={<div className="banner-home">
           <h2>
             O <span>verde</span> no urbano
@@ -28,17 +28,17 @@ function Home() {
             NÃO TEM <span>ESPAÇO</span> EM CASA?
           </h2>
           <p>
-          Conheça a <span>Germinne</span> Box, cultive seu próprio alimento sem dificuldades!
+            Conheça a <span>Germinne</span> Box, cultive seu próprio alimento sem dificuldades!
           </p>
           <span><a href="/loja">saiba mais...</a></span>
         </div>}
         slide3={
           <div className="banner-home contrate-home">
             <h2>
-              O <span>verde</span> no urbano
+            <span>profssionais</span> de confiança
             </h2>
             <p>
-            TEM UM <span>ESPAÇO</span> EM CASA MAS NÃO SABE <span>OQUE FAZER</span> COM ELE?
+              Solicite um orçamento <span>gratuito</span> sem sair de casa agora.
             </p>
             <span><a href="/contrate">saiba mais...</a></span>
           </div>
@@ -150,27 +150,27 @@ function Home() {
         </section>
 
         <section className='box-avaliacoes'>
-          <h3><span>Avaliações</span> dos nossos <span>clientes</span></h3>
+          <h3><span>Avaliações</span> dos nossos clientes</h3>
 
           <div>
             <CardAvaliacao
-              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
+              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322621?e=1707955200&v=beta&t=ox5WjTMlulu41s5QUazJH3v7dOkmCwa6WAq-qE7feRI'
               altImg='Foto do Gabriel Augusto'
-              description='"Me tornei pai de planta com a Germine Box"'
+              description='"Amei o kit! É completão. Ta doce para cultivar minha hortinha agora e já indiquei pra minha mãe"'
               name='Gabriel Augusto'
             />
 
             <CardAvaliacao
-              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
+              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322621?e=1707955200&v=beta&t=ox5WjTMlulu41s5QUazJH3v7dOkmCwa6WAq-qE7feRI'
               altImg='Foto do Gabriel Augusto'
-              description='“Comprei a GerminneBox e foi otimo, pouco trabalho, quase nenhum.”'
+              description='"Me tornei pai de planta com a Germine Box. É incrivel o quanto o kit é completo, não precisei me preocupar em comprar mais nada para o plantio."'
               name='Gabriel Silva'
             />
 
             <CardAvaliacao
-              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
+              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322621?e=1707955200&v=beta&t=ox5WjTMlulu41s5QUazJH3v7dOkmCwa6WAq-qE7feRI'
               altImg='Foto do Gabriel Augusto'
-              description='"Encontrei um profssional na vitrine da Germinne e "'
+              description='"Minha amiga me indicou a GerminneBox, resultado: minha varanda ta lotada de plantas."'
               name='Gabriel Lindo Augusto'
             />
           </div>
