@@ -9,6 +9,12 @@ const GerminneProvider = ({ children }) => {
     nomeUsuario: '',
     idUsuario: ''
   });
+
+  const [checkoutInfo, setCheckoutInfo] = useState({
+    sementes: [],
+    quantidade: 0,
+    produto: ''
+  });
     
   const verifyUserLogin = async () => {
     const userInfo = JSON.parse(localStorage.getItem('userInfo'));
@@ -31,7 +37,10 @@ const GerminneProvider = ({ children }) => {
   }, []);
 
   const context = {
-    loggedUser
+    loggedUser,
+    checkout: {
+      checkoutInfo, setCheckoutInfo
+    }
   };
 
   return (

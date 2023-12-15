@@ -11,11 +11,13 @@ import {
   MDBTypography,
 } from 'mdb-react-ui-kit';
 import './mdb.min.css';
-// import './checkout.css';
-import germinneBox from '../../images/gb-imagem-principal.png';
-import React from 'react';
+
+import React, { useContext } from 'react';
+import GerminneContext from '../../context/GerminneContext';
 
 export default function Checkout() {
+  const { checkout: { checkoutInfo } } = useContext(GerminneContext);
+
   return (
     <section className="h-100 h-custom" style={{ backgroundColor: '#eee' }}>
       <MDBContainer className="py-5 h-100">
@@ -39,26 +41,26 @@ export default function Checkout() {
                           <div className="d-flex flex-row align-items-center">
                             <div>
                               <MDBCardImage
-                                src={ germinneBox }
+                                src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-3.png"
                                 fluid className="rounded-3" style={{ width: '65px' }}
                                 alt="Shopping item" />
                             </div>
                             <div className="ms-3">
                               <MDBTypography tag="h5">
-                                Germinne Box
+                                { checkoutInfo.produto }
                               </MDBTypography>
-                              <p className="small mb-0">Salsa, Manjericão, Cebolinha</p>
+                              <p className="small mb-0">{ checkoutInfo.sementes.join(', ') }</p>
                             </div>
                           </div>
                           <div className="d-flex flex-row align-items-center">
                             <div style={{ width: '50px' }}>
                               <MDBTypography tag="h5" className="fw-normal mb-0">
-                                1
+                                { checkoutInfo.quantidade }
                               </MDBTypography>
                             </div>
                             <div style={{ width: '80px' }}>
                               <MDBTypography tag="h5" className="mb-0">
-                                R$ 49,90
+                                R$ { checkoutInfo.quantidade * 134.99 }
                               </MDBTypography>
                             </div>
                             <a href="#!" style={{ color: '#cecece' }}>
@@ -115,7 +117,7 @@ export default function Checkout() {
     
                         <div className="d-flex justify-content-between">
                           <p className="mb-2">Subtotal</p>
-                          <p className="mb-2">R$ 49,90</p>
+                          <p className="mb-2">R$ { checkoutInfo.quantidade * 134.99 }</p>
                         </div>
     
                         <div className="d-flex justify-content-between">
@@ -125,12 +127,12 @@ export default function Checkout() {
     
                         <div className="d-flex justify-content-between">
                           <p className="mb-2">Total</p>
-                          <p className="mb-2">R$ 89,90</p>
+                          <p className="mb-2">R$ { checkoutInfo.quantidade * 134.99 + 30 }</p>
                         </div>
     
                         <MDBBtn style={{ backgroundColor: 'var(--font-banner-verde)' }} color="info" block size="lg">
                           <div className="d-flex justify-content-between">
-                            <span>R$ 89,90</span>
+                            <span>R$ { checkoutInfo.quantidade * 134.99 + 30 }</span>
                             <span>
                               Finalizar compra{' '}
                               <i className="fas fa-long-arrow-alt-right ms-2"></i>

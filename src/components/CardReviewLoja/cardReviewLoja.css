@@ -29,6 +29,10 @@
     font-weight: var(--semi-bold);
 }
 
+.card-review-loja p {
+    margin-bottom: 0;
+}
+
 .card-review-loja-nome > img {
     width: 70px;
     height: 70px;

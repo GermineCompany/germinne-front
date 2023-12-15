@@ -17,7 +17,8 @@
 }
 
 .box-imagem-descricao img {
-    width: 100%;
+    width: 550px;
+    height: 420px;
     background-color: #F8F8F8;
     border-radius: 10px;
     object-fit: cover;
@@ -54,6 +55,7 @@
 
 .nome-preco p {
     font-size: var(--title-small);
+    margin-bottom: 0;
 }
 
 .nome-preco span {
@@ -64,13 +66,11 @@
     display: flex;
 }
 
- .div-botoes {
-    margin-top: 25px;
-} 
-
 .div-botoes>p {
     font-size: var(--body-small);
     color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
+    white-space: nowrap;
 }
 
 .div-botoes>p span {
