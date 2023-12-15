@@ -1,24 +1,24 @@
-import React from "react";
-import "./facaParte.css";
+import React from 'react';
+import './facaParte.css';
 
-import CustoBeneficio from "../../images/custo-beneficio-trabalhe-conosco.svg";
+import CustoBeneficio from '../../images/custo-beneficio-trabalhe-conosco.svg';
 
-import BeneficiosParaVoce from "../../components/BeneficiosParaVoce/BeneficiosParaVoce";
-import PassoApasso from "../../components/PassoApasso/PassoApasso";
-import CardPlanos from "../../components/CardPlanos/CardPlanos";
+import BeneficiosParaVoce from '../../components/BeneficiosParaVoce/BeneficiosParaVoce';
+import PassoApasso from '../../components/PassoApasso/PassoApasso';
+import CardPlanos from '../../components/CardPlanos/CardPlanos';
 
-import img1 from "../../images/imgemBeneficio1.svg";
-import img2 from "../../images/imagemBeneficio2.svg";
-import img3 from "../../images/imagemBeneficio3.svg";
-import img4 from "../../images/imagemBeneficio4.svg";
-import img5 from "../../images/imagemBeneficio5.svg";
-import img6 from "../../images/imagemBeneficio6.svg";
-import passo1 from "../../images/PassoApasso1.svg";
-import passo2 from "../../images/PassoApasso2.svg";
-import passo3 from "../../images/PassoApasso3.svg";
-import Carousel from "../../components/Carousel/Carousel";
+import img1 from '../../images/imgemBeneficio1.svg';
+import img2 from '../../images/imagemBeneficio2.svg';
+import img3 from '../../images/imagemBeneficio3.svg';
+import img4 from '../../images/imagemBeneficio4.svg';
+import img5 from '../../images/imagemBeneficio5.svg';
+import img6 from '../../images/imagemBeneficio6.svg';
+import passo1 from '../../images/PassoApasso1.svg';
+import passo2 from '../../images/PassoApasso2.svg';
+import passo3 from '../../images/PassoApasso3.svg';
+import Carousel from '../../components/Carousel/Carousel';
 
-function TrabalheConosco() {
+function FacaParte() {
   return (
     <div>
       <div className="main-container-limitador">
@@ -130,7 +130,7 @@ function TrabalheConosco() {
               <sapn className="color-passo-a-passo" key={1}>
                 Faça
               </sapn>,
-              " o login",
+              ' o login',
             ]}
             srcImg={passo1}
             altImg="oi"
@@ -141,7 +141,7 @@ function TrabalheConosco() {
               <sapn className="color-passo-a-passo" key={2}>
                 Complete
               </sapn>,
-              " seu cadastro",
+              ' seu cadastro',
             ]}
             srcImg={passo2}
             altImg="oi"
@@ -149,11 +149,11 @@ function TrabalheConosco() {
 
           <PassoApasso
             titulo={[
-              "Feche ",
+              'Feche ',
               <sapn className="color-passo-a-passo" key={3}>
                 trabalhos
               </sapn>,
-              " a vontade",
+              ' a vontade',
             ]}
             srcImg={passo3}
             altImg="oi"
@@ -168,7 +168,7 @@ function TrabalheConosco() {
                   <sapn className="color-passo-a-passo" key={1}>
                     Faça
                   </sapn>,
-                  " o login",
+                  ' o login',
                 ]}
                 srcImg={passo1}
                 altImg="oi"
@@ -180,7 +180,7 @@ function TrabalheConosco() {
                   <sapn className="color-passo-a-passo" key={2}>
                     Complete
                   </sapn>,
-                  " seu cadastro",
+                  ' seu cadastro',
                 ]}
                 srcImg={passo2}
                 altImg="oi"
@@ -189,11 +189,11 @@ function TrabalheConosco() {
             slide3={
               <PassoApasso
                 titulo={[
-                  "Feche ",
+                  'Feche ',
                   <sapn className="color-passo-a-passo" key={3}>
                     trabalhos
                   </sapn>,
-                  " a vontade",
+                  ' a vontade',
                 ]}
                 srcImg={passo3}
                 altImg="oi"
@@ -209,18 +209,18 @@ function TrabalheConosco() {
           <div className="box-planos">
             <CardPlanos
               nomePlano="Plano Anual"
-              precoPlano={["R$389,99", <span key={1}>/ano</span>]}
+              precoPlano={['R$389,99', <span key={1}>/ano</span>]}
               texto="O plano anual é a melhor opção para você que busca o melhor custo sem preocupação de renovar ."
             />
             <CardPlanos
               nomePlano="Plano Mensal"
-              precoPlano={["R$34,99", <span key={2}>/mês</span>]}
+              precoPlano={['R$34,99', <span key={2}>/mês</span>]}
               texto="Nosso plano mensal é uma boa opção para você que quer experimentar nossa plataforma.
               "
             />
             <CardPlanos
               nomePlano="Plano Semestral"
-              precoPlano={["R$199,99", <span key={3}>/3meses</span>]}
+              precoPlano={['R$199,99', <span key={3}>/3meses</span>]}
               texto="O plano semestral é um intermédio entre os outros planos para você que precisa de flexibilidade."
             />
           </div>
@@ -230,14 +230,14 @@ function TrabalheConosco() {
               slide1={
                 <CardPlanos
                   nomePlano="Plano Anual"
-                  precoPlano={["R$389,99", <span key={1}>/ano</span>]}
+                  precoPlano={['R$389,99', <span key={1}>/ano</span>]}
                   texto="O plano anual é a melhor opção para você que busca o melhor custo sem preocupação de renovar ."
                 />
               }
               slide2={
                 <CardPlanos
                   nomePlano="Plano Mensal"
-                  precoPlano={["R$34,99", <span key={2}>/mês</span>]}
+                  precoPlano={['R$34,99', <span key={2}>/mês</span>]}
                   texto="Nosso plano mensal é uma boa opção para você que quer experimentar nossa plataforma.
                 "
                 />
@@ -245,7 +245,7 @@ function TrabalheConosco() {
               slide3={
                 <CardPlanos
                   nomePlano="Plano Semestral"
-                  precoPlano={["R$199,99", <span key={3}>/3meses</span>]}
+                  precoPlano={['R$199,99', <span key={3}>/3meses</span>]}
                   texto="O plano semestral é um intermédio entre os outros planos para você que precisa de flexibilidade."
                 />
               }
@@ -271,4 +271,4 @@ function TrabalheConosco() {
   );
 }
 
-export default TrabalheConosco;
+export default FacaParte;

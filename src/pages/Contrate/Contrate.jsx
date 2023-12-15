@@ -1,27 +1,23 @@
-import React from "react";
-import "./contrate.css";
-import "../../components/ArticleBeneficios/articleBeneficios.css";
+import React from 'react';
+import './contrate.css';
+import '../../components/ArticleBeneficios/articleBeneficios.css';
+import ComoFunciona from '../../components/ComoFunciona/ComoFunciona';
+import ArticleBeneficios from '../../components/ArticleBeneficios/ArticleBeneficios';
+import Passo1 from '../../images/Passo1.svg';
+import Passo2 from '../../images/Passo2.svg';
+import Passo3 from '../../images/Passo3.svg';
+import Passo4 from '../../images/Passo4.svg';
+import imgComoFunciona from '../../images/comoFunciona.svg';
+import servico1 from '../../images/servico1.svg';
+import servico2 from '../../images/servico2.svg';
+import servico3 from '../../images/servico3.svg';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import ComoFunciona from "../../components/ComoFunciona/ComoFunciona";
-import ArticleBeneficios from "../../components/ArticleBeneficios/ArticleBeneficios";
-
-import Passo1 from "../../images/Passo1.svg";
-import Passo2 from "../../images/Passo2.svg";
-import Passo3 from "../../images/Passo3.svg";
-import Passo4 from "../../images/Passo4.svg";
-import imgComoFunciona from "../../images/comoFunciona.svg";
-
-import servico1 from "../../images/servico1.svg";
-import servico2 from "../../images/servico2.svg";
-import servico3 from "../../images/servico3.svg";
-
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-
-function Horticultores() {
+function Contrate() {
   const navigate = useNavigate();
 
-  const [CEP, setCEP] = useState("");
+  const [CEP, setCEP] = useState('');
 
   const handleChange = (event) => setCEP(event.target.value);
 
@@ -95,7 +91,7 @@ function Horticultores() {
 
       <div>
         <h2 className="titulo-banner-horticultor">
-          Encontre <span>agora</span> o profissional ideal para{" "}
+          Encontre <span>agora</span> o profissional ideal para{' '}
           <span>você</span>
         </h2>
 
@@ -134,7 +130,7 @@ function Horticultores() {
               </div>
             </div>
 
-            <button onClick={() => navigate("/vitrine-horticultores")}>
+            <button onClick={() => navigate('/vitrine-horticultores')}>
               Consultar profissionais
             </button>
           </div>
@@ -144,4 +140,4 @@ function Horticultores() {
   );
 }
 
-export default Horticultores;
+export default Contrate;

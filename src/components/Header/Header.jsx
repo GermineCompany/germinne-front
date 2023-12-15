@@ -14,7 +14,7 @@ function Header() {
   const { pathname } = useLocation();
 
   const handleShowLogin = () => {
-    setShowLogin(showLogin ? false : true);
+    setShowLogin(!showLogin);
   };
 
   return (
@@ -36,9 +36,7 @@ function Header() {
                 <a href="/">
                   Inicio
                   <div
-                    className={` underline  ${
-                      pathname == "/" ? "hold-underline" : ""
-                    }`}
+                    className={`underline ${pathname === '/' ? 'hold-underline' : ''}`}
                   />
                 </a>
               </li>
@@ -47,9 +45,7 @@ function Header() {
                 <a href="/blog">
                   Blog
                   <div
-                    className={` underline  ${
-                      pathname == "/blog" ? "hold-underline" : ""
-                    }`}
+                    className={`underline ${pathname === '/blog' ? 'hold-underline' : ''}`}
                   />
                 </a>
               </li>
@@ -58,15 +54,13 @@ function Header() {
                 <a href="/loja">
                   GerminneBox
                   <div
-                    className={` underline  ${
-                      pathname == "/loja" ? "hold-underline" : ""
-                    }`}
+                    className={`underline ${pathname === '/loja' ? 'hold-underline' : ''}`}
                   />
                 </a>
               </li>
 
-              <li className={" nav-item profissionais "}>
-                <a href="">Profissionais</a>
+              <li className="nav-item profissionais">
+                <a href="/">Profissionais</a>
                 <div className="dropdown-horticultores">
                   <a href="/contrate">Contrate</a>
                   <a href="/faca-parte">Faça parte</a>
@@ -77,49 +71,37 @@ function Header() {
                 <a href="/sobre-nos">
                   Sobre nós
                   <div
-                    className={` underline  ${
-                      pathname == "/sobre-nos" ? "hold-underline" : ""
-                    }`}
+                    className={`underline ${pathname === '/sobre-nos' ? 'hold-underline' : ''}`}
                   />
                 </a>
               </li>
             </ul>
           </nav>
-        
-          <div className='box-login'>
-            <div>
-              {
-                loggedUser.logged && 
-                <div>
-                  <a href="/perfil">Olá, { loggedUser.nomeUsuario }</a>
-                </div>
-              }
-              {
-                !loggedUser.logged && 
-                <button className={ showLogin ? 'button-opened' : ''} onClick={ handleShowLogin }>Entrar</button>
-              }
 
           <div className="box-login">
             <div>
-              <button
-                className={showLogin ? "button-opened" : ""}
-                onClick={handleShowLogin}>
-                Entrar
-              </button>
-
-              <div
-                className={`links-login ${
-                  showLogin ? "open-login" : "close-login"
-                }`}>
-                <ul>
-                  <li>
-                    <a href="/login-cliente">Cliente</a>
-                  </li>
-                  <li>
-                    <a href="/login">Profissional</a>
-                  </li>
-                </ul>
-              </div>
+              {loggedUser.logged ? (
+                <div>
+                  <a href="/perfil">Olá, {loggedUser.nomeUsuario}</a>
+                </div>
+              ) : (
+                <button
+                  className={showLogin ? 'button-opened' : ''}
+                  onClick={handleShowLogin}
+                >
+                  Entrar
+                </button>
+              )}
+            </div>
+            <div className={`box-login ${showLogin ? 'open-login' : 'close-login'}`}>
+              <ul>
+                <li>
+                  <a href="/login-cliente">Cliente</a>
+                </li>
+                <li>
+                  <a href="/login">Profissional</a>
+                </li>
+              </ul>
             </div>
 
             <div className="box-icone-sacola">
@@ -135,7 +117,7 @@ function Header() {
 }
 
 Header.propTypes = {
-  loggedUser: PropTypes.object.isRequired
+  loggedUser: PropTypes.object.isRequired,
 };
 
 export default Header;

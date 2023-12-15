@@ -7,27 +7,27 @@ import ultimoPostImg from '../../images/ultimos-posts.png';
 import CardPublicidadeBox from '../../components/CardPublicidadeBox/CardPublicidadeBox';
 import UltimosPosts from '../../components/UltimosPosts/UltimosPosts';
 import publicidade from '../../images/card-publicidade-germinne.png';
-import PlantaPrincipal from '../../images/PlantaPrincipal.jpg'
-import artigoVantagensHorta from '../../images/artigoVantagensHorta.jpg'
-import artigoUtilidadesHortela from '../../images/artigoUtilidadesHortela.jpg'
-import artigoUtilidadesGerminneBox from '../../images/artigoUtilidadesGerminneBox.jpg'
-import artigoUtilidadesMaoSalada from '../../images/artigoUtilidadesMaoSalada.jpg'
-import artigoBeneficiosHorta from '../../images/artigoBeneficiosHorta.jpg'
-import artigoTelhadoVerde from '../../images/artigoTelhadoVerde.jpg'
-import artigoTelhadoVerde2 from '../../images/artigoTelhadoVerde2.jpg'
-import Cidade from '../../images/Cidade.svg'
-import Casal from '../../images/CasalCuidandoPlanta.svg'
-import Plantando from '../../images/Plantando.jpg'
-import PlantaFlorescendo from '../../images/PlantaFlorescendo.jpg'
-import Crianca from '../../images/CriancaRegando.png'
-import Cultivando from '../../images/cultivandoplantaBlog.jpg'
-import Dicas from '../../images/dicaBrota.jpg'
-import Terra from '../../images/TerranaGarrafa.jpg'
-import Salada from '../../images/salada.jpg'
-import Pote from '../../images/Pote-Salada.jpg'
-import PlantarCoentro from '../../images/plantarCoentro.jpg'
-import Residencia from '../../images/Residencia.jpg'
-import PlantasnaMesa from '../../images/plantasnamesa.jpg'
+import PlantaPrincipal from '../../images/PlantaPrincipal.jpg';
+import artigoVantagensHorta from '../../images/artigoVantagensHorta.jpg';
+import artigoUtilidadesHortela from '../../images/artigoUtilidadesHortela.jpg';
+import artigoUtilidadesGerminneBox from '../../images/artigoUtilidadesGerminneBox.jpg';
+import artigoUtilidadesMaoSalada from '../../images/artigoUtilidadesMaoSalada.jpg';
+import artigoBeneficiosHorta from '../../images/artigoBeneficiosHorta.jpg';
+import artigoTelhadoVerde from '../../images/artigoTelhadoVerde.jpg';
+import artigoTelhadoVerde2 from '../../images/artigoTelhadoVerde2.jpg';
+import Cidade from '../../images/Cidade.svg';
+import Casal from '../../images/CasalCuidandoPlanta.svg';
+import Plantando from '../../images/Plantando.jpg';
+import PlantaFlorescendo from '../../images/PlantaFlorescendo.jpg';
+import Crianca from '../../images/CriancaRegando.png';
+import Cultivando from '../../images/cultivandoplantaBlog.jpg';
+import Dicas from '../../images/dicaBrota.jpg';
+import Terra from '../../images/TerranaGarrafa.jpg';
+import Salada from '../../images/salada.jpg';
+import Pote from '../../images/Pote-Salada.jpg';
+import PlantarCoentro from '../../images/plantarCoentro.jpg';
+import Residencia from '../../images/Residencia.jpg';
+import PlantasnaMesa from '../../images/plantasnamesa.jpg';
 import './artigo.css';
 
 function Artigo() {
@@ -65,37 +65,37 @@ function Artigo() {
 
           {/* artigo-vantagens-agricultura-urbana */}
 
-          {/* 
+          {/*           
 
-            <article className="artigo-blog">
-              <figure>
-                <img
-                  src={artigo.length && artigo[0].imagens[0]}
-                  alt="Imagem de um saco de terra junto com uma pá"
-                />
-                <figcaption>Fonte: Nome do Autor</figcaption>
-              </figure>
+          <article className="artigo-blog">
+            <figure>
+              <img
+                src={artigo.length && artigo[0].imagens[0]}
+                alt="Imagem de um saco de terra junto com uma pá"
+              />
+              <figcaption>Fonte: Nome do Autor</figcaption>
+            </figure>
 
-              <p>{artigo.length && artigo[0].paragrafos[0]}</p>
+            <p>{artigo.length && artigo[0].paragrafos[0]}</p>
 
-              <p>{artigo.length && artigo[0].paragrafos[1]}</p>
+            <p>{artigo.length && artigo[0].paragrafos[1]}</p>
 
-              <p>{artigo.length && artigo[0].paragrafos[2]}</p>
+            <p>{artigo.length && artigo[0].paragrafos[2]}</p>
 
-              <p>{artigo.length && artigo[0].paragrafos[3]}</p>
+            <p>{artigo.length && artigo[0].paragrafos[3]}</p>
 
-              <figure>
-                <img
-                  src={artigo.length && artigo[0].imagens[1]}
-                  alt="Imagem de duas mãos plantando uma arvore"
-                />
-                <figcaption>Fonte: Nome do Autor</figcaption>
-              </figure>
+            <figure>
+              <img
+                src={artigo.length && artigo[0].imagens[1]}
+                alt="Imagem de duas mãos plantando uma arvore"
+              />
+              <figcaption>Fonte: Nome do Autor</figcaption>
+            </figure>
 
-              <p>{artigo.length && artigo[0].paragrafos[4]}</p>
+            <p>{artigo.length && artigo[0].paragrafos[4]}</p>
 
-              <p>{artigo.length && artigo[0].paragrafos[5]}</p>
-            </article> */}
+            <p>{artigo.length && artigo[0].paragrafos[5]}</p>
+          </article> */}
 
 
           {/* artigo-hortelã */}
@@ -726,9 +726,9 @@ function Artigo() {
 
 
 
-            {/* ABAIXO, BLOG DE PASSO A PASSO */}
+          {/* ABAIXO, BLOG DE PASSO A PASSO */}
 
-         {/*  <article className="artigo-blog">
+          {/*  <article className="artigo-blog">
 
 
             <figure>
@@ -798,7 +798,7 @@ function Artigo() {
           </article>
           */}
         
-                {/* ACIMA SEGUE  */}
+          {/* ACIMA SEGUE  */}
 
 
 

@@ -12,12 +12,12 @@ import LoginCliente from './pages/LoginCliente/LoginCliente';
 import CadastroCliente from './pages/CadastroCliente/CadastroCliente';
 import Artigo from './pages/Artigo/Artigo';
 import Loja from './pages/Loja/Loja';
-import Horticultores from './pages/Horticultores/Horticultores';
 import VitrineHorticultores from './pages/VitrineHorticultores/VitrineHorticultores';
 import Perfil from './pages/Perfil/Perfil';
 import PerfilHorticultor from './pages/PerfilHorticultor/PerfilHorticultor';
 import FiltrosServico from './pages/FiltrosServico/FiltrosServico';
-import TrabalheConosco from './pages/TrabalheConosco/TrabalheConosco';
+import Contrate from './pages/Contrate/Contrate';
+import FacaParte from './pages/FacaParte/FacaParte';
 
 function App() {
   const path = window.location.pathname;
@@ -70,10 +70,10 @@ function App() {
           <Route path="/faca-parte" Component={FacaParte} />
         </Routes>
       </main>
-      {path != "/login" &&
-        path != "/cadastro-profissional" &&
-        path != "/login-cliente" &&
-        path != "/cadastro-cliente" && <Footer />}
+      {path != '/login' &&
+        path != '/cadastro-profissional' &&
+        path != '/login-cliente' &&
+        path != '/cadastro-cliente' && <Footer />}
     </BrowserRouter>
   );
 }
