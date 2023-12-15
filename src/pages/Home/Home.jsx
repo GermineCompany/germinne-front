@@ -7,19 +7,44 @@ import articleImage1 from '../../images/article-image-1.png';
 import articleImage2 from '../../images/article-image-2.png';
 import articleImage3 from '../../images/article-image-3.png';
 import CardAvaliacao from '../../components/CardAvaliacao/CardAvaliacao';
+import Carousel from '../../components/Carousel/Carousel';
 
 function Home() {
   return (
     <div>
-      <div className="banner-home">
-        <h2>
-          O <span>verde</span> no urbano
-        </h2>
-        <p>
-          Semeia a vida, cultive sabor! A <span>Germinne</span> almeja um futuro
-          verde e sustentavel nas cidades.
-        </p>
-      </div>
+     <Carousel
+        slide1={<div className="banner-home">
+          <h2>
+            O <span>verde</span> no urbano
+          </h2>
+          <p>
+            Semeia a vida, cultive sabor! A <span>Germinne</span> almeja um futuro
+            verde e sustentavel nas cidades.
+          </p>
+          <span><a href="/blog">saiba mais...</a></span>
+        </div>}
+        slide2={<div className="banner-home germinnebox-home">
+          <h2>
+            NÃO TEM <span>ESPAÇO</span> EM CASA?
+          </h2>
+          <p>
+          Conheça a <span>Germinne</span> Box, cultive seu próprio alimento sem dificuldades!
+          </p>
+          <span><a href="/loja">saiba mais...</a></span>
+        </div>}
+        slide3={
+          <div className="banner-home contrate-home">
+            <h2>
+              O <span>verde</span> no urbano
+            </h2>
+            <p>
+            TEM UM <span>ESPAÇO</span> EM CASA MAS NÃO SABE <span>OQUE FAZER</span> COM ELE?
+            </p>
+            <span><a href="/contrate">saiba mais...</a></span>
+          </div>
+
+        }
+      />
 
       <div className='main-container-limitador'>
 
