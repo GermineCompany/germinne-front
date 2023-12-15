@@ -15,19 +15,43 @@
 .box-inputs-login-cadastro {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    justify-content: center;
+    align-items: center !important;
     margin-right: 260px !important;
 }
 .box-inputs-login-cadastro div:nth-child(1) {
     text-align: center;
-    margin: auto;
+    justify-content: center;
+    width: 100%;
 }
 
 .box-inputs-login-cadastro h1 {
-    font-size: var(--display-large);
+    font-size: var(--title-large);
     font-weight: var(--regular-bold);
     color: var(--verde-principal);
 }
+
+.box-inputs-login-cadastro a {
+    color: var(--verde-principal);
+}
+
+.logomarca-germinne-geral {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.logomarca-germinne-login-profissional {
+    display: flex !important;
+    flex-direction: row !important;
+    margin-bottom: 10px !important;
+    align-items: center;
+}
+
+.logomarca-germinne-login-profissional img {
+    width: 55px;
+}
+
 
 .box-inputs-login-cadastro h3 {
     margin-top: -20px;
@@ -38,18 +62,23 @@
 
 .box-email-password label {
     display: flex;
+    align-self: center;
     width: 30vw;
     font-size: var(--subtitle-medium);
     font-weight: var(--semi-bold);
     flex-direction: column;
     align-items: baseline;
-    margin: 9% 0;
+    margin: 40px 0;
     border: 0px;
     border-bottom: 1px solid green;
 }
 
+.box-email-password div:nth-child(2) {
+    align-self: center !important;
+}
+
 .box-email-password input {
-    font-size: 15px;
+    font-size: var(--body-medium);
     padding: 15px;
     width: 100%;
     border: none;
@@ -59,8 +88,8 @@
 
 .box-button button{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    margin-top: 50px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -69,7 +98,7 @@
 }
 
 .box-email-password button {
-    padding: 10px 120px;
+    padding: 13px 120px;
     border-radius: 15px;
     font-size: var(--body-large);
     font-weight: var(--semi-bold);
@@ -89,19 +118,21 @@
 }
 
 .box-cadastro {
-    width: 35vw;
+    width: 100%;
     text-align: center;
+    margin-top: 30px;
 }
 
 .box-cadastro p {
-    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
     font-size: var(--body-medium);
 }
 
 .box-cadastro button {
-    padding: 10px 50px;
+    padding: 12px 70px;
     border: none;
-    border-radius: 25px;
+    border-radius: 15px;
     font-size: var(--body-large);
     font-weight: var(--semi-bold);
     color: white;
@@ -163,12 +194,21 @@
     }
 
     .box-cadastro {
-        width: 90%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 450px) {
     .box-email-password label {
         width: 90vw;
+    }
+    .box-inputs-login-cadastro h1 {
+        font-size: var(--title-medium);
+    }
+    .logomarca-germinne-login-profissional img {
+        width: 40px;
+    }
+    .box-email-password label {
+        font-size: var(--subtitle-small);
     }
 }

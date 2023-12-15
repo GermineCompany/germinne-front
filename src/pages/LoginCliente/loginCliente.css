@@ -2,6 +2,29 @@
   color: var(--cta-roxo);
 }
 
+
+.logomarca-germinne-login-profissional {
+  transition: .5s;
+}
+
+.logomarca-germinne-login-profissional h1 {
+  transition: .5s;
+}
+
+.logomarca-germinne-login-profissional img {
+  transition: .5s ;
+}
+
+.logomarca-germinne-login-profissional:hover h1 {
+    font-size: 52px;
+    transition: .3s ease-out;
+}
+
+.logomarca-germinne-login-profissional:hover img {
+  width: 57px;
+  transition: .3s ease-out;
+}
+
 input[type="email"] {
   display: flex;
   border-bottom: green;
@@ -10,4 +33,14 @@ input[type="email"] {
 input[type="password"] {
   display: flex;
   border-bottom: green;
+}
+
+@media  (max-width:450px) {
+  .logomarca-germinne-login-profissional:hover h1 {
+    font-size: 55px;
+}
+
+.logomarca-germinne-login-profissional:hover img {
+  width: 45px;
+}
 }
