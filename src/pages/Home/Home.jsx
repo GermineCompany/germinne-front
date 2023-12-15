@@ -35,7 +35,7 @@ function Home() {
         slide3={
           <div className="banner-home contrate-home">
             <h2>
-            <span>profssionais</span> de confiança
+              <span>profssionais</span> de confiança
             </h2>
             <p>
               Solicite um orçamento <span>gratuito</span> sem sair de casa agora.
