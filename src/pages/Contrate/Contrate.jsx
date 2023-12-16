@@ -14,7 +14,7 @@ import servico3 from '../../images/servico3.svg';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Horticultores() {
+function Contrate() {
   const navigate = useNavigate();
 
   const [CEP, setCEP] = useState('');

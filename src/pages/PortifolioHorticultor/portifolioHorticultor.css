@@ -130,3 +130,12 @@
         font-size: var(--subtitle-large);
     }
 }
+
+.botao-voltar-horticultores {
+    font-size: var(--body-medium);
+    display: inline-block;
+}
+
+.botao-voltar-horticultores:hover {
+    cursor: pointer;
+}
