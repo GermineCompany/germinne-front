@@ -1,20 +1,16 @@
 import React from 'react';
 import './contrate.css';
 import '../../components/ArticleBeneficios/articleBeneficios.css';
-
 import ComoFunciona from '../../components/ComoFunciona/ComoFunciona';
 import ArticleBeneficios from '../../components/ArticleBeneficios/ArticleBeneficios';
-
 import Passo1 from '../../images/Passo1.svg';
 import Passo2 from '../../images/Passo2.svg';
 import Passo3 from '../../images/Passo3.svg';
 import Passo4 from '../../images/Passo4.svg';
 import imgComoFunciona from '../../images/comoFunciona.svg';
-
 import servico1 from '../../images/servico1.svg';
 import servico2 from '../../images/servico2.svg';
 import servico3 from '../../images/servico3.svg';
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -144,4 +140,4 @@ function Horticultores() {
   );
 }
 
-export default Horticultores;
+export default Contrate;

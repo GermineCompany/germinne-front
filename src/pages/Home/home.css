@@ -77,8 +77,64 @@
 .box-card-germinne {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 150px;
     flex-wrap: wrap;
+}
+
+.box-cards {
+    margin-top: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+
+}
+
+.box-cards span {
+    color: var(--verde-principal);
+}
+
+.box-cards > h2 {
+    font-size: var(--title-small);
+    align-self: flex-start;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.banner-mvv {
+    background: url(../../images/banner-mvv.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 1220px;
+    color: var(--verde-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-weight: var(--regular-bold);
+}
+
+.banner-mvv ul {
+    list-style: none;
+}
+
+.mvv-itens {
+   width: 400px;
+}
+
+.mvv-itens h2 {
+    margin-bottom: 20px;
+}
+
+
+.box-mvv2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 
 .box-beneficios-agricultura {

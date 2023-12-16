@@ -19,15 +19,36 @@ import PerfilHorticultor from "./pages/PerfilHorticultor/PerfilHorticultor";
 import FiltrosServico from "./pages/FiltrosServico/FiltrosServico";
 import FacaParte from "./pages/FacaParte/FacaParte";
 import PortifolioHorticultor from "./pages/PortifolioHorticultor/PortifolioHorticultor";
+import Checkout from './pages/Checkout/Checkout';
+import Contrate from './pages/Contrate/Contrate';
+import TrabalheConosco from './pages/TrabalheConosco/TrabalheConosco';
 
 function App() {
   const path = window.location.pathname;
+  const [loggedUser, setLoggedUser] = useState({
+    logged: false,
+    nomeUsuario: '',
+    idUsuario: ''
+  });
+
+  const verifyUserLogin = () => {
+    const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+
+    if (userInfo) {
+      setLoggedUser(prevState => ({ ...prevState, logged: true, idUsuario: userInfo.idCliente, nomeUsuario: userInfo.nomeCliente }));
+    }
+  };
+
+  useEffect(() => {
+    verifyUserLogin();
+  }, []);
+
   return (
     <BrowserRouter>
-      {path != "/login" &&
-        path != "/cadastro-profissional" &&
-        path != "/login-cliente" &&
-        path != "/cadastro-cliente" && <Header />}
+      {path != '/login' &&
+        path != '/cadastro-profissional' &&
+        path != '/login-cliente' &&
+        path != '/cadastro-cliente' && <Header loggedUser={ loggedUser } />}
       <main>
         <Routes>
           <Route path="/" Component={Home} />
@@ -51,13 +72,15 @@ function App() {
           <Route path="/perfil-horticultor/:id" Component={PerfilHorticultor} />
           <Route path="/portifolio-horticultor" Component={PortifolioHorticultor} />
           <Route path="/filtros-servico" Component={FiltrosServico} />
+          <Route path="/trabalhe-conosco" Component={TrabalheConosco} />
+          <Route path="/checkout" Component={Checkout} />
           <Route path="/faca-parte" Component={FacaParte} />
         </Routes>
       </main>
-      {path != "/login" &&
-        path != "/cadastro-profissional" &&
-        path != "/login-cliente" &&
-        path != "/cadastro-cliente" && <Footer />}
+      {path != '/login' &&
+        path != '/cadastro-profissional' &&
+        path != '/login-cliente' &&
+        path != '/cadastro-cliente' && <Footer />}
     </BrowserRouter>
   );
 }

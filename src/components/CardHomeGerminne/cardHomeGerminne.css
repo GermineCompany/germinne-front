@@ -32,14 +32,7 @@
 
 .second-germinne-card {
     background: url(../../images/card-home-5.png) no-repeat;
-    height: 150px;
     box-shadow: 0px -100px 80px 0px rgba(0, 0, 0, 0.50) inset;
-}
-
-.second-germinne-large {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .second-germinne-large h3 {
