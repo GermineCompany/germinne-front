@@ -2,10 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './botaoSelecaoGB.css';
 
-function BotaoSelecaoGB({ contentButton, className }) {
+function BotaoSelecaoGB({ contentButton, className, changeClass }) {
   return (
     <div className='botao-selecao-gb'>
-      <button className={ className }>{ contentButton }</button>
+      <button 
+        className={ className }
+        onClick={ changeClass }
+      >
+        { contentButton }
+      </button>
     </div>
   );
 }
@@ -13,6 +18,7 @@ function BotaoSelecaoGB({ contentButton, className }) {
 BotaoSelecaoGB.propTypes = {
   contentButton: PropTypes.string.isRequired,
   className: PropTypes.string,
+  changeClass: PropTypes.func.isRequired
 };
 
 export default BotaoSelecaoGB;

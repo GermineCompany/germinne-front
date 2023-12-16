@@ -16,6 +16,8 @@ import VitrineHorticultores from './pages/VitrineHorticultores/VitrineHorticulto
 import Perfil from './pages/Perfil/Perfil';
 import PerfilHorticultor from './pages/PerfilHorticultor/PerfilHorticultor';
 import FiltrosServico from './pages/FiltrosServico/FiltrosServico';
+import TrabalheConosco from './pages/TrabalheConosco/TrabalheConosco';
+import Checkout from './pages/Checkout/Checkout';
 import Contrate from './pages/Contrate/Contrate';
 import FacaParte from './pages/FacaParte/FacaParte';
 
@@ -67,6 +69,8 @@ function App() {
           <Route path="/perfil" Component={Perfil} />
           <Route path="/perfil-horticultor/:id" Component={PerfilHorticultor} />
           <Route path="/filtros-servico" Component={FiltrosServico} />
+          <Route path="/trabalhe-conosco" Component={TrabalheConosco} />
+          <Route path="/checkout" Component={Checkout} />
           <Route path="/faca-parte" Component={FacaParte} />
         </Routes>
       </main>
