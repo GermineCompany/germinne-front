@@ -12,6 +12,7 @@
     padding: 10px 0;
     width: 300px;
     font-size: var(--body-small);
+    background-color: white;
 }
 
 .dados-pessoais-cliente input:disabled {
@@ -42,7 +43,7 @@
     background-color: var(--verde-principal);
     color: white;
     font-size: var(--body-large);
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .button-salvar-informacoes button {
@@ -51,4 +52,10 @@
 
 .box-button-perfil-cliente button:hover {
     cursor: pointer;
+}
+
+.mensagem-editar-perfil-cliente p {
+    text-align: center;
+    font-size: var(--body-medium);
+    color: var(--verde-principal);
 }

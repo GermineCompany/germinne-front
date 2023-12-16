@@ -4,7 +4,7 @@ import GerminneContext from '../../context/GerminneContext';
 import api from '../../utils/axios';
 
 function DadosPessoaisCliente() {
-  const { loggedUser: { idUsuario } } = useContext(GerminneContext);
+  const { loggedUser: { id } } = useContext(GerminneContext);
   const [userInfo, setUserInfo] = useState({});
   const [inputStatus, setInputStatus] = useState(true);
   const [nameButton, setNameButton] = useState('Editar informações');
@@ -14,17 +14,23 @@ function DadosPessoaisCliente() {
     email: '',
     telefone: ''
   });
+  const [message, setMessage] = useState('');
 
   const getClienteInfos = async () => {
-    const result = await api.get(`/cliente/${idUsuario}`);
+    const result = await api.get(`/cliente/${id}`);
 
     setUserInfo(result.data);
-    // console.log(result.data);
+    setInputInfos({
+      nome: result.data.nome,
+      sobrenome: result.data.sobrenome,
+      email: result.data.email,
+      telefone: result.data.telefone
+    });
   };
 
   useEffect(() => {
     getClienteInfos();
-  }, [idUsuario]);
+  }, [id]);
 
   const handleEditInfo = async () => {
     setInputStatus(false);
@@ -32,16 +38,17 @@ function DadosPessoaisCliente() {
 
     if (nameButton == 'Salvar informações') {
       try {
-        const updateInfos = {
-          nome: inputInfos.nome || userInfo.nome,
-          sobrenome: inputInfos.sobrenome || userInfo.sobrenome,
-          email: inputInfos.email || userInfo.email,
-          telefone: inputInfos.telefone || userInfo.telefone,
-        };
-        const result = await api.put(`/cliente/${idUsuario}`, updateInfos);
-        console.log(result);
+        const result = await api.put(`/cliente/${id}`, inputInfos);
+        setMessage(result.data.message);
+
+        setTimeout(() => { 
+          setMessage(''); 
+          setNameButton('Editar informações');
+          setInputStatus(true);
+          getClienteInfos();
+        }, 1500);
       } catch(error) {
-        console.log(error);
+        setMessage(error.response.data.message);
       }
     }
   };
@@ -49,6 +56,7 @@ function DadosPessoaisCliente() {
   const handleChange = (event) => {
     setInputInfos({...inputInfos, [event.target.id]: event.target.value });
   };
+
   return (
     <div className='dados-pessoais-cliente'>
       <h2>Dados pessoais</h2>
@@ -108,6 +116,10 @@ function DadosPessoaisCliente() {
             />
           </label>
         </div>
+      </div>
+
+      <div className='mensagem-editar-perfil-cliente'>
+        <p>{message}</p>
       </div>
 
       <div className={`${nameButton == 'Editar informações' ? 'box-button-perfil-cliente' : 'box-button-perfil-cliente button-salvar-informacoes'}`}>

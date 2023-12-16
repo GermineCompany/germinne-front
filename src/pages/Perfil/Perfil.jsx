@@ -46,10 +46,10 @@ function Perfil() {
       </aside>
 
       <div className='component-renderizado'>
-        <VerificacaoProfissional />
-        {/* {
-          menusActived.dadosPessoais && <DadosPessoaisCliente />
-        } */}
+        {/* <VerificacaoProfissional /> */}
+        {
+          menusActived.dadosPessoais && loggedUser.tipo == 'cliente' && <DadosPessoaisCliente />
+        }
         {/* <EditarPerfilVitrine /> */}
       </div>
     </div>
