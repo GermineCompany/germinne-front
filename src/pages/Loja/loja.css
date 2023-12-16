@@ -6,7 +6,7 @@
 
 
 .conheca-gb {
-  margin: 150px auto 80px auto;
+  margin: 50px auto 80px auto;
   width: 100%;
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@
 }
 
 .conheca-gb-texto h2 {
-  margin-bottom: 70px;
+  margin-bottom: 25px;
   font-size: var(--title-medium);
 }
 
@@ -114,4 +114,21 @@
   justify-content: center;
   width: 90%;
   margin: 5px auto;
+}
+
+/* ------------------------------------------ */
+
+.review-loja-germinne-box h3 {
+  font-size: var(--title-medium);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.review-loja-germinne-box span {
+  color: var(--verde-principal);
+}
+
+.review-loja-germinne-box > div {
+  display: flex;
+  justify-content: space-evenly;
 }

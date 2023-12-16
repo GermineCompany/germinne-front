@@ -12,7 +12,7 @@ import Carousel from '../../components/Carousel/Carousel';
 function Home() {
   return (
     <div>
-     <Carousel
+      <Carousel
         slide1={<div className="banner-home">
           <h2>
             O <span>verde</span> no urbano
