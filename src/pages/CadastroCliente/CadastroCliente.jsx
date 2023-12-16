@@ -27,6 +27,11 @@ function CadastroCliente() {
     emailJaCadastrado: ''
   });
 
+  const [statusRegister, setStatusRegister] = useState({
+    status: '',
+    message: ''
+  });
+
   const validateNome = (nome) => {
     if (nome.length < 3) {
       setValidateInfos({ ...validateInfos, nome: 'Digite um nome com pelo menos 3 caracteres!'});
@@ -109,10 +114,10 @@ function CadastroCliente() {
     try {
       const result = await api.post('/cliente/registro', infos);
       localStorage.setItem('userInfo', JSON.stringify(result.data));
-      navigate('/');
+      setStatusRegister({ status: 'success', message: result.data.message });
+      setTimeout(() => window.location.href = '/', 2000);
     } catch(error) {
-      setValidateInfos({ ...validateInfos, emailJaCadastrado: error.response.data.message });
-      console.log(error);
+      setStatusRegister({ status: 'error', message: error.response.data.message });
     }
   };
 
@@ -124,7 +129,7 @@ function CadastroCliente() {
 
       <article className='box-inputs-login-cadastro box-inputs-cliente'>
         <div className='logomarca-germinne-geral margin-cadastro-cliente'>
-          <div className='logomarca-germinne-login-profissional'>
+          <div className='logomarca-germinne-login-profissional logomarca-margin-cliente'>
             <a href="/">
               <img src={logoVerde} alt="logo verde germinne" />
             </a>
@@ -220,6 +225,10 @@ function CadastroCliente() {
                 placeholder='Digite seu CPF sem pontuação aqui...'
               />
             </label>
+          </div>
+
+          <div className={`box-tratamento-erro ${statusRegister.status == 'error' ? 'mensagem-erro' : 'mensagem-sucesso'}`}>
+            <p>{ statusRegister.message }</p>
           </div>
 
           <div className='box-button'>

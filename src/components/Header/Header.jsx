@@ -105,7 +105,7 @@ function Header() {
             </div>
 
             <div className="box-icone-sacola">
-              <a href="/carrinho">
+              <a href="/checkout">
                 <img src={sacola} alt="Icone de sacola" />
               </a>
             </div>

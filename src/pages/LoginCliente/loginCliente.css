@@ -9,9 +9,11 @@
 
 .logomarca-germinne-login-profissional h1 {
   transition: .5s;
+  margin-bottom: 0;
 }
 
 .logomarca-germinne-login-profissional img {
+  margin-top: -15px;
   transition: .5s ;
 }
 

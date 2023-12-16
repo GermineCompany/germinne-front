@@ -3,16 +3,34 @@ import imagemLogin from '../../images/login-profissional.png';
 import './loginCadastro.css';
 import { useNavigate } from 'react-router-dom';
 import logoVerde from '../../images/logo-verde.svg';
+import api from '../../utils/axios';
 
 function Login() {
   const navigate = useNavigate();
 
   const [infos, setInfos] = useState({
     email: '',
-    password: ''
+    senha: ''
+  });
+
+  const [statusLogin, setStatusLogin] = useState({
+    status: '',
+    message: ''
   });
 
   const handleChange = (event) => setInfos({ ...infos, [event.target.name]: event.target.value });
+
+  const handleLogin = async () => {
+    console.log(infos);
+    try {
+      const result = await api.post('/profissional/login', infos);
+      setStatusLogin({ ...statusLogin, message: result.data.message, status: 'success' });
+      localStorage.setItem('userInfo', JSON.stringify({ ...result.data, logged: true }));
+      setTimeout(() => window.location.href = '/', 1500);
+    } catch (error) {
+      setStatusLogin({ ...statusLogin, message: error.response.data.message, status: 'error' });
+    }
+  };
 
   return (
     <div className='box-login-cadastro'>
@@ -32,7 +50,6 @@ function Login() {
         </div>
 
         <div>
-
           <div className='box-email-password'>
             <div>
               <label>
@@ -52,16 +69,20 @@ function Login() {
                 Senha
                 <input
                   type='password'
-                  name='password'
-                  value={infos.password}
+                  name='senha'
+                  value={infos.senha}
                   onChange={handleChange}
                   placeholder='Digite sua senha aqui...'
                 />
               </label>
             </div>
 
+            <div className={`box-tratamento-erro ${statusLogin.status == 'error' ? 'mensagem-erro' : 'mensagem-sucesso'}`}>
+              <p>{ statusLogin.message }</p>
+            </div>
+
             <div className='box-button'>
-              <button>Entrar</button>
+              <button onClick={handleLogin}>Entrar</button>
             </div>
           </div>
 
