@@ -135,7 +135,7 @@ function CadastroCliente() {
             </a>
             <h1><a href="/">Germinne</a></h1>
           </div>
-          <h3>Profissional</h3>
+          <h3>Cliente</h3>
         </div>
 
         <div>
