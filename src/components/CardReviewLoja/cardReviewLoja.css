@@ -12,8 +12,8 @@
 
 .card-review-loja > div:nth-child(2) img {
     object-fit: cover;
-    width: 320px;
-    height: 370px;
+    width: 330px;
+    height: 280px;
     border-radius: 10px;
     margin: 10px 0;
 }

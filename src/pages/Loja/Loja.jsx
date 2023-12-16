@@ -1,6 +1,6 @@
 import React from 'react';
 import CardConteudoGB from '../../components/CardConteudoGB/CardConteudoGB';
-import vaso from '../../images/gb-conteudo-vaso.svg';
+import vaso from '../../images/germinne-box-3.png';
 import sementes from '../../images/gb-conteudo-sementes.svg';
 import substrato from '../../images/gb-conteudo-substrato.svg';
 import qrcode from '../../images/gb-conteudo-qrcode.svg';
@@ -77,7 +77,7 @@ function Loja() {
           <CardConteudoGB
             srcImg={vaso}
             altImg="SADASDA"
-            text="Vaso autoirrigável"
+            text="Germinne Box auto irrigável"
           />
           <CardConteudoGB
             srcImg={sementes}

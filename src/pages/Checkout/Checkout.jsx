@@ -32,7 +32,7 @@ export default function Checkout() {
                         <MDBIcon fas icon="long-arrow-alt-left me-2" /> Continue comprando
                       </a>
                     </MDBTypography>
-    
+
                     <hr />
 
                     <MDBCard className="mb-3">
@@ -41,26 +41,26 @@ export default function Checkout() {
                           <div className="d-flex flex-row align-items-center">
                             <div>
                               <MDBCardImage
-                                src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-3.png"
+                                src={checkoutInfo.imagem}
                                 fluid className="rounded-3" style={{ width: '65px' }}
                                 alt="Shopping item" />
                             </div>
                             <div className="ms-3">
                               <MDBTypography tag="h5">
-                                { checkoutInfo.produto }
+                                {checkoutInfo.produto}
                               </MDBTypography>
-                              <p className="small mb-0">{ checkoutInfo.sementes.join(', ') }</p>
+                              <p className="small mb-0">{checkoutInfo.sementes.join(', ')}</p>
                             </div>
                           </div>
                           <div className="d-flex flex-row align-items-center">
                             <div style={{ width: '50px' }}>
                               <MDBTypography tag="h5" className="fw-normal mb-0">
-                                { checkoutInfo.quantidade }
+                                {checkoutInfo.quantidade}
                               </MDBTypography>
                             </div>
                             <div style={{ width: '80px' }}>
                               <MDBTypography tag="h5" className="mb-0">
-                                R$ { checkoutInfo.quantidade * 134.99 }
+                                R$ {checkoutInfo.quantidade * checkoutInfo.preco}
                               </MDBTypography>
                             </div>
                             <a href="#!" style={{ color: '#cecece' }}>
@@ -71,7 +71,7 @@ export default function Checkout() {
                       </MDBCardBody>
                     </MDBCard>
                   </MDBCol>
-    
+
                   <MDBCol lg="5">
                     <MDBCard style={{ backgroundColor: 'var(--cta-roxo)' }} id='card-detalhes-cartao' className="bg-#FCE4EC text-white rounded-3">
                       <MDBCardBody>
@@ -80,7 +80,7 @@ export default function Checkout() {
                             Detalhes do cartão
                           </MDBTypography>
                         </div>
-    
+
                         <a href="#!" type="submit" className="text-white">
                           <MDBIcon fab icon="cc-mastercard fa-2x me-2" />
                         </a>
@@ -93,14 +93,14 @@ export default function Checkout() {
                         <a href="#!" type="submit" className="text-white">
                           <MDBIcon fab icon="cc-paypal fa-2x me-2" />
                         </a>
-    
+
                         <form className="mt-4">
                           <MDBInput className="mb-4" label="Nome no cartão" type="text" size="lg"
                             placeholder="Nome no cartão" contrast />
-    
+
                           <MDBInput className="mb-4" label="Número do cartão" type="text" size="lg"
                             minLength="19" maxLength="19" placeholder="1234 5678 9012 3457" contrast />
-    
+
                           <MDBRow className="mb-4">
                             <MDBCol md="6">
                               <MDBInput className="mb-4" label="Expiração" type="text" size="lg"
@@ -112,27 +112,27 @@ export default function Checkout() {
                             </MDBCol>
                           </MDBRow>
                         </form>
-    
+
                         <hr />
-    
+
                         <div className="d-flex justify-content-between">
                           <p className="mb-2">Subtotal</p>
-                          <p className="mb-2">R$ { checkoutInfo.quantidade * 134.99 }</p>
+                          <p className="mb-2">R$ {checkoutInfo.quantidade * checkoutInfo.preco}</p>
                         </div>
-    
+
                         <div className="d-flex justify-content-between">
                           <p className="mb-2">Entrega</p>
                           <p className="mb-2">R$ 30,00</p>
                         </div>
-    
+
                         <div className="d-flex justify-content-between">
                           <p className="mb-2">Total</p>
-                          <p className="mb-2">R$ { checkoutInfo.quantidade * 134.99 + 30 }</p>
+                          <p className="mb-2">R$ {(checkoutInfo.quantidade * checkoutInfo.preco + 30.00).toFixed(2)}</p>
                         </div>
-    
+
                         <MDBBtn style={{ backgroundColor: 'var(--font-banner-verde)' }} color="info" block size="lg">
                           <div className="d-flex justify-content-between">
-                            <span>R$ { checkoutInfo.quantidade * 134.99 + 30 }</span>
+                            <span>R$ {(checkoutInfo.quantidade * checkoutInfo.preco + 30.00).toFixed(2)}</span>
                             <span>
                               Finalizar compra{' '}
                               <i className="fas fa-long-arrow-alt-right ms-2"></i>

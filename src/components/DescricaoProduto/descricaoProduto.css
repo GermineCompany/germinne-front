@@ -118,5 +118,21 @@
     border-radius: 10px;
     box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
     margin-top: 25px;
+    position: relative;
+    overflow: hidden;
 }
 
+.botao-adicionar-carrinho button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.678), transparent);
+    transition: all 0.5s;
+}
+
+.botao-adicionar-carrinho button:hover::before {
+    left: 100%;
+}
