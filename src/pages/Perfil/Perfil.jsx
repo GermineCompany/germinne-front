@@ -27,10 +27,12 @@ function Perfil() {
     });
   };
 
+  console.log(loggedUser);
+
   return (
     <div className='perfil'>
       <aside className='menu-lateral-perfil'>
-        <h3>Olá, <span>{ loggedUser.nomeUsuario }</span>!</h3>
+        <h3>Olá, <span>{ loggedUser.nome }</span>!</h3>
 
         <nav>
           <ul>

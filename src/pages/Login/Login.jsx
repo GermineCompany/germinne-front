@@ -24,8 +24,9 @@ function Login() {
     console.log(infos);
     try {
       const result = await api.post('/profissional/login', infos);
+      delete result.data.message;
       setStatusLogin({ ...statusLogin, message: result.data.message, status: 'success' });
-      localStorage.setItem('userInfo', JSON.stringify({ ...result.data, logged: true }));
+      localStorage.setItem('userInfo', JSON.stringify({ ...result.data, tipo: 'profissional' }));
       setTimeout(() => window.location.href = '/', 1500);
     } catch (error) {
       setStatusLogin({ ...statusLogin, message: error.response.data.message, status: 'error' });
