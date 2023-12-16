@@ -1,70 +1,143 @@
-.box-sobre-nos {
-    background: url(../../images/background-sobre-nos.svg) no-repeat;
+
+.banner-sobre-nos {
+    background-image: url("https://germinnecomp-img.s3.sa-east-1.amazonaws.com/banner-sobre-nos.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    height: 65vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    margin-top: 100px;
-}
+    align-items: end;
+    margin-bottom: 45px;
+  }
+  
+  .banner-sobre-nos p {
+      color: white;
+      font-weight: var(--semi-bold);
+      text-transform: uppercase;
+      margin-bottom: 100px;
+      margin-left: 50px;
+      font-size: var(--title-medium);
+  }
+  
+  .banner-sobre-nos span {
+      color: var(--cta-laranja);
+  }
+  
+  .box-sobre-a-germinne {
+      padding: 0 50px;
+      margin-bottom: 50px;
+  }
+  
+  .box-sobre-a-germinne p {
+      line-height: 32px;
+      margin: 20px 0;
+      font-size: var(--body-medium);
+  }
+  
+  .box-sobre-a-germinne span {
+      color: var(--cta-verde);
+  }
+  
+  .box-cards-valores {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .box-futuro-germinne {
+      margin-top: 30px;
+      text-align: center;
+  }
+  
+  .box-futuro-germinne h3 {
+      font-size: var(--title-medium);
+      margin: 40px 0;
+  }
+  
+  .box-futuro-germinne h3 span {
+      color: var(--verde-principal);
+  }
+  
+  .box-futuro-germinne div:nth-child(even) {
+      flex-direction: row-reverse;
+  }
 
-.box-text-sobre-nos h3 {
-    color: var(--verde-titulo);
-    border-bottom: 2px solid black;
-    font-size: 50px;
-    font-weight: 500;
-    width: 20%;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 30px;
-}
 
-.box-text-sobre-nos p {
-    width: 60%;
-    margin: auto;
-    text-align: center;
-    line-height: 30px;
-}
+/* ---------------------------------------------- */
 
-.box-fale-conosco {
-    text-align: center;
-    margin: 30px 0;
-}
-
-.box-fale-conosco p {
-    width: 50%;
-    margin: auto;
-}
-
-.box-fale-conosco h3 {
-    color: var(--verde-titulo);
-    font-size: 50px;
-    font-weight: 500;
-}
-
-.box-contatos {
+.box-paleta {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-}
-
-.box-contatos div {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-    width: 20%;
-    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
     border-radius: 10px;
-    margin: 30px;
 }
 
-.box-contatos div p {
-    font-weight: 500;
-    margin-bottom: 40px;
+.box-paleta h2 {
+    font-size: var(--title-small);
+    font-weight: var(--semi-bold);
+    margin: 20px 0px;
+
 }
 
-.box-contatos div a {
-    color: var(--verde-titulo);
-    text-decoration: none;
+.box-banner-logo {
+    margin-top: 50px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
 }
 
-.box-contatos svg {
-    width: 100px;
-    height: 100px;
+.box-banner-logo img {
+    width: 1250px;
+    border-radius: 10px;
+}
+
+.box-impactos-sociais {
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box-impactos-sociais span {
+    color: var(--verde-principal);
+}
+
+.box-impactos-sociais h2 {
+    font-size: var(--title-small);
+    font-weight: var(--semi-bold);
+}
+
+.box-impactos-sociais-imagens {
+    width: 92%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.box-impactos-sociais-imagens img {
+    width: 350px;
+    border-radius: 10px;   
+}
+
+.div-impactos {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-impactos p {
+    font-size: var(--body-large);
+    font-weight: var(--regular-bold);
+    text-align: center;
+    margin-top: 15px;
+    width: 350px;
 }

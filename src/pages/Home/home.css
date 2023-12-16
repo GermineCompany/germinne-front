@@ -85,7 +85,6 @@
     text-align: center;
     display: flex;
     flex-direction: column; 
-
 }
 
 .box-cards span {
@@ -165,8 +164,13 @@
     flex-direction: row-reverse;
 }
 
+
 .box-avaliacoes {
-    padding: 5% 0;
+   margin: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .box-avaliacoes div {
@@ -177,17 +181,15 @@
 
 .box-avaliacoes h3 {
     text-align: center;
-    font-size: var(--title-medium);
-    margin-bottom: 5%;
+    font-size: var(--title-small);
+    margin-bottom: 50px;
 }
 
 .box-avaliacoes span {
     color: var(--verde-principal);
 }
 
-.tamanho-pagina {
-    width: 80vw !important;
-}
+
 
 @media  (max-width:1200px) {
     .banner-home {

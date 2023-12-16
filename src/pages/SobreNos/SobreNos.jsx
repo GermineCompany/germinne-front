@@ -1,82 +1,99 @@
 import React from 'react';
-import CardSobreNos from '../../components/CardSobreNos/CardSobreNos';
-import missao from '../../images/missao.svg';
-import visao from '../../images/visao.svg';
-import valor from '../../images/valor.svg';
 import './sobreNos.css';
-import { MdOutlineEmail, MdOutlineWhatsapp } from 'react-icons/md';
-import FormsSobreNos from '../../components/FormsSobreNos/FormsSobreNos';
+import CardValores from '../../components/CardValores/CardValores';
+import FuturoSobreNos from '../../components/FuturoSobreNos/FuturoSobreNos';
 
 function SobreNos() {
   return (
-    <article>
-      <div className="box-text-sobre-nos">
-        <h3>Sobre nós</h3>
-        <p>
-          A Germinne surgiu com o objetivo de incentivar cada vêz mais pessoas
-          parte de um movimento que transforma os espaços urbanos em fontes de
-          vida e saúde. Nossa plataforma promove informações e incentiva
-          iniciativas que promovam a agricultura urbana: Leia os mais diversos
-          artigos em nosso blog, converse com nosso chatbot inteligente que irá
-          te orientar e ajudar a resolver os seus problemas, invista em nosso
-          kit de cultivo indoor e plante em qualquer lugar de maneira
-          simplificada.
-        </p>
-
-        <p>
-          Temos como objetivo tornar a agricutura urbana mais acessível,
-          inclusiva e produtiva para todos.
-        </p>
+    <div>
+      <div className='banner-sobre-nos'>
+        <p><span>Conheça</span> a Germinne</p>
       </div>
 
-      <div className="box-sobre-nos">
-        <CardSobreNos
-          srcImg={missao}
-          altImg="Icone do missão"
-          title="Missão"
-          text="A nossa missão é promover e democratizar a agricultura urbana, fornecendo informações e práticas corretas."
-        />
-        <CardSobreNos
-          srcImg={visao}
-          altImg="Icone da visão"
-          title="Visão"
-          text="A nossa missão é promover e democratizar a agricultura urbana, fornecendo informações e práticas corretas."
-        />
-        <CardSobreNos
-          srcImg={valor}
-          altImg="Icone do valor"
-          title="Valor"
-          text="Ética, confiança, sustentabilidade, comprometimento, transparência, excelência, informações de qualidade e eficiência."
-        />
-      </div>
+      <div className="main-container-limitador">
 
-      <div className="box-fale-conosco">
-        <h3>Tire suas dúvidas e fale conosco</h3>
-        <p>
-          Tem dúvidas quanto ao nosso Kit de Cultivo? Tem algum problema com seu
-          pedido? ou tem algum problema com suas plantinhas? Vamos te ajudar:
-        </p>
-
-        <div className="box-contatos">
-          <div>
-            <MdOutlineEmail />
-            <p>Nosso email</p>
-            <a href="mailto:germinne@contato.com">germinne@contato.com</a>
-          </div>
-
-          <div>
-            <MdOutlineWhatsapp />
-            <p>Nosso WhatsApp</p>
-            <a href="">Tire sua dúvida agora</a>
-          </div>
+        <div className='box-sobre-a-germinne'>
+          <p>Bem-vindo à <span>Germinne</span>, um lugar onde a paixão pela natureza e a dedicação à vida urbana se encontram. Somos apaixonados por tornar a <span>gricultura urbana acessível</span> a todos, oferecendo <span>soluções práticas</span> para transformar o desejo de cultivar em uma realidade vibrante.</p>
+          <p>Nosso compromisso vai além do cultivo; é sobre capacitar cada indivíduo a <span>colher os beneficios de uma horta em casa</span>, independente de sua experiência ou espaço disponível. Com uma <span>equipe dedicada</span> e uma visão orientada para a <span>sustentabilidade</span>, estamos aqui para tornar sua jornada de cultivo uma experiência prazerosa e gratificante. </p>
+          <p>Junte-se a nós nessa de <span>cultivar vida, saúde e sustentabilidade</span> no coração das cidades. Seja parte da comunidade <span>Germinne</span> e descubra o poder de cultivar seu próprio pedaço de verde no mundo urbano.</p>
         </div>
 
-        <div>
-          <h2>Ou preencha o formulário</h2>
-          <FormsSobreNos />
+        <div className='box-cards-valores'>
+          <CardValores
+            srcImg='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/cultivo-sobre-nos.png'
+            titulo='Cultivo'
+            descricao='A nossa missão é democratizar a agricultura urbana, fornecendo informações corretas e práticas junto com um profissional, para que todos possam ter acesso a alimentos frescos e saudáveis.'
+          />
+
+          <CardValores
+            srcImg='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/colheita-sobre-nos.png'
+            titulo='Colheita'
+            descricao='Ser a principal plataforma de informações, serviço de horticultura e vendas de produtos que incentivam as hortas urbanas, reconhecida pela sua contribuição para a sustentabilidade e bem-estar das pessoas.'
+          />
+
+          <CardValores
+            srcImg='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/nutrientes-sobre-nos.png'
+            titulo='Nutrientes'
+            descricao='Ética; Confiança; Sustentabilidade; Comprometimento; Informações de Qualidade; Eficiência; Tecnologia;'
+          />
+        </div>
+
+        <div className='box-futuro-germinne'>
+          <h3>Visão de <span>futuro</span></h3>
+
+          <FuturoSobreNos
+            titulo={['Aplicativo para ', <span key={1}>Android e iOS</span>]}
+            srcImg='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/mockup.png'
+            descricao='Queremos portar 100% da plataforma para o Mobile, trazendo conforto e felicidade na palma da sua mão! Em breve você terá tudo que precisa a um clique de distância.'
+          />
+
+          <FuturoSobreNos
+            titulo={['Você poderá Interagir com o ', <span key={2}>Chatbot</span>, ' da Germinne!']}
+            srcImg='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/chat-germinne.png'
+            descricao='Criaremos um Chatbot que irá tirar todas as suas dúvidas e curiosidades sobre suas hortinhas, sobre a GerminneBox, nosso site e muitos outros temas que te interessam.'
+          />
+
+          <FuturoSobreNos
+            titulo={['A criação das ', <span key={3}>Hortas verticais</span>, ' únicas da Germinne!']}
+            srcImg='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/horta-vertical-sobre-nos.png'
+            descricao='Futuramente você poderá ter as hortas verticais da Germinne e terá mais alimentos organicos e saudáveis dentro do seu lar ocupando menos espaço e mais conforto.'
+          />
+        </div>
+
+
+
+        <div className='box-paleta'>
+          <h2>Nossa paleta de cores</h2>
+          <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/paleta-de-cores.png" alt="Imagem da paleta de cores" />
+        </div>
+
+        <div className='box-banner-logo'>
+          <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/banner-logo.png" alt="" />
+        </div>
+
+        <div className='box-impactos-sociais'>
+          <h2>O impacto da <span>Germinne</span>:</h2>
+          <div className='box-impactos-sociais-imagens'>
+
+            <div className='div-impactos'>
+              <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/impacto-comunitario1.png" alt="" />
+              <p>Benefícios sua <span>saúde</span> fisica com a ingestão de menos agrotóxicos.</p>
+            </div>
+
+            <div className='div-impactos'>
+              <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/impacto-comunitario2.png" alt="" />
+              <p>Diminuição do stress e prevenção de doenças mentais com a <span>hortoterapia</span>.</p>
+            </div>
+
+            <div className='div-impactos'>
+              <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/impacto-comunitario3.png" alt="" />
+              <p>Alimentos mais saborosos e <span>orgânicos</span> cultivados em casa.</p>
+            </div>
+
+          </div>
         </div>
       </div>
-    </article>
+    </div>
   );
 }
 
