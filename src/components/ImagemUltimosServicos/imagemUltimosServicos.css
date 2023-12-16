@@ -8,9 +8,9 @@
     text-overflow: ellipsis;
 }
 
-.imagem-ultimos-servicos h3 {
+.imagem-ultimos-servicos h3 a {
     font-size: var(--subtitle-medium);
-    color: var(--verde-principal);
+    color: var(--verde-principal) !important;
 }
 .localizacao-card-portifilio {
     color: gray !important;
@@ -44,6 +44,8 @@
     }
     .imagem-ultimos-servicos h3 {
         font-size: var(--subtitle-small);
+        color: var(--verde-principal) !important;
+        
     }
     
     .imagem-ultimos-servicos p {

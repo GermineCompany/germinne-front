@@ -8,7 +8,9 @@ function ImagemUltimosServicos({ srcImg, titulo, local, texto }) {
       <div>
         <img src={srcImg} alt="Imagem de uma serviço do horticultor" />
         <div>
-          <h3>{titulo}</h3>
+
+          <h3><a href="">{titulo}</a></h3>
+
           <p className='localizacao-card-portifilio'>{local}</p>
           <p>{texto}</p>
         </div>

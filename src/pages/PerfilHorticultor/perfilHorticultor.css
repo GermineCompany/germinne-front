@@ -150,6 +150,11 @@
 
 .ultimos-servicos-mobile {
     display: none !important;
+    text-decoration: none;
+}
+
+.ultimos-servicos-desktop a {
+    color: black;
 }
 
 /*  */
