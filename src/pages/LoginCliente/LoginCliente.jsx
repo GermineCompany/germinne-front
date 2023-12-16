@@ -1,42 +1,64 @@
 import React, { useState } from 'react';
 import imagemLogin from '../../images/ImagemCliente.svg';
-import google from '../../images/google.png';
 import '../Login/loginCadastro.css';
 import './loginCliente.css';
 import { useNavigate } from 'react-router-dom';
-
+import api from '../../utils/axios';
+import logoVerde from '../../images/logo-verde.svg';
 
 function LoginCliente() {
   const navigate = useNavigate();
-
   const [infos, setInfos] = useState({
     email: '',
-    password: ''
+    senha: ''
   });
+
+  const [messages, setMessages] = useState({ messageError: '', messageSuccessful: '' });
 
   const handleChange = (event) => setInfos({ ...infos, [event.target.name]: event.target.value });
 
+  const handleLogin = async () => {
+    try {
+      const result = await api.post('/cliente/login', infos);
+      setMessages({ ...messages, messageSuccessful: result.data.message });
+      localStorage.setItem('userInfo', JSON.stringify({ ...result.data, logged: true }));
+      setTimeout(() => window.location.href = '/', 1500);
+    } catch (error) {
+      setMessages({ ...messages, messageError: error.response.data.message });
+    }
+  };
+
   return (
-    <div className='box-login-cadastro'>
-      <div>
-        <img src={ imagemLogin } alt="Imagem de uma mão plantando uma planta" />
+    <div className="box-login-cadastro">
+      <div className='imagem-esquerda'>
+        <img src={imagemLogin} alt="Imagem de uma mão plantando uma planta" />
       </div>
 
       <article className='box-inputs-login-cadastro box-inputs-cliente'>
+        <div className='logomarca-germinne-geral'>
+          <div className='logomarca-germinne-login-profissional'>
+            <a href="/">
+              <img src={logoVerde} alt="logo verde germinne" />
+            </a>
+            <h1><a href="/">Germinne</a></h1>
+          </div>
+          <h3>Profissional</h3>
+        </div>
+
         <div>
-          <h1>Germinne</h1>
-          <h3>Cliente</h3>
+          <span>{messages.messageError}</span>
+          <span className='mensagem-sucesso'>{messages.messageSuccessful}</span>
         </div>
 
         <div className='box-email-password'>
           <div>
             <label>
               Email
-              <input 
-                type='email' 
-                name='email' 
-                value={ infos.email } 
-                onChange={ handleChange }
+              <input
+                type='email'
+                name='email'
+                value={infos.email}
+                onChange={handleChange}
                 placeholder='Digite seu email aqui...'
               />
             </label>
@@ -45,24 +67,19 @@ function LoginCliente() {
           <div>
             <label>
               Senha
-              <input 
-                type='password' 
-                name='password' 
-                value={ infos.password }
-                onChange={ handleChange }
+              <input
+                type='password'
+                name='senha'
+                value={infos.senha}
+                onChange={handleChange}
                 placeholder='Digite sua senha aqui...'
               />
             </label>
           </div>
 
           <div className='box-button'>
-            <button>Entrar</button>
+            <button onClick={handleLogin}>Entrar</button>
           </div>
-        </div>
-
-        <div className='box-google'>
-          <p>Ou faça login com sua conta do Google</p>
-          <img src={ google } alt='Logo do Google' />
         </div>
 
         <div className='box-cadastro'>

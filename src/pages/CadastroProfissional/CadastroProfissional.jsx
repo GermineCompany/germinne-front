@@ -3,6 +3,7 @@ import imagemLogin from '../../images/login-profissional.png';
 import '../Login/loginCadastro.css';
 import './cadastroProfissional.css';
 import { useNavigate } from 'react-router-dom';
+import logoVerde from '../../images/logo-verde.svg';
 
 function CadastroProfissional() {
   const navigate = useNavigate();
@@ -19,12 +20,17 @@ function CadastroProfissional() {
   return (
     <div className='box-login-cadastro'>
       <div>
-        <img src={ imagemLogin } alt="Imagem de uma mão plantando uma planta" />
+        <img src={imagemLogin} alt="Imagem de uma mão plantando uma planta" />
       </div>
 
       <article className='box-inputs-login-cadastro'>
-        <div>
-          <h1>Germinne</h1>
+        <div className='logomarca-germinne-geral'>
+          <div className='logomarca-germinne-login-profissional'>
+            <a href="/">
+              <img src={logoVerde} alt="logo verde germinne" />
+            </a>
+            <h1><a href="/">Germinne</a></h1>
+          </div>
           <h3>Profissional</h3>
         </div>
 
@@ -32,11 +38,11 @@ function CadastroProfissional() {
           <div>
             <label>
               Nome e sobrenome
-              <input 
-                type='text' 
-                name='name' 
-                value={ infos.name } 
-                onChange={ handleChange }
+              <input
+                type='text'
+                name='name'
+                value={infos.name}
+                onChange={handleChange}
                 placeholder='Digite seu nome e sobrenome aqui...'
               />
             </label>
@@ -45,11 +51,11 @@ function CadastroProfissional() {
           <div>
             <label className='Email'>
               Email
-              <input 
-                type='email' 
-                name='email' 
-                value={ infos.email } 
-                onChange={ handleChange }
+              <input
+                type='email'
+                name='email'
+                value={infos.email}
+                onChange={handleChange}
                 placeholder='Digite seu email aqui...'
               />
             </label>
@@ -58,11 +64,11 @@ function CadastroProfissional() {
           <div>
             <label>
               Senha
-              <input 
-                type='password' 
-                name='password' 
-                value={ infos.password }
-                onChange={ handleChange }
+              <input
+                type='password'
+                name='password'
+                value={infos.password}
+                onChange={handleChange}
                 placeholder='Digite sua senha aqui...'
               />
             </label>
@@ -71,11 +77,11 @@ function CadastroProfissional() {
           <div>
             <label>
               CPF
-              <input 
-                type='text' 
-                name='CPF' 
-                value={ infos.CPF } 
-                onChange={ handleChange }
+              <input
+                type='text'
+                name='CPF'
+                value={infos.CPF}
+                onChange={handleChange}
                 placeholder='Digite seu CPF aqui...'
               />
             </label>

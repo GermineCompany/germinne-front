@@ -130,6 +130,12 @@
   margin-bottom: 0 !important;
 }
 
+.login-cliente-menu-mobile a {
+  color: var(--cta-laranja) !important;
+}
+
+
+
 @media screen and (max-width: 700px) {
   .header-mobile img {
     width: 30px;

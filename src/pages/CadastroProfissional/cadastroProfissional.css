@@ -2,6 +2,10 @@
     margin: 5% 0;
 }
 
-.box-cadastro-profissional {
-    margin: 5% 0;
+.margin-cadastro-cliente {
+    margin-top: 200px;
+}
+
+.margin-botao-cadastro-cliente {
+    margin-bottom: 30px;
 }

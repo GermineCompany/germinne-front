@@ -4,8 +4,11 @@ import './galeriaProjetos.css';
 
 function GaleriaProjetos() {
   return (
-    <div className='galeria-projetos'>
-      <PiStarFourFill />
+    <div className='div-galeria-projetos'>
+      <div className='galeria-projetos'>
+        <PiStarFourFill />
+      </div>
+      <p>Adicionar arquivo</p>
     </div>
   );
 }
