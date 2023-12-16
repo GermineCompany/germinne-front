@@ -1,6 +1,5 @@
 .card-passo-a-passo {
-    height: 450px;
-    width: 450px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,6 +18,15 @@
 
 .card-passo-a-passo img {
     border-radius: 10px;
-    height: 400px;
     width: 400px;
+}
+
+@media (max-width:600px) {
+    .card-passo-a-passo h3 {
+        font-size: var(--subtitle-small);
+    }
+    
+    .card-passo-a-passo img {
+        width: 280px;
+    }
 }

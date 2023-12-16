@@ -12,13 +12,14 @@ import LoginCliente from './pages/LoginCliente/LoginCliente';
 import CadastroCliente from './pages/CadastroCliente/CadastroCliente';
 import Artigo from './pages/Artigo/Artigo';
 import Loja from './pages/Loja/Loja';
-import Horticultores from './pages/Horticultores/Horticultores';
 import VitrineHorticultores from './pages/VitrineHorticultores/VitrineHorticultores';
 import Perfil from './pages/Perfil/Perfil';
 import PerfilHorticultor from './pages/PerfilHorticultor/PerfilHorticultor';
 import FiltrosServico from './pages/FiltrosServico/FiltrosServico';
 import TrabalheConosco from './pages/TrabalheConosco/TrabalheConosco';
 import Checkout from './pages/Checkout/Checkout';
+import Contrate from './pages/Contrate/Contrate';
+import FacaParte from './pages/FacaParte/FacaParte';
 
 function App() {
   const path = window.location.pathname;
@@ -52,18 +53,25 @@ function App() {
           <Route path="/sobre-nos" Component={SobreNos} />
           <Route path="/blog" Component={Blog} />
           <Route path="/login" Component={Login} />
-          <Route path="/cadastro-profissional" Component={CadastroProfissional} />
+          <Route
+            path="/cadastro-profissional"
+            Component={CadastroProfissional}
+          />
           <Route path="/login-cliente" Component={LoginCliente} />
           <Route path="/cadastro-cliente" Component={CadastroCliente} />
           <Route path="/artigo/:id" Component={Artigo} />
           <Route path="/loja" Component={Loja} />
-          <Route path="/horticultores" Component={Horticultores} />
-          <Route path="/vitrine-horticultores" Component={VitrineHorticultores} />
+          <Route path="/contrate" Component={Contrate} />
+          <Route
+            path="/vitrine-horticultores"
+            Component={VitrineHorticultores}
+          />
           <Route path="/perfil" Component={Perfil} />
           <Route path="/perfil-horticultor/:id" Component={PerfilHorticultor} />
           <Route path="/filtros-servico" Component={FiltrosServico} />
           <Route path="/trabalhe-conosco" Component={TrabalheConosco} />
           <Route path="/checkout" Component={Checkout} />
+          <Route path="/faca-parte" Component={FacaParte} />
         </Routes>
       </main>
       {path != '/login' &&

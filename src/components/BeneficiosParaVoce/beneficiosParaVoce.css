@@ -1,30 +1,57 @@
+.box-beneficios-para-voce {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  width: 400px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 10px;
+}
+
 .beneficios-para-voce {
-    background-color: rgb(255, 255, 255);
-    width: 400px;
-    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    gap: 30px;
     padding: 15px;
     text-align: center;
-    border-radius: 10px;
   }
   
   .beneficios-para-voce h3 {
-    font-size: var(--subtitle-large);
-    font-weight: var(--semi-bold);
+    font-size: var(--subtitle-small);
+    font-weight: var(--bold);
     width: 100%;
     margin-bottom: 10px;
   }
   
   .beneficios-para-voce p {
-    font-size: var(--body-large);
+    font-size: var(--body-medium);
     width: 100%;
   }
   
-  .beneficios-para-voce img {
-    margin-top: -100px; 
+  .beneficios-para-voce img { 
     width: 100px;
+  }
+
+  @media (max-width: 600px) {
+
+    .box-beneficios-para-voce {
+      height: 630px;
+      width: 300px;
+      justify-content: center;
+    }
+
+    .beneficios-para-voce {
+      padding: 0 10px 0 10px;
+    }
+
+    .beneficios-para-voce p {
+      font-size: var(--body-small);
+    }
+
+    .beneficios-para-voce img {
+      width: 80px;
+    }
   }
