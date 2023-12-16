@@ -84,16 +84,16 @@ function Header() {
                 <div>
                   <a href="/perfil">Olá, {loggedUser.nomeUsuario}</a>
                 </div>
-              ) : (
-                <button
-                  className={showLogin ? 'button-opened' : ''}
-                  onClick={handleShowLogin}
-                >
-                  Entrar
-                </button>
-              )}
+              ) : false}
+
             </div>
-            <div className={`box-login ${showLogin ? 'open-login' : 'close-login'}`}>
+            <button
+              className={showLogin ? 'button-opened' : ''}
+              onClick={handleShowLogin}
+            >
+              Entrar
+            </button>
+            <div className={`links-login ${showLogin ? 'open-login' : 'close-login'}`}>
               <ul>
                 <li>
                   <a href="/login-cliente">Cliente</a>
