@@ -13,13 +13,13 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
   /* COLOR */
   --verde-header: #35845E;
-  --verde-principal: #4CA676;
+  --verde-principal: #0FBD6C;
   --verde-escuro: #0C9354;
   --verde-avaliacoes: #F5FEF8;
   --verde-vitrine: #09834A;
@@ -35,10 +35,11 @@ body {
   --background-main: #fff;
   --background-article-home: #F8F8F8;
   /* COLOR */
+  
 
   /* FONT */
   /* FONT-FAMILLY */
-  --title-family: "Montserrat", sans-serif !important;
+  --title-family: "Montserrat", sans-serif;
   --body-family: 'Poppins', sans-serif;
 
   /* FONT-SIZE */
@@ -60,8 +61,8 @@ body {
   /* FONT-COLORS */
   --title-color: #1e1e1e;
   --font-body-color: #353535;
-  --font-body-verde: #4CA676;
-  --font-banner-verde: #1AC673;
+  --font-body-verde: #0FBD6C;
+  --font-banner-verde: #12E281;
 
   /* FONT-WEIGHT */
   --bold: 700;
@@ -71,14 +72,6 @@ body {
   /* FONT */
 }
 
-h1, h2 {
-  font-weight: var(--bold) !important;
-}
-
-h3, h3 {
-  font-weight: var(--semi-bold) !important;
-}
-
 h1, h2, h3, h4 {
-  font-family: var(--title-family) !important;
+  font-family: var(--title-family);
 }
