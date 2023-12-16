@@ -3,6 +3,7 @@ import imagemLogin from '../../images/ImagemCliente.svg';
 import '../Login/loginCadastro.css';
 import { useNavigate } from 'react-router-dom';
 import api from '../../utils/axios';
+import logoVerde from '../../images/logo-verde.svg';
 
 function CadastroCliente() {
   const navigate = useNavigate();
@@ -122,9 +123,14 @@ function CadastroCliente() {
       </div>
 
       <article className='box-inputs-login-cadastro box-inputs-cliente'>
-        <div>
-          <h1>Germinne</h1>
-          <h3>Cliente</h3>
+        <div className='logomarca-germinne-geral margin-cadastro-cliente'>
+          <div className='logomarca-germinne-login-profissional'>
+            <a href="/">
+              <img src={logoVerde} alt="logo verde germinne" />
+            </a>
+            <h1><a href="/">Germinne</a></h1>
+          </div>
+          <h3>Profissional</h3>
         </div>
 
         <div>
@@ -224,7 +230,7 @@ function CadastroCliente() {
         <div className='box-cadastro box-cadastro-profissional'>
           <hr />
           <p>Já possui conta na Germinne?</p>
-          <button onClick={() => navigate('/login-cliente')}>Login</button>
+          <button className='margin-botao-cadastro-cliente' onClick={() => navigate('/login-cliente')}>Login</button>
         </div>
 
 
