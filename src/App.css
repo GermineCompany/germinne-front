@@ -75,3 +75,20 @@ body {
 h1, h2, h3, h4 {
   font-family: var(--title-family);
 }
+
+h1, h2, h3 {
+  font-weight: var(--semi-bold) !important;
+}
+
+p {
+  margin: 0 !important;
+}
+
+p , a, li{
+  font-family: var(--body-family) !important;
+  font-weight: var(--body-medium) !important;
+}
+
+ul {
+  padding-left: 0 !important;
+}

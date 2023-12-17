@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     color: white;
-    padding: 150px 0px 0px 50px;
+    padding: 0px 0px 0px 50px;
     box-shadow: 700px 0px 150px 0px rgba(0, 0, 0, 0.70) inset;
 }
 
@@ -42,10 +42,6 @@
     color: var(--cta-laranja) !important;
 }
 
-.swiper-slide {
-    padding: 0 !important;
-}
-
 .banner-home h2 {
     font-size: var(--display-large);
     text-transform: uppercase;
@@ -61,27 +57,27 @@
     font-size: var(--subtitle-medium);
 }
 
-.box-card-home {
-    width: 90%;
-    margin: auto;
-}
 
-.box-card-servicos {
-    flex-wrap: wrap;
-    background-color: var(--body-article-color);
-    padding-top:  50px;
-    display: flex;
-    justify-content: space-evenly;
+
+.hide-carousel-home {
+    display: none !important;
+    margin: 20px;
 }
 
 .box-card-germinne {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px
+}
+
+.hide-carousel-germinne {
+    display: none;
 }
 
 .box-cards {
     margin-top: 70px;
+    margin-bottom: 100px;
     text-align: center;
     display: flex;
     flex-direction: column; 
@@ -94,16 +90,18 @@
 .box-cards > h2 {
     font-size: var(--title-small);
     align-self: flex-start;
-    margin-left: 40px;
     margin-bottom: 30px;
+    margin-left: 50px;
 }
+
+
 
 .banner-mvv {
     background: url(../../images/banner-mvv.png) no-repeat;
     background-size: cover;
     background-position: center;
     height: 700px;
-    width: 1220px;
+    width: 100%;
     color: var(--verde-principal);
     display: flex;
     flex-direction: column;
@@ -122,12 +120,12 @@
 
 .mvv-itens {
    width: 400px;
+   padding: 20px;
 }
 
 .mvv-itens h2 {
     margin-bottom: 20px;
 }
-
 
 .box-mvv2 {
     display: flex;
@@ -136,19 +134,94 @@
     width: 100%;
 }
 
-.box-beneficios-agricultura {
-    padding-top: 150px;
+.banner-mvv-mobile {
+    display: none;
+    width: 100vw;
+}
+
+.mvv-mobile {
+    background:  url(../../images/banner-mvv-mobile.svg) no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 75% !important;
+    height: 400px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: var(--verde-escuro);
+    margin-top: 50px;
 }
 
-.box-beneficios-agricultura article:nth-child(2) {
-    padding-top: 50px !important;
+.banner-mvv-mobile .swiper-pagination-bullet-active {
+    background-color: var(--font-banner-verde) !important;
 }
 
-.box-beneficios-agricultura article {
-    padding-top: 150px;
+.banner-mvv-mobile .swiper {
+    padding: 5px 0;
+}
+
+.mvv-m {
+    background:  url(../../images/banner-mvv-mobile.svg) no-repeat;
+    background-size: cover;
+}
+
+.mvv-v {
+    background:  url(../../images/banner-mvv-mobile-v.svg) no-repeat;
+    background-size: cover;
+}
+
+.mvv-vv {
+    background:  url(../../images/banner-mvv-mobile-vv.svg) no-repeat;
+    background-size: cover;
+}
+
+.mvv-mobile h2 {
+    font-size: var(--subtitle-large);
+    font-weight: var(--bold);
+}
+
+.mvv-mobile ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mvv-mobile li {
+    font-size: var(--body-large);
+    list-style: none;
+}
+
+.mvv-mobile p {
+    font-size: var(--body-large);
+}
+
+.box-card-servicos {
+    flex-wrap: wrap;
+    background-color: var(--body-article-color);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.home-contrate {
+    color: var(--cta-laranja) !important;
+}
+
+.home-germinnebox {
+    color: var(--cta-roxo) !important;
+}
+
+.carousel-beneficios-home {
+    width: 100%;   
+}
+
+
+.box-beneficios-agricultura {
+    padding-top: 50px;
+    width: 100%;
 }
 
 .box-beneficios-agricultura h2 {
@@ -160,33 +233,50 @@
     color: var(--verde-principal);
 }
 
-.box-beneficios-agricultura article:nth-child(3) {
-    flex-direction: row-reverse;
-}
-
-
-.box-avaliacoes {
-   margin: 70px 0px;
+.beneficios-agricultura-home {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    gap: 120px;
+    width: 100%;
 }
 
-.box-avaliacoes div {
+.beneficios-agricultura-home article:nth-child(1) {
+    padding-top: 50px !important;
+}
+
+
+
+.beneficios-agricultura-home article:nth-child(2) {
+    flex-direction: row-reverse;
+    text-align: right !important; 
+}
+
+.box-avaliacoes {
+    padding: 5% 0;
+}
+
+.carousel-avaliacao-home {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
 }
 
 .box-avaliacoes h3 {
     text-align: center;
-    font-size: var(--title-small);
-    margin-bottom: 50px;
+    font-size: var(--title-medium);
+    margin-bottom: 5%;
 }
 
 .box-avaliacoes span {
     color: var(--verde-principal);
+}
+
+.carousel-avaliacao-home .swiper {
+    padding: 10px 100px;
+}
+
+.carousel-mobile-avaliacao-home {
+    display: none;
 }
 
 
@@ -211,5 +301,87 @@
 
     .contrate-home {
         background-image: url(../../images/banner-contrate-home-mobile.svg) !important;
+    }
+    
+    .box-card-germinne {
+        display: none;
+    }
+
+    .hide-carousel-germinne {
+        display: flex;
+    }
+}
+@media (max-width: 1375px) {
+    .carousel-avaliacao-home {
+        display: none;
+    } 
+
+    .carousel-mobile-avaliacao-home .swiper {
+        padding: 10px 0;
+    }
+    
+    .carousel-mobile-avaliacao-home {
+        display: flex;
+    }
+}
+
+@media (max-width: 1600px) {
+    .box-cards > h2{
+       align-self: center;
+       margin-left: 0;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+
+    .box-beneficios-agricultura h2 {
+        font-size: var(--subtitle-large);
+        margin-bottom: 10px;
+    }
+
+    .beneficios-agricultura-home {
+        gap: 50px;
+        margin-bottom: 30px;
+    }
+
+    .box-cards {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .banner-mvv-mobile {
+        display: flex;
+    }
+    .banner-mvv {
+        display: none;
+    }
+
+    .box-avaliacoes h3 {
+        font-size: var(--title-small);
+    }
+
+    .box-avaliacoes {
+        margin-bottom: 20px;
+    }
+    .mvv-mobile p {
+        font-size: var(--body-medium);
+    }
+}
+
+@media (max-width: 600px) {
+    .box-cards > h2{
+        font-size: var(--subtitle-large);
+        white-space: nowrap;
+    }
+    
+    .banner-home {
+        padding: 15px !important;
+    }
+
+    .hide-carousel-home {
+        display: flex !important;
     }
 }

@@ -1,3 +1,8 @@
 .swiper-pagination-bullet-active {
     background-color: var(--cta-laranja) !important;
 }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}

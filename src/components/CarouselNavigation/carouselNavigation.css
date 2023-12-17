@@ -1,0 +1,8 @@
+:root {
+ --swiper-theme-color: #FFBD4F !important;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
