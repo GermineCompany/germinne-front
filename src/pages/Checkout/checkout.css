@@ -1,33 +1,6 @@
-.h-100{height:100% }
-
-.py-5{padding-top:3rem ;padding-bottom:3rem }
-
-.justify-content-center{justify-content:center }
-
-.align-items-center{align-items:center }
-
-.p-4{padding:1.5rem }
-
-.text-body{--mdb-text-opacity: 1;color:rgba(var(--mdb-body-color-rgb), var(--mdb-text-opacity)) }.text-muted{--mdb-text-opacity: 1;color:var(--mdb-secondary-color) }
-
-.d-flex{display:flex }
-
-.justify-content-between{justify-content:space-between }
-
-.flex-row{flex-direction:row }
-
-.mb-3{margin-bottom:1rem }
-
-.ms-3{margin-left:1rem }
-
-.fw-normal{font-weight:400 }
-
-.rounded-3{border-radius:var(--mdb-border-radius-lg) }
-
-.mb-4{margin-bottom:1.5rem }
-
-.mt-4{margin-top:1.5rem }
-
-.mb-4{margin-bottom:1.5rem }
-
-.mb-2{margin-bottom:.5rem }
+.box-compra-finalizada {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

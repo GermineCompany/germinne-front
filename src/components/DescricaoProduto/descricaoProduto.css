@@ -4,15 +4,13 @@
     align-items: center;
     justify-content: space-evenly;
     margin: 5% auto;
-   
-
 }
+
 .descricao-imagens {
     display: flex;
     width: 50%;
     border-radius: 10px;
 }
-
 
 .box-imagem-descricao {
     
@@ -23,7 +21,6 @@
 }
 
 .box-imagem-descricao img {
-
     width: 550px;
     height: 420px;
     border-radius: 10px;

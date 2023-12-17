@@ -4,7 +4,6 @@ import './descricaoProduto.css';
 import BotaoSelecaoGB from '../BotaoSelecaoGB/BotaoSelecaoGB';
 import GerminneContext from '../../context/GerminneContext';
 import { useNavigate } from 'react-router';
-import germinnebox from '../../images/card-home-3.png';
 
 function DescricaoProduto() {
   const navigate = useNavigate();
@@ -14,15 +13,16 @@ function DescricaoProduto() {
     ,
     preco: 134.99,
     imagem: ['https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-1.png', 'https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-2.png', 'https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-3.png']
-  }
+  };
   const kitPlantio = {
     titulo: 'Kit Plantio para GerminneBox',
     descricao: 'O kit perfeito para quem já tem a Germinne Box. Contem 500g de substrato e 6 pacotes de sementes à sua escolha, é tudo o que você precisa para começar de novo. Sem complicações, apenas os materiais necessários para reviver seu jardim verde e ter alimentos frescos e orgânicos novamente.',
     preco: 22.99,
     imagem: ['https://germinnecomp-img.s3.sa-east-1.amazonaws.com/kitplantio.png', 'https://germinnecomp-img.s3.sa-east-1.amazonaws.com/substrato.png', 'https://germinnecomp-img.s3.sa-east-1.amazonaws.com/sementes.png']
-  }
+  };
   const { checkout } = useContext(GerminneContext);
   const [infoCarrinho, setInfoCarrinho] = useState({
+    idProduto: 1,
     sementes: [],
     quantidade: 1,
     produto: 'GerminneBox',
@@ -102,16 +102,28 @@ function DescricaoProduto() {
             <BotaoSelecaoGB
               className={infoCarrinho.produto === 'GerminneBox' ? 'botao-selecionado' : ''}
               changeClass={() => {
-                setInfoCarrinho({ ...infoCarrinho, produto: 'GerminneBox', preco: 134.99, imagem: germinneBox.imagem[0] })
-                setImagemDestaque(germinneBox.imagem[0])
+                setInfoCarrinho({ 
+                  ...infoCarrinho,
+                  produto: 'GerminneBox',
+                  preco: 134.99,
+                  imagem: germinneBox.imagem[0],
+                  idProduto: 1,
+                });
+                setImagemDestaque(germinneBox.imagem[0]);
               }}
               contentButton="GerminneBox"
             />
             <BotaoSelecaoGB
               className={infoCarrinho.produto === 'Kit Plantio' ? 'botao-selecionado' : ''}
               changeClass={() => {
-                setInfoCarrinho({ ...infoCarrinho, produto: 'Kit Plantio', preco: 22.99, imagem: kitPlantio.imagem[0] })
-                setImagemDestaque(kitPlantio.imagem[0])
+                setInfoCarrinho({ 
+                  ...infoCarrinho,
+                  produto: 'Kit Plantio',
+                  preco: 22.99, 
+                  imagem: kitPlantio.imagem[0],
+                  idProduto: 2,
+                });
+                setImagemDestaque(kitPlantio.imagem[0]);
               }}
               contentButton="Kit Plantio"
             />
