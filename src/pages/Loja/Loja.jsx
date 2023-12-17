@@ -6,50 +6,20 @@ import substrato from '../../images/gb-conteudo-substrato.svg';
 import qrcode from '../../images/gb-conteudo-qrcode.svg';
 import conhecaGbImagem from '../../images/conheca-gb.png';
 import './loja.css';
-import CarouselPaginaGB from '../../components/CarouselPaginaGB/CarouselPaginaGB';
 import carouselgb1 from '../../images/carouselgb1.png';
 import carouselgb2 from '../../images/carouselgb2.png';
 import carouselgb3 from '../../images/carouselgb3.png';
 import review1 from '../../images/review-loja-1.png';
-import doublearrow from '../../images/doublearrow.svg';
 import CardPerguntas from '../../components/CardPerguntas/CardPerguntas';
-import elipsedarrow from '../../images/elipsed-arrow.svg';
 import './loja.css';
 import DescricaoProduto from '../../components/DescricaoProduto/DescricaoProduto';
 import { useState } from 'react';
 import CardReviewLoja from '../../components/CardReviewLoja/CardReviewLoja';
+import MotivosParaComprar from '../../components/MotivosParaComprar/MotivosParaComprar';
+import CarouselLoja from '../../components/CarouselLoja/CarouselLoja';
+import Carousel from '../../components/Carousel/Carousel';
 
 function Loja() {
-  const contentCarousel = [
-    {
-      img: carouselgb1,
-      title: 'Alimentação saudável e saborosa',
-      text: 'Pesquisas indicam que ter plantas em casa pode melhorar seu bem-estar emocional e diminuir o estresse. Estar perto de plantas e se conectar com a natureza ajuda a relaxar, trazendo uma sensação de calma. Fora isso, cuidar das plantinhas é uma atividade terapêutica e recompensadora, proporcionando um descanso relaxante da correria do dia a dia.',
-    },
-    {
-      img: carouselgb2,
-      title: 'Bem-estar e terapia',
-      text: 'Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.',
-    },
-    {
-      img: carouselgb3,
-      title: 'Sua casa mais verde e bonita',
-      text: 'Plantinhas fazem maravilhas no visual de qualquer ambiente, trazendo beleza e vida. Com suas cores animadas, texturas e formas diferentes, elas dão um up em qualquer lugar. Se você cuidar direitinho delas, a casa vira um cantinho super aconchegante e agradável.',
-    },
-  ];
-
-  const [carouselPosition, setCarouselPosition] = useState(0);
-  const [carouselProps, setCarouselProps] = useState(contentCarousel[0]);
-
-  const handleCarousel = () => {
-    if (carouselPosition == 2) {
-      setCarouselProps(contentCarousel[0]);
-      return setCarouselPosition(0);
-    }
-
-    setCarouselProps(contentCarousel[carouselPosition + 1]);
-    setCarouselPosition(carouselPosition + 1);
-  };
 
   return (
     <div className="main-container-limitador">
@@ -99,24 +69,52 @@ function Loja() {
 
       <div className="carousel-pagina-gb-title">
         <h2>Razões para ter sua própria hortinha em casa</h2>
-        <img src={doublearrow} alt="seta dupla" />
       </div>
 
       <div className="carousel-content">
-        <CarouselPaginaGB
-          srcImg={carouselProps.img}
-          altImg="Imagem ilustrativa do carousel"
-          title={carouselProps.title}
-          text={carouselProps.text}
+        <CarouselLoja
+          slide1={<MotivosParaComprar
+            srcImg={carouselgb1}
+            altImg='mulher comendo salada'
+            titulo='Alimentação saudável e saborosa'
+            texto='Pesquisas indicam que ter plantas em casa pode melhorar seu bem-estar emocional e diminuir o estresse. Estar perto de plantas e se conectar com a natureza ajuda a relaxar, trazendo uma sensação de calma. Fora isso, cuidar das plantinhas é uma atividade terapêutica e recompensadora, proporcionando um descanso relaxante da correria do dia a dia.'
+          />}
+          slide2={<MotivosParaComprar
+            srcImg={carouselgb2}
+            altImg='mulher comendo salada'
+            titulo='Bem-estar e terapia'
+            texto='Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.'
+          />}
+          slide3={<MotivosParaComprar
+            srcImg={carouselgb3}
+            altImg='Sua casa mais verde e bonita'
+            titulo='Alimentação saudável e saborosa'
+            texto='Plantinhas fazem maravilhas no visual de qualquer ambiente, trazendo beleza e vida. Com suas cores animadas, texturas e formas diferentes, elas dão um up em qualquer lugar. Se você cuidar direitinho delas, a casa vira um cantinho super aconchegante e agradável.'
+          />}
         />
-        <div>
-          <img
-            className="elipsedarrow"
-            src={elipsedarrow}
-            alt="Imagem de uma seta para a direita"
-            onClick={handleCarousel}
-          />
-        </div>
+      </div>
+
+      <div className='carousel-mobile-loja'>
+        <Carousel
+          slide1={<MotivosParaComprar
+            srcImg={carouselgb1}
+            altImg='mulher comendo salada'
+            titulo='Alimentação saudável e saborosa'
+            texto='Pesquisas indicam que ter plantas em casa pode melhorar seu bem-estar emocional e diminuir o estresse. Estar perto de plantas e se conectar com a natureza ajuda a relaxar, trazendo uma sensação de calma. Fora isso, cuidar das plantinhas é uma atividade terapêutica e recompensadora, proporcionando um descanso relaxante da correria do dia a dia.'
+          />}
+          slide2={<MotivosParaComprar
+            srcImg={carouselgb2}
+            altImg='mulher comendo salada'
+            titulo='Bem-estar e terapia'
+            texto='Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.'
+          />}
+          slide3={<MotivosParaComprar
+            srcImg={carouselgb3}
+            altImg='Sua casa mais verde e bonita'
+            titulo='Alimentação saudável e saborosa'
+            texto='Plantinhas fazem maravilhas no visual de qualquer ambiente, trazendo beleza e vida. Com suas cores animadas, texturas e formas diferentes, elas dão um up em qualquer lugar. Se você cuidar direitinho delas, a casa vira um cantinho super aconchegante e agradável.'
+          />}
+        />
       </div>
 
 

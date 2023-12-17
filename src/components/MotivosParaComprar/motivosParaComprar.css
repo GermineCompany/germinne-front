@@ -1,0 +1,50 @@
+.card-motivos-para-comprar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.card-motivos-para-comprar img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.text-card-motivos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    text-align: center;
+    gap: 10px;
+}
+
+.text-card-motivos h2 {
+    font-size: var(--subtitle-large);
+    color: var(--verde-principal);
+}
+
+.text-card-motivos p {
+    font-size: var(--body-medium);
+}
+
+@media (max-width:600px) {
+    .text-card-motivos h2 {
+        font-size: var(--subtitle-medium);
+    }
+    .card-motivos-para-comprar img {
+        width: 350px !important;
+        height: 200px;
+    }
+    
+    .text-card-motivos {
+        width: 350px;
+    }
+
+    .text-card-motivos p {
+        font-size: var(--body-small);
+    }
+}

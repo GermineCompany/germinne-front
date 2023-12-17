@@ -4,18 +4,19 @@
 
 /* ----------------------------------------------------------------------------------------- */
 
-
 .conheca-gb {
-  margin: 50px auto 80px auto;
+  margin: 50px 0 80px 0;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .conheca-gb img {
-  width: 30%;
+  width: 500px;
   border-radius: 10px;
   
 }
@@ -23,7 +24,7 @@
 .conheca-gb-texto {
   font-size: var(--body-medium);
   text-align: center;
-  width: 40%;
+  width: 580px;
 }
 
 .conheca-gb-texto h2 {
@@ -46,6 +47,7 @@
   width: 100%;
   flex-wrap: wrap;
   text-align: center;
+  gap: 20px;
 }
 
 .conteudo-gb h3 {
@@ -58,16 +60,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   margin-top: 50px;
 }
 
 .carousel-pagina-gb-title h2 {
   font-size: var(--title-medium);
-}
-
-.carousel-pagina-gb-title img {
-  margin-top: 25px;
-  width: 3%;
 }
 
 .carousel-content {
@@ -76,6 +74,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.carousel-content .swiper{
+    padding: 0 25px;
+}
+
+.carousel-mobile-loja .swiper {
+  padding: 10px 0;
+}
+
+.carousel-mobile-loja {
+  display: none;
 }
 
 .carousel-content img:hover {
@@ -147,4 +157,44 @@
 .review-loja-germinne-box > div {
   display: flex;
   justify-content: space-evenly;
+}
+
+@media (max-width:600px) {
+  .conheca-gb img{
+      width: 300px;
+  }
+
+  .conheca-gb-texto {
+    width: 300px;
+  }
+
+  .conheca-gb-texto h2 {
+    font-size: var(--title-small);
+  }
+
+  .conheca-gb-texto p {
+    font-size: var(--body-small);
+  }
+
+  .card-conteudo-gb {
+    margin: 15px 0;
+    padding: 10px;
+  }
+
+  .conteudo-gb {
+    text-align: center;
+  }
+
+  .carousel-content {
+    display: none;
+  }
+
+  .carousel-mobile-loja {
+    display: flex;
+  }
+
+  .carousel-pagina-gb-title h2 {
+    font-size: var(--title-small);
+  }
+
 }
