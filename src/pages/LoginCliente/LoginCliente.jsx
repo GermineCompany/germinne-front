@@ -20,9 +20,8 @@ function LoginCliente() {
   const handleLogin = async () => {
     try {
       const result = await api.post('/cliente/login', infos);
-      delete result.data.message;
       setStatusLogin({ ...statusLogin, status: 'sucesso', message: result.data.message });
-      localStorage.setItem('userInfo', JSON.stringify({ ...result.data, tipo: 'cliente' }));
+      localStorage.setItem('userInfo', JSON.stringify({ ...result.data, logged: true }));
       setTimeout(() => window.location.href = '/', 1500);
     } catch (error) {
       setStatusLogin({ ...statusLogin, status: 'error', message: error.response.data.message });
