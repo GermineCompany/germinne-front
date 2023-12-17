@@ -1,26 +1,25 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import './carousel.css';
 import PropTypes from 'prop-types';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import './carouselNavigation.css';
+import { Navigation, Autoplay } from 'swiper/modules';
 
-import { Pagination, Autoplay} from 'swiper/modules';
-
-export default function Carousel({slide1, slide2, slide3}) {
+export default function CarouselNavigation({ slide1, slide2, slide3 }) {
   return (
     <>
-      <Swiper
-        pagination={{clickable: true,}}
-        modules={[Pagination, Autoplay]}
+      <Swiper navigation={true}
+        modules={[Navigation, Autoplay]}
         autoplay={{
-          delay: 4000,
+          delay: 4500,
           disableOnInteraction: true,
         }}
-        spaceBetween={50}
+        loop={true}
+        spaceBetween={200}
         slidesPerView={1}
-        loop = {true}
         className="mySwiper"
       >
         <SwiperSlide>{slide1}</SwiperSlide>
@@ -31,7 +30,7 @@ export default function Carousel({slide1, slide2, slide3}) {
   );
 }
 
-Carousel.propTypes = {
+CarouselNavigation.propTypes = {
   slide1: PropTypes.node.isRequired,
   slide2: PropTypes.node.isRequired,
   slide3: PropTypes.node.isRequired,

@@ -99,7 +99,7 @@
 .header-desktop nav a {
   font-size: var(--subtitle-small);
   color: var(--title-color);
-  
+  font-family: var(--title-family) !important;  
 }
 
 .dropdown-horticultores {

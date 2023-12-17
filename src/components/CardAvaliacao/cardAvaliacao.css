@@ -34,3 +34,9 @@
     text-align: center;
     font-size: var(--body-medium);
 }
+
+@media (max-width:600px) {
+    .card-avaliacao {
+        width: 300px !important;
+    }
+}

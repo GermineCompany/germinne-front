@@ -1,11 +1,12 @@
 .card-home-servicos {
     text-align: center;
     width: 380px;
+    transition: .5s;
 }
 
 
 .card-home-servicos div {
-    width: 380px;
+    width: 100%;
     height: 230px;
     display: flex;
     align-items: flex-end;
@@ -15,8 +16,11 @@
     background-position: center;
 } 
 
-.card-home-servicos:hover {
+.card-home-servicos div:hover {
     cursor: pointer;
+    width: 390px;
+    height: 240px;
+    transition: .25s ease-out;
 }
 
 
@@ -24,6 +28,10 @@
 .first-service-card {
     background: url(../../images/card-home-1.png) no-repeat;
     background-size: cover;
+}
+
+.first-service-card span {
+    color: var(--cta-roxo) !important;
 }
 
 .second-service-card {

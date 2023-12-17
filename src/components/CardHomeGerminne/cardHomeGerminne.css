@@ -3,7 +3,7 @@
 }
 
 .card-home-germinne {
-    width: 380px;
+    width: 100%;
     height: 230px; 
     display: flex;
     align-items: flex-end;
@@ -14,9 +14,10 @@
 }
 
 .card-home-germinne h2 {
+    padding: 5px;
     text-align: center;
-    width: 80%;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 30px;
     color: white;
     font-size: var(--body-medium);
     font-weight: var(--semi-bold);
@@ -43,4 +44,10 @@
 
 .third-germinne-card {
     background: url(../../images/card-home-6.png) no-repeat;
+}
+
+@media (max-width:1200px) {
+    .card-home-germinne {
+        width: 100%;
+    }
 }
