@@ -4,20 +4,22 @@ import './descricaoProduto.css';
 import BotaoSelecaoGB from '../BotaoSelecaoGB/BotaoSelecaoGB';
 import GerminneContext from '../../context/GerminneContext';
 import { useNavigate } from 'react-router';
+import germinnebox from '../../images/card-home-3.png';
 
 function DescricaoProduto() {
   const navigate = useNavigate();
   const germinneBox = {
     titulo: 'Kit Horta Urbana GerminneBox',
-    descricao: 'Adquira nossa Germinne Box, nosso kit contem todo o nescessario para proporcionar a você a facilidade de ter o seu próprio jardim verde, saudável e vibrante com alimentos frescos e orgânicos.',
+    descricao: 'Germinne Box, nosso kit que contem todo o nescessario para proporcionar a você a facilidade de ter o sua própria hortinha verde, saudável e vibrante com alimentos frescos e orgânicos. Faça parte desse movimento verde e adquira agora a Germinne Box para desfrutar de um cultivo em casa de maneira descomplicada e eficaz.'
+    ,
     preco: 134.99,
     imagem: ['https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-1.png', 'https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-2.png', 'https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-3.png']
   }
   const kitPlantio = {
     titulo: 'Kit Plantio para GerminneBox',
-    descricao: 'adquira seu kit plantio',
+    descricao: 'O kit perfeito para quem já tem a Germinne Box. Contem 500g de substrato e 6 pacotes de sementes à sua escolha, é tudo o que você precisa para começar de novo. Sem complicações, apenas os materiais necessários para reviver seu jardim verde e ter alimentos frescos e orgânicos novamente.',
     preco: 22.99,
-    imagem: ['https://germinnecomp-img.s3.sa-east-1.amazonaws.com/publi.png', 'https://germinnecomp-img.s3.sa-east-1.amazonaws.com/publi.png', 'https://germinnecomp-img.s3.sa-east-1.amazonaws.com/publi.png']
+    imagem: ['https://germinnecomp-img.s3.sa-east-1.amazonaws.com/kitplantio.png', 'https://germinnecomp-img.s3.sa-east-1.amazonaws.com/substrato.png', 'https://germinnecomp-img.s3.sa-east-1.amazonaws.com/sementes.png']
   }
   const { checkout } = useContext(GerminneContext);
   const [infoCarrinho, setInfoCarrinho] = useState({
@@ -56,7 +58,6 @@ function DescricaoProduto() {
 
   return (
     <div className="box-descricao-produto">
-
       <div className="descricao-imagens">
         <div className="box-imagens-secundarias">
           <ImagemPequenaGB
@@ -79,7 +80,7 @@ function DescricaoProduto() {
         <div className="box-imagem-descricao">
           <img src={imagemDestaque} alt="Imagem ilustrativa da Germinne Box" />
           <p>
-           {infoCarrinho.produto === 'GerminneBox' ? germinneBox.descricao : kitPlantio.descricao}
+            {infoCarrinho.produto === 'GerminneBox' ? germinneBox.descricao : kitPlantio.descricao}
           </p>
         </div>
       </div>
@@ -101,7 +102,7 @@ function DescricaoProduto() {
             <BotaoSelecaoGB
               className={infoCarrinho.produto === 'GerminneBox' ? 'botao-selecionado' : ''}
               changeClass={() => {
-                setInfoCarrinho({ ...infoCarrinho, produto: 'GerminneBox', preco: 134.99, imagem: germinneBox.imagem[0]})
+                setInfoCarrinho({ ...infoCarrinho, produto: 'GerminneBox', preco: 134.99, imagem: germinneBox.imagem[0] })
                 setImagemDestaque(germinneBox.imagem[0])
               }}
               contentButton="GerminneBox"
@@ -151,9 +152,9 @@ function DescricaoProduto() {
               contentButton="Salsa"
             />
             <BotaoSelecaoGB
-              className={infoCarrinho.sementes.includes('Tomate Cereja') ? 'botao-selecionado' : ''}
-              changeClass={() => toggleSeed('Tomate Cereja')}
-              contentButton="Tomate Cereja"
+              className={infoCarrinho.sementes.includes('Cebolinha') ? 'botao-selecionado' : ''}
+              changeClass={() => toggleSeed('Cebolinha')}
+              contentButton="Cebolinha"
             />
           </div>
         </div>

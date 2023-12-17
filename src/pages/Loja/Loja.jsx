@@ -77,7 +77,7 @@ function Loja() {
           <CardConteudoGB
             srcImg={vaso}
             altImg="SADASDA"
-            text="Germinne Box auto irrigável"
+            text="GerminneBox auto irrigável"
           />
           <CardConteudoGB
             srcImg={sementes}
@@ -119,31 +119,35 @@ function Loja() {
         </div>
       </div>
 
-      <DescricaoProduto />
+
+      <div className='germinnebox-title'>
+        <h2>Adquira agora sua <span>GerminneBox</span>!</h2>
+        <DescricaoProduto />
+      </div>
 
       <div className='review-loja-germinne-box'>
         <h3>Avaliações dos nossos <span>clientes</span>:</h3>
 
         <div>
-          <CardReviewLoja 
-            fotoCliente='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322621?e=1707955200&v=beta&t=ox5WjTMlulu41s5QUazJH3v7dOkmCwa6WAq-qE7feRI'
-            nomeCliente='Gabriel Augusto'
-            descricao='"Me tornei pai de planta com a Germine Box. É incrivel o quanto o kit é completo, não precisei me preocupar em comprar mais nada para o plantio ”'
-            fotoReview={ review1 }
+          <CardReviewLoja
+            fotoCliente='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/thais-angelo.jpg'
+            nomeCliente='Thais Ângelo'
+            descricao='"Me tornei uma mãe de planta com a Germinne Box e, sério, estou adorando! 😄 O kit é super completo e simples. A experiência tem sido incrível, tudo fácil e descomplicado."'
+            fotoReview={review1}
           />
 
-          <CardReviewLoja 
+          <CardReviewLoja
             fotoCliente='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322621?e=1707955200&v=beta&t=ox5WjTMlulu41s5QUazJH3v7dOkmCwa6WAq-qE7feRI'
             nomeCliente='Gabriel Augusto'
-            descricao='"Me tornei pai de planta com a Germine Box. É incrivel o quanto o kit é completo, não precisei me preocupar em comprar mais nada para o plantio ”'
-            fotoReview={ review1 }
+            descricao='"A Germinne Box é tipo um abraço para a minha varanda! 🌱 Comecei minha horta com esse kit incrível e tô apaixonado. Tudo o que eu precisava veio junto, e não precisei me preocupar em ser expert em plantas. É só amor verde!"'
+            fotoReview={review1}
           />
 
-          <CardReviewLoja 
-            fotoCliente='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322621?e=1707955200&v=beta&t=ox5WjTMlulu41s5QUazJH3v7dOkmCwa6WAq-qE7feRI'
-            nomeCliente='Gabriel Augusto'
-            descricao='"Me tornei pai de planta com a Germine Box. É incrivel o quanto o kit é completo, não precisei me preocupar em comprar mais nada para o plantio ”'
-            fotoReview={ review1 }
+          <CardReviewLoja
+            fotoCliente='https://media.licdn.com/dms/image/C4D03AQFX1J5BuXXoyA/profile-displayphoto-shrink_100_100/0/1636810200050?e=2147483647&v=beta&t=YlQREAL0kou82irvlcwTXS-GuXC_6KqEHSzpu8BBrJE'
+            nomeCliente='Drickis Maria'
+            descricao='"Simplesmente incrível! 🌿💚 O kit autoirrigável é um game changer. Só coloco as sementes, curto a vibe verde e deixo o sistema fazer a mágica. Ter uma horta nunca foi tão fácil e relaxante! ✨"'
+            fotoReview={review1}
           />
         </div>
       </div>

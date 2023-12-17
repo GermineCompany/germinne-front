@@ -82,6 +82,22 @@
   cursor: pointer;
 }
 
+.germinnebox-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  
+}
+.germinnebox-title h2 {
+  font-size: var(--title-medium);
+  color: var(--title-color);
+}
+
+.germinnebox-title h2 span {
+  color: var(--verde-principal);
+}
+
 /* ----------------------------------------------------------------------------------------- */
 
 .faq {
