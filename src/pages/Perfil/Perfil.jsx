@@ -7,6 +7,7 @@ import EditarPerfilVitrine from '../../components/EditarPerfilVitrine/EditarPerf
 import GerminneContext from '../../context/GerminneContext.jsx';
 import DadosPessoaisCliente from '../../components/DadosPessoaisCliente/DadosPessoaisCliente.jsx';
 import VerificacaoProfissional from '../../components/VerificacaoProfissional/VerificacaoProfissional.jsx';
+import EnderecoPerfil from '../../components/EnderecoPerfil/EnderecoPerfil.jsx';
 
 function Perfil() {
   const { loggedUser } = useContext(GerminneContext);
@@ -26,8 +27,6 @@ function Perfil() {
       [event.target.id]: true
     });
   };
-
-  console.log(loggedUser);
 
   return (
     <div className='perfil'>
@@ -49,6 +48,9 @@ function Perfil() {
         {/* <VerificacaoProfissional /> */}
         {
           menusActived.dadosPessoais && loggedUser.tipo == 'cliente' && <DadosPessoaisCliente />
+        }
+        {
+          menusActived.enderecos && <EnderecoPerfil />
         }
         {/* <EditarPerfilVitrine /> */}
       </div>

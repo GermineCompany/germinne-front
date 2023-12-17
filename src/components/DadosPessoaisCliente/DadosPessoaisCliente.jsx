@@ -107,7 +107,7 @@ function DadosPessoaisCliente() {
           <label htmlFor="telefone">
             Telefone
             <input disabled={inputStatus}
-              placeholder={userInfo.telefone}
+              placeholder={userInfo.telefone || 'Adicione um telefone...'}
               onChange={handleChange}
               value={inputInfos.telefone}
               type="text" 
