@@ -15,22 +15,28 @@ import './checkout.css';
 import React, { useContext, useState } from 'react';
 import GerminneContext from '../../context/GerminneContext';
 import api from '../../utils/axios';
+import { useNavigate } from 'react-router';
 
 export default function Checkout() {
-  const { checkout: { checkoutInfo } } = useContext(GerminneContext);
+  const navigate = useNavigate();
+  const { checkout: { checkoutInfo }, loggedUser: { id } } = useContext(GerminneContext);
   const [completed, setCompleted] = useState(false);
 
   const handleFinalizaCompra = async () => {
     const infoPedido = {
       idProduto: checkoutInfo.idProduto,
-      idUsuario: 1,
+      idUsuario: id,
       idStatus: 2,
       quantidade: checkoutInfo.quantidade
     };
 
-    const teste = await api.post('/pedido', infoPedido);
-
-    console.log(teste);
+    try {
+      const result = await api.post('/pedido', infoPedido);
+      setCompleted(`Pedido #${result.data.idPedido} criado com sucesso!`);
+      setTimeout(() => navigate('/perfil') ,1500);
+    } catch(error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -46,8 +52,6 @@ export default function Checkout() {
           </div>
         )
       }
-
-      <p onClick={handleFinalizaCompra}>Teste</p>
 
       {
         !completed && (
@@ -162,7 +166,7 @@ export default function Checkout() {
                             </div>
 
                             <MDBBtn style={{ backgroundColor: 'var(--font-banner-verde)' }} color="info" block size="lg">
-                              <div className="d-flex justify-content-between">
+                              <div onClick={handleFinalizaCompra} className="d-flex justify-content-between">
                                 <span>R$ {(checkoutInfo.quantidade * checkoutInfo.preco + 30.00).toFixed(2)}</span>
                                 <span>
                                   Finalizar compra{' '}
