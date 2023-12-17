@@ -1,23 +1,111 @@
 /* Beneficios */
 
-.main-container-limitador > h2 {
+.banner-faca-parte {
+  background: url(../../images/banner-contrate-home.png), no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-size: var(--title-medium);
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.banner-faca-parte h2{
+  font-size: var(--title-large);
+}
+
+.banner-faca-parte h2 span {
+ color: var(--font-banner-verde);
+}
+
+.banner-faca-parte p {
+  font-size: var(--subtitle-large);
+  font-weight: var(--semi-bold);
+  width: 70%;
   text-align: center;
+}
+
+.banner-faca-parte button {
+  background-color: var(--cta-laranja);
+  color: white;
+  font-size: var(--subtitle-small);
+  font-weight: var(--semi-bold);
+  border: none;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+.passo-a-passo {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 0 auto;
 
 }
 
-.ElementoComponente {
+.barra-amarela {
+  background-color: orange;
+  width: 100%;
+  height: 6px;
+  align-self: center;
+}
+
+
+.main-container-limitador > h2 {
+  display: flex;        
+  justify-content: center;        
+  margin: 100px 0px;
+  font-size: var(--title-medium);
+  text-align: center;
+;
+}
+
+.beneficios-profissional {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin: auto;
 }
 
 /* Beneficios */
+
+
+/* banner-teste-gratis */
+
+
+.banner-teste-gratis {
+  background: url(../../images/banner-teste-gratis.png), no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 450px;
+  border-radius: 10px;
+  margin: 100px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.banner-teste-gratis p {
+  font-size: var(--title-small);
+  font-weight: var(--regular-bold);
+  color: white;
+  font-family: var(--title-family);
+}
+
+.banner-teste-gratis h2 {
+  font-size: var(--display-large);
+  color: var(--cta-laranja);
+  font-family: var(--title-family);
+}
+
+/* banner-teste-gratis */
+
 
 /* custo-beneficio */
 
@@ -65,77 +153,31 @@
 
 /* custo-beneficio */
 
-/* banner-teste-gratis */
-
-.banner-teste-gratis {
-  background: url(../../images/Banner-teste-gratis.jpg), no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 450px;
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.banner-teste-gratis > div {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 800px;
-}
-
-.banner-teste-gratis p {
-  font-size: var(--title-medium);
-  font-weight: var(--regular-bold);
-  color: white;
-}
-
-.banner-teste-gratis h1 {
-  font-size: var(--display-large);
-  color: var(--cta-laranja);
-}
-
-/* banner-teste-gratis */
-
-.passo-a-passo {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 50px;
-  margin-top: 80px;
-}
-
 .color-passo-a-passo {
   color: var(--font-body-verde) !important;
 }
 
-.section-planos {
-  margin-top: 100px;
-  margin-bottom: 100px;
+.box-titulo-planos {
+  width: 90%;
+  margin: 100px auto;
   display: flex;
   flex-direction: column;
 }
 .box-planos {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 50px;
+  justify-content: space-between;
   flex-wrap: wrap; 
 }
 
-.section-planos > h2 {
+.box-titulo-planos > h2 {
   font-size: var(--title-large);
   text-align: center;
   padding-bottom: 5%;
 }
 
-.section-planos > h2 > span {
+.box-titulo-planos > h2 > span {
   color: var(--font-body-verde);
-}
-
-.section-planos .card-planos:nth-child(even) {
-  background-color: var(--cta-roxo);
 }
 
 
@@ -153,56 +195,6 @@
   display: none;
 }
 
-
-.banner-trabalhe-conosco {
-  background: url(../../images/banner-trabalhe-conosco.svg), no-repeat;
-  background-size: cover;
-  box-shadow: 900px 0px 150px 0px rgba(0, 0, 0, 0.8) inset;
-  width: 100%;
-  height: 700px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 50px;
-}
-
-.banner-trabalhe-conosco div:nth-child(1) {
-  max-width: 980px;
-}
-
-.banner-trabalhe-conosco div:nth-child(1) h1 {
-  font-size: var(--title-large);
-}
-
-.banner-trabalhe-conosco span {
-  color: var(--font-banner-verde);
-}
-
-.botoes-trabalhe-conosco {
-  display: flex;
-  gap: 30px;
-}
-
-.botoes-trabalhe-conosco button {
-  margin-top: 50px;
-  background-color: var(--cta-laranja);
-  color: white;
-  font-size: var(--subtitle-medium);
-  font-weight: var(--semi-bold);
-  width: 250px;
-  height: 55px;
-  border-radius: 10px;
-  border: none;
-}
-
-.botoes-trabalhe-conosco button:nth-child(2) {
-  background-color: var(--cta-verde);
-}
-
-.banner-trabalhe-conosco button:hover {
-  cursor: pointer;
-}
 
 @media (max-width: 500px) {
   .main-container-limitador > h2{
@@ -246,20 +238,12 @@
     font-size: var(--subtitle-large);
   }
   
-  .section-planos > h2 {
+  .box-titulo-planos > h2 {
     font-size: var(--title-small);
     margin-top: 50px;
     margin-bottom: 30px;
   }
 
-  .banner-trabalhe-conosco div:nth-child(1) h1 {
-    font-size: var(--title-small);
-    text-align: center;
-  }
-
-  .banner-trabalhe-conosco button {
-    font-size: var(--subtitle-small);
-  }
 }
 
 
@@ -280,7 +264,7 @@
     display: flex;
   }
 
-  .ElementoComponente {
+  .beneficios-profissional {
     display: none;
   }
 
