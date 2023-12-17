@@ -44,7 +44,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      {path != '/login' &&
+      {path != '/login-profissional' &&
         path != '/cadastro-profissional' &&
         path != '/login-cliente' &&
         path != '/cadastro-cliente' && <Header loggedUser={ loggedUser } />}
@@ -53,7 +53,7 @@ function App() {
           <Route path="/" Component={Home} />
           <Route path="/sobre-nos" Component={SobreNos} />
           <Route path="/blog" Component={Blog} />
-          <Route path="/login" Component={Login} />
+          <Route path="/login-profissional" Component={Login} />
           <Route
             path="/cadastro-profissional"
             Component={CadastroProfissional}
@@ -76,7 +76,7 @@ function App() {
           <Route path="/faca-parte" Component={FacaParte} />
         </Routes>
       </main>
-      {path != '/login' &&
+      {path != '/login-profissional' &&
         path != '/cadastro-profissional' &&
         path != '/login-cliente' &&
         path != '/cadastro-cliente' && <Footer />}

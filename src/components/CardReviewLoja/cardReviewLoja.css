@@ -12,8 +12,8 @@
 
 .card-review-loja > div:nth-child(2) img {
     object-fit: cover;
-    width: 320px;
-    height: 370px;
+    width: 330px;
+    height: 280px;
     border-radius: 10px;
     margin: 10px 0;
 }
@@ -34,9 +34,10 @@
 }
 
 .card-review-loja-nome > img {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     border-radius: 50px;
+    object-fit: cover;
 }
 
 .card-review-loja-nome > div {
@@ -46,6 +47,7 @@
 
 .card-review-loja-nome > div img {
     height: 20px;
+    object-fit: cover;
 }
 
 .card-review-loja-descricao {

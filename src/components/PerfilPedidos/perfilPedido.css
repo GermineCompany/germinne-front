@@ -20,7 +20,7 @@
 
 .ConteudoDireito > h2{
     text-align: center;
-    margin-top: 2%;
+    margin-bottom: 50px;
 }
 
 .pedidos{
@@ -29,6 +29,15 @@
     justify-content: start;
 }
 
-.ConteudoDireito > span{
-    color: #4CA676
+.ConteudoDireito span{
+    color: var(--verde-principal);
+}
+
+.pedidos-compre-agora {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.pedidos-compre-agora a {
+    color: var(--cta-roxo);
 }

@@ -1,45 +1,39 @@
 .box-descricao-produto {
-    width: 95%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin: 5% auto;
-   
 }
+
 .descricao-imagens {
     display: flex;
     width: 50%;
+    border-radius: 10px;
 }
 
-
 .box-imagem-descricao {
-    width: 85%;
+    
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .box-imagem-descricao img {
     width: 550px;
     height: 420px;
-    background-color: #F8F8F8;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: contain;
+    margin-left: 10px;
 }
 
 .box-imagem-descricao p {
+    width: 90%;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 15px;
 }
 
-
-.box-imagens-secundarias {
-    width: 25%
-}
-
-.box-imagens-secundarias img {
-    border-radius: 10px;
-    width: 100%;
-    height: 110px;
-    object-fit: cover;
-}
 
 .box-selecao {
     width: 35%;
@@ -50,12 +44,11 @@
 
 .nome-preco h2 {
     font-size: var(--title-medium);
-    margin-bottom: 10px;
 }
 
 .nome-preco p {
     font-size: var(--title-small);
-    margin-bottom: 0;
+    margin: 0px;
 }
 
 .nome-preco span {
@@ -64,16 +57,20 @@
 
 .box-botoes-selecao {
     display: flex;
+
 }
 
-.div-botoes>p {
+.div-botoes {
+    margin-top: 15px;
+}
+
+.div-botoes > p {
     font-size: var(--body-small);
-    color: rgba(0, 0, 0, 0.5);
-    margin-bottom: 0;
+    margin: 0px;
     white-space: nowrap;
 }
 
-.div-botoes>p span {
+.div-botoes > p span {
     color: black;
 }
 
@@ -118,5 +115,21 @@
     border-radius: 10px;
     box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
     margin-top: 25px;
+    position: relative;
+    overflow: hidden;
 }
 
+.botao-adicionar-carrinho button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.678), transparent);
+    transition: all 0.5s;
+}
+
+.botao-adicionar-carrinho button:hover::before {
+    left: 100%;
+}

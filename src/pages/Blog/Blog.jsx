@@ -62,12 +62,7 @@ function Blog() {
           )}
         </div>
 
-        <hr />
 
-        <div className="publicidade">
-          <CardPublicidade srcImg={publicidade} />
-          <CardPublicidade srcImg={publicidade} />
-        </div>
       </div>
     </div>
   );

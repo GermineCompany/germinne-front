@@ -7,6 +7,9 @@ import EditarPerfilVitrine from '../../components/EditarPerfilVitrine/EditarPerf
 import GerminneContext from '../../context/GerminneContext.jsx';
 import DadosPessoaisCliente from '../../components/DadosPessoaisCliente/DadosPessoaisCliente.jsx';
 import VerificacaoProfissional from '../../components/VerificacaoProfissional/VerificacaoProfissional.jsx';
+import EnderecoPerfil from '../../components/EnderecoPerfil/EnderecoPerfil.jsx';
+import Pedidos from '../../components/Pedidos/Pedidos.jsx';
+import PerfilPedido from '../../components/PerfilPedidos/PerfilPedido.jsx';
 
 function Perfil() {
   const { loggedUser } = useContext(GerminneContext);
@@ -30,24 +33,38 @@ function Perfil() {
   return (
     <div className='perfil'>
       <aside className='menu-lateral-perfil'>
-        <h3>Olá, <span>{ loggedUser.nomeUsuario }</span>!</h3>
+        <h3>Olá, <span>{ loggedUser.nome }</span>!</h3>
 
         <nav>
           <ul>
             <li onClick={handleClickMenu} id='mensagens' className={`${menusActived.mensagens && 'menuActived'}`}><LuMessagesSquare /> Mensagens</li>
             <li onClick={handleClickMenu} id='dadosPessoais' className={`${menusActived.dadosPessoais && 'menuActived'}`}><CgProfile /> Dados pessoais</li>
             <li onClick={handleClickMenu} id='enderecos' className={`${menusActived.enderecos && 'menuActived'}`}><LuMapPin /> Endereços</li>
-            <li onClick={handleClickMenu} id='pedidos' className={`${menusActived.pedidos && 'menuActived'}`}><LuInbox /> Pedidos</li>
+            {
+              loggedUser.tipo == 'cliente' && (
+                <li onClick={handleClickMenu} id='pedidos' className={`${menusActived.pedidos && 'menuActived'}`}><LuInbox /> Pedidos</li>
+              )
+            }
             <li><IoMdExit /> Sair</li>
           </ul>
         </nav>
       </aside>
 
       <div className='component-renderizado'>
-        <VerificacaoProfissional />
         {/* {
-          menusActived.dadosPessoais && <DadosPessoaisCliente />
-        } */}
+          menusActived.mensagens && <Mensagens />
+        } */
+        }
+        {/* <VerificacaoProfissional /> */}
+        {
+          menusActived.dadosPessoais && loggedUser.tipo == 'cliente' && <DadosPessoaisCliente />
+        }
+        {
+          menusActived.enderecos && <EnderecoPerfil />
+        }
+        {
+          menusActived.pedidos && <PerfilPedido />
+        }
         {/* <EditarPerfilVitrine /> */}
       </div>
     </div>

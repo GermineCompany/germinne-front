@@ -5,7 +5,7 @@ import './imagemPequenaGB.css';
 function ImagemPequenaGB({ srcImg, funcClick }) {
   return (
     <div onClick={ funcClick } className='imagem-pequena-gb'>
-      <img src={ srcImg } alt="Imagem ilustrativa da Germinne Box" />
+      <img src={ srcImg } alt="Imagem ilustrativa" />
     </div>
   );
 }

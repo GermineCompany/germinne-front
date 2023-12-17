@@ -13,18 +13,19 @@ function LoginCliente() {
     senha: ''
   });
 
-  const [messages, setMessages] = useState({ messageError: '', messageSuccessful: '' });
+  const [statusLogin, setStatusLogin] = useState({ status: '', message: '' });
 
   const handleChange = (event) => setInfos({ ...infos, [event.target.name]: event.target.value });
 
   const handleLogin = async () => {
     try {
       const result = await api.post('/cliente/login', infos);
-      setMessages({ ...messages, messageSuccessful: result.data.message });
-      localStorage.setItem('userInfo', JSON.stringify({ ...result.data, logged: true }));
+      delete result.data.message;
+      setStatusLogin({ ...statusLogin, status: 'sucesso', message: result.data.message });
+      localStorage.setItem('userInfo', JSON.stringify({ ...result.data, tipo: 'cliente' }));
       setTimeout(() => window.location.href = '/', 1500);
     } catch (error) {
-      setMessages({ ...messages, messageError: error.response.data.message });
+      setStatusLogin({ ...statusLogin, status: 'error', message: error.response.data.message });
     }
   };
 
@@ -42,12 +43,7 @@ function LoginCliente() {
             </a>
             <h1><a href="/">Germinne</a></h1>
           </div>
-          <h3>Profissional</h3>
-        </div>
-
-        <div>
-          <span>{messages.messageError}</span>
-          <span className='mensagem-sucesso'>{messages.messageSuccessful}</span>
+          <h3>Cliente</h3>
         </div>
 
         <div className='box-email-password'>
@@ -75,6 +71,10 @@ function LoginCliente() {
                 placeholder='Digite sua senha aqui...'
               />
             </label>
+          </div>
+
+          <div className={`box-tratamento-erro ${statusLogin.status == 'error' ? 'mensagem-erro' : 'mensagem-sucesso'}`}>
+            <p>{ statusLogin.message }</p>
           </div>
 
           <div className='box-button'>
