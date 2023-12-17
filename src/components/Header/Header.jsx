@@ -10,12 +10,7 @@ import GerminneContext from '../../context/GerminneContext';
 
 function Header() {
   const { loggedUser } = useContext(GerminneContext);
-  const [showLogin, setShowLogin] = useState(false);
   const { pathname } = useLocation();
-
-  const handleShowLogin = () => {
-    setShowLogin(!showLogin);
-  };
 
   return (
     <>
@@ -87,22 +82,17 @@ function Header() {
               ) : false}
 
             </div>
-            <button
-              className={showLogin ? 'button-opened' : ''}
-              onClick={handleShowLogin}
-            >
-              Entrar
+            <button>
+              <a href="/login-cliente">
+                Cliente
+              </a>
             </button>
-            <div className={`links-login ${showLogin ? 'open-login' : 'close-login'}`}>
-              <ul>
-                <li>
-                  <a href="/login-cliente">Cliente</a>
-                </li>
-                <li>
-                  <a href="/login">Profissional</a>
-                </li>
-              </ul>
-            </div>
+
+            <button className='botao-profissional-header'>
+              <a href="/login">
+              Profissional
+              </a>
+            </button>
 
             <div className="box-icone-sacola">
               <a href="/checkout">

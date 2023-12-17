@@ -49,21 +49,43 @@
 
 .box-login button {
     color: white;
-    padding: 10px 60px;
+    padding: 1px 15px;
     font-size: 22px;
     font-weight: var(--semi-bold);
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
-    background-color: var(--verde-principal);
+    background-color: var(--cta-laranja);
     transition: .3s;
+    margin-right: 15px;
 }
 
 .box-login button:hover {
-    border: 1px solid var(--verde-principal);
-    color: var(--verde-principal);
+    border: 1px solid var(--cta-laranja);
+    color: var(--cta-laranja) !important;
     background-color: white;
     cursor: pointer;
     transition: .5s;
+}
+
+.box-login button a {
+  font-size: var(--body-medium);
+}
+
+.box-login button:hover a {
+  color: var(--cta-laranja);
+}
+
+.botao-profissional-header {
+  background-color: var(--cta-roxo) !important;
+}
+
+.botao-profissional-header:hover {
+  border: 1px solid var(--cta-roxo) !important;
+  background-color: white !important;
+}
+
+.botao-profissional-header:hover a {
+  color: var(--cta-roxo) !important;
 }
 
 .box-login img {  
@@ -104,6 +126,7 @@
 
 .dropdown-horticultores {
   position: absolute;
+  z-index: 2;
   display: none;
   flex-direction: column;
   width: 100%;
@@ -155,12 +178,6 @@
     display: block;
 }
 
-.button-opened {
-    border-radius: 10px 10px 0 0 !important;
-    border: 1.5px solid var(--verde-principal) !important;
-    color: var(--verde-principal) !important;
-    background-color: white !important;
-}
 
 .links-login ul {
     width: 186px;
