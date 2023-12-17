@@ -5,23 +5,12 @@ import './cardPlanos.css';
 function CardPlanos({ nomePlano, precoPlano, texto }) {
   return (
     <div className='card-planos'>
+      <h3>{nomePlano}</h3>
       <div>
-        <h3>{nomePlano}</h3>
+        <h2>{precoPlano}</h2>
+        <p>{texto}</p>
+        <button>Assinar</button>
       </div>
-
-      <div>
-
-        <div>
-          <div>
-            <h2>{precoPlano}</h2>
-            <p>{texto}</p>
-          </div>
-
-          <button>Assinar</button>
-        </div>
-
-      </div>
-
     </div>
   );
 }
