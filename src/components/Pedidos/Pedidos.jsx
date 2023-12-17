@@ -3,27 +3,33 @@ import React from 'react';
 import './Pedidos.css';
 import PropTypes from 'prop-types';
 
-function Pedidos(props) {
+function Pedidos({ srcImg, data, produto, entregaAte, quantidade, numeroPedido, valor }) {
   return (
     <div className="pedidos-container">
       <div className="imagem-container">
-        <img src={props.srcImg} alt={props.altImg} />
+        <img src={srcImg} alt="Imagem do produto comprado" />
       </div>
       <div className='Descricao'>
-        <h3>Data da Compra: <span> 20/12/2023 </span></h3>
-        <p>Germinne Box</p>
-        <p>Entrega ate 15/12/2023</p>
-        <p>01 Unidade</p>
+        <div>
+          <h3>Data da Compra: <span> { data } </span></h3>
+        </div>
+
+        <div>
+          <p>{ produto }</p>
+          <p>Entrega até: { entregaAte }</p>
+          <p>{ quantidade } { quantidade == 1 ? 'Unidade' : 'Unidades' }</p>
+          <p>Valor: R$ { valor }</p>
+        </div>
 
         <div className='Pedido'>
-          <p>Numero do Pedido:</p>
+          <p>Número do pedido: { numeroPedido }</p>
         </div>
 
       </div>
       <div className='Botoes-Compra'>
         <div>
-          <a href=""><button className="botoes1">Avaliação</button></a>
-          <a href=""><button className="botoes2">Comprar Novamente</button></a>
+          <a href="/loja"><button className="botoes1">Avaliação</button></a>
+          <a href="/loja"><button className="botoes2">Comprar Novamente</button></a>
         </div>
       </div>
     </div>
@@ -32,8 +38,12 @@ function Pedidos(props) {
 }
 Pedidos.propTypes = {
   srcImg: PropTypes.string.isRequired,
-  altImg: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  data: PropTypes.string.isRequired,
+  produto: PropTypes.string.isRequired,
+  entregaAte: PropTypes.string.isRequired,
+  quantidade: PropTypes.number.isRequired,
+  numeroPedido: PropTypes.number.isRequired,
+  valor: PropTypes.string.isRequired,
 };
 
 
