@@ -17,6 +17,7 @@ function DadosPessoaisCliente() {
   const [message, setMessage] = useState('');
 
   const getClienteInfos = async () => {
+    console.log(id);
     const result = await api.get(`/cliente/${id}`);
 
     setUserInfo(result.data);
