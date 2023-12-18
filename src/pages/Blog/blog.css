@@ -15,6 +15,77 @@
     font-size: 20px;
 }
 
+.carousel-blog {
+    width: 100% !important;
+}
+
+.carousel-blog .swiper-slide {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+  
+  
+  .slide-carousel {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px -200px 150px 0px rgba(0, 0, 0, 0.8) inset;
+    padding: 3%;
+    width: 100% !important;
+    height: 600px !important;
+    border-radius: 20px;
+  }
+  
+  .slide-content span {
+    color: white;
+    font-size: var(--body-small);
+    font-weight: var(--semi-bold);
+  }
+  
+  .slide-content h2 {
+    margin-top: 10px;
+    text-align: left;
+    color: white;
+    font-size: var(--title-small);
+    font-weight: var(--semi-bold);
+  }
+  
+  .box-slide-imagem-1 {
+    background: url(../../images/artigo-card-1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .box-slide-imagem-2 {
+    background: url(../../images/artigo-card-2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .box-slide-imagem-3 {
+    background: url(../../images/artigo-card-3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .slide-carousel .aws-sld {
+    --open-animation-perspective: 600px;
+    --open-animation-angle: 8deg;
+    --open-animation-enter-delay: 85ms;
+  }
+  
+
 .banner-blog div:nth-child(2) {
     margin: 20px 0;
 }
@@ -22,13 +93,15 @@
 .filtros {
     background-color: var(--verde-principal);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px 20px;
     color: white;
-    font-size: 18px;
+    font-size: var(--body-medium);
     font-weight: 500;
     border-radius: 10px;
     margin: auto;
+    gap: 10px;
 }
 
 .filtros p {
@@ -51,7 +124,7 @@
 .busca input {
     padding: 10px;
     text-align: center;
-    font-size: 20px;
+    font-size: var(--body-large);
     width: 100%;
     border: .5px solid rgba(0, 0, 0, 0.3);
     border-radius: 0px 10px 10px 0px;
@@ -80,6 +153,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: auto;
+    gap: 20px;
 }
 
 .publicidade {
@@ -90,4 +164,22 @@
 .pagina-blog > hr {
     margin-bottom: 2%;
     border-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width:600px) {
+    .filtros p{
+        font-size: var(--body-small);
+    }
+    
+    .busca input {
+        font-size: var(--body-medium);
+    }
+
+    .slide-content h2 {
+        font-size: var(--subtitle-large) !important;
+    }
+
+    .slide-carousel {
+        height: 400px !important;
+    }
 }

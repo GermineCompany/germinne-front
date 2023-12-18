@@ -9,7 +9,6 @@ import articleImage3 from '../../images/article-image-3.png';
 import CardAvaliacao from '../../components/CardAvaliacao/CardAvaliacao';
 import Carousel from '../../components/Carousel/Carousel';
 import CarouselBanner from '../../components/CarouselBanner/CarouselBanner';
-import CarouselNavigation from '../../components/CarouselNavigation/CarouselNavigation';
 import CarouselAvaliacao from '../../components/CarouselAvaliacao/CarouselAvaliacao';
 import CarouselAvaliacaoMb from '../../components/CarouselAvaliacaoMb/CarouselAvaliacaoMb';
 
