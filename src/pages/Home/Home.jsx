@@ -39,7 +39,7 @@ function Home() {
         slide3={
           <div className="banner-home contrate-home">
             <h2>
-              TEM UM<span>ESPAÇO</span> MAS NAO TEM TEMPO?
+              PRECISA DOS SERVIÇOS DE UM <span>PROFISSIONAL?</span>
             </h2>
             <p>
               Ache o <span>profissional</span> ideal para <span>voce</span> na nossa vitrine!
