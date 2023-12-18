@@ -12,7 +12,6 @@ function VitrineHorticultores() {
   const getHorticultores = async () => {
     try {
       const response = await api.get('/profissional');
-      console.log(response.data);
       setHorticultores(response.data);
     } catch (error) {
       console.log(error);
@@ -59,7 +58,7 @@ function VitrineHorticultores() {
 
       <article className='box-horticultores main-container-limitador'>
         {
-          horticultores.map((horticultor) => 
+          horticultores.length && horticultores.map((horticultor) => 
             (
               <CardHorticultor
                 id={horticultor.idProfissional}

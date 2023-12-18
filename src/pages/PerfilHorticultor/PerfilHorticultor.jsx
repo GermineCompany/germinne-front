@@ -12,12 +12,14 @@ import api from '../../utils/axios';
 
 function PerfilHorticultor() {
   const { id } = useParams();
-  const [horticultor, setHorticultor] = useState({});
+  const [horticultor, setHorticultor] = useState([]);
+  const [horticultorRecebido, setHorticultorRecebido] = useState(false);
 
   const getHorticultor = async () => {
     try {
       const response = await api.get(`/profissional/${id}`);
       setHorticultor(response.data);
+      setHorticultorRecebido(true);
     } catch (error) {
       console.log(error);
     }
@@ -25,6 +27,7 @@ function PerfilHorticultor() {
   
   useEffect(() => {
     getHorticultor();
+    console.log(horticultor);
   }, [id]);
   return (
     <div className='main-container-limitador'>
@@ -82,11 +85,10 @@ function PerfilHorticultor() {
 
         <div className='ultimos-servicos-desktop'>
           {
-            horticultor.profissionalTrabalhos.map((trabalho) => {
-              console.log(trabalho);
+            horticultorRecebido && horticultor.profissionalTrabalhos.map((trabalho) => {
               const imagens = JSON.parse(trabalho.fotosTrabalho);
               return (
-                <a key={trabalho.idTrabalho} href="/portifolio-horticultor">
+                <a key={trabalho.idTrabalho} href={`/portifolio-horticultor/${trabalho.idTrabalho}`}>
                   <ImagemUltimosServicos
                     key={trabalho.idTrabalho}
                     srcImg={imagens[0]}
