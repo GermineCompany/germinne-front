@@ -46,6 +46,7 @@
     font-size: var(--display-large);
     text-transform: uppercase;
     margin-bottom: 20px;
+    width: 40%;
 }
 
 .banner-home span {
@@ -68,7 +69,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px
+    gap: 25px
 }
 
 .hide-carousel-germinne {
@@ -101,7 +102,7 @@
     background-size: cover;
     background-position: center;
     height: 700px;
-    width: 100%;
+    width: 95%;
     color: var(--verde-principal);
     display: flex;
     flex-direction: column;
@@ -202,8 +203,8 @@
     flex-wrap: wrap;
     background-color: var(--body-article-color);
     display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
+    justify-content: space-around;
+    gap: 25px;
 }
 
 .home-contrate {
@@ -220,8 +221,11 @@
 
 
 .box-beneficios-agricultura {
-    padding-top: 50px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .box-beneficios-agricultura h2 {
@@ -236,9 +240,11 @@
 .beneficios-agricultura-home {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    gap: 120px;
-    width: 100%;
+    gap: 100px;
+    width: 95%;
+
 }
 
 .beneficios-agricultura-home article:nth-child(1) {
@@ -288,10 +294,10 @@
         padding: 0 30px !important;
     }
     .banner-home h2 {
-        font-size: var(--title-medium);
+        font-size: var(--title-small);
     }
     .banner-home p {
-        font-size: var(--body-large);
+        font-size: var(--body-small);
         width: 100%;
     }
     
@@ -372,6 +378,9 @@
 }
 
 @media (max-width: 600px) {
+
+
+
     .box-cards > h2{
         font-size: var(--subtitle-large);
         white-space: nowrap;

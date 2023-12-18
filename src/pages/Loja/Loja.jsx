@@ -46,22 +46,22 @@ function Loja() {
         <div className="conteudo-gb-cards">
           <CardConteudoGB
             srcImg={vaso}
-            altImg="SADASDA"
-            text="GerminneBox auto irrigável"
+            altImg="GerminneBox autoirrigável ícone"
+            text="GerminneBox autoirrigável"
           />
           <CardConteudoGB
             srcImg={sementes}
-            altImg="SADASDA"
+            altImg="sementes orgânicas ícone"
             text="Sementes orgânicas"
           />
           <CardConteudoGB
             srcImg={substrato}
-            altImg="SADASDA"
+            altImg="substrato de qualidade ícone"
             text="Substrato de qualidade"
           />
           <CardConteudoGB
             srcImg={qrcode}
-            altImg="SADASDA"
+            altImg="qr code com instruções ícone"
             text="QR Code com instruções"
           />
         </div>
@@ -81,14 +81,14 @@ function Loja() {
           />}
           slide2={<MotivosParaComprar
             srcImg={carouselgb2}
-            altImg='mulher comendo salada'
+            altImg='Bem-estar e terapia'
             titulo='Bem-estar e terapia'
             texto='Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.'
           />}
           slide3={<MotivosParaComprar
             srcImg={carouselgb3}
             altImg='Sua casa mais verde e bonita'
-            titulo='Alimentação saudável e saborosa'
+            titulo='Sua casa mais verde e bonita'
             texto='Plantinhas fazem maravilhas no visual de qualquer ambiente, trazendo beleza e vida. Com suas cores animadas, texturas e formas diferentes, elas dão um up em qualquer lugar. Se você cuidar direitinho delas, a casa vira um cantinho super aconchegante e agradável.'
           />}
         />
@@ -104,14 +104,14 @@ function Loja() {
           />}
           slide2={<MotivosParaComprar
             srcImg={carouselgb2}
-            altImg='mulher comendo salada'
+            altImg='Bem-estar e terapia'
             titulo='Bem-estar e terapia'
             texto='Se você decidir plantar suas próprias hortaliças, ervas ou frutas em casa, vai ter comida fresquinha e saudável direto do seu cantinho verde. Essas comidinhas podem ser ainda mais gostosas e nutritivas do que as do mercado, além de dar aquele orgulho de comer algo que você mesmo cultivou.'
           />}
           slide3={<MotivosParaComprar
             srcImg={carouselgb3}
             altImg='Sua casa mais verde e bonita'
-            titulo='Alimentação saudável e saborosa'
+            titulo='Sua casa mais verde e bonita'
             texto='Plantinhas fazem maravilhas no visual de qualquer ambiente, trazendo beleza e vida. Com suas cores animadas, texturas e formas diferentes, elas dão um up em qualquer lugar. Se você cuidar direitinho delas, a casa vira um cantinho super aconchegante e agradável.'
           />}
         />

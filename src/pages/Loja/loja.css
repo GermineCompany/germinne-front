@@ -76,6 +76,10 @@
   align-items: center;
 }
 
+.carousel-content img {
+  border-radius: 10px;
+}
+
 .carousel-content .swiper{
     padding: 0 25px;
 }
