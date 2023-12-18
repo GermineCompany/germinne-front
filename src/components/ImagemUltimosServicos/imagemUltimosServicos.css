@@ -17,6 +17,8 @@
 }
 .imagem-ultimos-servicos p {
     font-size: var(--body-small);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .imagem-ultimos-servicos > div div {

@@ -32,7 +32,9 @@
 
 .box-nome-avaliacao-perfil div:nth-child(1) img {
     margin-bottom: 10px;
-    width: 50%;
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
     border-radius: 100%;
 }
 

@@ -6,7 +6,7 @@ import estrelas from '../../images/stars.png';
 import './cardHorticultor.css';
 import { useNavigate } from 'react-router-dom';
 
-function CardHorticultor({ srcImg, name, description, rating }) {
+function CardHorticultor({ srcImg, name, description, rating, id }) {
   const navigate = useNavigate();
 
   return (
@@ -29,7 +29,7 @@ function CardHorticultor({ srcImg, name, description, rating }) {
 
       <div className='botoes-contato-horticultor'>
         <div>
-          <button onClick={() => navigate('/perfil-horticultor/2')}>Ver perfil</button>
+          <button onClick={() => navigate(`/perfil-horticultor/${id}`)}>Ver perfil</button>
         </div>
 
         <div>
@@ -46,7 +46,8 @@ CardHorticultor.propTypes = {
   srcImg: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  rating: PropTypes.string.isRequired
+  rating: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 export default CardHorticultor;

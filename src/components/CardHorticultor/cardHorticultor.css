@@ -24,7 +24,9 @@
 }
 
 .foto-rating-horticultor div:nth-child(1) img {
-    width: 100%;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
     border-radius: 100%;
 }
 
