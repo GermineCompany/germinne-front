@@ -36,6 +36,7 @@ function CarouselBlog() {
             </div>
           </a>
         </SwiperSlide>
+        
         <SwiperSlide>
           <a href="">
             <div className="box-slide-imagem-2 slide-carousel">

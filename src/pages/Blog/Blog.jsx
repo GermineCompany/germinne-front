@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import busca from '../../images/busca.png';
-import publicidade from '../../images/card-publicidade-germinne.png';
 import CardBlog from '../../components/CardBlog/CardBlog';
-import CardPublicidade from '../../components/CardPublicidade/CardPublicidade';
 import './blog.css';
 import CarouselBlog from '../../components/CarouselBlog/CarouselBlog';
 import artigos from '../../data/artigos';
