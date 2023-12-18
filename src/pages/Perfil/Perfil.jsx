@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { LuMessagesSquare, LuMapPin, LuInbox } from 'react-icons/lu';
 import { CgProfile } from 'react-icons/cg';
 import { IoMdExit } from 'react-icons/io';
@@ -10,6 +10,7 @@ import VerificacaoProfissional from '../../components/VerificacaoProfissional/Ve
 import EnderecoPerfil from '../../components/EnderecoPerfil/EnderecoPerfil.jsx';
 import Pedidos from '../../components/Pedidos/Pedidos.jsx';
 import PerfilPedido from '../../components/PerfilPedidos/PerfilPedido.jsx';
+import api from '../../utils/axios';
 
 function Perfil() {
   const { loggedUser } = useContext(GerminneContext);
@@ -18,6 +19,9 @@ function Perfil() {
     dadosPessoais: true,
     enderecos: false,
     pedidos: false,
+  });
+  const [profissionalInfo, setProfissionalInfo] = useState({
+    rg: ''
   });
 
   const handleClickMenu = (event) => {
@@ -29,6 +33,17 @@ function Perfil() {
       [event.target.id]: true
     });
   };
+
+  const getProfissionalInfo = async () => { 
+    const response = await api.get(`/profissional/${loggedUser.id}`);
+    
+    setProfissionalInfo({ rg: response.data.rg });
+  };
+
+  useEffect(() => {
+    getProfissionalInfo();
+    console.log(profissionalInfo);
+  }, [loggedUser]);
 
   return (
     <div className='perfil'>
@@ -56,6 +71,7 @@ function Perfil() {
         } */
         }
         {/* <VerificacaoProfissional /> */}
+        
         {
           menusActived.dadosPessoais && loggedUser.tipo == 'cliente' && <DadosPessoaisCliente />
         }
@@ -64,6 +80,14 @@ function Perfil() {
         }
         {
           menusActived.pedidos && <PerfilPedido />
+        }
+        {
+          menusActived.dadosPessoais && loggedUser.tipo == 'profissional'
+          && !profissionalInfo.rg.length && <VerificacaoProfissional />
+        }
+        {
+          menusActived.dadosPessoais && loggedUser.tipo == 'profissional'
+          && profissionalInfo.rg.length && <EditarPerfilVitrine />
         }
         {/* <EditarPerfilVitrine /> */}
       </div>
