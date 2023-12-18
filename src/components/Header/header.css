@@ -6,6 +6,10 @@
   height: 110px;
 }
 
+header ul {
+  margin-bottom: 0;
+}
+
 .header-desktop > div {
   width: 100%;
   padding: 0px 10px;
@@ -48,23 +52,23 @@
 }
 
 .box-login button {
-    color: white;
-    padding: 1px 15px;
-    font-size: 22px;
-    font-weight: var(--semi-bold);
-    border-radius: 5px;
-    border: none;
-    background-color: var(--cta-laranja);
-    transition: .3s;
-    margin-right: 15px;
+  color: white;
+  padding: 1px 15px;
+  font-size: 22px;
+  font-weight: var(--semi-bold);
+  border-radius: 5px;
+  border: none;
+  background-color: var(--cta-laranja);
+  transition: 0.3s;
+  margin-right: 15px;
 }
 
 .box-login button:hover {
-    border: 1px solid var(--cta-laranja);
-    color: var(--cta-laranja) !important;
-    background-color: white;
-    cursor: pointer;
-    transition: .5s;
+  border: 1px solid var(--cta-laranja);
+  color: var(--cta-laranja) !important;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .box-login button a {
@@ -88,11 +92,9 @@
   color: var(--cta-roxo) !important;
 }
 
-.box-login img {  
+.box-login img {
   font-size: var(--subtitle-small);
   font-weight: var(--semi-bold);
- 
-
 }
 
 .box-login button a {
@@ -121,7 +123,7 @@
 .header-desktop nav a {
   font-size: var(--subtitle-small);
   color: var(--title-color);
-  font-family: var(--title-family) !important;  
+  font-family: var(--title-family) !important;
 }
 
 .dropdown-horticultores {
@@ -132,7 +134,7 @@
   width: 100%;
   text-align: center;
   background-color: white;
-  border: 1px solid  var(--verde-principal) !important;
+  border: 1px solid var(--verde-principal) !important;
   border-top: none !important;
   border-radius: 0 0 10px 10px;
   padding-top: 5px;
@@ -146,8 +148,8 @@
 }
 
 .profissionais:hover .dropdown-horticultores {
-      transition: 0.3s;
-      display: flex !important;
+  transition: 0.3s;
+  display: flex !important;
 }
 
 .dropdown-horticultores a {
@@ -178,41 +180,40 @@
 }
 
 .close-login {
-    display: none;
+  display: none;
 }
 
 .open-login {
-    display: block;
+  display: block;
 }
 
-
 .links-login ul {
-    width: 186px;
-    list-style: none;
-    text-align: center;
-    list-style-position: inside;
-    position: absolute;
+  width: 186px;
+  list-style: none;
+  text-align: center;
+  list-style-position: inside;
+  position: absolute;
 }
 
 .links-login ul li {
-    padding: 15px 10px;
-    background-color: var(--verde-escuro);
-    display: block !important;
-    transition: .3s;
+  padding: 15px 10px;
+  background-color: var(--verde-escuro);
+  display: block !important;
+  transition: 0.3s;
 }
 
 .links-login a {
-    color: white;
+  color: white;
 }
 
 .links-login ul li:hover {
-    cursor: pointer;
-    background-color: var(--cta-laranja);
-    transition: .5s;
+  cursor: pointer;
+  background-color: var(--cta-laranja);
+  transition: 0.5s;
 }
 
 .links-login ul li:nth-child(2) {
-    border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 .nav-item {
@@ -239,9 +240,35 @@
   margin-top: 8px;
 }
 
-.box-icone-sacola img{
+.box-icone-sacola img {
   height: 50px;
   margin-left: 10px;
+}
+
+.nome-usuario-logado {
+  display: flex;
+  align-items: center;
+}
+
+.nome-usuario-logado a {
+  font-size: var(--body-large);
+  font-weight: 400 !important;
+  color: black;
+  white-space: nowrap;
+  margin-right: 20px;
+  transition: 1s ease;
+}
+
+.nome-usuario-logado a:hover {
+  font-size: var(--subtitle-small);
+}
+
+.nome-usuario-logado span {
+  color: var(--verde-principal);
+}
+
+.botoes-cadastro-login {
+  display: flex;
 }
 
 @media screen and (max-width: 1250px) {
