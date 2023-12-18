@@ -1,7 +1,7 @@
 .card-blog {
     display: flex;
     flex-direction: column;
-    width: 22%;
+    width: 300px;
     margin: 0 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -62,10 +62,25 @@
 
 .categoria-ler-mais {
     justify-self: end;
+    align-items: center;
 }
 
 .card-blog a {
     color: var(--verde-principal);
     text-decoration: none;
     font-size: var(--body-small);
+}
+
+@media (max-width:600px) {
+    .card-blog div:nth-child(2) h3 {
+        font-size: var(--body-medium);
+    }
+
+    .card-blog a {
+        font-size: var(--body-extra-small);
+    }
+
+    .categoria-ler-mais p {
+        font-size: var(--body-extra-small); 
+    }
 }
