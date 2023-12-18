@@ -91,6 +91,5 @@ p , a, li{
 
 ul {
   padding-left: 0 !important;
-  margin: 0 !important;
   font-family: var(--title-family) !important;
 }

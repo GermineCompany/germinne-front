@@ -69,7 +69,7 @@ function App() {
           />
           <Route path="/perfil" Component={Perfil} />
           <Route path="/perfil-horticultor/:id" Component={PerfilHorticultor} />
-          <Route path="/portifolio-horticultor" Component={PortifolioHorticultor} />
+          <Route path="/portifolio-horticultor/:id" Component={PortifolioHorticultor} />
           <Route path="/filtros-servico" Component={FiltrosServico} />
           {/* <Route path="/trabalhe-conosco" Component={TrabalheConosco} /> */}
           <Route path="/checkout" Component={Checkout} />

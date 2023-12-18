@@ -3,7 +3,6 @@ import logo from '../../images/logo-verde.svg';
 import sacola from '../../images/sacola.png';
 import './header.css';
 import HeaderMobile from '../HeaderMobile/HeaderMobile';
-import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import GerminneContext from '../../context/GerminneContext';
@@ -89,7 +88,7 @@ function Header() {
             </button>
 
             <button className='botao-profissional-header'>
-              <a href="/login">
+              <a href="/login-profissional">
               Profissional
               </a>
             </button>

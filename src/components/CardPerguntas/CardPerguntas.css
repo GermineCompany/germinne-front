@@ -27,3 +27,15 @@
   margin-top: 15px;
   font-size: var(--body-small);
 }
+
+@media (max-width: 600px) {
+  .cardPerguntas img {
+      display: none;
+  }
+  .cardPerguntas {
+    justify-content: center;
+  }
+  .cardPerguntas h3 {
+    font-size: var(--body-large);
+  }
+}

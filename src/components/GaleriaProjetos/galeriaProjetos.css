@@ -18,6 +18,7 @@
 .div-galeria-projetos p {
     font-weight: var(--semi-regular);
     font-size: 11px;
+    margin-bottom: 0;
 }
 
 .div-galeria-projetos {

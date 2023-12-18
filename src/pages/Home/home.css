@@ -46,7 +46,7 @@
     font-size: var(--display-large);
     text-transform: uppercase;
     margin-bottom: 20px;
-    width: 40%;
+    width: 100%;
 }
 
 .banner-home span {
