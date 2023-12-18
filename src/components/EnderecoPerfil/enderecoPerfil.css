@@ -1,0 +1,7 @@
+.mensagem-editar-perfil-cliente {
+  display: flex;
+  justify-content: center;
+  font-size: var(--body-large);
+  text-align: center;
+  color: var(--verde-principal);
+}

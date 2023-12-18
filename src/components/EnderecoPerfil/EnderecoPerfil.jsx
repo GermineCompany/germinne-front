@@ -1,22 +1,25 @@
-import React, { useContext, useEffect, useState } from 'react';
-import '../DadosPessoaisCliente/dadosPessoaisCliente.css';
-import GerminneContext from '../../context/GerminneContext';
-import api from '../../utils/axios';
+import React, { useContext, useEffect, useState } from "react";
+import "../DadosPessoaisCliente/dadosPessoaisCliente.css";
+import GerminneContext from "../../context/GerminneContext";
+import api from "../../utils/axios";
+import "./enderecoPerfil.css";
 
 function EnderecoPerfil() {
-  const { loggedUser: { id, tipo } } = useContext(GerminneContext);
+  const {
+    loggedUser: { id, tipo },
+  } = useContext(GerminneContext);
   const [userInfo, setUserInfo] = useState({});
   const [inputStatus, setInputStatus] = useState(true);
-  const [nameButton, setNameButton] = useState('Editar informações');
+  const [nameButton, setNameButton] = useState("Editar informações");
   const [inputInfos, setInputInfos] = useState({
-    cep: '',
-    rua: '',
-    bairro: '',
-    cidade: '',
-    pais: '',
-    numero: '',
+    cep: "",
+    rua: "",
+    bairro: "",
+    cidade: "",
+    pais: "",
+    numero: "",
   });
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
 
   const getClienteInfos = async () => {
     const result = await api.get(`/cliente/${id}`);
@@ -49,25 +52,25 @@ function EnderecoPerfil() {
   };
 
   useEffect(() => {
-    if (tipo == 'cliente') {
+    if (tipo == "cliente") {
       getClienteInfos();
-    } else if (tipo == 'profissional') {
+    } else if (tipo == "profissional") {
       getProfissionalInfos();
     }
   }, [id]);
 
   const handleEditInfo = async () => {
     setInputStatus(false);
-    setNameButton('Salvar informações');
+    setNameButton("Salvar informações");
 
-    if (nameButton == 'Salvar informações' && tipo == 'cliente') {
+    if (nameButton == "Salvar informações" && tipo == "cliente") {
       try {
         const result = await api.put(`/cliente/${id}/endereco`, inputInfos);
         setMessage(result.data.message);
 
         setTimeout(() => {
-          setMessage('');
-          setNameButton('Editar informações');
+          setMessage("");
+          setNameButton("Editar informações");
           setInputStatus(true);
           getClienteInfos();
         }, 1500);
@@ -76,14 +79,17 @@ function EnderecoPerfil() {
       }
     }
 
-    if (nameButton == 'Salvar informações' && tipo == 'profissional') {
+    if (nameButton == "Salvar informações" && tipo == "profissional") {
       try {
-        const result = await api.put(`/profissional/${id}/endereco`, inputInfos);
+        const result = await api.put(
+          `/profissional/${id}/endereco`,
+          inputInfos
+        );
         setMessage(result.data.message);
 
         setTimeout(() => {
-          setMessage('');
-          setNameButton('Editar informações');
+          setMessage("");
+          setNameButton("Editar informações");
           setInputStatus(true);
           getProfissionalInfos();
         }, 1500);
@@ -96,7 +102,7 @@ function EnderecoPerfil() {
   const handleChange = async (event) => {
     setInputInfos({ ...inputInfos, [event.target.id]: event.target.value });
 
-    if (event.target.id == 'cep' && event.target.value.length == 8) {
+    if (event.target.id == "cep" && event.target.value.length == 8) {
       const result = await getVIACEP(event.target.value);
       setInputInfos({
         ...inputInfos,
@@ -104,7 +110,7 @@ function EnderecoPerfil() {
         rua: result.logradouro,
         bairro: result.bairro,
         cidade: result.localidade,
-        pais: 'Brasil',
+        pais: "Brasil",
       });
     }
   };
@@ -116,16 +122,16 @@ function EnderecoPerfil() {
   };
 
   return (
-    <div className='dados-pessoais-cliente'>
+    <div className="dados-pessoais-cliente">
       <h2>Dados pessoais</h2>
 
-      <div className='inputs-dados-pessoais-cliente'>
+      <div className="inputs-dados-pessoais-cliente">
         <div>
           <label htmlFor="cep">
             CEP
             <input
               disabled={inputStatus}
-              placeholder={userInfo.cep || 'Adicione um CEP...'}
+              placeholder={userInfo.cep || "Adicione um CEP..."}
               onChange={handleChange}
               value={inputInfos.cep}
               type="text"
@@ -138,7 +144,7 @@ function EnderecoPerfil() {
             Rua
             <input
               disabled={inputStatus}
-              placeholder={userInfo.rua || 'Adicione uma rua...'}
+              placeholder={userInfo.rua || "Adicione uma rua..."}
               onChange={handleChange}
               value={inputInfos.rua}
               type="text"
@@ -153,7 +159,9 @@ function EnderecoPerfil() {
             Número e complemento
             <input
               disabled={inputStatus}
-              placeholder={userInfo.numero || 'Adicione um número e complemento...'}
+              placeholder={
+                userInfo.numero || "Adicione um número e complemento..."
+              }
               onChange={handleChange}
               value={inputInfos.numero}
               type="text"
@@ -164,8 +172,9 @@ function EnderecoPerfil() {
 
           <label htmlFor="bairro">
             Bairro
-            <input disabled={inputStatus}
-              placeholder={userInfo.bairro || 'Adicione um bairro...'}
+            <input
+              disabled={inputStatus}
+              placeholder={userInfo.bairro || "Adicione um bairro..."}
               onChange={handleChange}
               value={inputInfos.bairro}
               type="text"
@@ -180,7 +189,7 @@ function EnderecoPerfil() {
             Cidade
             <input
               disabled={inputStatus}
-              placeholder={userInfo.cidade || 'Adicione uma cidade...' }
+              placeholder={userInfo.cidade || "Adicione uma cidade..."}
               onChange={handleChange}
               value={inputInfos.cidade}
               type="text"
@@ -191,8 +200,9 @@ function EnderecoPerfil() {
 
           <label htmlFor="pais">
             País
-            <input disabled={inputStatus}
-              placeholder={userInfo.pais || 'Adicione um telefone...'}
+            <input
+              disabled={inputStatus}
+              placeholder={userInfo.pais || "Adicione um telefone..."}
               onChange={handleChange}
               value={inputInfos.pais}
               type="text"
@@ -203,11 +213,17 @@ function EnderecoPerfil() {
         </div>
       </div>
 
-      <div className='mensagem-editar-perfil-cliente'>
+      <div className="mensagem-editar-perfil-cliente">
         <p>{message}</p>
       </div>
 
-      <div className={`${nameButton == 'Editar informações' ? 'box-button-perfil-cliente' : 'box-button-perfil-cliente button-salvar-informacoes'}`}>
+      <div
+        className={`${
+          nameButton == "Editar informações"
+            ? "box-button-perfil-cliente"
+            : "box-button-perfil-cliente button-salvar-informacoes"
+        }`}
+      >
         <button onClick={handleEditInfo}>{nameButton}</button>
       </div>
     </div>
