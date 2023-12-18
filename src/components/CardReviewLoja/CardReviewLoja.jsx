@@ -1,5 +1,5 @@
 import React from 'react';
-import stars from '../../images/5-stars.png';
+import estrelas from '../../images/estrelas.svg';
 import './cardReviewLoja.css';
 import PropTypes from 'prop-types';
 
@@ -10,7 +10,7 @@ function CardReviewLoja({ nomeCliente, fotoCliente, fotoReview, descricao }) {
         <img src={ fotoCliente } alt="Imagem do cliente" />
         <p>{ nomeCliente }</p>
         <div>
-          <img src={ stars } alt="5 estrelas amarelas." />
+        <img src={ estrelas } alt="Cinco estrelas de cor verde" />
           <p>5,0</p>
         </div>
       </div>

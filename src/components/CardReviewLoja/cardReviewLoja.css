@@ -27,6 +27,7 @@
 .card-review-loja-nome > p {
     margin-top: 5px;
     font-weight: var(--semi-bold);
+
 }
 
 .card-review-loja p {
@@ -42,7 +43,8 @@
 
 .card-review-loja-nome > div {
     display: flex;
-    color: #DBAD0A;
+    color: var(--verde-principal);
+
 }
 
 .card-review-loja-nome > div img {

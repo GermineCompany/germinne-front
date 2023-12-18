@@ -9,7 +9,7 @@ import './loja.css';
 import carouselgb1 from '../../images/carouselgb1.png';
 import carouselgb2 from '../../images/carouselgb2.png';
 import carouselgb3 from '../../images/carouselgb3.png';
-import review1 from '../../images/review-loja-1.png';
+import review1 from '../../images/germinne-box-3.png';
 import CardPerguntas from '../../components/CardPerguntas/CardPerguntas';
 import './loja.css';
 import DescricaoProduto from '../../components/DescricaoProduto/DescricaoProduto';
@@ -131,21 +131,21 @@ function Loja() {
             fotoCliente='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/thais-angelo.jpg'
             nomeCliente='Thais Ângelo'
             descricao='"Me tornei uma mãe de planta com a Germinne Box e, sério, estou adorando! 😄 O kit é super completo e simples. A experiência tem sido incrível, tudo fácil e descomplicado."'
-            fotoReview={review1}
+            fotoReview='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-1.png'
           />
 
           <CardReviewLoja
             fotoCliente='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322621?e=1707955200&v=beta&t=ox5WjTMlulu41s5QUazJH3v7dOkmCwa6WAq-qE7feRI'
             nomeCliente='Gabriel Augusto'
             descricao='"A Germinne Box é tipo um abraço para a minha varanda! 🌱 Comecei minha horta com esse kit incrível e tô apaixonado. Tudo o que eu precisava veio junto, e não precisei me preocupar em ser expert em plantas. É só amor verde!"'
-            fotoReview={review1}
+            fotoReview='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-1.png'
           />
 
           <CardReviewLoja
             fotoCliente='https://media.licdn.com/dms/image/C4D03AQFX1J5BuXXoyA/profile-displayphoto-shrink_100_100/0/1636810200050?e=2147483647&v=beta&t=YlQREAL0kou82irvlcwTXS-GuXC_6KqEHSzpu8BBrJE'
             nomeCliente='Drickis Maria'
             descricao='"Simplesmente incrível! 🌿💚 O kit autoirrigável é um game changer. Só coloco as sementes, curto a vibe verde e deixo o sistema fazer a mágica. Ter uma horta nunca foi tão fácil e relaxante! ✨"'
-            fotoReview={review1}
+            fotoReview='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-1.png'
           />
         </div>
       </div>

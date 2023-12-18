@@ -260,6 +260,7 @@
 
 .box-avaliacoes {
     padding: 5% 0;
+   
 }
 
 .carousel-avaliacao-home {
@@ -277,8 +278,12 @@
     color: var(--verde-principal);
 }
 
+.box-avaliacoes .swiper {
+    margin: 0px 100px;
+}
+
 .carousel-avaliacao-home .swiper {
-    padding: 10px 100px;
+    padding: 10px 150px;
 }
 
 .carousel-mobile-avaliacao-home {
