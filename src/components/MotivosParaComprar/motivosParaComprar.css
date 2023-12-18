@@ -3,13 +3,12 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
     width: 100%;
 }
 
 .card-motivos-para-comprar img {
-    width: 450px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
 }
 
@@ -23,8 +22,9 @@
 }
 
 .text-card-motivos h2 {
-    font-size: var(--subtitle-large);
+    font-size: var(--title-small);
     color: var(--verde-principal);
+    margin-bottom: 20px;
 }
 
 .text-card-motivos p {

@@ -6,7 +6,7 @@ import './cardAvaliacao.css';
 function CardAvaliacao({ srcImg, altImg, description, name }) {
   return (
     <article className='card-avaliacao'>
-      <img src={ srcImg } alt={ altImg } />
+      <img className='retrato-avaliacao' src={ srcImg } alt={ altImg } />
       <img src={ estrelas } alt="Cinco estrelas de cor verde" />
       <p className='avaliacao'>{ description }</p>
       <p className='nome-avaliacao'>{ name }</p>

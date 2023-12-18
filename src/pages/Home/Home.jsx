@@ -39,7 +39,7 @@ function Home() {
         slide3={
           <div className="banner-home contrate-home">
             <h2>
-              TEM UM<span>ESPAÇO</span> MAS NAO TEM TEMPO?
+              PRECISA DOS SERVIÇOS DE UM <span>PROFISSIONAL?</span>
             </h2>
             <p>
               Ache o <span>profissional</span> ideal para <span>voce</span> na nossa vitrine!
@@ -209,36 +209,37 @@ function Home() {
 
       </div>
       <section className='box-avaliacoes'>
-        <h3><span>Avaliações</span> dos nossos <span>clientes</span></h3>
+        <h3>Oque dizem nossos <span>usuários</span></h3>
 
         <div className='carousel-avaliacao-home'>
+
           <CarouselAvaliacao
             slide1={<CardAvaliacao
-              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
+              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322621?e=1707955200&v=beta&t=ox5WjTMlulu41s5QUazJH3v7dOkmCwa6WAq-qE7feRI'
               altImg='Foto do Gabriel Augusto'
-              description='"Me tornei pai de planta com a Germine Box"'
+              description='"A Germinne trouxe uma vibe nova pra minha vida. Ter minhas próprias plantinhas me anima a ser mais saudável, e isso tá fazendo toda a diferença."'
               name='Gabriel Augusto'
             />}
 
             slide2={<CardAvaliacao
-              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
-              altImg='Foto do Gabriel Augusto'
-              description='“Comprei a GerminneBox e foi otimo, pouco trabalho, quase nenhum.”'
-              name='Gabriel Silva'
+              srcImg='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/paula-lima.png'
+              altImg='Foto da Paula Lima'
+              description='“A plataforma foi uma mão na roda para mim que não sabia nada sobre cultivo. Nota 1000 hahaha”'
+              name='Paula Lima'
             />}
 
             slide3={<CardAvaliacao
-              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
-              altImg='Foto do Gabriel Augusto'
-              description='"Encontrei um profssional na vitrine da Germinne e "'
-              name='Gabriel Lindo Augusto'
+              srcImg='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/jailson.png'
+              altImg='Foto do Jailson Costa'
+              description='"Amei a plataforma! Tá doce para cultivar minha hortinha agora e já indiquei pra minha mãe"'
+              name='Jailson Costa'
             />}
 
             slide4={<CardAvaliacao
-              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
-              altImg='Foto do Gabriel Augusto'
-              description='"Encontrei um profssional na vitrine da Germinne e "'
-              name='Gabriel Lindo Augusto'
+              srcImg='https://media.licdn.com/dms/image/C4D03AQFX1J5BuXXoyA/profile-displayphoto-shrink_100_100/0/1636810200050?e=2147483647&v=beta&t=YlQREAL0kou82irvlcwTXS-GuXC_6KqEHSzpu8BBrJE'
+              altImg='Foto da Drickis Maria'
+              description='"A minha Mirella está adorando cuidar da sua horta. Ela está sempre me falando sobre como as plantinhas estão crescendo e como elas estão ficando bonitas."'
+              name='Drickis Maria'
             />}
           />
         </div>
@@ -246,31 +247,31 @@ function Home() {
         <div className='carousel-mobile-avaliacao-home'>
           <CarouselAvaliacaoMb
             slide1={<CardAvaliacao
-              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
+              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322621?e=1707955200&v=beta&t=ox5WjTMlulu41s5QUazJH3v7dOkmCwa6WAq-qE7feRI'
               altImg='Foto do Gabriel Augusto'
-              description='"Me tornei pai de planta com a Germine Box"'
+              description='"A Germinne trouxe uma vibe nova pra minha vida. Ter minhas próprias plantinhas me anima a ser mais saudável, e isso tá fazendo toda a diferença."'
               name='Gabriel Augusto'
             />}
 
             slide2={<CardAvaliacao
-              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
-              altImg='Foto do Gabriel Augusto'
-              description='“Comprei a GerminneBox e foi otimo, pouco trabalho, quase nenhum.”'
-              name='Gabriel Silva'
+              srcImg='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/paula-lima.png'
+              altImg='Foto da Paula Lima'
+              description='“A plataforma foi uma mão na roda para mim que não sabia nada sobre cultivo. Nota 1000 hahaha”'
+              name='Paula Lima'
             />}
 
             slide3={<CardAvaliacao
-              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
-              altImg='Foto do Gabriel Augusto'
-              description='"Encontrei um profssional na vitrine da Germinne e "'
-              name='Gabriel Lindo Augusto'
+              srcImg='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/jailson.png'
+              altImg='Foto do Jailson Costa'
+              description='"Amei a plataforma! Tá doce para cultivar minha hortinha agora e já indiquei pra minha mãe"'
+              name='Jailson Costa'
             />}
 
             slide4={<CardAvaliacao
-              srcImg='https://media.licdn.com/dms/image/C4D03AQFmj98FQmRvrA/profile-displayphoto-shrink_800_800/0/1662045322237?e=1702512000&v=beta&t=HlsPx_deG_QLg0MTJJNiK8aaT4mJ7AVKrcCCabPb50I'
-              altImg='Foto do Gabriel Augusto'
-              description='"Encontrei um profssional na vitrine da Germinne e "'
-              name='Gabriel Lindo Augusto'
+              srcImg='https://media.licdn.com/dms/image/C4D03AQFX1J5BuXXoyA/profile-displayphoto-shrink_100_100/0/1636810200050?e=2147483647&v=beta&t=YlQREAL0kou82irvlcwTXS-GuXC_6KqEHSzpu8BBrJE'
+              altImg='Foto da Drickis Maria'
+              description='"A minha Mirella está adorando cuidar da sua horta. Ela está sempre me falando sobre como as plantinhas estão crescendo e como elas estão ficando bonitas."'
+              name='Drickis Maria'
             />}
           />
         </div>
