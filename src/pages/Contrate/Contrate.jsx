@@ -1,16 +1,11 @@
 import React from 'react';
 import './contrate.css';
 import '../../components/ArticleBeneficios/articleBeneficios.css';
-import ComoFunciona from '../../components/ComoFunciona/ComoFunciona';
 import ArticleBeneficios from '../../components/ArticleBeneficios/ArticleBeneficios';
-import Passo1 from '../../images/Passo1.svg';
-import Passo2 from '../../images/Passo2.svg';
-import Passo3 from '../../images/Passo3.svg';
-import Passo4 from '../../images/Passo4.svg';
-import imgComoFunciona from '../../images/comoFunciona.svg';
 import servico1 from '../../images/servico1.svg';
 import servico2 from '../../images/servico2.svg';
 import servico3 from '../../images/servico3.svg';
+import PassoApasso from '../../components/PassoApasso/PassoApasso';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -23,41 +18,92 @@ function Contrate() {
 
   return (
     <div>
+
+      <div className="banner-faca-parte">
+        <h2>ENCONTRE AGORA O <span>PROFISSIONAL</span> IDEAL PARA VOCÊ</h2>
+        <p>A Germinne conecta profissionais qualificados a clientes entusiastas. Encontre ajuda especializada e tramsforme sua vontade de cultivar em realidade.</p>
+      </div>
+
+
       <div className='main-container-limitador'>
-        <div className='box-como-funciona'>
-          <img
-            className='como-funciona-mainImg'
-            src={imgComoFunciona}
-            alt='imgComoFunciona'
-          />
 
-          <div className='box-texto-como-funciona'>
-            <h2>Como funciona?</h2>
-            <ComoFunciona
-              urlImg={Passo1}
-              altImg='icone Pergunta'
-              conteudo='Responda as questões sobre o tipo de trabalho, onde será feito e o tamanho aproximado do espaço.'
-            />
 
-            <ComoFunciona
-              urlImg={Passo2}
-              altImg='icone Horticultor'
-              conteudo='Acesse serviços de horticultura e tenha hortas facilmente acessíveis!'
-            />
+        <h2>Descubra como funciona</h2>
 
-            <ComoFunciona
-              urlImg={Passo3}
-              altImg='icone entre em contato'
-              conteudo='Entre em contato direto com o nosso parceiro através do WhatsApp ou Chat integrado na plataforma e feche os detalhes do serviço.'
-            />
+        <div className="passo-a-passo">
 
-            <ComoFunciona
-              urlImg={Passo4}
-              altImg='icone fechamento de serviço'
-              conteudo='Após aprovar o orçamento nosso parceiro vai realizar o serviço na data e local combinados. '
+          <div>
+            <PassoApasso
+              titulo='Passo 1'
+              srcImg="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/passo1contrate.svg"
+              altImg="icone passo 1"
+              texto="Realize seu cadastro na plataforma"
             />
           </div>
+
+          <div className='barra-amarela'></div>
+
+          <div>
+            <PassoApasso
+              titulo='Passo 2'
+              srcImg="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/passo2contrate.svg"
+              altImg="icone passo 2"
+              texto="Complete seus dados e aguarde sua validação"
+            />
+          </div>
+
+          <div className='barra-amarela'></div>
+
+          <div>
+            <PassoApasso
+              titulo='Passo 3'
+              srcImg="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/passo3contrate.svg"
+              altImg="icone passo 3"
+              texto="Pronto! agora você pode fechar trabalhos a vontade"
+            />
+          </div>
+
+          <div className='barra-amarela'></div>
+
+          <div>
+            <PassoApasso
+              titulo='Passo 3'
+              srcImg="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/passo4contrate.svg"
+              altImg="icone passo 3"
+              texto="Pronto! agora você pode fechar trabalhos a vontade"
+            />
+          </div>
+
         </div>
+
+
+        {/* <div className='box-texto-como-funciona'>
+          <h2>Como funciona?</h2>
+          <ComoFunciona
+            urlImg=''
+            altImg='icone Pergunta'
+            conteudo='Responda as questões sobre o tipo de trabalho, onde será feito e o tamanho aproximado do espaço.'
+          />
+
+          <ComoFunciona
+            urlImg=''
+            altImg='icone Horticultor'
+            conteudo='Acesse serviços de horticultura e tenha hortas facilmente acessíveis!'
+          />
+
+          <ComoFunciona
+            urlImg=''
+            altImg='icone entre em contato'
+            conteudo='Entre em contato direto com o nosso parceiro através do WhatsApp ou Chat integrado na plataforma e feche os detalhes do serviço.'
+          />
+
+          <ComoFunciona
+            urlImg=''
+            altImg='icone fechamento de serviço'
+            conteudo='Após aprovar o orçamento nosso parceiro vai realizar o serviço na data e local combinados. '
+          />
+        </div> */}
+
 
         <div className='box-servicos'>
           <h2>
@@ -90,36 +136,35 @@ function Contrate() {
       </div>
 
       <div>
-        <h2 className='titulo-banner-horticultor'>
+       
+
+        <div className='banner-horticultor'>
+
+          <div className='box-selects'>
+           
+          <h2 className='titulo-banner-horticultor'>
           Encontre <span>agora</span> o profissional ideal para{' '}
           <span>você</span>
         </h2>
 
-        <div className='banner-horticultor'>
-          <div>
-            <h2>
-              Consulte agora um <span>Horticultor</span> e solicite um orçamento
+            <h3>
+              Consulte agora um <span>horticultor</span> e solicite um orçamento
               de forma totalmente <span>gratuita</span>:
-            </h2>
+            </h3>
 
-            <div className='box-inputs-horticultor'>
-              <div>
-                <select>
+                <select className='selects'>
                   <option value='default' disabled selected>
-                    Selecione o tipo de serviço
-                  </option>
+                    Selecione o tipo de serviço</option>
                   <option value='plantio'>Plantio</option>
                   <option value='cultivo'>Cultivo</option>
                   <option value='manutencao'>Manutenção</option>
                   <option value='fertilizacao'>Fertilização do solo</option>
-                  <option value='sistema de irrigacao'>
-                    Sistema de irrigação
-                  </option>
+                  <option value='sistema de irrigacao'>Sistema de irrigação</option>
                   <option value='pragas'>Controle de pragas</option>
                 </select>
-              </div>
+       
 
-              <div>
+             
                 <input
                   type='number'
                   name='CEP'
@@ -127,8 +172,8 @@ function Contrate() {
                   onChange={handleChange}
                   placeholder='Digite seu CEP'
                 />
-              </div>
-            </div>
+         
+            
 
             <button onClick={() => navigate('/vitrine-horticultores')}>
               Consultar profissionais

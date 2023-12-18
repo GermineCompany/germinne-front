@@ -6,6 +6,8 @@ import HeaderMobile from '../HeaderMobile/HeaderMobile';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import GerminneContext from '../../context/GerminneContext';
+import { IoMdArrowDropdown } from "react-icons/io";
+
 
 function Header() {
   const { loggedUser } = useContext(GerminneContext);
@@ -55,6 +57,7 @@ function Header() {
 
               <li className="nav-item profissionais">
                 <a href="/">Profissionais</a>
+                <IoMdArrowDropdown className='dropdown-icone'/>
                 <div className="dropdown-horticultores">
                   <a href="/contrate">Contrate</a>
                   <a href="/faca-parte">Faça parte</a>
