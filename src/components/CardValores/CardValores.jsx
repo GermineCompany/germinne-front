@@ -5,14 +5,11 @@ import PropTypes from 'prop-types';
 function CardValores({ titulo, descricao, srcImg }) {
   return (
     <div className='card-valores'>
-      <div>
-        <img src={ srcImg } alt="Icone de uma mão" />
-      </div>
 
-      <div>
-        <h4>{ titulo }</h4>
-        <p>{ descricao }</p>
-      </div>
+      <img src={srcImg} alt="Icone de uma mão" />
+      <h4>{titulo}</h4>
+      <p>{descricao}</p>
+
     </div>
   );
 }

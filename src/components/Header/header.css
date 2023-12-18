@@ -140,6 +140,13 @@ header ul {
   padding-top: 5px;
 }
 
+.dropdown-icone { 
+  color: var(--verde-principal);
+  width: 25px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+
 .profissionais:hover .dropdown-horticultores {
   transition: 0.3s;
   display: flex !important;

@@ -95,8 +95,6 @@
     margin-left: 50px;
 }
 
-
-
 .banner-mvv {
     background: url(../../images/banner-mvv.png) no-repeat;
     background-size: cover;
@@ -337,6 +335,11 @@
 }
 
 @media (max-width: 1600px) {
+    
+    .box-card-germinne {
+        width: 1200px;
+    }
+
     .box-cards > h2{
        align-self: center;
        margin-left: 0;
@@ -363,6 +366,7 @@
 }
 
 @media (max-width: 800px) {
+    
     .banner-mvv-mobile {
         display: flex;
     }

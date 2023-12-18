@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 65vh;
+    height: 60vh;
     width: 100%;
     display: flex;
     align-items: end;
@@ -17,7 +17,7 @@
       text-transform: uppercase;
       margin-bottom: 100px;
       margin-left: 50px;
-      font-size: var(--title-medium);
+      font-size: var(--title-medium);           
   }
   
   .banner-sobre-nos span {
@@ -41,8 +41,8 @@
   
   .box-cards-valores {
       display: flex;
-      flex-direction: column;
       align-items: center;
+      justify-content: space-evenly;
   }
   
   .box-futuro-germinne {
@@ -132,12 +132,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .div-impactos p {
     font-size: var(--body-large);
     font-weight: var(--regular-bold);
     text-align: center;
-    margin-top: 15px;
     width: 350px;
+    margin-top: 500px;
 }

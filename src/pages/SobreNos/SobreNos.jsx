@@ -13,9 +13,9 @@ function SobreNos() {
       <div className="main-container-limitador">
 
         <div className='box-sobre-a-germinne'>
-          <p>Bem-vindo à <span>Germinne</span>, um lugar onde a paixão pela natureza e a dedicação à vida urbana se encontram. Somos apaixonados por tornar a <span>gricultura urbana acessível</span> a todos, oferecendo <span>soluções práticas</span> para transformar o desejo de cultivar em uma realidade vibrante.</p>
+          <p>Bem-vindo à <span>Germinne</span>, um lugar onde a paixão pela natureza e a dedicação à vida urbana se encontram. Somos apaixonados por tornar a <span>agricultura urbana acessível</span> a todos, oferecendo <span>soluções práticas</span> para transformar o desejo de cultivar em uma realidade vibrante.</p>
           <p>Nosso compromisso vai além do cultivo; é sobre capacitar cada indivíduo a <span>colher os beneficios de uma horta em casa</span>, independente de sua experiência ou espaço disponível. Com uma <span>equipe dedicada</span> e uma visão orientada para a <span>sustentabilidade</span>, estamos aqui para tornar sua jornada de cultivo uma experiência prazerosa e gratificante. </p>
-          <p>Junte-se a nós nessa de <span>cultivar vida, saúde e sustentabilidade</span> no coração das cidades. Seja parte da comunidade <span>Germinne</span> e descubra o poder de cultivar seu próprio pedaço de verde no mundo urbano.</p>
+          <p>Junte-se a nós nessa de <span>cultivar vida</span> no coração das cidades. Seja parte da comunidade <span>Germinne</span> e descubra o poder de cultivar seu próprio pedaço de verde no mundo urbano.</p>
         </div>
 
         <div className='box-cards-valores'>

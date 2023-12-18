@@ -10,7 +10,7 @@
 
 .article-beneficios img {
     width: 500px;
-    height: 300px; 
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -35,9 +35,16 @@
         justify-content: center;
         text-align: center;
     }
+
+    .article-beneficios div:nth-child(2) {
+        width: 500px;
+        margin: 10px 150px;
+        text-align: center;
+    }
 }
 
 @media (max-width:1000px) {
+
     .article-beneficios img {
         width: 300px;
         height: 150px;
@@ -46,10 +53,13 @@
     .article-beneficios h4 {
         font-size: var(--subtitle-small);
         margin-top: 10px;
+        text-align: center;
     }
 
     .article-beneficios p {
         font-size: var(--body-small);
+        text-align: center;
+        width: 300px;
     }
 
     .article-beneficios div:nth-child(2) {
