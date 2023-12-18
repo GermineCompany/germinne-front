@@ -10,6 +10,7 @@ import VerificacaoProfissional from "../../components/VerificacaoProfissional/Ve
 import EnderecoPerfil from "../../components/EnderecoPerfil/EnderecoPerfil.jsx";
 import PerfilPedido from "../../components/PerfilPedidos/PerfilPedido.jsx";
 import api from "../../utils/axios";
+import Chat from "../../components/Chat/Chat.jsx";
 
 function Perfil() {
   const { loggedUser } = useContext(GerminneContext);
@@ -91,9 +92,7 @@ function Perfil() {
       </aside>
 
       <div className="component-renderizado">
-        {/* {
-          menusActived.mensagens && <Mensagens />
-        } */}
+        {menusActived.mensagens && <Chat />}
         {/* <VerificacaoProfissional /> */}
 
         {menusActived.dadosPessoais && loggedUser.tipo == "cliente" && (
