@@ -12,7 +12,7 @@
 }
 
 .box-header-mobile nav a {
-  color: white;
+  color: white !important;
 }
 
 .showDropdown-Mobile {
@@ -52,9 +52,14 @@
   margin: auto;
 }
 
+.header-box {
+  align-items: center;
+}
+
 .header-box h1 {
   font-size: var(--subtitle-medium) !important;
   color: var(--verde-principal);
+  margin: 0;
 }
 
 .box-sacola {
@@ -131,9 +136,8 @@
 }
 
 .login-cliente-menu-mobile a {
-  color: var(--cta-laranja) !important;
+  font-weight: var(--bold) !important;
 }
-
 
 
 @media screen and (max-width: 700px) {
