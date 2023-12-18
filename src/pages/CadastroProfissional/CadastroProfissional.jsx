@@ -8,6 +8,15 @@ import api from "../../utils/axios";
 
 function CadastroProfissional() {
   const navigate = useNavigate();
+  const arrayFotos = [
+    "https://germinnecomp-img.s3.sa-east-1.amazonaws.com/arthur-souza.webp",
+    "https://germinnecomp-img.s3.sa-east-1.amazonaws.com/emanuel-silva.jpg",
+    "https://germinnecomp-img.s3.sa-east-1.amazonaws.com/jose-arnaldo.webp",
+    "https://germinnecomp-img.s3.sa-east-1.amazonaws.com/lidia-mioto.webp",
+    "https://germinnecomp-img.s3.sa-east-1.amazonaws.com/Maria-antonia.webp",
+    "https://germinnecomp-img.s3.sa-east-1.amazonaws.com/soraia-lima.webp",
+  ];
+  const indiceAleatorio = Math.floor(Math.random() * arrayFotos.length);
 
   const [infos, setInfos] = useState({
     nome: "",
@@ -16,6 +25,7 @@ function CadastroProfissional() {
     senha: "",
     confirmSenha: "",
     cpf: "",
+    imagemPerfil: arrayFotos[indiceAleatorio],
   });
 
   const [statusRegister, setStatusRegister] = useState({
