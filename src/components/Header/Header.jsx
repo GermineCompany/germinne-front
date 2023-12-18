@@ -88,7 +88,7 @@ function Header() {
             </button>
 
             <button className='botao-profissional-header'>
-              <a href="/login">
+              <a href="/login-profissional">
               Profissional
               </a>
             </button>
