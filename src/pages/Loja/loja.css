@@ -144,6 +144,11 @@
 
 /* ------------------------------------------ */
 
+.review-loja-germinne-box {
+  width: 100%;
+  margin-top: 50px;
+}
+
 .review-loja-germinne-box h3 {
   font-size: var(--title-medium);
   text-align: center;
@@ -156,7 +161,7 @@
 
 .review-loja-germinne-box > div {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 @media (max-width:600px) {
@@ -195,6 +200,12 @@
 
   .carousel-pagina-gb-title h2 {
     font-size: var(--title-small);
+  }
+
+  .germinnebox-title h2 {
+    font-size: var(--title-small);
+    text-align: center;
+    width: 100% !important;
   }
 
 }
