@@ -3,7 +3,6 @@ import logo from '../../images/logo-verde.svg';
 import sacola from '../../images/sacola.png';
 import './header.css';
 import HeaderMobile from '../HeaderMobile/HeaderMobile';
-import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import GerminneContext from '../../context/GerminneContext';
