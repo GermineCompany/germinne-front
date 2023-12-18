@@ -1,5 +1,4 @@
-import React from 'react';
-import imagemHorticultor from '../../images/horticultor-exemplo.png';
+import React, { useEffect, useState } from 'react';
 import estrelas from '../../images/stars.png';
 import { MdVerified, MdOutlineWhatsapp } from 'react-icons/md';
 import { FaPhoneAlt } from 'react-icons/fa';
@@ -8,16 +7,36 @@ import CardPerfilServico from '../../components/CardPerfilServico/CardPerfilServ
 import ImagemUltimosServicos from '../../components/ImagemUltimosServicos/ImagemUltimosServicos';
 import post1 from '../../images/post1perfilhorticultor.svg';
 import CarouselView from '../../components/CarouselView/CarouselView';
+import { useParams } from 'react-router-dom';
+import api from '../../utils/axios';
 
 function PerfilHorticultor() {
+  const { id } = useParams();
+  const [horticultor, setHorticultor] = useState([]);
+  const [horticultorRecebido, setHorticultorRecebido] = useState(false);
+
+  const getHorticultor = async () => {
+    try {
+      const response = await api.get(`/profissional/${id}`);
+      setHorticultor(response.data);
+      setHorticultorRecebido(true);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  
+  useEffect(() => {
+    getHorticultor();
+    console.log(horticultor);
+  }, [id]);
   return (
     <div className='main-container-limitador'>
       <div className='centralizador-box-perfil-horticultor'>
         <article className='box-perfil-horticultor'>
           <div className='box-nome-avaliacao-perfil'>
             <div>
-              <img src={imagemHorticultor} alt="Foto do horticultor" />
-              <p>Nice Lima Soares</p>
+              <img src={horticultor.imagemPerfil} alt="Foto do horticultor" />
+              <p>{ `${horticultor.nome} ${horticultor.sobrenome}` }</p>
             </div>
 
             <div>
@@ -36,7 +55,7 @@ function PerfilHorticultor() {
 
           <div className='box-sobre-mim-perfil'>
             <h2>Sobre mim</h2>
-            <p>Trabalho com plantas faz 7 anos, e por ser Pai de plantas, vejo como o ambiente melhora! Estou disposto a melhorar ambiente de muitas pessoas nessa jornada de plantar e colher! Estou Disponível para ajudá-lo no que precisar </p>
+            <p>{ horticultor.biografia }</p>
           </div>
 
           <div className='box-contatos-perfil'>
@@ -65,55 +84,25 @@ function PerfilHorticultor() {
         <h2>Últimos <span>trabalhos</span>!</h2>
 
         <div className='ultimos-servicos-desktop'>
-          <a href="/portifolio-horticultor">
-            <ImagemUltimosServicos
-              srcImg={post1}
-              titulo='Horticultura nas escolas'
-              local='Cotia - SP | Granja Viana'
-              texto='Os ensinos em escolas estão ficando cada vez mais tecnológicos, então tivemos a iniciativa de nos virar para o lado do conta...'
-            />
-          </a>
-
-          <ImagemUltimosServicos
-            srcImg={post1}
-            titulo='Horticultura nas escolas'
-            local='Cotia - SP | Granja Viana'
-            texto='Os ensinos em escolas estão ficando cada vez mais tecnológicos, então tivemos a iniciativa de nos virar para o lado do conta...'
-          />
-
-          <ImagemUltimosServicos
-            srcImg={post1}
-            titulo='Horticultura nas escolas'
-            local='Cotia - SP | Granja Viana'
-            texto='Os ensinos em escolas estão ficando cada vez mais tecnológicos, então tivemos a iniciativa de nos virar para o lado do conta...'
-          />
-
-
-          <ImagemUltimosServicos
-            srcImg={post1}
-            titulo='Horticultura nas escolas'
-            local='Cotia - SP | Granja Viana'
-            texto='Os ensinos em escolas estão ficando cada vez mais tecnológicos, então tivemos a iniciativa de nos virar para o lado do conta...'
-          />
-
-          <ImagemUltimosServicos
-            srcImg={post1}
-            titulo='Horticultura nas escolas'
-            local='Cotia - SP | Granja Viana'
-            texto='Os ensinos em escolas estão ficando cada vez mais tecnológicos, então tivemos a iniciativa de nos virar para o lado do conta...'
-          />
-
-          <ImagemUltimosServicos
-            srcImg={post1}
-            titulo='Horticultura nas escolas'
-            local='Cotia - SP | Granja Viana'
-            texto='Os ensinos em escolas estão ficando cada vez mais tecnológicos, então tivemos a iniciativa de nos virar para o lado do conta...'
-          />
+          {
+            horticultorRecebido && horticultor.profissionalTrabalhos.map((trabalho) => {
+              const imagens = JSON.parse(trabalho.fotosTrabalho);
+              return (
+                <a key={trabalho.idTrabalho} href={`/portifolio-horticultor/${trabalho.idTrabalho}`}>
+                  <ImagemUltimosServicos
+                    key={trabalho.idTrabalho}
+                    srcImg={imagens[0]}
+                    titulo={trabalho.titulo}
+                    local={trabalho.local}
+                    texto={trabalho.descricao}
+                  />
+                </a>
+              );
+            })
+          }
         </div>
 
         <div className='ultimos-servicos-mobile'>
-
-          
           <CarouselView
             componente1={
               <ImagemUltimosServicos

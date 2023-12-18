@@ -35,13 +35,13 @@ export default function CarouselView({componente1, componente2, componente3, com
 }
 
 CarouselView.propTypes = {
-  componente1: PropTypes.node.isRequired,
-  componente2: PropTypes.node.isRequired,
-  componente3: PropTypes.node.isRequired,
-  componente4: PropTypes.node.isRequired,
-  componente5: PropTypes.node.isRequired,
-  componente6: PropTypes.node.isRequired,
-  componente7: PropTypes.node.isRequired,
-  componente8: PropTypes.node.isRequired,
-  componente9: PropTypes.node.isRequired,
+  componente1: PropTypes.node,
+  componente2: PropTypes.node,
+  componente3: PropTypes.node,
+  componente4: PropTypes.node,
+  componente5: PropTypes.node,
+  componente6: PropTypes.node,
+  componente7: PropTypes.node,
+  componente8: PropTypes.node,
+  componente9: PropTypes.node,
 };
