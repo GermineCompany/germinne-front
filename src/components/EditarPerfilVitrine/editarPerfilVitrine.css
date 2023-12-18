@@ -95,8 +95,12 @@
 
 .editar-perfil-vitrine h2 {
     text-align: center;
-    margin: 40px 0;
+    margin: 20px 0 40px 0;
     font-size: var(--title-small);
+}
+
+.editar-perfil-vitrine h2 span {
+    color: var(--verde-principal);
 }
 
 .servicos-que-atende-perfil > p {
@@ -109,10 +113,33 @@
     font-size: var(--body-medium);
 }
 
+.box-galeria-projetos div {
+    margin-right: 20px;
+    text-align: center;
+}
+
 .box-galeria-projetos > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.box-galeria-projetos > div div:nth-child(1) {
     display: flex;
 }
 
-.box-galeria-projetos div {
-    margin-right: 20px;
+.box-galeria-projetos button {
+    border: none;
+    width: 250px;
+    height: 50px;
+    color: white;
+    font-size: var(--body-large);
+    font-weight: var(--regular-bold);
+    border-radius: 40px;
+    background-color: var(--cta-laranja);
+}
+
+.status-atualizar-perfil-profissional {
+    text-align: center;
+    color: var(--verde-principal);
 }

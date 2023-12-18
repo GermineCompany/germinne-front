@@ -65,3 +65,33 @@
 .box-certificados-na-area h4 {
     margin-bottom: 10px;
 }
+
+.checkbox-verificacao-profissional label {
+    margin: 20px 0 40px 0;
+    border-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+}
+
+.checkbox-verificacao-profissional input {
+    width: 20px;
+    margin-right: 15px;
+}
+
+.button-solicitar-verificacao:disabled {
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+.verificacao-completa {
+    text-align: center;
+}
+
+.verificacao-completa img {
+    margin: 40px 0;
+}
+
+.verificacao-completa p {
+    font-size: var(--body-large);
+    font-weight: var(--regular-bold);
+}
