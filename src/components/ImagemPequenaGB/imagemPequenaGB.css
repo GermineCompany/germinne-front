@@ -1,4 +1,7 @@
 .imagem-pequena-gb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     margin-bottom: 15px;
     padding: 5px;
@@ -13,4 +16,10 @@
 
 .imagem-pequena-gb:hover {
     cursor: pointer;
+}
+
+@media (max-width:1460px) {
+    .imagem-pequena-gb {
+        width: 150px;
+    }
 }
