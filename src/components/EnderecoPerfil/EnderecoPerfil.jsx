@@ -4,7 +4,7 @@ import GerminneContext from '../../context/GerminneContext';
 import api from '../../utils/axios';
 
 function EnderecoPerfil() {
-  const { loggedUser: { id } } = useContext(GerminneContext);
+  const { loggedUser: { id, tipo } } = useContext(GerminneContext);
   const [userInfo, setUserInfo] = useState({});
   const [inputStatus, setInputStatus] = useState(true);
   const [nameButton, setNameButton] = useState('Editar informações');
@@ -32,15 +32,35 @@ function EnderecoPerfil() {
     });
   };
 
+  const getProfissionalInfos = async () => {
+    const result = await api.get(`/profissional/${id}`);
+
+    console.log(result.data);
+
+    setUserInfo(result.data);
+    setInputInfos({
+      cep: result.data.endereco.cep,
+      rua: result.data.endereco.rua,
+      bairro: result.data.endereco.bairro,
+      cidade: result.data.endereco.cidade,
+      pais: result.data.endereco.pais,
+      numero: result.data.endereco.numero,
+    });
+  };
+
   useEffect(() => {
-    getClienteInfos();
+    if (tipo == 'cliente') {
+      getClienteInfos();
+    } else if (tipo == 'profissional') {
+      getProfissionalInfos();
+    }
   }, [id]);
 
   const handleEditInfo = async () => {
     setInputStatus(false);
     setNameButton('Salvar informações');
 
-    if (nameButton == 'Salvar informações') {
+    if (nameButton == 'Salvar informações' && tipo == 'cliente') {
       try {
         const result = await api.put(`/cliente/${id}/endereco`, inputInfos);
         setMessage(result.data.message);
@@ -50,6 +70,22 @@ function EnderecoPerfil() {
           setNameButton('Editar informações');
           setInputStatus(true);
           getClienteInfos();
+        }, 1500);
+      } catch (error) {
+        setMessage(error.response.data.message);
+      }
+    }
+
+    if (nameButton == 'Salvar informações' && tipo == 'profissional') {
+      try {
+        const result = await api.put(`/profissional/${id}/endereco`, inputInfos);
+        setMessage(result.data.message);
+
+        setTimeout(() => {
+          setMessage('');
+          setNameButton('Editar informações');
+          setInputStatus(true);
+          getProfissionalInfos();
         }, 1500);
       } catch (error) {
         setMessage(error.response.data.message);
