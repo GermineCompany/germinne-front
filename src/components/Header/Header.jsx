@@ -95,12 +95,6 @@ function Header() {
               Profissional
               </a>
             </button>
-
-            <div className="box-icone-sacola">
-              <a href="/checkout">
-                <img src={sacola} alt="Icone de sacola" />
-              </a>
-            </div>
           </div>
         </div>
       </header>
