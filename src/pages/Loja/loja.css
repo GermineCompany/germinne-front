@@ -144,6 +144,23 @@
 
 /* ------------------------------------------ */
 
+.carousel-rewiew-desktop .swiper	{
+  padding: 10px;
+}
+
+.carousel-mobile-review .swiper {
+  padding: 5px;
+}
+
+.carousel-mobile-review {
+  display: none !important;
+}
+
+.review-loja-germinne-box {
+  width: 100%;
+  margin-top: 50px;
+}
+
 .review-loja-germinne-box h3 {
   font-size: var(--title-medium);
   text-align: center;
@@ -156,7 +173,7 @@
 
 .review-loja-germinne-box > div {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 @media (max-width:600px) {
@@ -197,4 +214,31 @@
     font-size: var(--title-small);
   }
 
+  .germinnebox-title h2 {
+    font-size: var(--title-small);
+    text-align: center;
+    width: 100% !important;
+  }
+
+  .box-card-perguntas {
+    width: 100%;
+  }
+
+}
+
+@media (max-width:1200px) {
+  .carousel-mobile-review {
+    display: flex !important;
+  }
+
+  .carousel-rewiew-desktop {
+    display: none !important;
+  }
+
+  .review-loja-germinne-box h3 {
+    font-size: var(--title-small);
+  }
+  .faq-title {
+    text-align: center;
+  }
 }
