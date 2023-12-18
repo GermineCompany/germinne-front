@@ -1,15 +1,20 @@
-import React, { useContext } from 'react';
-import logo from '../../images/logo-verde.svg';
-import sacola from '../../images/sacola.png';
-import './header.css';
-import HeaderMobile from '../HeaderMobile/HeaderMobile';
-import { useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import GerminneContext from '../../context/GerminneContext';
+import React, { useContext } from "react";
+import logo from "../../images/logo-verde.svg";
+import sacola from "../../images/sacola.png";
+import "./header.css";
+import HeaderMobile from "../HeaderMobile/HeaderMobile";
+import { useLocation } from "react-router-dom";
+import PropTypes from "prop-types";
+import GerminneContext from "../../context/GerminneContext";
 
 function Header() {
   const { loggedUser } = useContext(GerminneContext);
   const { pathname } = useLocation();
+
+  const handleSair = () => {
+    localStorage.clear();
+    window.location.href = "/";
+  };
 
   return (
     <>
@@ -30,7 +35,9 @@ function Header() {
                 <a href="/">
                   Inicio
                   <div
-                    className={`underline ${pathname === '/' ? 'hold-underline' : ''}`}
+                    className={`underline ${
+                      pathname === "/" ? "hold-underline" : ""
+                    }`}
                   />
                 </a>
               </li>
@@ -39,7 +46,9 @@ function Header() {
                 <a href="/blog">
                   Blog
                   <div
-                    className={`underline ${pathname === '/blog' ? 'hold-underline' : ''}`}
+                    className={`underline ${
+                      pathname === "/blog" ? "hold-underline" : ""
+                    }`}
                   />
                 </a>
               </li>
@@ -48,7 +57,9 @@ function Header() {
                 <a href="/loja">
                   GerminneBox
                   <div
-                    className={`underline ${pathname === '/loja' ? 'hold-underline' : ''}`}
+                    className={`underline ${
+                      pathname === "/loja" ? "hold-underline" : ""
+                    }`}
                   />
                 </a>
               </li>
@@ -65,7 +76,9 @@ function Header() {
                 <a href="/sobre-nos">
                   Sobre nós
                   <div
-                    className={`underline ${pathname === '/sobre-nos' ? 'hold-underline' : ''}`}
+                    className={`underline ${
+                      pathname === "/sobre-nos" ? "hold-underline" : ""
+                    }`}
                   />
                 </a>
               </li>
@@ -74,29 +87,25 @@ function Header() {
 
           <div className="box-login">
             <div>
-              {loggedUser.logged ? (
-                <div>
-                  <a href="/perfil">Olá, {loggedUser.nomeUsuario}</a>
+              {loggedUser.tipo == "cliente" ||
+              loggedUser.tipo == "profissional" ? (
+                <div className="nome-usuario-logado">
+                  <a href="/perfil">
+                    Olá, <span>{loggedUser.nome}</span>
+                  </a>
+                  <button onClick={handleSair}>Sair</button>
                 </div>
-              ) : false}
+              ) : (
+                <div className="botoes-cadastro-login">
+                  <button>
+                    <a href="/login-cliente">Cliente</a>
+                  </button>
 
-            </div>
-            <button>
-              <a href="/login-cliente">
-                Cliente
-              </a>
-            </button>
-
-            <button className='botao-profissional-header'>
-              <a href="/login-profissional">
-              Profissional
-              </a>
-            </button>
-
-            <div className="box-icone-sacola">
-              <a href="/checkout">
-                <img src={sacola} alt="Icone de sacola" />
-              </a>
+                  <button className="botao-profissional-header">
+                    <a href="/login-profissional">Profissional</a>
+                  </button>
+                </div>
+              )}
             </div>
           </div>
         </div>

@@ -1,37 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import GerminneContext from './GerminneContext.jsx';
-import api from '../utils/axios.js';
+import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import GerminneContext from "./GerminneContext.jsx";
 
 const GerminneProvider = ({ children }) => {
-  const [loggedUser, setLoggedUser] = useState({
-    logged: false,
-    nomeUsuario: '',
-    idUsuario: ''
-  });
+  const [loggedUser, setLoggedUser] = useState({});
 
   const [checkoutInfo, setCheckoutInfo] = useState({
     sementes: [],
     quantidade: 0,
-    produto: ''
+    produto: "",
   });
-    
+
   const verifyUserLogin = async () => {
-    const userInfo = JSON.parse(localStorage.getItem('userInfo'));
-    console.log(userInfo);
+    const userInfo = JSON.parse(localStorage.getItem("userInfo"));
 
     if (userInfo) {
-      const infosAPI = await api.get(`/cliente/${userInfo.idCliente}`);
-      console.log(infosAPI, 'dddddddddd');
-      setLoggedUser(prevState => ({ 
-        ...prevState, 
-        logged: true, 
-        idUsuario: infosAPI.idUsuario, 
-        nomeUsuario: userInfo.nomeCliente 
-      }));
+      setLoggedUser(userInfo);
     }
   };
-    
+
   useEffect(() => {
     verifyUserLogin();
   }, []);
@@ -39,8 +26,9 @@ const GerminneProvider = ({ children }) => {
   const context = {
     loggedUser,
     checkout: {
-      checkoutInfo, setCheckoutInfo
-    }
+      checkoutInfo,
+      setCheckoutInfo,
+    },
   };
 
   return (

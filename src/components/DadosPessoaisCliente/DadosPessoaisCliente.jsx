@@ -1,81 +1,92 @@
-import React, { useContext, useEffect, useState } from 'react';
-import './dadosPessoaisCliente.css';
-import GerminneContext from '../../context/GerminneContext';
-import api from '../../utils/axios';
+import React, { useContext, useEffect, useState } from "react";
+import "./dadosPessoaisCliente.css";
+import GerminneContext from "../../context/GerminneContext";
+import api from "../../utils/axios";
 
 function DadosPessoaisCliente() {
-  const { loggedUser: { idUsuario } } = useContext(GerminneContext);
+  const {
+    loggedUser: { id },
+  } = useContext(GerminneContext);
   const [userInfo, setUserInfo] = useState({});
   const [inputStatus, setInputStatus] = useState(true);
-  const [nameButton, setNameButton] = useState('Editar informações');
+  const [nameButton, setNameButton] = useState("Editar informações");
   const [inputInfos, setInputInfos] = useState({
-    nome: '',
-    sobrenome: '',
-    email: '',
-    telefone: ''
+    nome: "",
+    sobrenome: "",
+    email: "",
+    telefone: "",
   });
+  const [message, setMessage] = useState("");
 
   const getClienteInfos = async () => {
-    const result = await api.get(`/cliente/${idUsuario}`);
+    console.log(id);
+    const result = await api.get(`/cliente/${id}`);
 
     setUserInfo(result.data);
-    // console.log(result.data);
+    setInputInfos({
+      nome: result.data.nome,
+      sobrenome: result.data.sobrenome,
+      email: result.data.email,
+      telefone: result.data.telefone,
+    });
   };
 
   useEffect(() => {
     getClienteInfos();
-  }, [idUsuario]);
+  }, [id]);
 
   const handleEditInfo = async () => {
     setInputStatus(false);
-    setNameButton('Salvar informações');
+    setNameButton("Salvar informações");
 
-    if (nameButton == 'Salvar informações') {
+    if (nameButton == "Salvar informações") {
       try {
-        const updateInfos = {
-          nome: inputInfos.nome || userInfo.nome,
-          sobrenome: inputInfos.sobrenome || userInfo.sobrenome,
-          email: inputInfos.email || userInfo.email,
-          telefone: inputInfos.telefone || userInfo.telefone,
-        };
-        const result = await api.put(`/cliente/${idUsuario}`, updateInfos);
-        console.log(result);
-      } catch(error) {
-        console.log(error);
+        const result = await api.put(`/cliente/${id}`, inputInfos);
+        setMessage(result.data.message);
+
+        setTimeout(() => {
+          setMessage("");
+          setNameButton("Editar informações");
+          setInputStatus(true);
+          getClienteInfos();
+        }, 1500);
+      } catch (error) {
+        setMessage(error.response.data.message);
       }
     }
   };
 
   const handleChange = (event) => {
-    setInputInfos({...inputInfos, [event.target.id]: event.target.value });
+    setInputInfos({ ...inputInfos, [event.target.id]: event.target.value });
   };
+
   return (
-    <div className='dados-pessoais-cliente'>
+    <div className="dados-pessoais-cliente">
       <h2>Dados pessoais</h2>
 
-      <div className='inputs-dados-pessoais-cliente'>
+      <div className="inputs-dados-pessoais-cliente">
         <div>
           <label htmlFor="nome">
             Nome
-            <input 
+            <input
               disabled={inputStatus}
-              placeholder={userInfo.nome} 
+              placeholder={userInfo.nome}
               onChange={handleChange}
               value={inputInfos.nome}
               type="text"
-              name="nome" 
-              id="nome" 
+              name="nome"
+              id="nome"
             />
           </label>
 
           <label htmlFor="sobrenome">
             Sobrenome
-            <input 
-              disabled={inputStatus} 
+            <input
+              disabled={inputStatus}
               placeholder={userInfo.sobrenome}
               onChange={handleChange}
               value={inputInfos.sobrenome}
-              type="text" 
+              type="text"
               name="sobrenome"
               id="sobrenome"
             />
@@ -85,24 +96,25 @@ function DadosPessoaisCliente() {
         <div>
           <label htmlFor="email">
             Email
-            <input 
+            <input
               disabled={inputStatus}
               placeholder={userInfo.email}
               onChange={handleChange}
               value={inputInfos.email}
               type="text"
-              name="email" 
-              id="email" 
+              name="email"
+              id="email"
             />
           </label>
 
           <label htmlFor="telefone">
             Telefone
-            <input disabled={inputStatus}
-              placeholder={userInfo.telefone}
+            <input
+              disabled={inputStatus}
+              placeholder={userInfo.telefone || "Adicione um telefone..."}
               onChange={handleChange}
               value={inputInfos.telefone}
-              type="text" 
+              type="text"
               name="telefone"
               id="telefone"
             />
@@ -110,8 +122,18 @@ function DadosPessoaisCliente() {
         </div>
       </div>
 
-      <div className={`${nameButton == 'Editar informações' ? 'box-button-perfil-cliente' : 'box-button-perfil-cliente button-salvar-informacoes'}`}>
-        <button onClick={handleEditInfo}>{ nameButton }</button>
+      <div className="mensagem-editar-perfil-cliente">
+        <p>{message}</p>
+      </div>
+
+      <div
+        className={`${
+          nameButton == "Editar informações"
+            ? "box-button-perfil-cliente"
+            : "box-button-perfil-cliente button-salvar-informacoes"
+        }`}
+      >
+        <button onClick={handleEditInfo}>{nameButton}</button>
       </div>
     </div>
   );
