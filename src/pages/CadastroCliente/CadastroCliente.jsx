@@ -113,8 +113,7 @@ function CadastroCliente() {
   const handleRegister = async () => {
     try {
       const result = await api.post('/cliente/registro', infos);
-      delete result.data.message;
-      localStorage.setItem('userInfo', JSON.stringify({ ...result.data, tipo: 'cliente' }));
+      localStorage.setItem('userInfo', JSON.stringify(result.data));
       setStatusRegister({ status: 'success', message: result.data.message });
       setTimeout(() => window.location.href = '/', 2000);
     } catch(error) {

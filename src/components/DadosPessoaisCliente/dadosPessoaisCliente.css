@@ -12,17 +12,12 @@
     padding: 10px 0;
     width: 300px;
     font-size: var(--body-small);
-    background-color: white;
 }
 
 .dados-pessoais-cliente input:disabled {
     color: rgba(128, 128, 128, 0.6);
     font-weight: var(--bold);
     border-bottom: 3px solid rgba(128, 128, 128, 0.6);
-}
-
-.dados-pessoais-cliente input::placeholder {
-    color: rgba(128, 128, 128, 0.6);
 }
 
 .dados-pessoais-cliente h2 {
@@ -47,7 +42,7 @@
     background-color: var(--verde-principal);
     color: white;
     font-size: var(--body-large);
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 .button-salvar-informacoes button {
@@ -56,10 +51,4 @@
 
 .box-button-perfil-cliente button:hover {
     cursor: pointer;
-}
-
-.mensagem-editar-perfil-cliente p {
-    text-align: center;
-    font-size: var(--body-medium);
-    color: var(--verde-principal);
 }

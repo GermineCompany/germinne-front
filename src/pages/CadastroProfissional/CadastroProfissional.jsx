@@ -113,8 +113,7 @@ function CadastroProfissional() {
   const handleRegister = async () => {
     try {
       const result = await api.post('/profissional/registro', infos);
-      delete result.data.message;
-      localStorage.setItem('userInfo', JSON.stringify({ ...result.data, tipo: 'profissional' }));
+      localStorage.setItem('userInfo', JSON.stringify(result.data));
       setStatusRegister({ status: 'success', message: result.data.message });
       setTimeout(() => window.location.href = '/', 2000);
     } catch(error) {
