@@ -1,21 +1,21 @@
-import React, { useState } from "react";
-import imagemLogin from "../../images/login-profissional.png";
-import "./loginCadastro.css";
-import { useNavigate } from "react-router-dom";
-import logoVerde from "../../images/logo-verde.svg";
-import api from "../../utils/axios";
+import React, { useState } from 'react';
+import imagemLogin from '../../images/login-profissional.png';
+import './loginCadastro.css';
+import { useNavigate } from 'react-router-dom';
+import logoVerde from '../../images/logo-verde.svg';
+import api from '../../utils/axios';
 
 function Login() {
   const navigate = useNavigate();
 
   const [infos, setInfos] = useState({
-    email: "",
-    senha: "",
+    email: '',
+    senha: '',
   });
 
   const [statusLogin, setStatusLogin] = useState({
-    status: "",
-    message: "",
+    status: '',
+    message: '',
   });
 
   const handleChange = (event) =>
@@ -24,23 +24,23 @@ function Login() {
   const handleLogin = async () => {
     console.log(infos);
     try {
-      const result = await api.post("/profissional/login", infos);
+      const result = await api.post('/profissional/login', infos);
       delete result.data.message;
       setStatusLogin({
         ...statusLogin,
         message: result.data.message,
-        status: "success",
+        status: 'success',
       });
       localStorage.setItem(
-        "userInfo",
-        JSON.stringify({ ...result.data, tipo: "profissional" })
+        'userInfo',
+        JSON.stringify({ ...result.data, tipo: 'profissional' })
       );
-      setTimeout(() => (window.location.href = "/"), 1500);
+      setTimeout(() => (window.location.href = '/'), 1500);
     } catch (error) {
       setStatusLogin({
         ...statusLogin,
         message: error.response.data.message,
-        status: "error",
+        status: 'error',
       });
     }
   };
@@ -94,9 +94,9 @@ function Login() {
 
             <div
               className={`box-tratamento-erro ${
-                statusLogin.status == "error"
-                  ? "mensagem-erro"
-                  : "mensagem-sucesso"
+                statusLogin.status == 'error'
+                  ? 'mensagem-erro'
+                  : 'mensagem-sucesso'
               }`}
             >
               <p>{statusLogin.message}</p>
@@ -110,7 +110,7 @@ function Login() {
           <div className="box-cadastro">
             <hr />
             <p>Não possui conta na Germinne?</p>
-            <button onClick={() => navigate("/cadastro-profissional")}>
+            <button onClick={() => navigate('/cadastro-profissional')}>
               Cadastre-se
             </button>
           </div>
