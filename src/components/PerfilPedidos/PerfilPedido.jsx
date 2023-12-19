@@ -42,7 +42,7 @@ function PerfilPedido() {
                 <Pedidos
                   key={idPedido}
                   srcImg={imagemProduto}
-                  data={`${dataFormated.getDate()}/${dataFormated.getMonth()}/${dataFormated.getFullYear()}`}
+                  data={`${dataFormated.getDate()}/${dataFormated.getMonth()+ 1}/${dataFormated.getFullYear()}`}
                   numeroPedido={idPedido}
                   produto={statusPedido}
                   entregaAte={`${

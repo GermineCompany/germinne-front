@@ -26,8 +26,8 @@ function DescricaoProduto() {
     sementes: [],
     quantidade: 1,
     produto: 'GerminneBox',
-    preco: 0,
-    imagem: '',
+    preco: 134.99,
+    imagem: 'https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-1.png',
   });
 
 
@@ -52,7 +52,10 @@ function DescricaoProduto() {
   const handleRedirectCheckout = () => {
     if (infoCarrinho.produto == 'GerminneBox') {
       setInfoCarrinho({...infoCarrinho, imagem: 'https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-1.png' });
+    } else if (infoCarrinho.produto == 'Kit Plantio') {
+      setInfoCarrinho({...infoCarrinho, imagem: 'https://germinnecomp-img.s3.sa-east-1.amazonaws.com/substrato.png' });
     }
+
     checkout.setCheckoutInfo(infoCarrinho);
     navigate('/checkout');
   };

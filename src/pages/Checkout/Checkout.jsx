@@ -24,6 +24,7 @@ export default function Checkout() {
     loggedUser: { id },
   } = useContext(GerminneContext);
   const [completed, setCompleted] = useState(false);
+  console.log(checkoutInfo);
 
   const handleFinalizaCompra = async () => {
     const infoPedido = {
@@ -42,8 +43,6 @@ export default function Checkout() {
       console.log(error);
     }
   };
-
-  console.log(checkoutInfo);
 
   return (
     <section className="h-100 h-custom ">
@@ -80,7 +79,7 @@ export default function Checkout() {
                             <div className="d-flex flex-row align-items-center">
                               <div>
                                 <MDBCardImage
-                                  src='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-1.png'
+                                  src={ checkoutInfo.imagem }
                                   fluid
                                   className="rounded-3"
                                   style={{ width: "65px" }}
