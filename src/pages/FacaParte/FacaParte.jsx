@@ -1,8 +1,5 @@
 import React from 'react';
 import './facaParte.css';
-
-// import CustoBeneficio from '../../images/custo-beneficio-trabalhe-conosco.svg';
-
 import BeneficiosParaVoce from '../../components/BeneficiosParaVoce/BeneficiosParaVoce';
 import PassoApasso from '../../components/PassoApasso/PassoApasso';
 import CardPlanos from '../../components/CardPlanos/CardPlanos';
@@ -14,7 +11,7 @@ function FacaParte() {
       <div className="banner-faca-parte">
         <h2>CUSTO BENEFÍCIO E ACESSO AO SEU <span>PÚBLICO</span> ALVO</h2>
         <p>Impulsione suas receitas com a atração de novos clientes. Nossa plataforma é acessada diariamente por pessoas engajadas e envolvidas na prática da horticultura.</p>
-        <button>Cadastre-se</button>
+        <button onClick={ () => window.location.href = '/cadastro-profissional' }>Cadastre-se</button>
       </div>
 
       <div className="main-container-limitador">
