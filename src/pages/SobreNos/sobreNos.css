@@ -13,11 +13,11 @@
   
   .banner-sobre-nos p {
       color: white;
-      font-weight: var(--semi-bold);
-      text-transform: uppercase;
-      margin-bottom: 100px;
-      margin-left: 50px;
-      font-size: var(--title-medium);           
+      font-weight: var(--semi-bold) !important;
+      text-transform: uppercase !important;
+      margin-bottom: 100px !important;
+      margin-left: 50px !important;
+      font-size: var(--title-medium) !important;           
   }
   
   .banner-sobre-nos span {
