@@ -43,6 +43,8 @@ export default function Checkout() {
     }
   };
 
+  console.log(checkoutInfo);
+
   return (
     <section className="h-100 h-custom ">
       {completed && (
@@ -78,7 +80,7 @@ export default function Checkout() {
                             <div className="d-flex flex-row align-items-center">
                               <div>
                                 <MDBCardImage
-                                  src={checkoutInfo.imagem}
+                                  src='https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-1.png'
                                   fluid
                                   className="rounded-3"
                                   style={{ width: "65px" }}

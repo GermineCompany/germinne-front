@@ -50,6 +50,9 @@ function DescricaoProduto() {
   };
 
   const handleRedirectCheckout = () => {
+    if (infoCarrinho.produto == 'GerminneBox') {
+      setInfoCarrinho({...infoCarrinho, imagem: 'https://germinnecomp-img.s3.sa-east-1.amazonaws.com/germinne-box-1.png' });
+    }
     checkout.setCheckoutInfo(infoCarrinho);
     navigate('/checkout');
   };

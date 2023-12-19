@@ -208,7 +208,7 @@ header ul {
 
 .links-login ul li:hover {
   cursor: pointer;
-  background-color: var(--cta-laranja);
+  background-color: var(--cta-roxo);
   transition: 0.5s;
 }
 
