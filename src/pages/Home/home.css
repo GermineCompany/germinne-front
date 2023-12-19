@@ -13,11 +13,7 @@
 }
 
 .banner-home span a {
-    color: white !important;
-    background-color: var(--verde-principal) !important;
-    padding: 10px 20px;
-    border-radius: 10px;
- 
+    color: var(--verde-principal) !important;
 }
 
 .germinnebox-home {
@@ -30,10 +26,8 @@
 }
 
 .germinnebox-home span a {
-    color: white;
-    background-color: var(--cta-roxo) !important;
-    padding: 10px 20px;
-    border-radius: 10px;
+    color: var(--cta-roxo) !important;
+  
 }
 
 .contrate-home {
@@ -46,10 +40,8 @@
 }
 
 .contrate-home span a {
-    color: white;
-    background-color: var(--cta-laranja) !important;
-    padding: 10px 20px;
-    border-radius: 10px;
+    color:  var(--cta-laranja);
+  
 }
 
 .banner-home h2 {
@@ -61,7 +53,6 @@
 
 .banner-home span {
     color: var(--font-banner-verde);
-    margin-top: 15px;
 }
 
 .banner-home p {
