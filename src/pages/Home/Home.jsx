@@ -210,7 +210,7 @@ function Home() {
 
       </div>
       <section className='box-avaliacoes'>
-        <h3>Oque dizem nossos <span>usuários</span></h3>
+        <h3>O que dizem nossos <span>usuários</span></h3>
 
         <div className='carousel-avaliacao-home'>
 
