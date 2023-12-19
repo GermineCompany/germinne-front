@@ -161,18 +161,20 @@ function Home() {
             />
 
             <CardHomeServicos
+              title='Plante sem dificuldades'
+              subtitle={['Conheça a ', <span className='home-germinnebox' key={3}>Germinne Box</span>]}
+              className='third-service-card'
+              routeName='loja'
+            />
+
+            <CardHomeServicos
               title='Contrate profissionais de confinaça'
               subtitle={['Profissionais de ', <span className='home-contrate' key={2}>Qualidade</span>]}
               className='second-service-card'
               routeName='contrate'
             />
 
-            <CardHomeServicos
-              title='Plante sem dificuldades'
-              subtitle={['Conheça a ', <span className='home-germinnebox' key={3}>Germinne Box</span>]}
-              className='third-service-card'
-              routeName='loja'
-            />
+
           </div>
 
         </div>
