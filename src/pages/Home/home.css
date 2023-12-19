@@ -40,7 +40,7 @@
 }
 
 .contrate-home span a {
-    color:  var(--cta-laranja);
+    color:  var(--cta-laranja) !important;
   
 }
 
@@ -48,7 +48,7 @@
     font-size: var(--display-large);
     text-transform: uppercase;
     margin-bottom: 20px;
-    width: 40%;
+    width: 60%;
 }
 
 .banner-home span {
