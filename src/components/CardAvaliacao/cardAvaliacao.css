@@ -39,7 +39,8 @@
 
 .nome-avaliacao {
     font-size: var(--body-medium);
-    font-weight: var(--semi-bold);
+    font-weight: var(--semi-bold) !important;
+    padding-bottom: 10px;
 }
 
 .avaliacao {
@@ -50,6 +51,9 @@
 
 @media (max-width:600px) {
     .card-avaliacao {
-        width: 300px !important;
+        width: 330px !important;
+    }
+    .avaliacao {
+        font-size: var(--body-small);
     }
 }

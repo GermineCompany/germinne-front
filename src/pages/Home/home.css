@@ -276,7 +276,7 @@
     color: var(--verde-principal);
 }
 
-.box-avaliacoes .swiper {
+.carousel-avaliacao-home .swiper {
     margin: 0px 100px;
 }
 
@@ -286,6 +286,10 @@
 
 .carousel-mobile-avaliacao-home {
     display: none;
+}
+
+.carousel-mobile-avaliacao-home .swiper {
+    padding: 3px !important;
 }
 
 
