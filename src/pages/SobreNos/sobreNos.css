@@ -46,13 +46,13 @@
   }
   
   .box-futuro-germinne {
-      margin-top: 30px;
+      margin-top: 80px;
       text-align: center;
   }
   
   .box-futuro-germinne h3 {
       font-size: var(--title-medium);
-      margin: 40px 0;
+      margin: 50px 0;
   }
   
   .box-futuro-germinne h3 span {
@@ -75,17 +75,22 @@
     height: 100%;
     background-color: #fff;
     border-radius: 10px;
+     margin-top: 50px;
+}
+
+.box-paleta img {
+    width: 1400px;
 }
 
 .box-paleta h2 {
     font-size: var(--title-small);
     font-weight: var(--semi-bold);
-    margin: 20px 0px;
+    margin: 40px 0px;
 
 }
 
 .box-banner-logo {
-    margin-top: 50px ;
+    margin-top: 80px ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,7 +99,7 @@
 }
 
 .box-banner-logo img {
-    width: 1250px;
+    width: 1350px;
     border-radius: 10px;
 }
 

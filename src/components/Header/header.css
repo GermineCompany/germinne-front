@@ -58,13 +58,13 @@ header ul {
   font-weight: var(--semi-bold);
   border-radius: 5px;
   border: none;
-  background-color: var(--cta-laranja);
+  background-color: var(--cta-roxo);
   transition: 0.3s;
   margin-right: 15px;
 }
 
 .box-login button:hover {
-  border: 1px solid var(--cta-laranja);
+  border: 1px solid var(--cta-roxo);
   color: var(--cta-laranja) !important;
   background-color: white;
   cursor: pointer;
@@ -80,11 +80,11 @@ header ul {
 }
 
 .botao-profissional-header {
-  background-color: var(--cta-roxo) !important;
+  background-color: var(--cta-laranja) !important;
 }
 
 .botao-profissional-header:hover {
-  border: 1px solid var(--cta-roxo) !important;
+  border: 1px solid var(--cta-laranja) !important;
   background-color: white !important;
 }
 

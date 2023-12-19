@@ -61,15 +61,15 @@ function SobreNos() {
         </div>
 
 
+        <div className='box-banner-logo'>
+          <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/banner-logo.png" alt="" />
+        </div>
 
         <div className='box-paleta'>
           <h2>Nossa paleta de cores</h2>
           <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/paleta-de-cores.png" alt="Imagem da paleta de cores" />
         </div>
 
-        <div className='box-banner-logo'>
-          <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/banner-logo.png" alt="" />
-        </div>
 
         <div className='box-impactos-sociais'>
           <h2>O impacto da <span>Germinne</span>:</h2>
@@ -89,6 +89,7 @@ function SobreNos() {
               <img src="https://germinnecomp-img.s3.sa-east-1.amazonaws.com/impacto-comunitario3.png" alt="" />
               <p>Alimentos mais saborosos e <span>orgânicos</span> cultivados em casa.</p>
             </div>
+
 
           </div>
         </div>
